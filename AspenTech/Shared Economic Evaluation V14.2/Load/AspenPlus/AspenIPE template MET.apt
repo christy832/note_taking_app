@@ -1,0 +1,154 @@
+MM "11.1" FLAVOR "NO" VERSION "11.1" DATETIME "Fri Jun 28 11:28:44 2002" 
+MACHINE "WIN-NT/VC"  ; 
+startlibrary
+version1
+NumLibs = 1
+Built-In
+NumCats = 9
+Mixers/Splitters
+active
+Separators
+active
+Heat Exchangers
+active
+Columns
+active
+Reactors
+active
+Pressure Changers
+active
+Manipulators
+active
+Solids
+active
+User Models
+active
+endlibrary
+; 
+0
+? SETUP MAIN ? \ SIMULATE INTERACTIVE = NO PROPERTIES = ( "IPE-1" "IPE-2" 
+"IPE-3" ) VISITED = 1 \ ? SETUP GLOBAL ? \ "IN-UNITS" \ ? SETUP DIAGNOSTICS ? 
+? SETUP "SIM-OPTIONS" ? ; "ENG_MOLE" ; ? SETUP "ACCOUNT-INFO" ? ? SETUP 
+DESCRIPTION ? ? DATABANKS ? \ DATABANKS FILE-SYM-NAM = ( PURE11 AQUEOUS 
+SOLIDS INORGANIC ) \ ? COMPONENTS MAIN ? ? COMPONENTS "COMP-LIST" GLOBAL ? ? 
+SOLVE ? ? FLOWSHEET GLOBAL ? ? PROPERTIES MAIN ? \ GPROPERTIES PARCON = -1 \ 
+? PROPERTIES PARAMETERS BINARY SCALAR "RKTKIJ-1" ? ; "ENG_MOLE" ; \ PROP-LIST 
+PARAMNAME = RKTKIJ SETNO = 1 UNITROW = 0 \ ? PROPERTIES PARAMETERS BINARY 
+"T-DEPENDENT" "ANDKIJ-1" ? ; "ENG_MOLE" ; \ PROP-LIST PARAMNAME = ANDKIJ 
+SETNO = 1 UNITROW = 0 TUNITROW = 22 TUNITLABEL = F NEL = 2 \ ? PROPERTIES 
+PARAMETERS BINARY "T-DEPENDENT" "ANDMIJ-1" ? ; "ENG_MOLE" ; \ PROP-LIST 
+PARAMNAME = ANDMIJ SETNO = 1 UNITROW = 0 TUNITROW = 22 TUNITLABEL = F NEL = 2 
+\ ? "PROP-SET" MAIN "IPE-1" ? ; "ENG_MOLE" ; \ P1 ID = MASSVFRA \ \ P1 ID = 
+MASSSFRA \ \ P1 ID = MASSFLMX \ \ P1 ID = VOLFLMX \ \ P1 ID = TEMP \ \ P1 ID
+ = PRES \ \ P1 ID = MWMX \ \ P1 ID = MASSFLOW \ \ P2 SUBSTREAM = ALL \ ? 
+"PROP-SET" MAIN "IPE-2" ? ; "ENG_MOLE" ; \ P1 ID = VOLFLMX \ \ P1 ID = 
+MASSFLMX \ \ P1 ID = KMX \ \ P1 ID = SIGMAMX \ \ P1 ID = MUMX \ \ P1 ID = 
+CPMX UNITS = ( "kJ/kg-K" ) \ \ P1 ID = MWMX \ \ P2 PHASE = ( L ) \ ? "PROP-SET" 
+MAIN "IPE-3" ? ; "ENG_MOLE" ; \ P1 ID = VOLFLMX \ \ P1 ID = MASSFLMX \ \ P1 
+ID = KMX \ \ P1 ID = MUMX \ \ P1 ID = CPMX UNITS = ( "kJ/kg-K" ) \ \ P1 ID = 
+MWMX \ \ P2 PHASE = ( V ) \ ? REPORT REPORT ? ? REPORT "BLOCK-REPORT" ? ? 
+REPORT "STREAM-REPOR" ? \ OPTIONS PROPERTIES = ( "IPE-1" "IPE-2" "IPE-3" ) \ 
+? REPORT "FLOWSHEET-RE" ? ? REPORT "PROPERTY-REP" ? ? REPORT "ADA-REPORT" ? ? 
+REPORT "BATCH-OPERAT" ? ; "ENG_MOLE" ; 
+
+ GRAPHICS_BACKUP
+PFS V 5.00
+$CONFIG
+paramdata ENRTL-RK
+paramdata VLE-IG
+paramdata VLE-RK
+paramdata VLE-HOC
+paramdata LLE-LIT
+paramdata LLE-ASPEN
+paramdata VLE-LIT
+paramdata BINARY
+paramdata EOS-LIT
+paramdata HENRY
+purebank PURE10
+purebank AQUEOUS
+purebank SOLIDS
+purebank INORGANIC
+regdbank 1
+ftn_check 1
+autoblockid 1
+autostreamid 1
+showblockid 1
+showstreamid 1
+autoplacement 1
+grid 2
+gridresolution 0.100000
+scale 0
+streamprefix 
+blockprefix B
+labelscale 1.000000
+qwformat %.0f
+tempformat %.0f
+presformat %.0f
+flowformat %.0f
+strmqwformat %.0f
+vflowformat %.0f
+mflowformat %.0f
+vfracformat %.2f
+pseudobatch 0
+partial 1
+animation 1
+runanyway 0
+tooldrawvisible 0
+browserheight 6465
+browserwidth 10335
+browsertreewidth 3645
+polyplusenabled 1
+dynaplusenabled 1
+bfracenabled 1
+rtfenabled 1
+pinchenabled 0
+linklimit 500
+material_color 0
+material_style 983041
+material_width 1
+heat_color 0
+heat_style 983042
+heat_width 1
+heat_termid Q
+work_color 0
+work_style 983043
+work_width 1
+work_termid W
+connections_color 9
+connections_style 983044
+connections_width 1
+measurements_color 4
+measurements_style 983044
+measurements_width 1
+displayeoconn 0
+displayeomeas 1
+displayeomeastype 2
+showeoviews 0
+eoautosave 1
+#
+#
+PFSVData {A0DFFFE6-908E-11CE-A964-0000C08C668E}
+# of PFS Objects = 1
+SIZE -3 3 -3 3
+LEGEND
+Version: 2
+Dim: -3.96725 -3.2 -3.1 -3.37253
+Size: 0.0145055
+Font: 1 0 =Times New Roman
+# of PFS Objects = 0
+VIEWPORT -6.520220 6.520219 3.300000 -3.300000
+LAYOUT
+TableFormat 1
+Pages 1 1 1 1
+PAGESETUP
+PAPERSIZE 1
+PAPERSOURCE 1
+ORIENTATION 1
+PRINTPAGENO 1 1
+LEFTMARGIN 0.5"
+RIGHTMARGIN 0.5"
+TOPMARGIN 0.5"
+BOTTOMMARGIN 0.5"
+PFDFLAG 255 255
+PFDMODE 0
+SCALE 0.014505

@@ -1,0 +1,101 @@
+EQUIP.ICS (Equipment)|||||
+|||||
+Import Name|Area Name|Component Name|Component Type|Total Installed Cost|Equipment Weight|Installed Weight|
+||||(USD)|||
+|||||
+|||||
+|||||
+|||||
+|||||
+|AA|A1 - Block|HE FLOAT-HEAD||||
+|AA|A2 - Block|HE FLOAT-HEAD||||
+|||||
+|BB|B1 - Block-tower|TW TRAYED    |151100|||
+|BB|B2 - Block|VT CYLINDER  |164700|||
+|BB|B3-COLD - Block|HE FLOAT-HEAD|72800|||
+|BB|B3-HOT - Block|HE FLOAT-HEAD|76400|||
+|BB|B6 - Block|HE FLOAT-HEAD||||
+|BB|B7 - Block-cond|HE FIXED-T-S |76600|||
+|BB|B7 - Block-cond acc|HT HORIZ-DRUM|58600|||
+|BB|B7 - Block-reb|RB U-TUBE    |134500|||
+|BB|B7 - Block-reflux pump|CP CENTRIF   |26300|||
+|BB|B7 - Block-tower|TW TRAYED    |261000|||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||

@@ -1,0 +1,43 @@
+:Project Basis|10000|000|ic_PROJECT_BASIS|Project Basis general information
+::Project Properties|20000|100|ic_PROJECT_PROPERTIES|View/Modify the properties of this project (Description, Remarks, etc.)|
+::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+::Basis for Capital Costs|10010|010|ic_CAPITAL_COSTS_STANDARD_BASIS|Specs for project basis relating to capital costs|projinfo|Project Information|Standard Basis Specs File|
+:::Input Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+:::Output (Reports) Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+:::Design Basis|11010|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS|Design basis specs for the project|
+::::Equipment Specs|40020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS_EQUIPMENT_SPECS|Design basis specs for Equipment|
+::::Piping Specs|11020|000|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS|Piping specs for the project|
+:::::General|40040|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_GENERAL|General piping specs for the project|
+:::::Material|40050|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_MATERIAL|Material piping specs for the project|
+:::::Custom|40060|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_CUSTOM|Custom piping specs for the project|
+::::Civil/Steel Specs|40070|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CIVIL_SPECS|Civil specs for the project|
+::::Instrumentation Specs|40080|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSTRUMENTATION_SPECS|Instrumentation specs for the project|
+::::Electrical Specs|40090|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ELECTRICAL_SPECS|Electrical specs for the project|
+::::Insulation Specs|40100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSULATION_SPECS|Insulation specs for the project|
+::::Paint Specs|40110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PAINT_SPECS|Paint specs for the project|
+:::Currency|42000|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CURRENCY|Currency Specifications for Procurement
+:::Contingency and Misc. Project Costs|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PROJECT_COSTS|Project costs|
+:::Escalation|42020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ESCALATION|Escalation parameters for the project|
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::Wage Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to wages and productivities|
+:::Codes of Accounts|43020|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_CODES_OF_ACCOUNTS|Codes of accounts definition and allocation|
+:::Indexing|41100|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_INDEXING|Indexing for various accounts|
+:::Equipment Rental|34100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_EQUIPMENT_RENTAL|Equipment rental|
+:::Indirects|35100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INDIRECTS|Indirects|
+:::Customer External Files|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT|Customer External Files|
+::::Civil Material|23181|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CIVIL|Civil Materials table|
+::::Steel Material|23182|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_STEEL|Steel Materials table|
+::::Building Unit Costs|23183|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_BLDG|Building Material Table|
+::::Instrumentation Components|23184|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INPARTS|Instrumentation Components Table|
+::::Instrumentation Assemblies|23185|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INASMBLY|Instrumentation Assemblies|
+::::Insulation External Files|10090|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INSULATION|Insulation External Files|
+:::::Hot Insulation Schedules|23187|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_HOTINSUL|Hot Insulation Schedules|
+:::::Cold Insulation Schedules|23188|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_COLDINSUL|Cold Insulation Schedules|
+:::::Insulation Equivalent Length Rules|23186|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INSUL|Insulation Equivalent Length Rules|
+::::Fittings|23187|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_FITTINGS|Fittings|
+::Project Execution Schedule Settings|30020|101|ic_SCHEDULE_SETTINGS_SETUP|Settings for developing construction planning schedule|
+::Process Design|10030|000|ic_PROCESS_DESIGN|Process Design specifications
+:::Design Criteria|10031|0101|ic_GENERAL_DESIGN_CRITERIA|Design criteria and associated file name|projinfo|Project Information|Design Criteria|
+::::Heat Exchangers|20018|100|ic_DESIGN_CRIT_HEAT_EXCHANGER|Design criteria - Heat Exchangers|projinfo|Project Information|Design Criteria|
+:::Utility Specifications|20014|1101|ic_UTILITY_RESOURCES|Specs for utility resources|projinfo|Project Information|Utility Specs File|
+:Streams|30000|100|ic_STREAMS|View stream information|

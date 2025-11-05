@@ -1,0 +1,32 @@
+:::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+:::Project Remarks|29994|100|ic_CAPITAL_COSTS_STANDARD_BASIS_REMARKS|Edit Remarks statements for this file|
+:::Units of Measure Customization|19992|000|ic_UOM_CUSTOMIZATION|Units of measure customization|
+::::Input|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+::::Output (Reports)|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+:::Design Basis|11010|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS|Design basis specs for the project|
+::::Equipment Specs|40020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS_EQUIPMENT_SPECS|Design basis specs for Equipment|
+::::Piping Specs|11020|000|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS|Piping specs for the project|
+:::::General|40040|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_GENERAL|General piping specs for the project|
+:::::Material|40050|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_MATERIAL|Material piping specs for the project|
+::::Civil/Steel Specs|40070|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CIVIL_SPECS|Civil specs for the project|
+::::Instrumentation Specs|40080|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSTRUMENTATION_SPECS|Instrumentation specs for the project|
+::::Electrical Specs|40090|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ELECTRICAL_SPECS|Electrical specs for the project|
+::::Insulation Specs|40100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSULATION_SPECS|Insulation specs for the project|
+::::Paint Specs|40110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PAINT_SPECS|Paint specs for the project|
+:::Contingency and Misc. Project Costs|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_BIG_PROJECT_COSTS|Contingency and miscellaneous project costs|
+:::Escalation|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ESCALATION|Escalation parameters for the project|
+:::Engineering Workforce|10020|000|ic_ENGINEERING_WORKFORCE|Engineering workforce definition|
+::::By Phase|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ENGINEERING_WORKFORCE_PHASE|Engineering workforce definition by phase|
+::::By Discipline|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ENGINEERING_WORKFORCE_DISCIPLINE|Engineering workforce definition by phase|
+::::Drawing Types (** not for Pipeline)|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DRAWING_TYPES|Engineering drawing types (not allowed for Pipeline project)|
+::::Drawing Count (** not for Pipeline)|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DRAWING_COUNT|Engineering drawing count (not allowed for Pipeline project)|
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::General Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to general wages and productivities|
+::::Crew Mixes|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CREW_MIXTURES|Construction crew mixes|
+::::Craft Names|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CRAFT_NAMES|Construction craft names|
+:::Equipment Rental|34100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_EQUIPMENT_RENTAL|Equipment rental|
+::Project Execution Schedule Settings|11080|000|ic_SCHEDULE_SETTINGS_EPC|Settings for developing EPC planning schedule|
+:::Adjust Schedule and Barcharts (** not for Pipeline)|30020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_ADJUSTMENTS|Initial schedule adjustments (not allowed for Pipeline project)|
+:::Equipment Class Delivery Times (** not for Pipeline)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_EQUIPMENT_CLASSES|Specifications for general equipment class delivery times (not allowed for Pipeline project)|
+:::Equipment Item Delivery Times (** not for Pipeline)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_EQUIPMENT_ITEMS|Specifications for specific equipment delivery times (not allowed for Pipeline project)|
+:::Add Barchart Items (** not for Pipeline)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_BARCHART_ITEMS|Add new barchart items (not allowed for Pipeline project)|

@@ -1,0 +1,1024 @@
+A1 DEFIN      P1 LUMP SUM CONST. INDIRECT                              10
+A1 DEFIN      P1 FRINGE BENEFITS                                       11
+A1 DEFIN      P1 BURDENS                                               12
+A1 DEFIN      P1 CONSUMABLES, SMALL TOOLS                              13
+A1 DEFIN      P1 MISC. (INSURANCE, ETC)                                14
+A1 DEFIN      P1 SCAFFOLDING, PLATFORMS                                15
+A1 DEFIN      P1 EQUIPMENT RENTAL                                      16
+A1 DEFIN      P1 VENDOR REPRESENTATIVES                                17
+A1 DEFIN      P1 FIELD SERVICES                                        18
+A1 DEFIN      P1 TEMP. CONST., UTILITIES                               19
+A1 DEFIN      P1 MOBILIZATION, DEMOBILIZE                              20
+A1 DEFIN      P1 CATERING, ACCOMMODATION                               21
+A1 DEFIN      P1 TRAVEL                                                22
+A1 DEFIN      P1 OVERTIME PREMIUM                                      23
+A1 DEFIN      P2 SPECIAL INDIRECT ITEM 1                               24
+A1 DEFIN      P2 SPECIAL INDIRECT ITEM 2                               25
+A1 DEFIN      P3 LUMP SUM FREIGHT                                      50
+A1 DEFIN      P3 DOMESTIC FREIGHT                                      51
+A1 DEFIN      P3 OCEAN FREIGHT                                         52
+A1 DEFIN      P3 AIR FREIGHT                                           53
+A1 DEFIN      P3 MODULE FREIGHT                                        54
+A1 DEFIN      P3 OTHER FREIGHT                                         55
+A1 DEFIN      P4 LUMP SUM TAXES, PERMITS                               60
+A1 DEFIN      P4 PERMITS                                               61
+A1 DEFIN      P4 MATERIALS TAXES                                       62
+A1 DEFIN      P4 CONSTRUCTION TAXES                                    63
+A1 DEFIN      P4 ENGINEERING TAXES                                     64
+A1 DEFIN      P4 OTHER TAXES                                           65
+A1 DEFIN      P5 LUMP SUM ENGINEERING                                  70
+A1 DEFIN      P5 BASIC ENGINEERING                                     71
+A1 DEFIN      P5 DETAIL ENGINEERING                                    72
+A1 DEFIN      P5 MATERIAL PROCUREMENT                                  73
+A1 DEFIN      P5 SUBCONTRACT PROCUREMENT                               74
+A1 DEFIN      P5 ENGINEERING MANAGEMENT                                75
+A1 DEFIN      PA LUMP SUM CONST. MGT.                                  80
+A1 DEFIN      PA HOME OFFICE CONST. SUPP.                              81
+A1 DEFIN      PA CONSTRUCTION MANAGEMENT                               82
+A1 DEFIN      PB FIELD CONST. SUPERVISION                              85
+A1 DEFIN      PB START-UP, COMMISSIONING                               86
+A1 DEFIN      P6 G AND A OVERHEADS                                     90
+A1 DEFIN      P7 CONTRACT FEE                                          91
+A1 DEFIN      P8 ESCALATION                                            97
+A1 DEFIN      P9 ROYALTY, MISC. CHARGES                                98
+A1 DEFIN      P0 CONTINGENCY                                           99
+A1 DEFIN      EQ EQUIPMENT AND SETTING                                100
+A1 DEFIN      EQ SPECIAL PLANT ITEM                                   103
+A1 DEFIN      EQ SPECIAL EQUIPMENT ITEM                               104
+A1 DEFIN      EQ MISC. ITEM ALLOWANCE                                 105
+A1 DEFIN      EQ OTHER EQUIPMENT ITEMS                                106
+A1 DEFIN      EQ WAREHOUSE SPARES                                     107
+A1 DEFIN      EQ EQUIPMENT DEMOLITION                                 109
+A1 DEFIN      EQ PROCESS VESSELS                                      110
+A1 DEFIN      EQ TRAY TOWERS & TRAYS                                  111
+A1 DEFIN      EQ PACKED TOWERS & PACKING                              112
+A1 DEFIN      EQ VERTICAL VESSELS                                     113
+A1 DEFIN      EQ HORIZONTAL VESSELS                                   114
+A1 DEFIN      EQ VACUUM VESSELS                                       115
+A1 DEFIN      EQ CRYSTALLIZERS                                        116
+A1 DEFIN      EQ EVAPORATORS                                          117
+A1 DEFIN      EQ STORAGE VESSELS                                      120
+A1 DEFIN      EQ ATMOSPHERIC STORAGE TANK                             121
+A1 DEFIN      EQ PRESSURIZED STORAGE TANK                             122
+A1 DEFIN      EQ SILOS                                                123
+A1 DEFIN      EQ BINS AND HOPPERS                                     124
+A1 DEFIN      EQ GAS HOLDERS                                          125
+A1 DEFIN      EQ STOCK CHESTS                                         126
+A1 DEFIN      EQ REACTION,MIXING EQUIP.                               130
+A1 DEFIN      EQ REACTORS & AUTOCLAVES                                131
+A1 DEFIN      EQ AGITATED VESSELS                                     132
+A1 DEFIN      EQ BLENDERS                                             133
+A1 DEFIN      EQ MIXERS                                               134
+A1 DEFIN      EQ COMPRESSORS & BLOWERS                                150
+A1 DEFIN      EQ CENTRIFUGAL COMPRESSORS                              151
+A1 DEFIN      EQ RECIPROCATING COMPRESSOR                             152
+A1 DEFIN      EQ TURBO-EXPAND. COMPRESSOR                             153
+A1 DEFIN      EQ FANS AND BLOWERS                                     154
+A1 DEFIN      EQ PUMPS                                                160
+A1 DEFIN      EQ CENTRIFUGAL PUMPS                                    161
+A1 DEFIN      EQ RECIPROCATING PUMPS                                  162
+A1 DEFIN      EQ VACUUM PUMPS                                         163
+A1 DEFIN      EQ ROTARY,GEAR PUMPS                                    164
+A1 DEFIN      EQ VERTICAL PUMPS                                       165
+A1 DEFIN      EQ SUMP & WELL PUMPS                                    166
+A1 DEFIN      EQ SLURRY PUMPS                                         167
+A1 DEFIN      EQ DRIVERS & GEAR REDUCERS                              170
+A1 DEFIN      EQ ELECTRIC MOTORS                                      171
+A1 DEFIN      EQ STEAM TURBINES                                       172
+A1 DEFIN      EQ GAS TURBINES                                         173
+A1 DEFIN      EQ GAS & DIESEL ENGINES                                 174
+A1 DEFIN      EQ GEAR REDUCERS                                        175
+A1 DEFIN      EQ SIZE REDUCTION EQUIPMENT                             180
+A1 DEFIN      EQ CRUSHERS,BREAKERS                                    181
+A1 DEFIN      EQ MILLS                                                182
+A1 DEFIN      EQ PULVERIZERS                                          183
+A1 DEFIN      EQ CUTTERS,FLAKERS                                      184
+A1 DEFIN      EQ STOCK TREATMENT                                      185
+A1 DEFIN      EQ SOLIDS SEPARATION EQUIP.                             190
+A1 DEFIN      EQ SCREENS AND GRIZZLIES                                191
+A1 DEFIN      EQ FILTERS                                              192
+A1 DEFIN      EQ CENTRIFUGES                                          193
+A1 DEFIN      EQ DRYERS                                               194
+A1 DEFIN      EQ LIQUID CYCLONES                                      195
+A1 DEFIN      EQ FLOATATION CELLS                                     196
+A1 DEFIN      EQ THICKENERS,CLARIFIERS                                197
+A1 DEFIN      EQ FLUID SEPARATION EQUIP.                              200
+A1 DEFIN      EQ DUST COLLECTORS                                      201
+A1 DEFIN      EQ SCRUBBERS                                            202
+A1 DEFIN      EQ BAG HOUSES                                           203
+A1 DEFIN      EQ PRECIPITATORS                                        204
+A1 DEFIN      EQ SEPARATORS                                           205
+A1 DEFIN      EQ MATERIALS HANDLING EQUIP                             210
+A1 DEFIN      EQ CONVEYORS                                            211
+A1 DEFIN      EQ FEEDERS                                              212
+A1 DEFIN      EQ CRANES,HOISTS,ETC                                    213
+A1 DEFIN      EQ ELEVATORS                                            214
+A1 DEFIN      EQ SCALES                                               215
+A1 DEFIN      EQ MAGNETS                                              216
+A1 DEFIN      EQ CAR DUMPERS & SHAKERS                                217
+A1 DEFIN      EQ ELECTRICAL GENERATORS                                220
+A1 DEFIN      EQ GAS TURBINE GENERATORS                               221
+A1 DEFIN      EQ DIESEL GENERATORS                                    222
+A1 DEFIN      EQ STEAM TURBINE GENERATORS                             223
+A1 DEFIN      EQ PORTABLE GENERATORS                                  224
+A1 DEFIN      EQ GENERATORS NO DRIVER                                 225
+A1 DEFIN      EQ BOILER PLANT EQUIPMENT                               240
+A1 DEFIN      EQ BOILERS                                              241
+A1 DEFIN      EQ PACKAGE BOILER                                       242
+A1 DEFIN      EQ ECONOMIZERS                                          243
+A1 DEFIN      EQ PREHEATERS                                           244
+A1 DEFIN      EQ PROCESS HEATERS                                      250
+A1 DEFIN      EQ FURNACES,HEATERS                                     251
+A1 DEFIN      EQ WASTE HEAT BOILERS                                   252
+A1 DEFIN      EQ INCINERATORS                                         253
+A1 DEFIN      EQ KILNS                                                254
+A1 DEFIN      EQ STACKS                                               255
+A1 DEFIN      EQ HEAT EXCHANGERS                                      260
+A1 DEFIN      EQ SHELL & TUBE EXCHANGERS                              261
+A1 DEFIN      EQ REBOILERS                                            262
+A1 DEFIN      EQ DOUBLE PIPE EXCHANGERS                               263
+A1 DEFIN      EQ AIR COOLERS                                          264
+A1 DEFIN      EQ COOLING TOWERS                                       265
+A1 DEFIN      EQ MISC. HEAT EXCHANGERS                                266
+A1 DEFIN      EQ PLATE FIN EXCHANGERS                                 267
+A1 DEFIN      EQ LININGS                                              270
+A1 DEFIN      EQ REFRACTORY LININGS                                   271
+A1 DEFIN      EQ ACID BRICK LININGS                                   272
+A1 DEFIN      EQ CAST LININGS                                         273
+A1 DEFIN      EQ POND LININGS                                         274
+A1 DEFIN      EQ OTHER LININGS                                        275
+A1 DEFIN      EQ MISC. PACKAGE UNITS                                  280
+A1 DEFIN      EQ REFRIGERATION UNITS                                  281
+A1 DEFIN      EQ HVAC EQUIPMENT                                       282
+A1 DEFIN      EQ WATER TREATING UNITS                                 283
+A1 DEFIN      EQ INSTRUMENT AIR SYSTEMS                               284
+A1 DEFIN      EQ MODULE SETTING                                       285
+A1 DEFIN      EQ MISCELLANEOUS EQUIPMENT                              290
+A1 DEFIN      EQ EJECTORS                                             291
+A1 DEFIN      EQ PROPRIETARY EQUIPMENT                                292
+A1 DEFIN      EQ FLARES                                               293
+A1 DEFIN      P  PIPING                                               300
+A1 DEFIN      P  SUBCONTRACT PIPING                                   302
+A1 DEFIN      P  SPECIAL PLANT PIPING                                 303
+A1 DEFIN      P  SPECIAL EQUIP. PIPING                                304
+A1 DEFIN      P  OTHER EQUIPMENT PIPE                                 305
+A1 DEFIN      P  PIPING SYSTEM TESTING                                306
+A1 DEFIN      P  PREFAB PIPE REWORK                                   307
+A1 DEFIN      P  PIPING DEMOLITION                                    309
+A1 DEFIN      P  CARBON STL PIPE/FITTINGS                             310
+A1 DEFIN      P  CS FIELD MATERIAL                                    311
+A1 DEFIN      P  CS FIELD SHOP FAB                                    312
+A1 DEFIN      P  CS REMOTE SHOP MATERIAL                              313
+A1 DEFIN      P  CS REMOTE SHOP FAB                                   314
+A1 DEFIN      P  CS VALVES: FLANGED                                   315
+A1 DEFIN      P  CS VALVES: NON-FLANGED                               316
+A1 DEFIN      P  CS PIPE ERECTION                                     317
+A1 DEFIN      P  STAINLESS PIPE/FITTINGS                              320
+A1 DEFIN      P  SS FIELD MATERIAL                                    321
+A1 DEFIN      P  SS FIELD SHOP FAB                                    322
+A1 DEFIN      P  SS REMOTE SHOP MATERIAL                              323
+A1 DEFIN      P  SS REMOTE SHOP FAB                                   324
+A1 DEFIN      P  SS VALVES: FLANGED                                   325
+A1 DEFIN      P  SS VALVES: NON-FLANGED                               326
+A1 DEFIN      P  SS PIPE ERECTION                                     327
+A1 DEFIN      P  MISC.METAL PIPE/FITTINGS                             330
+A1 DEFIN      P  MISC.METAL FIELD MATL                                331
+A1 DEFIN      P  MISC.METAL FIELDSHOP FAB                             332
+A1 DEFIN      P  MISC.METAL RMT SHOP MATL                             333
+A1 DEFIN      P  MISC.METAL RMT SHOP FAB                              334
+A1 DEFIN      P  MISC.METAL VALVE:FLANGED                             335
+A1 DEFIN      P  MISC.METAL VALVE:NOFLANG                             336
+A1 DEFIN      P  MISC.METAL PIPE ERECTION                             337
+A1 DEFIN      P  LINED PIPE/FITTINGS                                  340
+A1 DEFIN      P  LINED PIPE FIELD MATL                                341
+A1 DEFIN      P  LINED FIELD SHOP FAB                                 342
+A1 DEFIN      P  LINED REMOTE SHOP MATL                               343
+A1 DEFIN      P  LINED REMOTE SHOP FAB                                344
+A1 DEFIN      P  LINED VALVES                                         345
+A1 DEFIN      P  LINED PIPE ERECTION                                  347
+A1 DEFIN      P  NON-METAL PIPE/FITTINGS                              350
+A1 DEFIN      P  NON-METAL FIELD MATERIAL                             351
+A1 DEFIN      P  NON-METAL FIELD SHOP FAB                             352
+A1 DEFIN      P  NON-METAL RMT SHOP MATL                              353
+A1 DEFIN      P  NON-METAL RMT SHOP FAB                               354
+A1 DEFIN      P  NON-METAL VALVES                                     355
+A1 DEFIN      P  NON-METAL PIPE ERECTION                              357
+A1 DEFIN      P  PIPING SPECIALTIES                                   360
+A1 DEFIN      P  TRAPS & VACUUM BREAKERS                              361
+A1 DEFIN      P  TRACING TUBING & FITTING                             362
+A1 DEFIN      P  JACKET INTERCONNECTIONS                              363
+A1 DEFIN      P  HAND CONTROLS                                        365
+A1 DEFIN      P  PIPE HANGERS, SHOES ETC.                             366
+A1 DEFIN      P  MECHANICAL CONNECTIONS                               368
+A1 DEFIN      P  FLOW DIVERSION PANELS                                369
+A1 DEFIN      P  FIREWATER, BURIED PIPE                               370
+A1 DEFIN      P  FIREWATER PIPING                                     371
+A1 DEFIN      P  HYDRANTS,HOSE,NOZZLE,ETC                             372
+A1 DEFIN      P  DELUGE SYSTEMS                                       373
+A1 DEFIN      P  SHOWER, EYEWASH, ETC.                                374
+A1 DEFIN      P  BURIED PIPE INSTALLATION                             376
+A1 DEFIN      P  PIPE TRENCH & BACKFILL                               377
+A1 DEFIN      P  COAT AND WRAP PIPE                                   378
+A1 DEFIN      P  DUCTWORK/LAUNDERS                                    380
+A1 DEFIN      P  PROCESS DUCTWORK                                     381
+A1 DEFIN      P  HVAC DUCTWORK                                        382
+A1 DEFIN      P  LAUNDERS                                             383
+A1 DEFIN      P  PIPELINES                                            390
+A1 DEFIN      P  PIPELINE-MAINLINE PIPE                               391
+A1 DEFIN      P  PIPELINE-VALVES,FITTINGS                             392
+A1 DEFIN      P  PIPELINE-FAB. & INSTALL                              393
+A1 DEFIN      P  PIPELINE-SCRAPER L/R                                 394
+A1 DEFIN      P  PIPELINE-DBL JOINT/COAT                              395
+A1 DEFIN      P  PIPELINE-SUPPORTS                                    396
+A1 DEFIN      P  PIPELINE-RADIOGRAPH TEST                             397
+A1 DEFIN      P  PIPELINE-MARINE WORK                                 398
+A1 DEFIN      P  PIPELINE MISC. PIPING                                399
+A1 DEFIN      C  CIVIL                                                400
+A1 DEFIN      C  SUBCONTRACT CIVIL                                    402
+A1 DEFIN      C  SPECIAL PLANT CIVIL                                  403
+A1 DEFIN      C  SPECIAL EQUIP. CIVIL                                 404
+A1 DEFIN      C  SCAFFOLDING                                          405
+A1 DEFIN      C  CIVIL DEMOLITION                                     409
+A1 DEFIN      C  EARTHWORK                                            410
+A1 DEFIN      C  CLEAR SITE                                           411
+A1 DEFIN      C  BULK EXCAVATION                                      412
+A1 DEFIN      C  ROCK EXCAVATION                                      413
+A1 DEFIN      C  BLASTING                                             414
+A1 DEFIN      C  HAULING & DUMPING                                    415
+A1 DEFIN      C  SITE FILL & COMPACT                                  416
+A1 DEFIN      C  DEWATERING                                           417
+A1 DEFIN      C  STABILIZATION                                        418
+A1 DEFIN      C  CONTAINMENT,EMBANKMENTS                              419
+A1 DEFIN      C  ROADS,RAILROADS                                      420
+A1 DEFIN      C  GRADE,COMPACT BASE                                   421
+A1 DEFIN      C  ROADS                                                422
+A1 DEFIN      C  PAVING                                               423
+A1 DEFIN      C  RAILROADS                                            424
+A1 DEFIN      C  BOARD ROADS                                          425
+A1 DEFIN      C  OTHER SITEWORK                                       430
+A1 DEFIN      C  TEST BORINGS                                         431
+A1 DEFIN      C  DEMOLITION & RELOCATION                              432
+A1 DEFIN      C  LANDSCAPING                                          433
+A1 DEFIN      C  FENCING                                              434
+A1 DEFIN      C  RETAINING WALLS                                      435
+A1 DEFIN      C  PILING                                               436
+A1 DEFIN      C  SHORING                                              437
+A1 DEFIN      C  DRILLED WELLS                                        438
+A1 DEFIN      C  DRAINAGE                                             439
+A1 DEFIN      C  CONCRETE                                             440
+A1 DEFIN      C  AGGREGATE                                            441
+A1 DEFIN      C  CEMENT                                               442
+A1 DEFIN      C  SAND                                                 443
+A1 DEFIN      C  POURED CONCRETE                                      444
+A1 DEFIN      C  GROUT                                                445
+A1 DEFIN      C  CONCRETE POUR AND FINISH                             446
+A1 DEFIN      C  EXCAVATION                                           447
+A1 DEFIN      C  MISCELLANEOUS CONCRETE                               448
+A1 DEFIN      C  OTHER EQUIP. CONCRETE                                449
+A1 DEFIN      C  REBAR, FORMWORK, ETC.                                450
+A1 DEFIN      C  REBAR                                                451
+A1 DEFIN      C  FOUNDATION ACCESSORIES                               452
+A1 DEFIN      C  INSTALL REBAR                                        453
+A1 DEFIN      C  FORMWORK MATERIALS                                   454
+A1 DEFIN      C  FIELD FABRICATE FORMWORK                             455
+A1 DEFIN      C  INSTALL FORMWORK                                     456
+A1 DEFIN      C  STRIP & CLEAN FORMWORK                               457
+A1 DEFIN      C  BACKFILL                                             458
+A1 DEFIN      C  PRECAST CONCRETE                                     460
+A1 DEFIN      C  PRECAST PIPERACK                                     461
+A1 DEFIN      C  PRECAST BEAMS & COLUMNS                              462
+A1 DEFIN      C  BUILDINGS                                            470
+A1 DEFIN      C  SUBCONTRACT BUILDINGS                                471
+A1 DEFIN      C  BLDG STRUCTURE/FINISHES                              472
+A1 DEFIN      C  BUILDING FURNISHINGS                                 473
+A1 DEFIN      C  BUILDING ELECTRICAL                                  474
+A1 DEFIN      C  BUILDING PLUMBING                                    475
+A1 DEFIN      C  BUILDING HVAC                                        476
+A1 DEFIN      C  MISCELLANEOUS CIVIL                                  480
+A1 DEFIN      C  LININGS & COATINGS                                   481
+A1 DEFIN      C  OFFSHORE CIVIL                                       485
+A1 DEFIN      C  PIPELINE CIVIL WORK                                  490
+A1 DEFIN      C  PIPELINE-ROW & SITE WORK                             491
+A1 DEFIN      C  PIPELINE-ROW CROSSINGS                               492
+A1 DEFIN      C  PIPELINE-DITCHING                                    493
+A1 DEFIN      C  PIPELINE-ANCHORS/SUPPORT                             494
+A1 DEFIN      C  PIPELINE MISC. CIVIL                                 499
+A1 DEFIN      ST STEEL                                                500
+A1 DEFIN      ST SUBCONTRACT STEEL                                    502
+A1 DEFIN      ST SPECIAL PLANT STEEL                                  503
+A1 DEFIN      ST SPECIAL EQUIP. STEEL                                 504
+A1 DEFIN      ST STEEL DEMOLITION                                     509
+A1 DEFIN      ST EQUIPMENT STEEL                                      510
+A1 DEFIN      ST EQUIPMENT SUPPORT STEEL                              511
+A1 DEFIN      ST LADDERS                                              512
+A1 DEFIN      ST PLATFORMS                                            513
+A1 DEFIN      ST OTHER EQUIPMENT STEEL                                519
+A1 DEFIN      ST STRUCTURAL STEEL                                     520
+A1 DEFIN      ST STEEL STRUCTURES                                     521
+A1 DEFIN      ST PIPERACK STEEL                                       522
+A1 DEFIN      ST PIPE SUPPORTS                                        523
+A1 DEFIN      ST TUBULAR STEEL                                        524
+A1 DEFIN      ST OTHER STEEL ITEMS                                    530
+A1 DEFIN      ST FLOORING & STAIR TREADS                              531
+A1 DEFIN      ST HANDRAIL AND TOE PLATE                               532
+A1 DEFIN      ST OTHER BLDG/STRUCT STEEL                              533
+A1 DEFIN      ST BUILDING SIDING                                      534
+A1 DEFIN      ST MISCELLANEOUS STEEL ITEM                             535
+A1 DEFIN      ST TOWERS AND TRUSSES                                   540
+A1 DEFIN      ST STEEL TOWERS                                         541
+A1 DEFIN      ST STEEL TRUSSES                                        542
+A1 DEFIN      ST STEEL PLATE ITEMS                                    550
+A1 DEFIN      ST FABRICATED PLATE                                     551
+A1 DEFIN      ST OFFSHORE STEELWORK                                   580
+A1 DEFIN      ST OFFSHORE JACKETS                                     581
+A1 DEFIN      ST OFFSHORE TUBULAR STEEL                               582
+A1 DEFIN      ST OTHER STEELWORK                                      590
+A1 DEFIN      ST STEEL UNLOAD & HANDLING                              591
+A1 DEFIN      ST THRUST ANCHORS                                       592
+A1 DEFIN      ST DEFLECTION ANCHORS                                   593
+A1 DEFIN      I  INSTRUMENTATION                                      600
+A1 DEFIN      I  SUBCON. INSTRUMENTATION                              602
+A1 DEFIN      I  SPECIAL PLANT INSTRUMENT                             603
+A1 DEFIN      I  SPECIAL EQUIP INSTRUMENT                             604
+A1 DEFIN      I  INSTRUMENT DEMOLITION                                609
+A1 DEFIN      I  FIELD INSTRUMENTATION                                610
+A1 DEFIN      I  FLOW INSTRUMENTS                                     611
+A1 DEFIN      I  LEVEL INSTRUMENTS                                    612
+A1 DEFIN      I  PRESSURE INSTRUMENTS                                 613
+A1 DEFIN      I  TEMPERATURE INSTRUMENTS                              614
+A1 DEFIN      I  ANALYZERS                                            615
+A1 DEFIN      I  MOTION INSTRUMENTS                                   616
+A1 DEFIN      I  BURNER INSTRUMENTS                                   617
+A1 DEFIN      I  ORIFICE PLATES                                       618
+A1 DEFIN      I  OTHER EQUIPMENT INSTR.                               619
+A1 DEFIN      I  PANELS, PANEL DEVICES                                620
+A1 DEFIN      I  CONTROL CENTER PANELS                                621
+A1 DEFIN      I  CONTROL CTR CONNECTIONS                              622
+A1 DEFIN      I  BACK OF PANEL INSTRUMENT                             623
+A1 DEFIN      I  EMERGENCY SHUT-DOWN BOP                              624
+A1 DEFIN      I  ALARM SWITCH BOP                                     625
+A1 DEFIN      I  EQUIP. CONTROL PANEL                                 627
+A1 DEFIN      I  EQUIP. PANEL DEVICES                                 628
+A1 DEFIN      I  OTHER PANEL DEVICES                                  629
+A1 DEFIN      I  INSTRUMENT RUNS                                      630
+A1 DEFIN      I  AIR SUPPLY PIPING                                    631
+A1 DEFIN      I  INSTRUMENT PIPING                                    632
+A1 DEFIN      I  TERMINATIONS                                         633
+A1 DEFIN      I  PNEUMATIC TUBING                                     634
+A1 DEFIN      I  PNEUMATIC MULTI-TUBE                                 635
+A1 DEFIN      I  INSTRUMENT SIGNAL WIRING                             636
+A1 DEFIN      I  MULTI-COND. INSTR. WIRE                              637
+A1 DEFIN      I  T/C EXTENSION WIRING                                 638
+A1 DEFIN      I  T/C MULTI-COND. WIRING                               639
+A1 DEFIN      I  INSTR. SUPPORT & ENCL.                               640
+A1 DEFIN      I  TRAYS & SUPPORT                                      641
+A1 DEFIN      I  CONDUIT & FITTINGS                                   642
+A1 DEFIN      I  INSTRUMENT HOUSING                                   644
+A1 DEFIN      I  PNEU. JUNCTION BOXES                                 645
+A1 DEFIN      I  ELEC. JUNCTION BOXES                                 646
+A1 DEFIN      I  T/C   JUNCTION BOXES                                 647
+A1 DEFIN      I  MULTIPLEX JUNCTION BOXES                             648
+A1 DEFIN      I  OTHER SUPPORTS                                       649
+A1 DEFIN      I  INSTRUMENT ELECTRICAL                                650
+A1 DEFIN      I  WIRE/CABLE ETC.                                      651
+A1 DEFIN      I  SOLENOIDS                                            653
+A1 DEFIN      I  OTHER INSTR. ELECTRICAL                              659
+A1 DEFIN      I  COMPUTER CONTROL                                     660
+A1 DEFIN      I  CONTROLLER INTERFACES                                661
+A1 DEFIN      I  INDIC./RECORD INTERFACES                             662
+A1 DEFIN      I  T/C INTERFACES                                       663
+A1 DEFIN      I  OPERATOR STATIONS                                    664
+A1 DEFIN      I  CABLE/DATA HIGHWAYS                                  665
+A1 DEFIN      I  BARRIERS & TRANSDUCERS                               666
+A1 DEFIN      I  PROGRAMMABLE CONTROLLERS                             667
+A1 DEFIN      I  OTHER COMPUTER CONTROL                               669
+A1 DEFIN      I  MISC. INSTRUMENTATION                                670
+A1 DEFIN      I  Q.C. EQUIPMENT                                       671
+A1 DEFIN      I  FINAL CONTROL ELEMENTS                               680
+A1 DEFIN      I  CONTROL VALVES                                       681
+A1 DEFIN      I  SAFETY VALVES                                        682
+A1 DEFIN      I  RUPTURE DISCS                                        683
+A1 DEFIN      I  MOTOR OPERATED VALVES                                684
+A1 DEFIN      I  REGULATING VALVES                                    685
+A1 DEFIN      I  DIVERTER VALVES                                      686
+A1 DEFIN      I  OTHER INSTRUMENT WORK                                690
+A1 DEFIN      I  INSTRUMENT TESTING                                   691
+A1 DEFIN      E  ELECTRICAL                                           700
+A1 DEFIN      E  SUBCONTRACT ELECTRICAL                               702
+A1 DEFIN      E  SPECIAL PLANT ELECTRICAL                             703
+A1 DEFIN      E  SPECIAL EQUIP ELECTRICAL                             704
+A1 DEFIN      E  ELECTRICAL DEMOLITION                                709
+A1 DEFIN      E  WIRE, CABLE, ETC.                                    710
+A1 DEFIN      E  WIRE/CABLE - LV                                      711
+A1 DEFIN      E  WIRE/CABLE - HV                                      712
+A1 DEFIN      E  PILOT LIGHT                                          713
+A1 DEFIN      E  PUSH BUTTON STATION                                  714
+A1 DEFIN      E  TERMINATORS/CONNECTORS                               715
+A1 DEFIN      E  JUNCTION BOXES                                       716
+A1 DEFIN      E  WIRE/CABLE - MV                                      717
+A1 DEFIN      E  WIRE/CABLE - CV                                      718
+A1 DEFIN      E  OTHER EQUIPMENT WIRING                               719
+A1 DEFIN      E  CONDUIT, TRAYS, ETC.                                 720
+A1 DEFIN      E  CONDUIT                                              721
+A1 DEFIN      E  CONDUIT FITTINGS                                     722
+A1 DEFIN      E  CABLE TRAYS                                          723
+A1 DEFIN      E  OTHER ELEC. EQUIPMENT                                730
+A1 DEFIN      E  VARIABLE FREQUENCY DRIVE                             731
+A1 DEFIN      E  CAPACITORS                                           732
+A1 DEFIN      E  MOTOR CONTROL CENTER-LV                              733
+A1 DEFIN      E  TRANSFORMERS - MV                                    734
+A1 DEFIN      E  TRANSFORMERS - LV                                    735
+A1 DEFIN      E  SWITCHGEAR - MV                                      736
+A1 DEFIN      E  SWITCHGEAR - LV                                      737
+A1 DEFIN      E  BUS DUCT - LV                                        738
+A1 DEFIN      E  DISCONNECT SWITCH                                    739
+A1 DEFIN      E  MAJOR ELEC. EQUIPMENT                                740
+A1 DEFIN      E  TRANSFORMERS - HV                                    741
+A1 DEFIN      E  SWITCHGEAR - HV                                      742
+A1 DEFIN      E  MCC EQUIPPED SPACE                                   743
+A1 DEFIN      E  MOTOR CONTROL CENTER-MV                              744
+A1 DEFIN      E  BUS DUCT - MV/HV                                     745
+A1 DEFIN      E  TRANSMISSION LINES                                   746
+A1 DEFIN      E  SUBSTATION STEEL                                     747
+A1 DEFIN      E  SWITCHRACK                                           748
+A1 DEFIN      E  RECTIFIERS                                           749
+A1 DEFIN      E  BLDG/AREA ELECTRICAL                                 750
+A1 DEFIN      E  BLDG/AREA LIGHTING                                   751
+A1 DEFIN      E  LIGHTING FIXTURES                                    752
+A1 DEFIN      E  RECEPTACLES/SWITCHES                                 753
+A1 DEFIN      E  HVAC ELECTRICAL                                      754
+A1 DEFIN      E  MISC. SMALL TRANSFORMERS                             755
+A1 DEFIN      E  PANELBOARDS                                          756
+A1 DEFIN      E  WIRE/CABLE - LIGHTING                                757
+A1 DEFIN      E  EQUIPMENT CABINETS                                   758
+A1 DEFIN      E  BURIED CABLE                                         760
+A1 DEFIN      E  ELECTRICAL TRENCHING                                 761
+A1 DEFIN      E  UNDERGROUND CABLE DUCT                               762
+A1 DEFIN      E  GROUNDING, CATH. PROTEC.                             770
+A1 DEFIN      E  GROUNDING SYSTEMS                                    771
+A1 DEFIN      E  CATHODIC PROTECTION                                  772
+A1 DEFIN      E  COMMUNICATION,ALARMS,ETC                             780
+A1 DEFIN      E  TELEPHONE SYSTEM                                     781
+A1 DEFIN      E  PUBLIC ADDRESS GEN.ALARM                             782
+A1 DEFIN      E  INTRUSION DET. SYSTEM                                783
+A1 DEFIN      E  ACCESS CONTROL SYSTEM                                784
+A1 DEFIN      E  CLOSED CIRCUIT TV                                    785
+A1 DEFIN      E  RADIO SYSTEM                                         786
+A1 DEFIN      E  AREA NETWORK SYSTEM                                  787
+A1 DEFIN      E  METEOROLOGICAL SYSTEM                                788
+A1 DEFIN      E  OTHER ELECTRICAL                                     790
+A1 DEFIN      E  ELECTRICAL CIRCUIT TSTNG                             791
+A1 DEFIN      E  ELECTRICAL TRACING                                   792
+A1 DEFIN      E  SOLAR PANELS                                         794
+A1 DEFIN      E  BATTERY PACKS                                        795
+A1 DEFIN      E  UPS                                                  796
+A1 DEFIN      E  EMERGENCY GENERATOR                                  797
+A1 DEFIN      IN INSULATION, FIREPROOFING                             800
+A1 DEFIN      IN SUBCONTRACT INSULATION                               802
+A1 DEFIN      IN SPECIAL PLANT INSULATION                             803
+A1 DEFIN      IN SPECIAL EQUIP INSULATION                             804
+A1 DEFIN      IN INSULATION DEMOLITION                                809
+A1 DEFIN      IN INSULATION                                           810
+A1 DEFIN      IN PIPE INSULATION                                      811
+A1 DEFIN      IN EQUIP INSULATION                                     812
+A1 DEFIN      IN MODULE INSULATION SHOP                               813
+A1 DEFIN      IN MODULE INSULATION FIELD                              814
+A1 DEFIN      IN PERSONNEL PROTECTION                                 815
+A1 DEFIN      IN OTHER EQUIP. INSULATION                              819
+A1 DEFIN      IN FIREPROOFING                                         820
+A1 DEFIN      IN STRUCTURAL FIREPROOFING                              821
+A1 DEFIN      IN EQUIPMENT FIREPROOFING                               822
+A1 DEFIN      IN CABLE TRAY FIREPROOFING                              823
+A1 DEFIN      IN SPECIAL COATINGS                                     830
+A1 DEFIN      IN ACID TILE PAVING                                     831
+A1 DEFIN      PT PAINT                                                900
+A1 DEFIN      PT SUBCONTRACT PAINT                                    902
+A1 DEFIN      PT SPECIAL PLANT PAINT                                  903
+A1 DEFIN      PT SPECIAL EQUIP PAINT                                  904
+A1 DEFIN      PT PAINT DEMOLITION                                     909
+A1 DEFIN      PT PAINTING                                             910
+A1 DEFIN      PT PAINT - EQUIPMENT                                    911
+A1 DEFIN      PT PAINT - PIPING                                       912
+A1 DEFIN      PT PAINT - STRUCTURES                                   913
+A1 DEFIN      PT PAINT MODULE EQUIPMENT                               914
+A1 DEFIN      PT PAINT MODULE PIPING                                  915
+A1 DEFIN      PT PAINT MODULE STRUCTURES                              916
+A1 DEFIN      PT OTHER COATINGS                                       918
+A1 DEFIN      PT OTHER EQUIPMENT PAINT                                919
+A1 DEFIN      PT SURFACE PREPARATION                                  920
+A1 DEFIN      PT SURFACE PREP - EQUIPMENT                             921
+A1 DEFIN      PT SURFACE PREP - PIPING                                922
+A1 DEFIN      PT SURFACE PREP - STEEL                                 923
+A2 ALLOC   1    10                                                     10
+A2 ALLOC   11                                                          11
+A2 ALLOC   12                                                          12
+A2 ALLOC   13                                                          13
+A2 ALLOC   14                                                          14
+A2 ALLOC   15                                                          15
+A2 ALLOC   16                                                          16
+A2 ALLOC   17                                                          17
+A2 ALLOC   18                                                          18
+A2 ALLOC   19                                                          19
+A2 ALLOC   20                                                          20
+A2 ALLOC   21                                                          21
+A2 ALLOC   22                                                          22
+A2 ALLOC   23                                                          23
+A2 ALLOC   24                                                          24
+A2 ALLOC   25   49                                                     25
+A2 ALLOC   50                                                          50
+A2 ALLOC   51                                                          51
+A2 ALLOC   52                                                          52
+A2 ALLOC   53                                                          53
+A2 ALLOC   54                                                          54
+A2 ALLOC   55   59                                                     55
+A2 ALLOC   60                                                          60
+A2 ALLOC   61                                                          61
+A2 ALLOC   62                                                          62
+A2 ALLOC   63                                                          63
+A2 ALLOC   64                                                          64
+A2 ALLOC   65   69                                                     65
+A2 ALLOC   70                                                          70
+A2 ALLOC   71                                                          71
+A2 ALLOC   72                                                          72
+A2 ALLOC   73                                                          73
+A2 ALLOC   74                                                          74
+A2 ALLOC   75   79                                                     75
+A2 ALLOC   80                                                          80
+A2 ALLOC   81                                                          81
+A2 ALLOC   82   84                                                     82
+A2 ALLOC   85                                                          85
+A2 ALLOC   86   89                                                     86
+A2 ALLOC   90                                                          90
+A2 ALLOC   91   96                                                     91
+A2 ALLOC   97                                                          97
+A2 ALLOC   98                                                          98
+A2 ALLOC   99                                                          99
+A2 ALLOC  100  102                                                    100
+A2 ALLOC  103                                                         103
+A2 ALLOC  104                                                         104
+A2 ALLOC  105                                                         105
+A2 ALLOC  106                                                         106
+A2 ALLOC  107  108                                                    107
+A2 ALLOC  109                                                         109
+A2 ALLOC  110                                                         110
+A2 ALLOC  111                                                         111
+A2 ALLOC  112                                                         112
+A2 ALLOC  113                                                         113
+A2 ALLOC  114                                                         114
+A2 ALLOC  115                                                         115
+A2 ALLOC  116                                                         116
+A2 ALLOC  117  119                                                    117
+A2 ALLOC  120                                                         120
+A2 ALLOC  121                                                         121
+A2 ALLOC  122                                                         122
+A2 ALLOC  123                                                         123
+A2 ALLOC  124                                                         124
+A2 ALLOC  125                                                         125
+A2 ALLOC  126  129                                                    126
+A2 ALLOC  130                                                         130
+A2 ALLOC  131                                                         131
+A2 ALLOC  132                                                         132
+A2 ALLOC  133                                                         133
+A2 ALLOC  134  149                                                    134
+A2 ALLOC  150                                                         150
+A2 ALLOC  151                                                         151
+A2 ALLOC  152                                                         152
+A2 ALLOC  153                                                         153
+A2 ALLOC  154  159                                                    154
+A2 ALLOC  160                                                         160
+A2 ALLOC  161                                                         161
+A2 ALLOC  162                                                         162
+A2 ALLOC  163                                                         163
+A2 ALLOC  164                                                         164
+A2 ALLOC  165                                                         165
+A2 ALLOC  166                                                         166
+A2 ALLOC  167  169                                                    167
+A2 ALLOC  170                                                         170
+A2 ALLOC  171                                                         171
+A2 ALLOC  172                                                         172
+A2 ALLOC  173                                                         173
+A2 ALLOC  174                                                         174
+A2 ALLOC  175  179                                                    175
+A2 ALLOC  180                                                         180
+A2 ALLOC  181                                                         181
+A2 ALLOC  182                                                         182
+A2 ALLOC  183                                                         183
+A2 ALLOC  184                                                         184
+A2 ALLOC  185  189                                                    185
+A2 ALLOC  190                                                         190
+A2 ALLOC  191                                                         191
+A2 ALLOC  192                                                         192
+A2 ALLOC  193                                                         193
+A2 ALLOC  194                                                         194
+A2 ALLOC  195                                                         195
+A2 ALLOC  196                                                         196
+A2 ALLOC  197  199                                                    197
+A2 ALLOC  200                                                         200
+A2 ALLOC  201                                                         201
+A2 ALLOC  202                                                         202
+A2 ALLOC  203                                                         203
+A2 ALLOC  204                                                         204
+A2 ALLOC  205  209                                                    205
+A2 ALLOC  210                                                         210
+A2 ALLOC  211                                                         211
+A2 ALLOC  212                                                         212
+A2 ALLOC  213                                                         213
+A2 ALLOC  214                                                         214
+A2 ALLOC  215                                                         215
+A2 ALLOC  216                                                         216
+A2 ALLOC  217  219                                                    217
+A2 ALLOC  220                                                         220
+A2 ALLOC  221                                                         221
+A2 ALLOC  222                                                         222
+A2 ALLOC  223                                                         223
+A2 ALLOC  224                                                         224
+A2 ALLOC  225                                                         225
+A2 ALLOC  226  239                                                    224
+A2 ALLOC  240                                                         240
+A2 ALLOC  241                                                         241
+A2 ALLOC  242                                                         242
+A2 ALLOC  243                                                         243
+A2 ALLOC  244  249                                                    244
+A2 ALLOC  250                                                         250
+A2 ALLOC  251                                                         251
+A2 ALLOC  252                                                         252
+A2 ALLOC  253                                                         253
+A2 ALLOC  254                                                         254
+A2 ALLOC  255  259                                                    255
+A2 ALLOC  260                                                         260
+A2 ALLOC  261                                                         261
+A2 ALLOC  262                                                         262
+A2 ALLOC  263                                                         263
+A2 ALLOC  264                                                         264
+A2 ALLOC  265                                                         265
+A2 ALLOC  266                                                         266
+A2 ALLOC  267                                                         267
+A2 ALLOC  268  269                                                    266
+A2 ALLOC  270                                                         270
+A2 ALLOC  271                                                         271
+A2 ALLOC  272                                                         272
+A2 ALLOC  273                                                         273
+A2 ALLOC  274                                                         274
+A2 ALLOC  275  279                                                    275
+A2 ALLOC  280                                                         280
+A2 ALLOC  281                                                         281
+A2 ALLOC  282                                                         282
+A2 ALLOC  283                                                         283
+A2 ALLOC  284                                                         284
+A2 ALLOC  285  289                                                    285
+A2 ALLOC  290                                                         290
+A2 ALLOC  291                                                         291
+A2 ALLOC  292                                                         292
+A2 ALLOC  293  299                                                    293
+A2 ALLOC  300  301                                                    300
+A2 ALLOC  302                                                         302
+A2 ALLOC  303                                                         303
+A2 ALLOC  304                                                         304
+A2 ALLOC  305                                                         305
+A2 ALLOC  306                                                         306
+A2 ALLOC  307  308                                                    307
+A2 ALLOC  309                                                         309
+A2 ALLOC  310                                                         310
+A2 ALLOC  311                                                         311
+A2 ALLOC  312                                                         312
+A2 ALLOC  313                                                         313
+A2 ALLOC  314                                                         314
+A2 ALLOC  315                                                         315
+A2 ALLOC  316                                                         316
+A2 ALLOC  317  319                                                    317
+A2 ALLOC  320                                                         320
+A2 ALLOC  321                                                         321
+A2 ALLOC  322                                                         322
+A2 ALLOC  323                                                         323
+A2 ALLOC  324                                                         324
+A2 ALLOC  325                                                         325
+A2 ALLOC  326                                                         326
+A2 ALLOC  327  329                                                    327
+A2 ALLOC  330                                                         330
+A2 ALLOC  331                                                         331
+A2 ALLOC  332                                                         332
+A2 ALLOC  333                                                         333
+A2 ALLOC  334                                                         334
+A2 ALLOC  335                                                         335
+A2 ALLOC  336                                                         336
+A2 ALLOC  337  339                                                    337
+A2 ALLOC  340                                                         340
+A2 ALLOC  341                                                         341
+A2 ALLOC  342                                                         342
+A2 ALLOC  343                                                         343
+A2 ALLOC  344                                                         344
+A2 ALLOC  345                                                         345
+A2 ALLOC  347  349                                                    347
+A2 ALLOC  350                                                         350
+A2 ALLOC  351                                                         351
+A2 ALLOC  352                                                         352
+A2 ALLOC  353                                                         353
+A2 ALLOC  354                                                         354
+A2 ALLOC  355                                                         355
+A2 ALLOC  357  359                                                    357
+A2 ALLOC  360                                                         360
+A2 ALLOC  361                                                         361
+A2 ALLOC  362                                                         362
+A2 ALLOC  363                                                         363
+A2 ALLOC  365                                                         365
+A2 ALLOC  366  367                                                    366
+A2 ALLOC  368                                                         368
+A2 ALLOC  369                                                         369
+A2 ALLOC  370                                                         370
+A2 ALLOC  371                                                         371
+A2 ALLOC  372                                                         372
+A2 ALLOC  373                                                         373
+A2 ALLOC  374  375                                                    374
+A2 ALLOC  376                                                         376
+A2 ALLOC  377                                                         377
+A2 ALLOC  378  379                                                    378
+A2 ALLOC  380                                                         380
+A2 ALLOC  381                                                         381
+A2 ALLOC  382                                                         382
+A2 ALLOC  383  389                                                    383
+A2 ALLOC  390                                                         390
+A2 ALLOC  391                                                         391
+A2 ALLOC  392                                                         392
+A2 ALLOC  393                                                         393
+A2 ALLOC  394                                                         394
+A2 ALLOC  395                                                         395
+A2 ALLOC  396                                                         396
+A2 ALLOC  397                                                         397
+A2 ALLOC  398                                                         398
+A2 ALLOC  399                                                         399
+A2 ALLOC  400  401                                                    400
+A2 ALLOC  402                                                         402
+A2 ALLOC  403                                                         403
+A2 ALLOC  404                                                         404
+A2 ALLOC  405  408                                                    405
+A2 ALLOC  409                                                         409
+A2 ALLOC  410                                                         410
+A2 ALLOC  411                                                         411
+A2 ALLOC  412                                                         412
+A2 ALLOC  413                                                         413
+A2 ALLOC  414                                                         414
+A2 ALLOC  415                                                         415
+A2 ALLOC  416                                                         416
+A2 ALLOC  417                                                         417
+A2 ALLOC  418                                                         418
+A2 ALLOC  419                                                         419
+A2 ALLOC  420                                                         420
+A2 ALLOC  421                                                         421
+A2 ALLOC  422                                                         422
+A2 ALLOC  423                                                         423
+A2 ALLOC  424                                                         424
+A2 ALLOC  425  429                                                    425
+A2 ALLOC  430                                                         430
+A2 ALLOC  431                                                         431
+A2 ALLOC  432                                                         432
+A2 ALLOC  433                                                         433
+A2 ALLOC  434                                                         434
+A2 ALLOC  435                                                         435
+A2 ALLOC  436                                                         436
+A2 ALLOC  437                                                         437
+A2 ALLOC  438                                                         438
+A2 ALLOC  439                                                         439
+A2 ALLOC  440                                                         440
+A2 ALLOC  441                                                         441
+A2 ALLOC  442                                                         442
+A2 ALLOC  443                                                         443
+A2 ALLOC  444                                                         444
+A2 ALLOC  445                                                         445
+A2 ALLOC  446                                                         446
+A2 ALLOC  447                                                         447
+A2 ALLOC  448                                                         448
+A2 ALLOC  449                                                         449
+A2 ALLOC  450                                                         450
+A2 ALLOC  451                                                         451
+A2 ALLOC  452                                                         452
+A2 ALLOC  453                                                         453
+A2 ALLOC  454                                                         454
+A2 ALLOC  455                                                         455
+A2 ALLOC  456                                                         456
+A2 ALLOC  457                                                         457
+A2 ALLOC  458  459                                                    458
+A2 ALLOC  460                                                         460
+A2 ALLOC  461                                                         461
+A2 ALLOC  462  469                                                    462
+A2 ALLOC  470                                                         470
+A2 ALLOC  471                                                         471
+A2 ALLOC  472                                                         472
+A2 ALLOC  473                                                         473
+A2 ALLOC  474                                                         474
+A2 ALLOC  475                                                         475
+A2 ALLOC  476  479                                                    476
+A2 ALLOC  480                                                         480
+A2 ALLOC  481  484                                                    481
+A2 ALLOC  485  489                                                    485
+A2 ALLOC  490                                                         490
+A2 ALLOC  491                                                         491
+A2 ALLOC  492                                                         492
+A2 ALLOC  493                                                         493
+A2 ALLOC  494  498                                                    494
+A2 ALLOC  499                                                         499
+A2 ALLOC  500  501                                                    500
+A2 ALLOC  502                                                         502
+A2 ALLOC  503                                                         503
+A2 ALLOC  504  505                                                    504
+A2 ALLOC  509                                                         509
+A2 ALLOC  510                                                         510
+A2 ALLOC  511                                                         511
+A2 ALLOC  512                                                         512
+A2 ALLOC  513  518                                                    513
+A2 ALLOC  519                                                         519
+A2 ALLOC  520                                                         520
+A2 ALLOC  521                                                         521
+A2 ALLOC  522                                                         522
+A2 ALLOC  523                                                         523
+A2 ALLOC  524  529                                                    524
+A2 ALLOC  530                                                         530
+A2 ALLOC  531                                                         531
+A2 ALLOC  532                                                         532
+A2 ALLOC  533                                                         533
+A2 ALLOC  534                                                         534
+A2 ALLOC  535  539                                                    535
+A2 ALLOC  540                                                         540
+A2 ALLOC  541                                                         541
+A2 ALLOC  542  549                                                    542
+A2 ALLOC  550                                                         550
+A2 ALLOC  551  579                                                    551
+A2 ALLOC  580                                                         580
+A2 ALLOC  581                                                         581
+A2 ALLOC  582  589                                                    582
+A2 ALLOC  590                                                         590
+A2 ALLOC  591                                                         591
+A2 ALLOC  592                                                         592
+A2 ALLOC  593  599                                                    593
+A2 ALLOC  600  601                                                    600
+A2 ALLOC  602                                                         602
+A2 ALLOC  603                                                         603
+A2 ALLOC  604  608                                                    604
+A2 ALLOC  609                                                         609
+A2 ALLOC  610                                                         610
+A2 ALLOC  611                                                         611
+A2 ALLOC  612                                                         612
+A2 ALLOC  613                                                         613
+A2 ALLOC  614                                                         614
+A2 ALLOC  615                                                         615
+A2 ALLOC  616                                                         616
+A2 ALLOC  617                                                         617
+A2 ALLOC  618                                                         618
+A2 ALLOC  619                                                         619
+A2 ALLOC  620                                                         620
+A2 ALLOC  621                                                         621
+A2 ALLOC  622                                                         622
+A2 ALLOC  623                                                         623
+A2 ALLOC  624                                                         624
+A2 ALLOC  625  626                                                    625
+A2 ALLOC  627                                                         627
+A2 ALLOC  628                                                         628
+A2 ALLOC  629                                                         629
+A2 ALLOC  630                                                         630
+A2 ALLOC  631                                                         631
+A2 ALLOC  632                                                         632
+A2 ALLOC  633                                                         633
+A2 ALLOC  634                                                         634
+A2 ALLOC  635                                                         635
+A2 ALLOC  636                                                         636
+A2 ALLOC  637                                                         637
+A2 ALLOC  638                                                         638
+A2 ALLOC  639                                                         639
+A2 ALLOC  640                                                         640
+A2 ALLOC  641                                                         641
+A2 ALLOC  642  643                                                    642
+A2 ALLOC  644                                                         644
+A2 ALLOC  645                                                         645
+A2 ALLOC  646                                                         646
+A2 ALLOC  647                                                         647
+A2 ALLOC  648                                                         648
+A2 ALLOC  649                                                         649
+A2 ALLOC  650                                                         650
+A2 ALLOC  651  652                                                    651
+A2 ALLOC  653  658                                                    653
+A2 ALLOC  659                                                         659
+A2 ALLOC  660                                                         660
+A2 ALLOC  661                                                         661
+A2 ALLOC  662                                                         662
+A2 ALLOC  663                                                         663
+A2 ALLOC  664                                                         664
+A2 ALLOC  665                                                         665
+A2 ALLOC  666                                                         666
+A2 ALLOC  667  668                                                    667
+A2 ALLOC  669                                                         669
+A2 ALLOC  670                                                         670
+A2 ALLOC  671  679                                                    671
+A2 ALLOC  680                                                         680
+A2 ALLOC  681                                                         681
+A2 ALLOC  682                                                         682
+A2 ALLOC  683                                                         683
+A2 ALLOC  684                                                         684
+A2 ALLOC  685                                                         685
+A2 ALLOC  686  689                                                    686
+A2 ALLOC  690                                                         690
+A2 ALLOC  691  699                                                    691
+A2 ALLOC  700  701                                                    700
+A2 ALLOC  702                                                         702
+A2 ALLOC  703                                                         703
+A2 ALLOC  704  708                                                    704
+A2 ALLOC  709                                                         709
+A2 ALLOC  710                                                         710
+A2 ALLOC  711                                                         711
+A2 ALLOC  712                                                         712
+A2 ALLOC  713                                                         713
+A2 ALLOC  714                                                         714
+A2 ALLOC  715                                                         715
+A2 ALLOC  716                                                         716
+A2 ALLOC  717                                                         717
+A2 ALLOC  718                                                         718
+A2 ALLOC  719                                                         719
+A2 ALLOC  720                                                         720
+A2 ALLOC  721                                                         721
+A2 ALLOC  722                                                         722
+A2 ALLOC  723  729                                                    723
+A2 ALLOC  730                                                         730
+A2 ALLOC  731                                                         731
+A2 ALLOC  732                                                         732
+A2 ALLOC  733                                                         733
+A2 ALLOC  734                                                         734
+A2 ALLOC  735                                                         735
+A2 ALLOC  736                                                         736
+A2 ALLOC  737                                                         737
+A2 ALLOC  738                                                         738
+A2 ALLOC  739                                                         739
+A2 ALLOC  740                                                         740
+A2 ALLOC  741                                                         741
+A2 ALLOC  742                                                         742
+A2 ALLOC  743                                                         743
+A2 ALLOC  744                                                         744
+A2 ALLOC  745                                                         745
+A2 ALLOC  746                                                         746
+A2 ALLOC  747                                                         747
+A2 ALLOC  748                                                         748
+A2 ALLOC  749                                                         749
+A2 ALLOC  750                                                         750
+A2 ALLOC  751                                                         751
+A2 ALLOC  752                                                         752
+A2 ALLOC  753                                                         753
+A2 ALLOC  754                                                         754
+A2 ALLOC  755                                                         755
+A2 ALLOC  756                                                         756
+A2 ALLOC  757                                                         757
+A2 ALLOC  758  759                                                    758
+A2 ALLOC  760                                                         760
+A2 ALLOC  761                                                         761
+A2 ALLOC  762  769                                                    762
+A2 ALLOC  770                                                         770
+A2 ALLOC  771                                                         771
+A2 ALLOC  772  779                                                    772
+A2 ALLOC  780                                                         780
+A2 ALLOC  781                                                         781
+A2 ALLOC  782                                                         782
+A2 ALLOC  783                                                         783
+A2 ALLOC  784                                                         784
+A2 ALLOC  785                                                         785
+A2 ALLOC  786                                                         786
+A2 ALLOC  787                                                         787
+A2 ALLOC  788  789                                                    788
+A2 ALLOC  790                                                         790
+A2 ALLOC  791                                                         791
+A2 ALLOC  792  793                                                    792
+A2 ALLOC  794                                                         794
+A2 ALLOC  795                                                         795
+A2 ALLOC  796                                                         796
+A2 ALLOC  797  799                                                    797
+A2 ALLOC  800  801                                                    800
+A2 ALLOC  802                                                         802
+A2 ALLOC  803                                                         803
+A2 ALLOC  804  808                                                    804
+A2 ALLOC  809                                                         809
+A2 ALLOC  810                                                         810
+A2 ALLOC  811                                                         811
+A2 ALLOC  812                                                         812
+A2 ALLOC  813                                                         813
+A2 ALLOC  814                                                         814
+A2 ALLOC  815  818                                                    815
+A2 ALLOC  819                                                         819
+A2 ALLOC  820                                                         820
+A2 ALLOC  821                                                         821
+A2 ALLOC  822                                                         822
+A2 ALLOC  823  829                                                    823
+A2 ALLOC  830                                                         830
+A2 ALLOC  831  899                                                    831
+A2 ALLOC  900  901                                                    900
+A2 ALLOC  902                                                         902
+A2 ALLOC  903                                                         903
+A2 ALLOC  904  908                                                    904
+A2 ALLOC  909                                                         909
+A2 ALLOC  910                                                         910
+A2 ALLOC  911                                                         911
+A2 ALLOC  912                                                         912
+A2 ALLOC  913                                                         913
+A2 ALLOC  914                                                         914
+A2 ALLOC  915                                                         915
+A2 ALLOC  916  917                                                    916
+A2 ALLOC  918                                                         918
+A2 ALLOC  919                                                         919
+A2 ALLOC  920                                                         920
+A2 ALLOC  921                                                         921
+A2 ALLOC  922                                                         922
+A2 ALLOC  923  999                                                    923

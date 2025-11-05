@@ -1,0 +1,220 @@
+#VERSION_NUM4321
+#-------------------------------------------------------------------------------------------------------
+#   Indirects and Pro-ratables File Example(INDIRECT.DAT.orig or SAMPLE_INDIRECT.DAT)
+#-------------------------------------------------------------------------------------------------------
+#
+#   History:
+#
+#   Created by BY  22 Feb 2002 
+#   Modified by KPT 22 May 2002 Added comments
+#   Modified by KPT 20 Aug 2002 Clean up comments
+#
+#.......................................................................................................
+#
+#   Purpose: 
+#
+#   A flexible system for making indirect and pro-ratable(direct cost) additions to a project.
+#   Additions can be fixed or based on direct costs for all or per contractor. Costs generated can be
+#   assigned to any code of account and allocated as material cost, labor cost, man-hours or indirects.
+#
+#.......................................................................................................
+#
+#   Adding File to a project:
+#
+#   The items specified in this file will be added to the project when this file is name INDIRECTS.DAT
+#   and is located in the same directory as the input specification file(specs).
+#
+#   Using this File as a library:
+#
+#   For IC2000:
+#       The administrator places this file in the Admin directory with the name LIBRARY.IND
+#       (LIBRARY can be anything the user wants).  The file INDIRECTS.SET(You can start with 
+#       INDIRECTS.SET.proto for example), is edited and a line with the LIBRARY.IND is added.
+#
+#       To use it, open any project with no INDIRECT.DAT file, you will be prompted to select a
+#       file when accessing the Project Indirects/Pro-ratables menu.
+#
+#   For Kbase-Framework products:
+#       The administrator places this file in the Data\Indirects directory with name LIBRARY.DAT
+#       (LIBRARY can be anything the user wants).
+#
+#       To use it, open any project and go to the Project Basis - Custom External - Indirects
+#       and right click - select to chose the desired library
+#
+#.......................................................................................................
+#
+#   Explanation of (#)Fields:
+#
+#   (1)Key Field(K):              The Key Field.  Currently All Indirect/Pro-ratables use IP.
+#                                 A # in column 1 indicates a comment.
+#
+#   (2)Contractor Basis(CT):      Used to determine the basis for percentage items.  Only costs
+#                                 assigned to this contractor will be considered in calculated
+#                                 the adder.  Note an entry of '**' indicates all contractors
+#                                 but is only allowed on direct accounts
+#
+#   (3)Account(Acct):             The adder will be assigned to this account.  This account will
+#                                 be used to determine which contractor this cost will be assigned to.
+#                                 This value should be based on the project account codes.
+#                                 (User codes when in use)
+#
+#   (4)Item Description:          Used in reports to identify the item.
+#
+#
+#  FOR ITEMS BOOKED TO INDIRECT ACCOUNTS
+#  Fixed Costs:
+#   (5) Material Cost(MCOST):              A fixed material cost in the project currency booked
+#                                          to indirect accounts.
+#
+#   (6) Labor Cost(LCOST):                 A fixed labor cost in the project currency booked
+#                                          to indirect accounts.
+#
+#   (7) Labor Hours(MH):                   A fixed number of man-hours, requires Cost/Labor Hours
+#                                          specified for indirect accounts.
+#
+#   (8) Cost/Labor Hour($/MH):             The wage rate in the project currency used to calculate
+#                                          labor cost from man-hours for indirects(This is required
+#                                          for Fixed labor hours or percentage labor hours
+#                                          booked to indirect accounts and not allowed for directs).
+#
+#  Percentage Costs:(Specify only one of 10,11,12)
+#   (9) Percent of Category(%of)           The direct cost basis for percentage adders.
+#                                          The allowed values are combinations of Major account
+#                                          and cost type(Material Cost, Labor Cost, Total Cost,
+#                                          Man-hours) The cost type must match the percent specified
+#                                          below in either 10, 11 or 12 below.(IE Specifying Percent
+#                                          of Direct material requires a cost type of Material Cost;
+#                                          Percent of direct hours requires a cost type of Man-hours)
+#                                          See TABLE 1 below for an exhaustive list.
+#  (10) Percent of direct Material(%M)     The percentage of the direct cost basis item assigned
+#                                          to the specified contractor to be generated as a material
+#                                          cost assigned to the specified indirect account.
+#  (11) Percent of direct Labor(%L)        The percentage of the direct cost basis item assigned
+#                                          to the specified contractor to be generated as a labor
+#                                          cost assigned to the specified indirect account.
+#  (12) Percent of direct hours(%HR)       The percentage of the basis item assigned to the specified
+#                                          contractor to be generated as man-hours assigned to the
+#                                          specified indirect account. Requires Cost/Labor Hour(8 above)
+#                                          to be specified.
+#
+#  FOR ITEMS BOOKED TO DIRECT ACCOUNTS
+#
+#  (16) Percent of Category(%of)           The basis for percentage adders.  The allowed values
+#                                          are combinations of Major account and cost type
+#                                          (Material Cost, Labor Cost, Total Cost, Man-hours)
+#                                          The cost type must match the percent specified below
+#                                          in either 17 or 18 below.(IE Specifying Percent of
+#                                          Direct material requires a cost type of Material Cost;
+#                                          Percent of direct hours requires a cost type of Man-hours)
+#                                          See TABLE 1 below for an exhaustive list.
+#  (17) Percent of direct Material(%M)     The percentage of the basis item assigned to the specified
+#                                          contractor to be generated as a material cost assigned
+#                                          to the specified direct account.
+#  (18) Percent of direct Hours(%HR)       The percentage of the basis item assigned to the specified
+#                                          contractor to be generated as a labor man-hour item assigned
+#                                          to the specified direct account.
+#
+#  UNIT COSTS
+#  (13) Unit of Measure(UNITS)             The unit basis when using the Cost per Unit of Measure
+#  (14) Cost per Unit of Measure(%/UNIT)   The cost in project currency per unit allocated as
+#                                          a material cost added to other costs generated for this item.
+#  (15) Quantity(Qt)                       The number of units for calculating the total material cost
+#                                          when using the Cost per Unit of Measure
+#
+#
+#  TABLE 1 - Category entries for Percentages
+#----------
+#                                |      Material       Labor         Labor          Total
+#        Major Account           |        Cost         Cost          Hours          Cost
+#--------------------------------+------------------------------------------------------------------
+#        Purchased equipment     |        EQPM         EQPL          EQPH           EQPT
+#        Piping                  |        PIPM         PIPL          PIPH           PIPT
+#        Civil                   |        CIVM         CIVL          CIVH           CIVT
+#        Steel                   |        STEM         STEL          STEH           STET
+#        Instrumentation         |        ISTM         ISTL          ISTH           ISTT
+#        Electrical              |        ELEM         ELEL          ELEH           ELET
+#        Insulation              |        INSM         INSL          INSH           INST
+#        Paint                   |        PANM         PANL          PANH           PANT
+#--------------------------------+---------------------------------------------------------
+#        Direct total            |        SUMM         SUML          SUMH           SUMT
+#
+#
+#   Comments:
+#
+#   1) Multiple costs can not be generated on each item.  Percentage costs will be ignored
+#      if fixed costs are specified. Unit costs are the exception to this and can be specified
+#      with other costs.
+#
+#   2) Labor Hours booked to indirect accounts also require a wage rate to be specified.
+#
+#   3) Wage rate is not allowed on items booked to direct accounts.
+#
+#   3) Direct costs are reported at the end of each area.
+#
+#   4) Indirect costs are calculated for each contractor during indirects calculation.
+#
+#   5) Material and labor are not reported separately for indirects.
+#
+#   6) Pro-ratable percentages assigned to direct accounts are all calculated based on values
+#      before applying any pro-ratables. Indirect and Pro-ratable percentages assigned
+#      to indirect accounts are all calculated based on values including direct pro-ratables.
+#
+#
+#  Examples(See Below):
+#
+#  Proratables 1:
+#      User wants to a material cost for special piping material requirements based on piping
+#      material costs assigned to contractor 2 and allocated to COA 300.
+#  Proratables 2:
+#      User wants to generate a labor item for fire watch as a percentage of piping manhours
+#      assigned to contractor 2 and allocated to COA 300.
+#  Proratables 3:
+#      User wants to generate a cost for testing equipment based on instrumentation labor costs
+#      assigned to contractor 5 and allocated to COA 600.
+#  Proratables 4:
+#     User wants to generate a site cost based on total piping costs assigned to all contractors
+#     and allocated to COA 400
+#
+#  ALL INDIRECT ACCOUNT ITEMS
+#     User wants a document preparation cost for 10000 and wants 1 for each indirect item
+#  INDIRECT ACCOUNT 1
+#     User wants an indirect item for a survey with a cost of 10000 assigned to contractor 2
+#     and allocated to COA 11.
+#  INDIRECT ACCOUNT 2
+#     User wants an indirect item for an environmental survey with a labor cost of 10000
+#     and material cost of 10000 assigned to contractor 2 and allocated to COA 12.
+#  INDIRECT ACCOUNT 4
+#     User wants a refuse disposal material cost as a percentage of direct piping material costs
+#     assigned to contractor 2 and allocated to account 24.
+#  INDIRECT ACCOUNT 5
+#     User wants a startup labor cost as a percentage of direct piping material costs assigned
+#     to contractor 2 and allocated to account 52
+#  INDIRECT ACCOUNT 6
+#     User wants a hydrotesting labor item as a percentage of piping labor hours at 100 per hour
+#     assigned to contractor 2 and allocated to account 62
+#  INDIRECT ACCOUNT 7
+#     User wants a managment review as 100 labor hours at 100 per hour assigned to contractor 2
+#     and allocated to account 72
+#
+#                                                                                                  1         1         1         1         1
+#        1         2         3         4         5         6         7         8         9         0         1         2         3         4
+#234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678
+#
+#-----------------------------------+--------------------------------------------------------------------------------------+---------------+
+#                                  |                    FOR USE WITH                                                      | FOR USE WITH |
+#  GENERAL                         |                  INDIRECT ACCOUNTS                                                   |DIRECT ACCOUNT|
+#                                  |             FIXED COSTS                 |    PERCENTAGE     |       UNIT COST        |  PERCENTAGE  |
+#----------------------------------+-----------------------------------------+-------------------+------------------------+--------------+--------|-|
+#1|2 | 3  |          4             |      5     |     6      |    7   |   8  |  9 | 10 | 11 | 12 |   13   |   14   |  15  | 16 | 17 | 18 | 3 NEW  |I|
+#K|CT|Acct|Description             |  MCOST($)  |  LCOST($)  |   MH   | $/MH |%of | %M | %L | %HR|  UNITS | $/UNIT |  Qt  |%of | %M | %HR|Acct NEW|U|
+#-+--+----+------------------------+------------+------------+--------+------+----+----+----+----+--------+--------+------+----+----+----+--------|-|
+IP 02      Proratables 1                                                                                                   PIPM 10        300
+IP 02      Proratables 2                                                                                                   PIPH      10   300
+IP 05      Proratables 3                                                                                                   ISTL 10        600
+IP **      Proratables 4                                                                                                   PIPT 10        400
+IP 02      INDIRECT ACCOUNT 1       10000                                                         EA       10000    1                     11
+IP 02      INDIRECT ACCOUNT 2       10000        10000                                            EA       10000    1                     11
+IP 02      INDIRECT ACCOUNT 4                                                 PIPM 10             EA       10000    1                     24
+IP 02      INDIRECT ACCOUNT 5                                                 PIPM      10        EA       10000    1                     52
+IP 02      INDIRECT ACCOUNT 6                                          100    PIPH           10   EA       10000    1                     62
+IP 02      INDIRECT ACCOUNT 7                                 100      100    PIPL 10             EA       10000    1                     72

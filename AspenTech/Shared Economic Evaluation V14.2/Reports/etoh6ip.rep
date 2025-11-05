@@ -1,0 +1,2523 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + +   + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + +   + +       + +   + + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + +   + +       +       +       + +   + + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + +   + +       +       +       +       +       + +   + + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + + +   + +       +       +       +       +       + +   + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + + +   + + +   + +       + +   + + +   + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + +   + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+                                                                        TM
+ AAAAA   SSSSS   PPPPP   EEEEE   NN    N   PPPPP   L       U   U   SSSSS
+ A   A   S       P   P   E       N N   N   P   P   L       U   U   S    
+ AAAAA   SSSSS   PPPPP   EEEEE   N   N N   PPPPP   L       U   U   SSSSS
+ A   A       S   P       E       N    NN   P       L       U   U       S
+ A   A   SSSSS   P       EEEEE   N     N   P       LLLLL   UUUUU   SSSSS
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7001
+ TEN CANAL PARK                         EUROPE (32) 2/724-0100
+ CAMBRIDGE, MASSACHUSETTS 02141                             
+ 617/949-1000
+
+ PLATFORM: WIN32                                         MAY 11, 1999        
+ VERSION: 10.1-0 Build 25                                TUESDAY     
+ INSTALLATION: ICARUSPC                                  5:49:34 P.M.        
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE    I
+                          ETHANOL PRODUCTION PROCESS                            
+
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. TEN CANAL PARK,
+      CAMBRIDGE, MA 02141.
+                               TABLE OF CONTENTS                                
+
+
+            RUN CONTROL SECTION....................................  1
+                 RUN CONTROL INFORMATION...........................  1
+
+            FLOWSHEET SECTION......................................  2
+                 FLOWSHEET CONNECTIVITY BY STREAMS.................  2
+                 FLOWSHEET CONNECTIVITY BY BLOCKS..................  2
+                 CONVERGENCE STATUS SUMMARY........................  2
+                 CONVERGENCE BLOCK:  $OLVER02......................  2
+                 COMPUTATIONAL SEQUENCE............................  4
+                 OVERALL FLOWSHEET BALANCE.........................  4
+
+            PHYSICAL PROPERTIES SECTION............................  5
+                 COMPONENTS........................................  5
+
+            U-O-S BLOCK SECTION....................................  6
+                 BLOCK:  CO2-C1   MODEL: HEATER....................  6
+                 BLOCK:  CO2-C2   MODEL: HEATER....................  7
+                 BLOCK:  CO2-CHIL MODEL: HEATER....................  8
+                 BLOCK:  CO2-COMP MODEL: COMPR.....................  9
+                 BLOCK:  CO2-CP2  MODEL: COMPR..................... 10
+                 BLOCK:  CO2-CP3  MODEL: COMPR..................... 11
+                 BLOCK:  COMP-MX  MODEL: MIXER..................... 12
+                 BLOCK:  FEEDHEAT MODEL: HEATX..................... 13
+                 BLOCK:  FLASH    MODEL: FLASH2.................... 14
+                 BLOCK:  HEAT-MIX MODEL: MIXER..................... 15
+                 BLOCK:  KO-DRUM  MODEL: FLASH2.................... 16
+                 BLOCK:  KO-DRUM2 MODEL: FLASH2.................... 17
+                 BLOCK:  REACTOR  MODEL: RSTOIC.................... 18
+                 BLOCK:  RXN-FLAS MODEL: FLASH2.................... 20
+                 BLOCK:  TOWER    MODEL: RADFRAC................... 21
+                 BLOCK:  TRIMHEAT MODEL: HEATER.................... 38
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE   II
+                          ETHANOL PRODUCTION PROCESS                            
+                               TABLE OF CONTENTS                                
+
+
+            STREAM SECTION......................................... 40
+                 C02-CP1 C1-OUT C2-OUT CO2-PROD CO2-RECY........... 40
+                 COMP-IN COMP-MIX CP2-OUT CP3-OUT FEED............. 42
+                 FH-OUT FLASH-IN H20-COLD H20-DEC H20-OUT.......... 44
+                 HEAT-IN K02-VAP KO-LIQ KO-VAP KO2-H20............. 46
+                 PRODUCT RXN-LIQ RXN-OUT RXN-VAP TOWER-IN.......... 48
+
+            PROBLEM STATUS SECTION................................. 50
+                 BLOCK STATUS...................................... 50
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 1   
+                          ETHANOL PRODUCTION PROCESS                            
+                              RUN CONTROL SECTION                               
+
+ RUN CONTROL INFORMATION                 
+ -----------------------
+
+
+ THIS COPY OF ASPEN PLUS LICENSED TO ICARUS CORP.                    
+
+ TYPE OF RUN: EDIT
+
+ INPUT FILE NAME:  _0520tqv.inm                                                                    
+
+ INPUT PROBLEM DATA FILE NAME : _0520tqv VERSION NO.   1
+ OUTPUT PROBLEM DATA FILE NAME: _4913adr VERSION NO.   1
+ LOCATED IN:                                                                                                    
+
+
+
+ PDF SIZE USED FOR INPUT TRANSLATION:
+   NUMBER OF FILE RECORDS (PSIZE) =     0
+   NUMBER OF IN-CORE RECORDS      =   256
+ PSIZE NEEDED FOR SIMULATION      =     1
+
+ CALLING PROGRAM NAME:          apmain  
+ LOCATED IN:                    E:\ASPENT~1\ASPENP~1.1-0\Engine\xeq                                             
+
+
+ SIMULATION REQUESTED FOR ENTIRE FLOWSHEET
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 2   
+                          ETHANOL PRODUCTION PROCESS                            
+                               FLOWSHEET SECTION                                
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+ ---------------------------------
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   FEED       ----       REACTOR        RXN-OUT    REACTOR    RXN-FLAS
+   COMP-IN    FLASH      COMP-MX        TOWER-IN   FLASH      TOWER   
+   C02-CP1    CO2-COMP   CO2-C1         CO2-RECY   TOWER      COMP-MX 
+   PRODUCT    TOWER      ----           H20-OUT    TOWER      FEEDHEAT
+   H20-DEC    TOWER      ----           C1-OUT     CO2-C1     KO-DRUM 
+   KO-VAP     KO-DRUM    CO2-CP2        KO-LIQ     KO-DRUM    HEAT-MIX
+   CP2-OUT    CO2-CP2    CO2-C2         C2-OUT     CO2-C2     KO-DRUM2
+   CP3-OUT    CO2-CP3    CO2-CHIL       K02-VAP    KO-DRUM2   CO2-CP3 
+   KO2-H20    KO-DRUM2   HEAT-MIX       H20-COLD   FEEDHEAT   ----    
+   FH-OUT     FEEDHEAT   TRIMHEAT       FLASH-IN   TRIMHEAT   FLASH   
+   CO2-PROD   CO2-CHIL   ----           RXN-VAP    RXN-FLAS   COMP-MX 
+   RXN-LIQ    RXN-FLAS   HEAT-MIX       COMP-MIX   COMP-MX    CO2-COMP
+   HEAT-IN    HEAT-MIX   FEEDHEAT                                     
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+ --------------------------------
+
+   BLOCK        INLETS                         OUTLETS
+   REACTOR      FEED                           RXN-OUT                     
+   FLASH        FLASH-IN                       COMP-IN TOWER-IN            
+   CO2-COMP     COMP-MIX                       C02-CP1                     
+   TOWER        TOWER-IN                       CO2-RECY PRODUCT H20-OUT    
+                                               H20-DEC                     
+   CO2-C1       C02-CP1                        C1-OUT                      
+   KO-DRUM      C1-OUT                         KO-VAP KO-LIQ               
+   CO2-CP2      KO-VAP                         CP2-OUT                     
+   CO2-C2       CP2-OUT                        C2-OUT                      
+   CO2-CP3      K02-VAP                        CP3-OUT                     
+   KO-DRUM2     C2-OUT                         K02-VAP KO2-H20             
+   FEEDHEAT     H20-OUT HEAT-IN                H20-COLD FH-OUT             
+   TRIMHEAT     FH-OUT                         FLASH-IN                    
+   CO2-CHIL     CP3-OUT                        CO2-PROD                    
+   RXN-FLAS     RXN-OUT                        RXN-VAP RXN-LIQ             
+   COMP-MX      COMP-IN CO2-RECY RXN-VAP       COMP-MIX                    
+   HEAT-MIX     KO-LIQ KO2-H20 RXN-LIQ         HEAT-IN                     
+
+ CONVERGENCE STATUS SUMMARY              
+ --------------------------
+
+   TEAR STREAM SUMMARY
+   ===================
+
+   STREAM    MAXIMUM                   MAXIMUM     VARIABLE             CONV 
+   ID        ERROR        TOLERANCE    ERR/TOL     ID             STAT  BLOCK 
+   ------    -------      ---------    --------    --------       ----  ----- 
+   COMP-MIX  0.23835E-09  0.23003E-08  0.10361     2-PROP MOLEFLOW  #   $OLVER02
+   H20-OUT   0.63593E-05  0.65645E-05  0.96873     ETHANOL MOLEFLOW #   $OLVER02
+
+   #  = CONVERGED
+   *  = NOT CONVERGED
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 3   
+                          ETHANOL PRODUCTION PROCESS                            
+                               FLOWSHEET SECTION                                
+
+ CONVERGENCE BLOCK:  $OLVER02            
+ ----------------------------
+     Tear Stream  :  COMP-MIX   H20-OUT    
+     Tolerance used:  0.100D-03  0.100D-03 
+     Trace molefrac:  0.100D-05  0.100D-05 
+ 
+     MAXIMUM NO. ITERATIONS =   40
+     MAXIMUM NO. OF FLOWSHEET PASSES =  99999
+     WAIT =  2
+     METHOD: NEWTON        STATUS: CONVERGED       
+     TOTAL NUMBER OF FLOWSHEET PASSES:    24
+     NUMBER OF ITERATIONS ON LAST OUTER LOOP:     1
+     NUMBER OF FLOWSHEET PASSES ON LAST OUTER LOOP:     0
+
+                          *** FINAL VALUES ***
+
+    VARIABLE                       VALUE           PREV VALUE      ERR/TOL
+ TOTAL MOLEFLOW   LBMOL/HR     1329.5269      1329.5258      8.4778-03      
+ TOTAL MOLEFLOW   LBMOL/HR     1911.2328      1911.2328     -3.3559-04      
+ GLUCOSE MOLEFLOW LBMOL/HR        0.0            0.0            0.0         
+ WATER MOLEFLOW   LBMOL/HR       45.9262        45.9263     -1.7807-02      
+ CO2 MOLEFLOW     LBMOL/HR     1204.1235      1204.1231      3.3591-03      
+ ETHANOL MOLEFLOW LBMOL/HR       79.2180        79.2172         0.1013      
+ METHANOLMOLEFLOW LBMOL/HR     6.1865-02      6.1865-02     -5.3637-02      
+ 2-PROP MOLEFLOW  LBMOL/HR        0.1825         0.1825         0.1036      
+ 1-PROP MOLEFLOW  LBMOL/HR     1.2703-02      1.2703-02      8.8513-02      
+ BUTANOL MOLEFLOW LBMOL/HR        0.0            0.0            0.0         
+ GLYCEROLMOLEFLOW LBMOL/HR     7.7040-08      7.6795-08        31.8901     T
+ ACETIC MOLEFLOW  LBMOL/HR     1.9290-03      1.9289-03      5.6257-02      
+ GLUCOSE MOLEFLOW LBMOL/HR        0.0            0.0            0.0         
+ WATER MOLEFLOW   LBMOL/HR     1386.8671      1386.8168         0.3628      
+ CO2 MOLEFLOW     LBMOL/HR     3.4711-30      3.4608-29     -8997.0319     T
+ ETHANOL MOLEFLOW LBMOL/HR      520.9542       521.0047        -0.9687      
+ METHANOLMOLEFLOW LBMOL/HR        0.8854         0.8853         0.9520      
+ 2-PROP MOLEFLOW  LBMOL/HR        1.6774         1.6774      4.7394-02      
+ 1-PROP MOLEFLOW  LBMOL/HR        0.3987         0.3987     -2.5949-03      
+ BUTANOL MOLEFLOW LBMOL/HR        0.0            0.0            0.0         
+ GLYCEROLMOLEFLOW LBMOL/HR        0.2998         0.2998     -2.7389-05      
+ ACETIC MOLEFLOW  LBMOL/HR        0.1499         0.1499     -7.3690-04      
+
+     T - SIGNIFIES COMPONENT IS A TRACE COMPONENT
+
+                          *** ITERATION HISTORY *** 
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 4   
+                          ETHANOL PRODUCTION PROCESS                            
+                               FLOWSHEET SECTION                                
+
+ CONVERGENCE BLOCK:  $OLVER02 (CONTINUED)            
+
+     TEAR STREAMS: 
+
+     ITERATION   MAX-ERR/TOL   STREAM ID   VARIABLE
+     ---------   -----------   ---------   --------
+          1       10.61        H20-OUT     2-PROP MOLEFLOW 
+          2     -0.9687        H20-OUT     ETHANOL MOLEFLOW
+
+ COMPUTATIONAL SEQUENCE                  
+ ----------------------
+
+ SEQUENCE USED WAS:
+    *REACTOR RXN-FLAS                                                      
+    $OLVER02 CO2-COMP CO2-C1 KO-DRUM CO2-CP2 CO2-C2 KO-DRUM2 HEAT-MIX      
+    |  FEEDHEAT TRIMHEAT FLASH *TOWER COMP-MX                              
+    (RETURN $OLVER02)                                                      
+    CO2-CP3 CO2-CHIL                                                       
+
+ OVERALL FLOWSHEET BALANCE               
+ -------------------------
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                              IN          OUT       GENERATION   RELATIVE DIFF.
+   CONVENTIONAL COMPONENTS  
+           (LBMOL/HR)
+      GLUCOSE             600.000      0.000000E+00  -600.000     -0.189478E-15
+      WATER               1500.00       1500.80      0.850000      0.334741E-04
+      CO2                0.000000E+00   1199.70       1199.70      0.333817E-06
+      ETHANOL            0.000000E+00   1194.20       1194.15     -0.415921E-04
+      METHANOL           0.000000E+00   1.19992       1.20000      0.699647E-04
+      2-PROP             0.000000E+00   2.79999       2.80000      0.351193E-05
+      1-PROP             0.000000E+00  0.400000      0.400000      0.247547E-07
+      BUTANOL            0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+      GLYCEROL           0.000000E+00  0.300000      0.300000      0.188219E-08
+      ACETIC             0.000000E+00  0.150000      0.150000      0.278231E-08
+   TOTAL BALANCE
+   MOLE(LBMOL/HR)         2100.00       3899.55       1799.55      0.272599E-06
+   MASS(LB/HR   )         135118.       135119.                   -0.100819E-04
+   ENTHALPY(BTU/HR  )   -0.186679E+09 -0.532386E+09                0.649355    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 5   
+                          ETHANOL PRODUCTION PROCESS                            
+                          PHYSICAL PROPERTIES SECTION                           
+
+ COMPONENTS                              
+ ----------
+
+  ID       TYPE  FORMULA        NAME OR ALIAS                      REPORT NAME
+   GLUCOSE  C     C6H12O6        C6H12O6                            GLUCOSE 
+   WATER    C     H2O            H2O                                WATER   
+   CO2      C     CO2            CO2                                CO2     
+   ETHANOL  C     C2H6O-2        C2H6O-2                            ETHANOL 
+   METHANOL C     CH4O           CH4O                               METHANOL
+   2-PROP   C     C3H8O-2        C3H8O-2                            2-PROP  
+   1-PROP   C     C3H8O-1        C3H8O-1                            1-PROP  
+   BUTANOL  C     C4H10O-1       C4H10O-1                           BUTANOL 
+   GLYCEROL C     C3H8O3         C3H8O3                             GLYCEROL
+   ACETIC   C     C2H4O2-1       C2H4O2-1                           ACETIC  
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 6   
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-C1   MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          C02-CP1 
+   OUTLET STREAM:         C1-OUT  
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1329.53         1329.53        0.000000E+00
+       MASS(LB/HR   )            57483.9         57483.9        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.213623E+09   -0.218752E+09    0.234452E-01
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE                F                        75.0000     
+   SPECIFIED PRESSURE                   PSI                      70.0000     
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    75.000    
+   OUTLET PRESSURE       PSI                                  70.000    
+   HEAT DUTY             BTU/HR                             -0.51287E+07
+   OUTLET VAPOR FRACTION                                     0.90211    
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.34543E-01    0.31677        0.39172E-02    0.12366E-01
+      CO2              0.90568        0.15563        0.98707         6.3425    
+      ETHANOL          0.59583E-01    0.52585        0.89843E-02    0.17085E-01
+      METHANOL         0.46532E-04    0.40250E-03    0.79027E-05    0.19634E-01
+      2-PROP           0.13732E-03    0.12419E-02    0.17450E-04    0.14051E-01
+      1-PROP           0.95543E-05    0.92060E-04    0.60100E-06    0.65284E-02
+      GLYCEROL         0.57761E-10    0.59003E-09    0.16796E-16    0.28466E-07
+      ACETIC           0.14509E-05    0.14315E-04    0.54911E-07    0.38360E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 7   
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-C2   MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          CP2-OUT 
+   OUTLET STREAM:         C2-OUT  
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1195.53         1195.53        0.000000E+00
+       MASS(LB/HR   )            52531.5         52531.5        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.200489E+09   -0.202045E+09    0.770091E-02
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE                F                        75.0000     
+   SPECIFIED PRESSURE                   PSI                     300.000      
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    75.000    
+   OUTLET PRESSURE       PSI                                  300.00    
+   HEAT DUTY             BTU/HR                             -0.15559E+07
+   OUTLET VAPOR FRACTION                                     0.98142    
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.32949E-02    0.14094        0.68875E-03    0.48870E-02
+      CO2              0.98911        0.52577        0.99788         1.8980    
+      ETHANOL          0.75726E-02    0.33236        0.14227E-02    0.42805E-02
+      METHANOL         0.67870E-05    0.23249E-03    0.25133E-05    0.10810E-01
+      2-PROP           0.14501E-04    0.67516E-03    0.19920E-05    0.29503E-02
+      1-PROP           0.48861E-06    0.24492E-04    0.34119E-07    0.13931E-02
+      ACETIC           0.45700E-07    0.23085E-05    0.28546E-08    0.12366E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 8   
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-CHIL MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          CP3-OUT 
+   OUTLET STREAM:         CO2-PROD
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1173.31         1173.31        0.000000E+00
+       MASS(LB/HR   )            51619.7         51619.7        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.198789E+09   -0.202505E+09    0.183514E-01
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  PV  FLASH
+   SPECIFIED PRESSURE                   PSI                   1,000.00       
+   VAPOR FRACTION                                                 0.0        
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    83.046    
+   OUTLET PRESSURE       PSI                                  1000.0    
+   HEAT DUTY             BTU/HR                             -0.37163E+07
+   OUTLET VAPOR FRACTION                                     0.00000E+00
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.68875E-03    0.68875E-03    0.52414E-05    0.76101E-02
+      CO2              0.99788        0.99788        0.99999         1.0021    
+      ETHANOL          0.14227E-02    0.14227E-02    0.57625E-05    0.40504E-02
+      METHANOL         0.25133E-05    0.25133E-05    0.50306E-07    0.20016E-01
+      2-PROP           0.19920E-05    0.19920E-05    0.46807E-08    0.23498E-02
+      1-PROP           0.34119E-07    0.34119E-07    0.42615E-10    0.12490E-02
+      ACETIC           0.28546E-08    0.28546E-08    0.62408E-11    0.21862E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 9   
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-COMP MODEL: COMPR           
+ -----------------------------
+   INLET STREAM:          COMP-MIX
+   OUTLET STREAM:         C02-CP1 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1329.53         1329.53        0.000000E+00
+       MASS(LB/HR   )            57483.9         57483.9       -0.506295E-15
+       ENTHALPY(BTU/HR  )      -0.216478E+09   -0.213623E+09   -0.131846E-01
+
+                           ***  INPUT DATA  ***
+
+   POLYTROPIC CENTRIFUGAL COMPRESSOR USING GPSA METHOD
+    OUTLET PRESSURE  PSI                                    50.0000     
+    POLYTROPIC EFFICIENCY                                    0.72000    
+    MECHANICAL EFFICIENCY                                    0.90000    
+
+                           ***  RESULTS  ***
+
+    INDICATED  HORSEPOWER REQUIREMENT  HP                1,121.81       
+    BRAKE      HORSEPOWER REQUIREMENT  HP                1,246.46       
+    NET WORK REQUIRED                  HP                1,246.46       
+    CALCULATED OUTLET TEMP  F                              297.970      
+    EFFICIENCY (POLYTR/ISENTR) USED                          0.72000    
+    OUTLET VAPOR FRACTION                                    1.00000    
+    HEAD DEVELOPED, FT-LBF/LB                           27,821.0        
+    INLET HEAT CAPACITY RATIO                                1.26942    
+    INLET VOLUMETRIC FLOW RATE , CUFT/HR               512,276.         
+    OUTLET VOLUMETRIC FLOW RATE, CUFT/HR               214,609.         
+    INLET  COMPRESSIBILITY FACTOR                            0.99405    
+    OUTLET COMPRESSIBILITY FACTOR                            0.99266    
+    AV. ISENT. VOL. EXPONENT                                 1.25143    
+    AV. ISENT. TEMP EXPONENT                                 1.25635    
+    AV. ACTUAL VOL. EXPONENT                                 1.38380    
+    AV. ACTUAL TEMP EXPONENT                                 1.38603    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 10  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-COMP MODEL: COMPR (CONTINUED)           
+
+ BLOCK:  CO2-CP2  MODEL: COMPR           
+ -----------------------------
+   INLET STREAM:          KO-VAP  
+   OUTLET STREAM:         CP2-OUT 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1195.53         1195.53        0.000000E+00
+       MASS(LB/HR   )            52531.5         52531.5        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.201549E+09   -0.200489E+09   -0.526078E-02
+
+                           ***  INPUT DATA  ***
+
+   POLYTROPIC CENTRIFUGAL COMPRESSOR USING GPSA METHOD
+    OUTLET PRESSURE  PSI                                   500.000      
+    OUTLET TEMPERATURE      F                              200.000      
+    MECHANICAL EFFICIENCY                                    1.00000    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 11  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-CP2  MODEL: COMPR (CONTINUED)           
+
+                           ***  RESULTS  ***
+
+    INDICATED  HORSEPOWER REQUIREMENT  HP                  416.716      
+    BRAKE      HORSEPOWER REQUIREMENT  HP                  416.716      
+    NET WORK REQUIRED                  HP                  416.716      
+    EFFICIENCY (POLYTR/ISENTR) USED                          2.47974    
+    OUTLET VAPOR FRACTION                                    1.00000    
+    HEAD DEVELOPED, FT-LBF/LB                           38,948.6        
+    INLET HEAT CAPACITY RATIO                                1.27757    
+    INLET VOLUMETRIC FLOW RATE , CUFT/HR                94,601.9        
+    OUTLET VOLUMETRIC FLOW RATE, CUFT/HR                15,274.3        
+    INLET  COMPRESSIBILITY FACTOR                            0.97449    
+    OUTLET COMPRESSIBILITY FACTOR                            0.90238    
+    AV. ISENT. VOL. EXPONENT                                 1.25088    
+    AV. ISENT. TEMP EXPONENT                                 1.27089    
+    AV. ACTUAL VOL. EXPONENT                                 1.07821    
+    AV. ACTUAL TEMP EXPONENT                                 1.12566    
+
+ BLOCK:  CO2-CP3  MODEL: COMPR           
+ -----------------------------
+   INLET STREAM:          K02-VAP 
+   OUTLET STREAM:         CP3-OUT 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1173.31         1173.31        0.000000E+00
+       MASS(LB/HR   )            51619.7         51619.7        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.198756E+09   -0.198789E+09    0.164928E-03
+
+                           ***  INPUT DATA  ***
+
+   POLYTROPIC CENTRIFUGAL COMPRESSOR USING GPSA METHOD
+    OUTLET PRESSURE  PSI                                 1,000.00       
+    OUTLET TEMPERATURE      F                              150.000      
+    MECHANICAL EFFICIENCY                                    1.00000    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 12  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  CO2-CP3  MODEL: COMPR (CONTINUED)           
+
+                           ***  RESULTS  ***
+
+    INDICATED  HORSEPOWER REQUIREMENT  HP                  -12.8853     
+    BRAKE      HORSEPOWER REQUIREMENT  HP                  -12.8853     
+    NET WORK REQUIRED                  HP                  -12.8853     
+    EFFICIENCY (POLYTR/ISENTR) USED                          0.0        
+    OUTLET VAPOR FRACTION                                    1.00000    
+    HEAD DEVELOPED, FT-LBF/LB                                0.0        
+    INLET HEAT CAPACITY RATIO                                1.24245    
+    INLET VOLUMETRIC FLOW RATE , CUFT/HR                19,954.0        
+    OUTLET VOLUMETRIC FLOW RATE, CUFT/HR                 5,593.50       
+    INLET  COMPRESSIBILITY FACTOR                            0.88919    
+    OUTLET COMPRESSIBILITY FACTOR                            0.72865    
+    AV. ISENT. VOL. EXPONENT                                 1.24748    
+    AV. ISENT. TEMP EXPONENT                                 1.30851    
+    AV. ACTUAL VOL. EXPONENT                                 0.94665    
+    AV. ACTUAL TEMP EXPONENT                                 1.12237    
+
+ BLOCK:  COMP-MX  MODEL: MIXER           
+ -----------------------------
+   INLET STREAMS:         COMP-IN     CO2-RECY    RXN-VAP 
+   OUTLET STREAM:         COMP-MIX
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1329.53         1329.53        0.847784E-06
+       MASS(LB/HR   )            57483.9         57483.9        0.929322E-06
+       ENTHALPY(BTU/HR  )      -0.216478E+09   -0.216478E+09   -0.929322E-06
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 13  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  COMP-MX  MODEL: MIXER (CONTINUED)           
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+   OUTLET PRESSURE:  MINIMUM OF INLET STREAM PRESSURES
+
+ BLOCK:  FEEDHEAT MODEL: HEATX           
+ -----------------------------
+   HOT SIDE:
+   ---------
+   INLET STREAM:          H20-OUT 
+   OUTLET STREAM:         H20-COLD
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+   COLD SIDE:
+   ----------
+   INLET STREAM:          HEAT-IN 
+   OUTLET STREAM:         FH-OUT  
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            4764.60         4764.60        0.000000E+00
+       MASS(LB/HR   )            137859.         137859.        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.579865E+09   -0.579865E+09    0.000000E+00
+
+                          ***  INPUT DATA  ***
+
+   FLASH SPECS FOR HOT SIDE:
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+
+   FLASH SPECS FOR COLD SIDE:
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+
+   FLOW DIRECTION AND SPECIFICATION:
+     COUNTERCURRENT   HEAT EXCHANGER
+     SPECIFIED HOT DEG. SUBCOOL    
+     SPECIFIED VALUE                F                       90.0000
+     LMTD CORRECTION FACTOR                                  1.00000
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 14  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  FEEDHEAT MODEL: HEATX (CONTINUED)           
+
+   PRESSURE SPECIFICATION:
+     HOT  SIDE PRESSURE DROP        PSI                      0.0000
+     COLD SIDE PRESSURE DROP        PSI                      0.0000
+
+   HEAT TRANSFER COEFFICIENT SPECIFICATION:
+     OVERALL COEFFICIENT            BTU/HR-SQFT-R          149.6937
+
+                        ***  OVERALL RESULTS  ***
+
+   STREAMS:
+                   --------------------------------------
+                   |                                    |
+   H20-OUT   ----->|                HOT                 |-----> H20-COLD
+   T=  1.9422D+02  |                                    |       T=  1.0423D+02
+   P=  2.0000D+01  |                                    |       P=  2.0000D+01
+   V=  0.0000D+00  |                                    |       V=  0.0000D+00
+                   |                                    |
+   FH-OUT    <-----|                COLD                |<----- HEAT-IN 
+   T=  1.2376D+02  |                                    |       T=  7.2895D+01
+   P=  1.5000D+01  |                                    |       P=  1.5000D+01
+   V=  2.7397D-02  |                                    |       V=  1.0168D-02
+                   --------------------------------------
+
+   DUTY AND AREA:
+     CALCULATED HEAT DUTY           BTU/HR             3827411.4452
+     CALCULATED (REQUIRED) AREA     SQFT                   530.2271
+
+   HEAT TRANSFER COEFFICIENT:
+     AVERAGE COEFFICIENT (DIRTY)    BTU/HR-SQFT-R          149.6937
+
+   LOG-MEAN TEMPERATURE DIFFERENCE:
+     LMTD CORRECTION FACTOR                                  1.0000
+     LMTD (CORRECTED)               F                       48.2214
+
+   PRESSURE DROP:
+     SHELLSIDE, TOTAL               PSI                      0.0000
+     TUBESIDE,  TOTAL               PSI                      0.0000
+
+ BLOCK:  FLASH    MODEL: FLASH2          
+ ------------------------------
+   INLET STREAM:          FLASH-IN
+   OUTLET VAPOR STREAM:   COMP-IN 
+   OUTLET LIQUID STREAM:  TOWER-IN
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 15  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  FLASH    MODEL: FLASH2 (CONTINUED)          
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            2853.37         2853.37       -0.318744E-15
+       MASS(LB/HR   )            88683.3         88683.3        0.313399E-10
+       ENTHALPY(BTU/HR  )      -0.346320E+09   -0.346320E+09    0.516326E-15
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE F                                 140.000      
+   SPECIFIED PRESSURE    PSI                                15.0000     
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    140.00    
+   OUTLET PRESSURE       PSI                                  15.000    
+   HEAT DUTY             BTU/HR                              0.00000E+00
+   VAPOR FRACTION                                            0.41689E-01
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.53215        0.54868        0.15207        0.27715    
+      CO2              0.36818E-01    0.12763E-01    0.58979         46.211    
+      ETHANOL          0.42930        0.43678        0.25727        0.58901    
+      METHANOL         0.42804E-03    0.43817E-03    0.19525E-03    0.44561    
+      2-PROP           0.10076E-02    0.10241E-02    0.62777E-03    0.61300    
+      1-PROP           0.14213E-03    0.14627E-03    0.47072E-04    0.32182    
+      GLYCEROL         0.10514E-03    0.10971E-03    0.54296E-09    0.49490E-05
+      ACETIC           0.52828E-04    0.54855E-04    0.62393E-05    0.11374    
+
+ BLOCK:  HEAT-MIX MODEL: MIXER           
+ -----------------------------
+   INLET STREAMS:         KO-LIQ      KO2-H20     RXN-LIQ 
+   OUTLET STREAM:         HEAT-IN 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 16  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  HEAT-MIX MODEL: MIXER (CONTINUED)           
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            2853.37         2853.37        0.000000E+00
+       MASS(LB/HR   )            88683.3         88683.3       -0.164089E-15
+       ENTHALPY(BTU/HR  )      -0.351790E+09   -0.351790E+09    0.169432E-15
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+   OUTLET PRESSURE:  MINIMUM OF INLET STREAM PRESSURES
+
+ BLOCK:  KO-DRUM  MODEL: FLASH2          
+ ------------------------------
+   INLET STREAM:          C1-OUT  
+   OUTLET VAPOR STREAM:   KO-VAP  
+   OUTLET LIQUID STREAM:  KO-LIQ  
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1329.53         1329.53       -0.171019E-15
+       MASS(LB/HR   )            57483.9         57483.9       -0.681020E-09
+       ENTHALPY(BTU/HR  )      -0.218752E+09   -0.218881E+09    0.590849E-03
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE F                                  70.0000     
+   SPECIFIED PRESSURE    PSI                                70.0000     
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 17  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  KO-DRUM  MODEL: FLASH2 (CONTINUED)          
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    70.000    
+   OUTLET PRESSURE       PSI                                  70.000    
+   HEAT DUTY             BTU/HR                             -0.12933E+06
+   VAPOR FRACTION                                            0.89922    
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.34543E-01    0.31335        0.32949E-02    0.10515E-01
+      CO2              0.90568        0.16129        0.98911         6.1326    
+      ETHANOL          0.59583E-01    0.52363        0.75726E-02    0.14462E-01
+      METHANOL         0.46532E-04    0.40114E-03    0.67870E-05    0.16919E-01
+      2-PROP           0.13732E-03    0.12331E-02    0.14501E-04    0.11760E-01
+      1-PROP           0.95543E-05    0.90440E-04    0.48861E-06    0.54026E-02
+      GLYCEROL         0.57761E-10    0.57311E-09    0.11563E-16    0.20176E-07
+      ACETIC           0.14509E-05    0.13988E-04    0.45700E-07    0.32671E-02
+
+ BLOCK:  KO-DRUM2 MODEL: FLASH2          
+ ------------------------------
+   INLET STREAM:          C2-OUT  
+   OUTLET VAPOR STREAM:   K02-VAP 
+   OUTLET LIQUID STREAM:  KO2-H20 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            1195.53         1195.53        0.190187E-15
+       MASS(LB/HR   )            52531.5         52531.5       -0.124656E-14
+       ENTHALPY(BTU/HR  )      -0.202045E+09   -0.202045E+09    0.147504E-15
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE F                                  75.0000     
+   SPECIFIED PRESSURE    PSI                               300.000      
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 18  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  KO-DRUM2 MODEL: FLASH2 (CONTINUED)          
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    75.000    
+   OUTLET PRESSURE       PSI                                  300.00    
+   HEAT DUTY             BTU/HR                              0.00000E+00
+   VAPOR FRACTION                                            0.98142    
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.32949E-02    0.14094        0.68875E-03    0.48870E-02
+      CO2              0.98911        0.52577        0.99788         1.8980    
+      ETHANOL          0.75726E-02    0.33236        0.14227E-02    0.42805E-02
+      METHANOL         0.67870E-05    0.23249E-03    0.25133E-05    0.10810E-01
+      2-PROP           0.14501E-04    0.67516E-03    0.19920E-05    0.29503E-02
+      1-PROP           0.48861E-06    0.24492E-04    0.34119E-07    0.13931E-02
+      ACETIC           0.45700E-07    0.23085E-05    0.28546E-08    0.12366E-02
+
+ BLOCK:  REACTOR  MODEL: RSTOIC          
+ ------------------------------
+   INLET STREAM:          FEED    
+   OUTLET STREAM:         RXN-OUT 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+
+     ***********************************************************************
+     *                                                                     *
+     *     ENTHALPY PARAMETERS ARE MISSING FOR REACTANTS OR PRODUCTS       *   
+     *                                                                     *
+     ***********************************************************************
+
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                              IN          OUT       GENERATION   RELATIVE DIFF.
+   TOTAL BALANCE
+   MOLE(LBMOL/HR)         2100.00       3899.55       1799.55      0.000000E+00
+   MASS(LB/HR   )         135118.       135118.                    0.000000E+00
+   ENTHALPY(BTU/HR  )   -0.186679E+09 -0.529639E+09                0.647536    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 19  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  REACTOR  MODEL: RSTOIC (CONTINUED)          
+
+                          ***  INPUT DATA  ***
+
+   SIMULTANEOUS REACTIONS
+   STOICHIOMETRY MATRIX:
+
+    REACTION #   1:
+     SUBSTREAM MIXED   :
+     GLUCOSE   -1.00    CO2        2.00    ETHANOL    2.00    
+
+    REACTION #   2:
+     SUBSTREAM MIXED   :
+     GLUCOSE   -2.00    WATER     -1.00    CO2        2.00    ETHANOL    1.00    
+     GLYCEROL   2.00    ACETIC     1.00    
+
+    REACTION #   3:
+     SUBSTREAM MIXED   :
+     GLUCOSE   -1.00    WATER     -2.00    CO2        2.00    METHANOL   4.00    
+
+    REACTION #   4:
+     SUBSTREAM MIXED   :
+     GLUCOSE   -3.00    WATER      2.00    CO2        6.00    1-PROP     4.00    
+
+    REACTION #   5:
+     SUBSTREAM MIXED   :
+     GLUCOSE   -3.00    WATER      2.00    CO2        6.00    2-PROP     4.00    
+
+
+   REACTION CONVERSION SPECS: NUMBER=    5
+     REACTION #   1:
+     SUBSTREAM:MIXED    KEY COMP:GLUCOSE  CONV FRAC: 0.9950    
+     REACTION #   2:
+     SUBSTREAM:MIXED    KEY COMP:GLUCOSE  CONV FRAC: 0.5000E-03
+     REACTION #   3:
+     SUBSTREAM:MIXED    KEY COMP:GLUCOSE  CONV FRAC: 0.5000E-03
+     REACTION #   4:
+     SUBSTREAM:MIXED    KEY COMP:GLUCOSE  CONV FRAC: 0.5000E-03
+     REACTION #   5:
+     SUBSTREAM:MIXED    KEY COMP:GLUCOSE  CONV FRAC: 0.3500E-02
+
+
+
+
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE F                                  75.0000     
+   SPECIFIED PRESSURE    PSI                                15.0000     
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 20  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  REACTOR  MODEL: RSTOIC (CONTINUED)          
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    75.000    
+   OUTLET PRESSURE       PSI                                  15.000    
+   HEAT DUTY             BTU/HR                             -0.34296E+09
+   VAPOR FRACTION                                            0.30834    
+
+
+
+   REACTION EXTENTS:
+
+      REACTION          REACTION
+      NUMBER            EXTENT  
+                        LBMOL/HR        
+         1               597.00    
+         2              0.15000    
+         3              0.30000    
+         4              0.10000    
+         5              0.70000    
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.38488        0.54624        0.22917E-01    0.41954E-01
+      CO2              0.30765        0.26607E-01    0.93808         35.257    
+      ETHANOL          0.30623        0.42541        0.38880E-01    0.91394E-01
+      METHANOL         0.30773E-03    0.43099E-03    0.31233E-04    0.72468E-01
+      2-PROP           0.71803E-03    0.99911E-03    0.87531E-04    0.87609E-01
+      1-PROP           0.10258E-03    0.14567E-03    0.59073E-05    0.40552E-01
+      GLYCEROL         0.76932E-04    0.11123E-03    0.10356E-10    0.93110E-07
+      ACETIC           0.38466E-04    0.55174E-04    0.98701E-06    0.17889E-01
+
+ BLOCK:  RXN-FLAS MODEL: FLASH2          
+ ------------------------------
+   INLET STREAM:          RXN-OUT 
+   OUTLET VAPOR STREAM:   RXN-VAP 
+   OUTLET LIQUID STREAM:  RXN-LIQ 
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 21  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  RXN-FLAS MODEL: FLASH2 (CONTINUED)          
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            3899.55         3899.55       -0.233231E-15
+       MASS(LB/HR   )            135118.         135118.        0.196011E-13
+       ENTHALPY(BTU/HR  )      -0.529639E+09   -0.529639E+09    0.000000E+00
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE F                                  75.0000     
+   SPECIFIED PRESSURE    PSI                                15.0000     
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    75.000    
+   OUTLET PRESSURE       PSI                                  15.000    
+   HEAT DUTY             BTU/HR                              0.00000E+00
+   VAPOR FRACTION                                            0.30834    
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.38488        0.54624        0.22917E-01    0.41954E-01
+      CO2              0.30765        0.26607E-01    0.93808         35.257    
+      ETHANOL          0.30623        0.42541        0.38880E-01    0.91394E-01
+      METHANOL         0.30773E-03    0.43099E-03    0.31233E-04    0.72468E-01
+      2-PROP           0.71803E-03    0.99911E-03    0.87531E-04    0.87609E-01
+      1-PROP           0.10258E-03    0.14567E-03    0.59073E-05    0.40552E-01
+      GLYCEROL         0.76932E-04    0.11123E-03    0.10356E-10    0.93110E-07
+      ACETIC           0.38466E-04    0.55174E-04    0.98701E-06    0.17889E-01
+
+ BLOCK:  TOWER    MODEL: RADFRAC         
+ -------------------------------
+    INLETS   - TOWER-IN STAGE  10
+    OUTLETS  - CO2-RECY STAGE   1
+               PRODUCT  STAGE   1
+               H20-OUT  STAGE  30
+               H20-DEC  STAGE  27
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 22  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+
+     ***********************************************************************
+     *                                                                     *
+     *     FEED PRESSURE IS LOWER THAN STAGE PRESSURE.                     *   
+     *                                                                     *
+     ***********************************************************************
+
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            2734.42         2734.42       -0.234563E-07
+       MASS(LB/HR   )            83854.4         83855.8       -0.168819E-04
+       ENTHALPY(BTU/HR  )      -0.329545E+09   -0.327287E+09   -0.685188E-02
+
+
+
+                         **********************
+                         ****  INPUT DATA  ****
+                         **********************
+
+   ****   INPUT PARAMETERS   ****
+
+    NUMBER OF STAGES                                        30
+    ALGORITHM OPTION                                      STANDARD    
+    ABSORBER OPTION                                       NO      
+    INITIALIZATION OPTION                                 STANDARD    
+    HYDRAULIC PARAMETER CALCULATIONS                      NO      
+    INSIDE LOOP CONVERGENCE METHOD                        BROYDEN 
+    DESIGN SPECIFICATION METHOD                           NESTED  
+    MAXIMUM NO. OF OUTSIDE LOOP ITERATIONS                  25
+    MAXIMUM NO. OF INSIDE LOOP ITERATIONS                   10
+    MAXIMUM NUMBER OF FLASH ITERATIONS                      50
+    FLASH TOLERANCE                                          0.100000-04
+    OUTSIDE LOOP CONVERGENCE TOLERANCE                       0.00010000 
+
+   ****   COL-SPECS   ****
+
+    MOLAR VAPOR DIST / TOTAL DIST                            0.010000   
+    MOLAR REFLUX RATIO                                      10.0000     
+    MOLAR BOILUP RATIO                                       5.00000    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 23  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+   ****   THERMOSYPHON REBOILER   **** 
+
+    VAPOR FRACTION                                           0.90000    
+
+   ****    PROFILES   ****
+
+    P-SPEC          STAGE  20  PRES, PSI                    20.0000     
+
+                          *******************
+                          ****  RESULTS  ****
+                          *******************
+
+
+   ***   COMPONENT SPLIT FRACTIONS   ***
+
+                             OUTLET STREAMS 
+                             --------------
+                  CO2-RECY     PRODUCT      H20-OUT      H20-DEC 
+    COMPONENT:
+    WATER       .18833E-03   .74189E-01   .92438       .12448E-02
+    CO2         .17278       .82722       .99460E-31   .12604E-28
+    ETHANOL     .15621E-02   .55964       .43618       .26092E-02
+    METHANOL    .90528E-03   .25793       .73898       .21799E-02
+    2-PROP      .94602E-03   .39556       .59904       .44625E-02
+    1-PROP      .12615E-05   .10202E-02   .99704       .19430E-02
+    GLYCEROL    .52273E-46   .12216E-38   .99957       .43182E-03
+    ACETIC      .15068E-09   .24238E-06   .99943       .57170E-03
+
+ 
+   ***    SUMMARY OF KEY RESULTS    ***
+
+    TOP STAGE TEMPERATURE          F                       130.472      
+    BOTTOM STAGE TEMPERATURE       F                       194.217      
+    TOP STAGE LIQUID FLOW          LBMOL/HR              8,181.85       
+    BOTTOM STAGE LIQUID FLOW       LBMOL/HR             12,301.1        
+    TOP STAGE VAPOR FLOW           LBMOL/HR                  8.18185    
+    BOTTOM STAGE VAPOR FLOW        LBMOL/HR              9,556.16       
+    MOLAR REFLUX RATIO                                      10.0000     
+    MOLAR BOILUP RATIO                                       5.00000    
+    CONDENSER DUTY (W/O SUBCOOL)   BTU/HR                   -0.161488+09
+    REBOILER DUTY                  BTU/HR                    0.163753+09
+
+   ****   MAXIMUM FINAL RELATIVE ERRORS   ****
+
+    DEW POINT                       0.15431E-04  STAGE=  1
+    BUBBLE POINT                    0.18375E-03  STAGE= 30
+    COMPONENT MASS BALANCE          0.13321E-05  STAGE= 10 COMP=CO2     
+    ENERGY BALANCE                  0.34919E-04  STAGE=  1
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 24  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+   ****    PROFILES   ****
+
+   **NOTE** REPORTED VALUES FOR STAGE LIQUID AND VAPOR RATES ARE THE FLOWS
+            FROM THE STAGE EXCLUDING ANY SIDE PRODUCT.  FOR THE FIRST STAGE,
+            THE REPORTED VAPOR FLOW IS THE VAPOR DISTILLATE FLOW.  FOR THE
+            LAST STAGE, THE REPORTED LIQUID FLOW IS THE LIQUID BOTTOMS FLOW.
+
+                                          ENTHALPY
+ STAGE TEMPERATURE   PRESSURE             BTU/LBMOL          HEAT DUTY
+       F             PSI            LIQUID       VAPOR        BTU/HR  
+
+   1   130.47        20.000      -0.12023E+06 -0.15081E+06  -.16149+09
+   2   185.14        20.000      -0.11668E+06 -0.10232E+06            
+   3   186.65        20.000      -0.11661E+06 -0.10018E+06            
+   4   186.73        20.000      -0.11666E+06 -0.10013E+06            
+   5   186.77        20.000      -0.11672E+06 -0.10016E+06            
+   6   186.83        20.000      -0.11680E+06 -0.10020E+06            
+   7   186.93        20.000      -0.11691E+06 -0.10026E+06            
+   8   187.10        20.000      -0.11705E+06 -0.10033E+06            
+   9   187.39        20.000      -0.11725E+06 -0.10042E+06            
+  10   187.98        20.000      -0.11756E+06 -0.10055E+06            
+  11   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  12   188.16        20.000      -0.11755E+06 -0.10030E+06            
+  13   188.16        20.000      -0.11755E+06 -0.10030E+06            
+  14   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  15   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  16   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  17   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  18   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  19   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  20   188.15        20.000      -0.11755E+06 -0.10030E+06            
+  21   188.16        20.000      -0.11756E+06 -0.10030E+06            
+  22   188.16        20.000      -0.11756E+06 -0.10030E+06            
+  23   188.17        20.000      -0.11756E+06 -0.10031E+06            
+  24   188.18        20.000      -0.11757E+06 -0.10031E+06            
+  25   188.22        20.000      -0.11759E+06 -0.10032E+06            
+  26   188.29        20.000      -0.11762E+06 -0.10033E+06            
+  27   188.46        20.000      -0.11769E+06 -0.10036E+06            
+  28   188.86        20.000      -0.11786E+06 -0.10043E+06            
+  29   189.98        20.000      -0.11824E+06 -0.10057E+06            
+  30   194.22        20.000      -0.11933E+06 -0.10089E+06   .16375+09
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LBMOL/HR                   LBMOL/HR                 LBMOL/HR
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1  8182.      8.182                                      810.0027    8.1818
+   2  8774.      9000.                                                        
+   3  8785.      9592.                                                        
+   4  8778.      9603.                                                        
+   5  8769.      9597.                                                        
+   6  8758.      9587.                                                        
+   7  8743.      9576.                                                        
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 25  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LBMOL/HR                   LBMOL/HR                 LBMOL/HR
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   8  8723.      9561.                                                        
+   9  8694.      9541.                                                        
+  10 0.1160E+05  9512.                          2734.4174                     
+  11 0.1160E+05  9685.                                                        
+  12 0.1160E+05  9688.                                                        
+  13 0.1160E+05  9688.                                                        
+  14 0.1160E+05  9688.                                                        
+  15 0.1160E+05  9688.                                                        
+  16 0.1160E+05  9688.                                                        
+  17 0.1160E+05  9688.                                                        
+  18 0.1160E+05  9688.                                                        
+  19 0.1160E+05  9688.                                                        
+  20 0.1160E+05  9688.                                                        
+  21 0.1160E+05  9688.                                                        
+  22 0.1160E+05  9687.                                                        
+  23 0.1160E+05  9687.                                                        
+  24 0.1160E+05  9686.                                                        
+  25 0.1160E+05  9685.                                                        
+  26 0.1159E+05  9682.                                                        
+  27 0.1157E+05  9676.                                        5.0000          
+  28 0.1154E+05  9663.                                                        
+  29 0.1147E+05  9633.                                                        
+  30  1911.      9556.                                     1911.2328          
+
+    ****  MASS FLOW PROFILES  ****
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LB/HR                      LB/HR                    LB/HR   
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1 0.3449E+06  356.6                                     .34145+05  356.6079
+   2 0.3677E+06 0.3794E+06                                                    
+   3 0.3662E+06 0.4022E+06                                                    
+   4 0.3636E+06 0.4007E+06                                                    
+   5 0.3603E+06 0.3981E+06                                                    
+   6 0.3561E+06 0.3948E+06                                                    
+   7 0.3506E+06 0.3906E+06                                                    
+   8 0.3429E+06 0.3851E+06                                                    
+   9 0.3319E+06 0.3774E+06                                                    
+  10 0.4223E+06 0.3664E+06                      .83854+05                     
+  11 0.4224E+06 0.3729E+06                                                    
+  12 0.4224E+06 0.3730E+06                                                    
+  13 0.4224E+06 0.3730E+06                                                    
+  14 0.4224E+06 0.3730E+06                                                    
+  15 0.4224E+06 0.3730E+06                                                    
+  16 0.4224E+06 0.3731E+06                                                    
+  17 0.4224E+06 0.3731E+06                                                    
+  18 0.4224E+06 0.3731E+06                                                    
+  19 0.4224E+06 0.3731E+06                                                    
+  20 0.4224E+06 0.3731E+06                                                    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 26  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+    ****  MASS FLOW PROFILES  ****
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LB/HR                      LB/HR                    LB/HR   
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+  21 0.4224E+06 0.3731E+06                                                    
+  22 0.4223E+06 0.3730E+06                                                    
+  23 0.4220E+06 0.3729E+06                                                    
+  24 0.4215E+06 0.3727E+06                                                    
+  25 0.4203E+06 0.3721E+06                                                    
+  26 0.4179E+06 0.3710E+06                                                    
+  27 0.4123E+06 0.3685E+06                                  178.1077          
+  28 0.4002E+06 0.3631E+06                                                    
+  29 0.3708E+06 0.3510E+06                                                    
+  30 0.4917E+05 0.3216E+06                                 .49174+05          
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+      1    0.13742       0.35641E-01   0.82519       0.38153E-03   0.13675E-02
+      2    0.14892       0.13989E-02   0.84779       0.34436E-03   0.15482E-02
+      3    0.15687       0.18779E-03   0.84095       0.30988E-03   0.16734E-02
+      4    0.16639       0.14439E-03   0.83139       0.28673E-03   0.17864E-02
+      5    0.17828       0.14178E-03   0.81942       0.27333E-03   0.18842E-02
+      6    0.19352       0.14020E-03   0.80410       0.26867E-03   0.19603E-02
+      7    0.21372       0.13802E-03   0.78385       0.27254E-03   0.20050E-02
+      8    0.24156       0.13478E-03   0.75598       0.28551E-03   0.20031E-02
+      9    0.28207       0.12963E-03   0.71551       0.30855E-03   0.19298E-02
+     10    0.34553       0.12080E-03   0.65216       0.34060E-03   0.17415E-02
+     11    0.34553       0.46126E-05   0.65225       0.34129E-03   0.17639E-02
+     12    0.34551       0.17611E-06   0.65224       0.34214E-03   0.17882E-02
+     13    0.34550       0.67243E-08   0.65223       0.34325E-03   0.18152E-02
+     14    0.34548       0.25674E-09   0.65222       0.34469E-03   0.18449E-02
+     15    0.34546       0.98028E-11   0.65220       0.34655E-03   0.18777E-02
+     16    0.34544       0.37427E-12   0.65218       0.34896E-03   0.19139E-02
+     17    0.34543       0.14290E-13   0.65215       0.35208E-03   0.19539E-02
+     18    0.34543       0.00000E+00   0.65210       0.35612E-03   0.19980E-02
+     19    0.34545       0.00000E+00   0.65203       0.36135E-03   0.20467E-02
+     20    0.34552       0.00000E+00   0.65190       0.36811E-03   0.21001E-02
+     21    0.34566       0.00000E+00   0.65169       0.37685E-03   0.21588E-02
+     22    0.34599       0.00000E+00   0.65128       0.38818E-03   0.22227E-02
+     23    0.34670       0.00000E+00   0.65049       0.40286E-03   0.22912E-02
+     24    0.34821       0.00000E+00   0.64888       0.42196E-03   0.23626E-02
+     25    0.35144       0.00000E+00   0.64554       0.44687E-03   0.24319E-02
+     26    0.35838       0.00000E+00   0.63849       0.47956E-03   0.24870E-02
+     27    0.37353       0.00000E+00   0.62325       0.52236E-03   0.24993E-02
+     28    0.40766       0.00000E+00   0.58910       0.57577E-03   0.23998E-02
+     29    0.49049       0.00000E+00   0.50653       0.61900E-03   0.20119E-02
+     30    0.72564       0.00000E+00   0.27257       0.46326E-03   0.87770E-03
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 27  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     1-PROP        GLYCEROL      ACETIC  
+      1    0.50377E-06   0.00000E+00   0.44883E-10
+      2    0.10113E-05   0.00000E+00   0.20594E-09
+      3    0.18705E-05   0.00000E+00   0.85726E-09
+      4    0.33665E-05   0.00000E+00   0.35192E-08
+      5    0.59480E-05   0.00000E+00   0.14423E-07
+      6    0.10339E-04   0.00000E+00   0.59157E-07
+      7    0.17649E-04   0.00000E+00   0.24273E-06
+      8    0.29406E-04   0.84429E-13   0.99404E-06
+      9    0.47171E-04   0.14271E-08   0.40386E-05
+     10    0.70609E-04   0.25860E-04   0.16021E-04
+     11    0.70610E-04   0.25854E-04   0.16019E-04
+     12    0.70613E-04   0.25854E-04   0.16019E-04
+     13    0.70619E-04   0.25854E-04   0.16019E-04
+     14    0.70629E-04   0.25854E-04   0.16019E-04
+     15    0.70648E-04   0.25854E-04   0.16019E-04
+     16    0.70683E-04   0.25854E-04   0.16019E-04
+     17    0.70749E-04   0.25854E-04   0.16019E-04
+     18    0.70876E-04   0.25854E-04   0.16019E-04
+     19    0.71118E-04   0.25855E-04   0.16020E-04
+     20    0.71583E-04   0.25855E-04   0.16020E-04
+     21    0.72474E-04   0.25855E-04   0.16021E-04
+     22    0.74181E-04   0.25856E-04   0.16024E-04
+     23    0.77442E-04   0.25857E-04   0.16030E-04
+     24    0.83640E-04   0.25860E-04   0.16047E-04
+     25    0.95316E-04   0.25867E-04   0.16100E-04
+     26    0.11693E-03   0.25880E-04   0.16299E-04
+     27    0.15542E-03   0.25909E-04   0.17151E-04
+     28    0.21760E-03   0.25976E-04   0.20972E-04
+     29    0.28786E-03   0.26156E-04   0.37273E-04
+     30    0.20865E-03   0.15690E-03   0.78437E-04
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+      1    0.34535E-01   0.73698       0.22803       0.13257E-03   0.32378E-03
+      2    0.13732       0.36278E-01   0.82465       0.38130E-03   0.13666E-02
+      3    0.14785       0.49179E-02   0.84535       0.34732E-03   0.15319E-02
+      4    0.15513       0.38059E-02   0.83910       0.31577E-03   0.16465E-02
+      5    0.16383       0.37687E-02   0.83035       0.29460E-03   0.17498E-02
+      6    0.17470       0.37697E-02   0.81940       0.28235E-03   0.18392E-02
+      7    0.18864       0.37726E-02   0.80539       0.27810E-03   0.19088E-02
+      8    0.20710       0.37763E-02   0.78688       0.28165E-03   0.19495E-02
+      9    0.23254       0.37811E-02   0.76141       0.29353E-03   0.19477E-02
+     10    0.26954       0.37874E-02   0.72443       0.31462E-03   0.18806E-02
+     11    0.27050       0.14470E-03   0.72708       0.31630E-03   0.19116E-02
+     12    0.27053       0.55249E-05   0.72717       0.31713E-03   0.19383E-02
+     13    0.27051       0.21095E-06   0.72716       0.31815E-03   0.19675E-02
+     14    0.27049       0.80544E-08   0.72715       0.31948E-03   0.19997E-02
+     15    0.27047       0.30753E-09   0.72713       0.32120E-03   0.20354E-02
+     16    0.27044       0.11742E-10   0.72711       0.32343E-03   0.20747E-02
+     17    0.27042       0.44831E-12   0.72708       0.32632E-03   0.21181E-02
+     18    0.27041       0.17116E-13   0.72705       0.33006E-03   0.21660E-02
+     19    0.27041       0.00000E+00   0.72699       0.33490E-03   0.22188E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 28  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+     20    0.27043       0.00000E+00   0.72690       0.34116E-03   0.22770E-02
+     21    0.27051       0.00000E+00   0.72675       0.34925E-03   0.23411E-02
+     22    0.27068       0.00000E+00   0.72650       0.35973E-03   0.24114E-02
+     23    0.27107       0.00000E+00   0.72601       0.37330E-03   0.24879E-02
+     24    0.27192       0.00000E+00   0.72507       0.39089E-03   0.25700E-02
+     25    0.27372       0.00000E+00   0.72315       0.41375E-03   0.26556E-02
+     26    0.27757       0.00000E+00   0.71918       0.44360E-03   0.27386E-02
+     27    0.28584       0.00000E+00   0.71077       0.48275E-03   0.28048E-02
+     28    0.30388       0.00000E+00   0.69261       0.53405E-03   0.28200E-02
+     29    0.34457       0.00000E+00   0.65190       0.59809E-03   0.27018E-02
+     30    0.44346       0.00000E+00   0.55332       0.65015E-03   0.22388E-02
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     1-PROP        GLYCEROL      ACETIC  
+      1    0.61665E-07   0.00000E+00   0.27624E-11
+      2    0.50337E-06   0.00000E+00   0.44845E-10
+      3    0.96766E-06   0.00000E+00   0.19216E-09
+      4    0.17537E-05   0.00000E+00   0.78801E-09
+      5    0.31220E-05   0.00000E+00   0.32229E-08
+      6    0.54830E-05   0.00000E+00   0.13196E-07
+      7    0.94984E-05   0.00000E+00   0.54106E-07
+      8    0.16182E-04   0.00000E+00   0.22196E-06
+      9    0.26927E-04   0.77189E-13   0.90880E-06
+     10    0.43156E-04   0.13043E-08   0.36913E-05
+     11    0.43325E-04   0.13140E-08   0.37039E-05
+     12    0.43334E-04   0.13144E-08   0.37044E-05
+     13    0.43338E-04   0.13144E-08   0.37044E-05
+     14    0.43344E-04   0.13144E-08   0.37044E-05
+     15    0.43357E-04   0.13143E-08   0.37044E-05
+     16    0.43379E-04   0.13143E-08   0.37044E-05
+     17    0.43421E-04   0.13143E-08   0.37044E-05
+     18    0.43500E-04   0.13142E-08   0.37045E-05
+     19    0.43652E-04   0.13141E-08   0.37046E-05
+     20    0.43942E-04   0.13140E-08   0.37049E-05
+     21    0.44498E-04   0.13138E-08   0.37055E-05
+     22    0.45565E-04   0.13134E-08   0.37067E-05
+     23    0.47609E-04   0.13125E-08   0.37095E-05
+     24    0.51513E-04   0.13107E-08   0.37161E-05
+     25    0.58934E-04   0.13068E-08   0.37344E-05
+     26    0.72913E-04   0.12987E-08   0.37942E-05
+     27    0.98793E-04   0.12820E-08   0.40256E-05
+     28    0.14490E-03   0.12483E-08   0.50291E-05
+     29    0.21938E-03   0.11934E-08   0.95713E-05
+     30    0.30371E-03   0.79212E-08   0.29040E-04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 29  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   K-VALUES           ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+      1    0.25117        20.681       0.27637       0.34704       0.23683    
+      2    0.92159        25.940       0.97281        1.1062       0.88289    
+      3    0.94200        26.195        1.0053        1.1200       0.91560    
+      4    0.93193        26.365        1.0094        1.1006       0.92185    
+      5    0.91866        26.586        1.0134        1.0773       0.92881    
+      6    0.90249        26.893        1.0191        1.0505       0.93835    
+      7    0.88248        27.338        1.0275        1.0201       0.95212    
+      8    0.85718        28.024        1.0409       0.98629       0.97337    
+      9    0.82432        29.173        1.0642       0.95122        1.0093    
+     10    0.78000        31.358        1.1109       0.92369        1.0799    
+     11    0.78281        31.375        1.1148       0.92676        1.0838    
+     12    0.78293        31.374        1.1149       0.92688        1.0840    
+     13    0.78295        31.374        1.1149       0.92689        1.0839    
+     14    0.78297        31.372        1.1149       0.92689        1.0839    
+     15    0.78298        31.371        1.1148       0.92690        1.0839    
+     16    0.78300        31.370        1.1148       0.92690        1.0838    
+     17    0.78301        31.370        1.1148       0.92691        1.0838    
+     18    0.78301        31.369        1.1148       0.92692        1.0838    
+     19    0.78300        31.370        1.1148       0.92692        1.0838    
+     20    0.78297        31.372        1.1148       0.92693        1.0839    
+     21    0.78288        31.377        1.1150       0.92692        1.0840    
+     22    0.78268        31.389        1.1152       0.92688        1.0845    
+     23    0.78224        31.416        1.1158       0.92678        1.0854    
+     24    0.78128        31.475        1.1171       0.92655        1.0873    
+     25    0.77924        31.601        1.1199       0.92606        1.0915    
+     26    0.77488        31.877        1.1261       0.92518        1.1007    
+     27    0.76560        32.501        1.1401       0.92428        1.1217    
+     28    0.74577        34.032        1.1754       0.92756        1.1745    
+     29    0.70276        38.583        1.2865       0.96605        1.3421    
+     30    0.61124        63.277        2.0290        1.4029        2.5490    
+
+                         ****   K-VALUES           ****
+   STAGE     1-PROP        GLYCEROL      ACETIC  
+      1    0.12244       0.42333E-05   0.61535E-01
+      2    0.49785       0.60717E-04   0.21773    
+      3    0.51743       0.64068E-04   0.22414    
+      4    0.52101       0.63279E-04   0.22390    
+      5    0.52497       0.62157E-04   0.22344    
+      6    0.53039       0.60778E-04   0.22306    
+      7    0.53823       0.59063E-04   0.22290    
+      8    0.55035       0.56887E-04   0.22329    
+      9    0.57089       0.54076E-04   0.22503    
+     10    0.61125       0.50430E-04   0.23040    
+     11    0.61362       0.50816E-04   0.23122    
+     12    0.61369       0.50832E-04   0.23125    
+     13    0.61368       0.50833E-04   0.23125    
+     14    0.61366       0.50835E-04   0.23125    
+     15    0.61364       0.50836E-04   0.23124    
+     16    0.61362       0.50838E-04   0.23124    
+     17    0.61361       0.50839E-04   0.23124    
+     18    0.61360       0.50840E-04   0.23124    
+     19    0.61361       0.50840E-04   0.23124    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 30  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   K-VALUES           ****
+   STAGE     1-PROP        GLYCEROL      ACETIC  
+     20    0.61365       0.50838E-04   0.23124    
+     21    0.61375       0.50831E-04   0.23126    
+     22    0.61398       0.50816E-04   0.23130    
+     23    0.61449       0.50782E-04   0.23138    
+     24    0.61560       0.50708E-04   0.23155    
+     25    0.61800       0.50548E-04   0.23192    
+     26    0.62326       0.50210E-04   0.23275    
+     27    0.63530       0.49502E-04   0.23468    
+     28    0.66554       0.48076E-04   0.23975    
+     29    0.76164       0.45629E-04   0.25673    
+     30     1.4546       0.50454E-04   0.37010    
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+      1    0.58727E-01   0.37209E-01   0.90182       0.29000E-03   0.19495E-02
+      2    0.64020E-01   0.14692E-02   0.93203       0.26331E-03   0.22202E-02
+      3    0.67794E-01   0.19825E-03   0.92935       0.23819E-03   0.24124E-02
+      4    0.72367E-01   0.15341E-03   0.92466       0.22180E-03   0.25917E-02
+      5    0.78162E-01   0.15186E-03   0.91871       0.21314E-03   0.27557E-02
+      6    0.85737E-01   0.15174E-03   0.91099       0.21171E-03   0.28971E-02
+      7    0.96019E-01   0.15149E-03   0.90058       0.21778E-03   0.30049E-02
+      8    0.11069       0.15086E-03   0.88582       0.23269E-03   0.30617E-02
+      9    0.13310       0.14943E-03   0.86338       0.25896E-03   0.30377E-02
+     10    0.17102       0.14606E-03   0.82545       0.29984E-03   0.28755E-02
+     11    0.17102       0.55772E-05   0.82555       0.30044E-03   0.29123E-02
+     12    0.17101       0.21294E-06   0.82553       0.30119E-03   0.29525E-02
+     13    0.17100       0.81302E-08   0.82550       0.30216E-03   0.29968E-02
+     14    0.17098       0.31042E-09   0.82546       0.30342E-03   0.30458E-02
+     15    0.17097       0.11852E-10   0.82542       0.30505E-03   0.30999E-02
+     16    0.17096       0.45249E-12   0.82537       0.30716E-03   0.31597E-02
+     17    0.17095       0.17275E-13   0.82531       0.30990E-03   0.32256E-02
+     18    0.17095       0.00000E+00   0.82523       0.31345E-03   0.32984E-02
+     19    0.17096       0.00000E+00   0.82514       0.31805E-03   0.33787E-02
+     20    0.17099       0.00000E+00   0.82501       0.32401E-03   0.34671E-02
+     21    0.17108       0.00000E+00   0.82481       0.33174E-03   0.35642E-02
+     22    0.17128       0.00000E+00   0.82449       0.34179E-03   0.36705E-02
+     23    0.17172       0.00000E+00   0.82392       0.35491E-03   0.37857E-02
+     24    0.17267       0.00000E+00   0.82282       0.37215E-03   0.39082E-02
+     25    0.17470       0.00000E+00   0.82062       0.39511E-03   0.40327E-02
+     26    0.17911       0.00000E+00   0.81603       0.42629E-03   0.41462E-02
+     27    0.18891       0.00000E+00   0.80605       0.46987E-03   0.42164E-02
+     28    0.21187       0.00000E+00   0.78295       0.53224E-03   0.41607E-02
+     29    0.27328       0.00000E+00   0.72169       0.61341E-03   0.37394E-02
+     30    0.50809       0.00000E+00   0.48806       0.57693E-03   0.20500E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 31  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     1-PROP        GLYCEROL      ACETIC  
+      1    0.71818E-06   0.00000E+00   0.63940E-10
+      2    0.14503E-05   0.00000E+00   0.29512E-09
+      3    0.26965E-05   0.00000E+00   0.12349E-08
+      4    0.48842E-05   0.00000E+00   0.51020E-08
+      5    0.86992E-05   0.00000E+00   0.21079E-07
+      6    0.15280E-04   0.00000E+00   0.87364E-07
+      7    0.26452E-04   0.00000E+00   0.36353E-06
+      8    0.44947E-04   0.19777E-12   0.15183E-05
+      9    0.74249E-04   0.34424E-08   0.63524E-05
+     10    0.11658E-03   0.65431E-04   0.26433E-04
+     11    0.11658E-03   0.65417E-04   0.26429E-04
+     12    0.11659E-03   0.65415E-04   0.26429E-04
+     13    0.11659E-03   0.65413E-04   0.26428E-04
+     14    0.11661E-03   0.65412E-04   0.26427E-04
+     15    0.11663E-03   0.65410E-04   0.26427E-04
+     16    0.11669E-03   0.65409E-04   0.26426E-04
+     17    0.11680E-03   0.65408E-04   0.26426E-04
+     18    0.11700E-03   0.65407E-04   0.26426E-04
+     19    0.11740E-03   0.65407E-04   0.26426E-04
+     20    0.11817E-03   0.65410E-04   0.26428E-04
+     21    0.11966E-03   0.65417E-04   0.26433E-04
+     22    0.12250E-03   0.65434E-04   0.26443E-04
+     23    0.12795E-03   0.65472E-04   0.26467E-04
+     24    0.13835E-03   0.65554E-04   0.26525E-04
+     25    0.15806E-03   0.65733E-04   0.26678E-04
+     26    0.19494E-03   0.66121E-04   0.27154E-04
+     27    0.26221E-03   0.66984E-04   0.28913E-04
+     28    0.37726E-03   0.69015E-04   0.36334E-04
+     29    0.53502E-03   0.74499E-04   0.69225E-04
+     30    0.48734E-03   0.56160E-03   0.18307E-03
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+      1    0.14275E-01   0.74416       0.24103       0.97458E-04   0.44644E-03
+      2    0.58685E-01   0.37874E-01   0.90120       0.28982E-03   0.19481E-02
+      3    0.63527E-01   0.51621E-02   0.92885       0.26543E-03   0.21957E-02
+      4    0.66974E-01   0.40140E-02   0.92640       0.24248E-03   0.23712E-02
+      5    0.71145E-01   0.39980E-02   0.92209       0.22754E-03   0.25347E-02
+      6    0.76424E-01   0.40286E-02   0.91664       0.21969E-03   0.26839E-02
+      7    0.83311E-01   0.40702E-02   0.90957       0.21844E-03   0.28120E-02
+      8    0.92636E-01   0.41265E-02   0.90008       0.22408E-03   0.29090E-02
+      9    0.10590       0.42063E-02   0.88666       0.23775E-03   0.29587E-02
+     10    0.12605       0.43270E-02   0.86635       0.26169E-03   0.29337E-02
+     11    0.12657       0.16539E-03   0.86995       0.26322E-03   0.29837E-02
+     12    0.12658       0.63151E-05   0.87005       0.26391E-03   0.30253E-02
+     13    0.12657       0.24111E-06   0.87003       0.26476E-03   0.30708E-02
+     14    0.12655       0.92059E-08   0.86999       0.26586E-03   0.31211E-02
+     15    0.12654       0.35148E-09   0.86994       0.26728E-03   0.31765E-02
+     16    0.12652       0.13420E-10   0.86990       0.26913E-03   0.32378E-02
+     17    0.12651       0.51235E-12   0.86984       0.27152E-03   0.33054E-02
+     18    0.12650       0.19561E-13   0.86977       0.27463E-03   0.33801E-02
+     19    0.12650       0.00000E+00   0.86969       0.27865E-03   0.34625E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 32  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     WATER         CO2           ETHANOL       METHANOL      2-PROP  
+     20    0.12651       0.00000E+00   0.86958       0.28386E-03   0.35534E-02
+     21    0.12655       0.00000E+00   0.86943       0.29060E-03   0.36535E-02
+     22    0.12664       0.00000E+00   0.86922       0.29935E-03   0.37635E-02
+     23    0.12686       0.00000E+00   0.86886       0.31072E-03   0.38840E-02
+     24    0.12733       0.00000E+00   0.86824       0.32556E-03   0.40146E-02
+     25    0.12834       0.00000E+00   0.86706       0.34505E-03   0.41535E-02
+     26    0.13051       0.00000E+00   0.86471       0.37097E-03   0.42954E-02
+     27    0.13521       0.00000E+00   0.85979       0.40616E-03   0.44259E-02
+     28    0.14568       0.00000E+00   0.84911       0.45538E-03   0.45098E-02
+     29    0.17037       0.00000E+00   0.82427       0.52598E-03   0.44564E-02
+     30    0.23738       0.00000E+00   0.75741       0.61899E-03   0.39977E-02
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     1-PROP        GLYCEROL      ACETIC  
+      1    0.85025E-07   0.00000E+00   0.38061E-11
+      2    0.71759E-06   0.00000E+00   0.63883E-10
+      3    0.13870E-05   0.00000E+00   0.27523E-09
+      4    0.25256E-05   0.00000E+00   0.11341E-08
+      5    0.45226E-05   0.00000E+00   0.46654E-08
+      6    0.80012E-05   0.00000E+00   0.19243E-07
+      7    0.13993E-04   0.00000E+00   0.79653E-07
+      8    0.24145E-04   0.00000E+00   0.33096E-06
+      9    0.40904E-04   0.17969E-12   0.13795E-05
+     10    0.67325E-04   0.31182E-08   0.57543E-05
+     11    0.67622E-04   0.31430E-08   0.57769E-05
+     12    0.67636E-04   0.31439E-08   0.57776E-05
+     13    0.67640E-04   0.31438E-08   0.57775E-05
+     14    0.67649E-04   0.31437E-08   0.57773E-05
+     15    0.67666E-04   0.31435E-08   0.57772E-05
+     16    0.67699E-04   0.31433E-08   0.57770E-05
+     17    0.67762E-04   0.31431E-08   0.57769E-05
+     18    0.67884E-04   0.31429E-08   0.57769E-05
+     19    0.68119E-04   0.31427E-08   0.57770E-05
+     20    0.68572E-04   0.31424E-08   0.57774E-05
+     21    0.69442E-04   0.31419E-08   0.57785E-05
+     22    0.71115E-04   0.31412E-08   0.57811E-05
+     23    0.74325E-04   0.31400E-08   0.57869E-05
+     24    0.80467E-04   0.31375E-08   0.58007E-05
+     25    0.92177E-04   0.31323E-08   0.58367E-05
+     26    0.11436E-03   0.31216E-08   0.59466E-05
+     27    0.15589E-03   0.31001E-08   0.63476E-05
+     28    0.23173E-03   0.30592E-08   0.80369E-05
+     29    0.36184E-03   0.30165E-08   0.15775E-04
+     30    0.54231E-03   0.21676E-07   0.51817E-04
+
+
+
+   **** THERMOSYPHON REBOILER **** 
+
+    TEMPERATURE   PRESSURE     FLOW RATE     VFRAC        HEAT DUTY
+        F         PSI           LBMOL/HR                    BTU/HR  
+       211.18       20.000       10390.      0.90000      0.16375E+09
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 33  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+                         ****   LIQUID MOLE-FRAC   ****
+          WATER       CO2         ETHANOL     METHANOL    2-PROP      1-PROP  
+       .95932      .00000E+00  .38829E-01  .11509E-03  .67669E-04  .27394E-04
+
+                         ****   LIQUID MOLE-FRAC   ****
+          GLYCEROL    ACETIC  
+       .15658E-02  .70727E-04
+
+                         ****   VAPOR MOLE-FRAC    ****
+          WATER       CO2         ETHANOL     METHANOL    2-PROP      1-PROP  
+       .69968      .00000E+00  .29855      .50195E-03  .96770E-03  .22879E-03
+
+                         ****   VAPOR MOLE-FRAC    ****
+          GLYCEROL    ACETIC  
+       .35979E-06  .79293E-04
+
+
+
+
+                    ********************************
+                    ***** HYDRAULIC PARAMETERS *****
+                    ********************************
+
+
+       *** DEFINITIONS ***
+
+        MARANGONI INDEX = SIGMA - SIGMATO
+        FLOW PARAM = (ML/MV)*SQRT(RHOV/RHOL)
+        QR = QV*SQRT(RHOV/(RHOL-RHOV))
+        F FACTOR = QV*SQRT(RHOV)
+          WHERE:
+          SIGMA IS THE SURFACE TENSION OF LIQUID FROM THE STAGE
+          SIGMATO IS THE SURFACE TENSION OF LIQUID TO THE STAGE
+          ML IS THE MASS FLOW OF LIQUID FROM THE STAGE
+          MV IS THE MASS FLOW OF VAPOR TO THE STAGE
+          RHOL IS THE MASS DENSITY OF LIQUID FROM THE STAGE
+          RHOV IS THE MASS DENSITY OF VAPOR TO THE STAGE
+          QV IS THE VOLUMETRIC FLOW RATE OF VAPOR TO THE STAGE
+
+
+             MASS FLOW                VOLUME FLOW         MOLECULAR WEIGHT
+              LB/HR                    CUFT/HR 
+ STAGE LIQUID FROM  VAPOR TO   LIQUID FROM  VAPOR TO   LIQUID FROM  VAPOR TO
+    1  0.37905E+06 0.37940E+06  8044.9     0.30555E+07  42.154      42.156    
+    2  0.36767E+06 0.40217E+06  8255.1     0.32625E+07  41.905      41.928    
+    3  0.36622E+06 0.40072E+06  8226.9     0.32670E+07  41.687      41.728    
+    4  0.36362E+06 0.39812E+06  8157.3     0.32653E+07  41.422      41.486    
+    5  0.36033E+06 0.39483E+06  8069.2     0.32630E+07  41.090      41.182    
+    6  0.35612E+06 0.39063E+06  7956.6     0.32601E+07  40.664      40.792    
+    7  0.35057E+06 0.38507E+06  7808.2     0.32566E+07  40.098      40.275    
+    8  0.34294E+06 0.37744E+06  7605.1     0.32522E+07  39.317      39.561    
+    9  0.33192E+06 0.36642E+06  7312.5     0.32469E+07  38.179      38.522    
+   10  0.42227E+06 0.37292E+06  9202.2     0.33068E+07  36.398      38.503    
+   11  0.42236E+06 0.37301E+06  9206.0     0.33076E+07  36.398      38.503    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 34  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+
+             MASS FLOW                VOLUME FLOW         MOLECULAR WEIGHT
+              LB/HR                    CUFT/HR 
+ STAGE LIQUID FROM  VAPOR TO   LIQUID FROM  VAPOR TO   LIQUID FROM  VAPOR TO
+   12  0.42237E+06 0.37302E+06  9206.4     0.33076E+07  36.399      38.504    
+   13  0.42238E+06 0.37303E+06  9206.6     0.33076E+07  36.400      38.505    
+   14  0.42239E+06 0.37304E+06  9206.9     0.33076E+07  36.401      38.506    
+   15  0.42240E+06 0.37305E+06  9207.1     0.33076E+07  36.401      38.507    
+   16  0.42241E+06 0.37306E+06  9207.3     0.33076E+07  36.402      38.508    
+   17  0.42242E+06 0.37307E+06  9207.5     0.33076E+07  36.403      38.509    
+   18  0.42243E+06 0.37307E+06  9207.6     0.33076E+07  36.404      38.510    
+   19  0.42242E+06 0.37307E+06  9207.5     0.33075E+07  36.404      38.510    
+   20  0.42241E+06 0.37306E+06  9207.1     0.33075E+07  36.403      38.509    
+   21  0.42236E+06 0.37301E+06  9205.8     0.33075E+07  36.399      38.505    
+   22  0.42225E+06 0.37290E+06  9202.8     0.33074E+07  36.391      38.495    
+   23  0.42201E+06 0.37265E+06  9196.3     0.33073E+07  36.372      38.472    
+   24  0.42148E+06 0.37212E+06  9182.3     0.33071E+07  36.330      38.423    
+   25  0.42033E+06 0.37098E+06  9152.1     0.33067E+07  36.240      38.316    
+   26  0.41787E+06 0.36851E+06  9087.0     0.33059E+07  36.046      38.084    
+   27  0.41248E+06 0.36313E+06  8945.1     0.33042E+07  35.622      37.578    
+   28  0.40017E+06 0.35099E+06  8622.7     0.33015E+07  34.663      36.435    
+   29  0.37079E+06 0.32161E+06  7855.6     0.33009E+07  32.334      33.655    
+   30  0.31650E+06 0.24734E+06  6289.6     0.33251E+07  25.729      26.451    
+
+
+               DENSITY                  VISCOSITY         SURFACE TENSION
+               LB/CUFT                   CP                  DYNE/CM 
+ STAGE LIQUID FROM  VAPOR TO     LIQUID FROM  VAPOR TO      LIQUID FROM
+    1   47.116      0.12417      0.55556      0.11086E-01    25.369    
+    2   44.538      0.12327      0.38515      0.10932E-01    23.339    
+    3   44.515      0.12266      0.38150      0.10936E-01    23.619    
+    4   44.575      0.12192      0.38069      0.10949E-01    24.036    
+    5   44.655      0.12100      0.37979      0.10965E-01    24.559    
+    6   44.758      0.11982      0.37861      0.10987E-01    25.230    
+    7   44.897      0.11824      0.37700      0.11016E-01    26.117    
+    8   45.094      0.11606      0.37471      0.11057E-01    27.338    
+    9   45.391      0.11285      0.37123      0.11120E-01    29.110    
+   10   45.888      0.11277      0.36556      0.11101E-01    31.876    
+   11   45.879      0.11277      0.36522      0.11100E-01    31.865    
+   12   45.878      0.11278      0.36521      0.11100E-01    31.864    
+   13   45.878      0.11278      0.36521      0.11100E-01    31.864    
+   14   45.878      0.11278      0.36521      0.11100E-01    31.863    
+   15   45.878      0.11279      0.36522      0.11100E-01    31.862    
+   16   45.878      0.11279      0.36522      0.11100E-01    31.861    
+   17   45.878      0.11279      0.36522      0.11100E-01    31.861    
+   18   45.878      0.11279      0.36523      0.11100E-01    31.861    
+   19   45.878      0.11279      0.36523      0.11099E-01    31.862    
+   20   45.879      0.11279      0.36522      0.11100E-01    31.864    
+   21   45.880      0.11278      0.36521      0.11100E-01    31.871    
+   22   45.883      0.11275      0.36519      0.11100E-01    31.885    
+   23   45.889      0.11268      0.36512      0.11102E-01    31.916    
+   24   45.901      0.11252      0.36499      0.11105E-01    31.981    
+   25   45.928      0.11219      0.36469      0.11111E-01    32.121    
+   26   45.985      0.11147      0.36405      0.11126E-01    32.423    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 35  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+
+               DENSITY                  VISCOSITY         SURFACE TENSION
+               LB/CUFT                   CP                  DYNE/CM 
+ STAGE LIQUID FROM  VAPOR TO     LIQUID FROM  VAPOR TO      LIQUID FROM
+   27   46.112      0.10990      0.36264      0.11158E-01    33.079    
+   28   46.409      0.10631      0.35942      0.11236E-01    34.557    
+   29   47.201      0.97434E-01  0.35140      0.11453E-01    38.124    
+   30   50.321      0.74387E-01  0.32775      0.12136E-01    48.103    
+
+
+       MARANGONI INDEX   FLOW PARAM          QR          REDUCED F-FACTOR
+ STAGE    DYNE/CM                          CUFT/HR       (LB-CUFT)**.5/HR
+    1                    0.51288E-01      0.15707E+06      0.10767E+07
+    2   -2.0304          0.48096E-01      0.17188E+06      0.11455E+07
+    3   0.28002          0.47973E-01      0.17173E+06      0.11442E+07
+    4   0.41692          0.47767E-01      0.17101E+06      0.11402E+07
+    5   0.52342          0.47507E-01      0.17009E+06      0.11350E+07
+    6   0.67084          0.47170E-01      0.16890E+06      0.11285E+07
+    7   0.88725          0.46721E-01      0.16735E+06      0.11198E+07
+    8    1.2213          0.46094E-01      0.16520E+06      0.11079E+07
+    9    1.7717          0.45168E-01      0.16210E+06      0.10907E+07
+   10   -.68182          0.56135E-01      0.16413E+06      0.11105E+07
+   11   -.10236E-01      0.56139E-01      0.16419E+06      0.11108E+07
+   12   -.10505E-02      0.56139E-01      0.16419E+06      0.11108E+07
+   13   -.77218E-03      0.56140E-01      0.16420E+06      0.11108E+07
+   14   -.79718E-03      0.56141E-01      0.16420E+06      0.11108E+07
+   15   -.78440E-03      0.56142E-01      0.16420E+06      0.11108E+07
+   16   -.69659E-03      0.56142E-01      0.16420E+06      0.11108E+07
+   17   -.48326E-03      0.56143E-01      0.16420E+06      0.11108E+07
+   18   -.39690E-04      0.56143E-01      0.16420E+06      0.11108E+07
+   19   0.85601E-03      0.56143E-01      0.16420E+06      0.11108E+07
+   20   0.26758E-02      0.56142E-01      0.16420E+06      0.11108E+07
+   21   0.64246E-02      0.56139E-01      0.16418E+06      0.11107E+07
+   22   0.14244E-01      0.56131E-01      0.16415E+06      0.11106E+07
+   23   0.30704E-01      0.56115E-01      0.16409E+06      0.11102E+07
+   24   0.65608E-01      0.56078E-01      0.16394E+06      0.11093E+07
+   25   0.14017          0.55999E-01      0.16363E+06      0.11076E+07
+   26   0.30125          0.55829E-01      0.16296E+06      0.11037E+07
+   27   0.65670          0.55454E-01      0.16150E+06      0.10954E+07
+   28    1.4773          0.54568E-01      0.15820E+06      0.10765E+07
+   29    3.5678          0.52381E-01      0.15013E+06      0.10303E+07
+   30    10.001          0.49198E-01      0.12794E+06      0.90688E+06
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 36  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+
+                 ************************************ 
+                 ***** TRAY SIZING CALCULATIONS ***** 
+                 ************************************ 
+
+
+    *******************
+    *** SECTION   1 ***
+    *******************
+
+    STARTING STAGE NUMBER                                         2
+    ENDING STAGE NUMBER                                          10
+    FLOODING CALCULATION METHOD                               GLITSCH 
+
+    DESIGN PARAMETERS             
+    -----------------             
+    PEAK CAPACITY FACTOR                                      1.00000    
+    SYSTEM FOAMING FACTOR                                     1.00000    
+    FLOODING FACTOR                                           0.80000    
+    MINIMUM COLUMN DIAMETER         FT                        1.00000    
+    MINIMUM DC AREA/COLUMN AREA                               0.10000    
+    HOLE AREA/ACTIVE AREA                                     0.12000    
+
+    TRAY SPECIFICATIONS        
+    -------------------        
+    TRAY TYPE                                                 SIEVE       
+    NUMBER OF PASSES                                              1
+    TRAY SPACING                    FT                        2.00000    
+
+
+            ***** SIZING RESULTS @ STAGE WITH MAXIMUM DIAMETER *****
+
+    STAGE WITH MAXIMUM DIAMETER                                   2
+    COLUMN DIAMETER                 FT                       16.6614     
+    DC AREA/COLUMN AREA                                       0.10000    
+    DOWNCOMER VELOCITY              FT/SEC                    0.10517    
+    WEIR LENGTH                     FT                       12.1064     
+
+
+                          **** SIZING PROFILES ****
+
+       STAGE    DIAMETER      TOTAL AREA   ACTIVE AREA   SIDE DC AREA
+                  FT            SQFT         SQFT           SQFT    
+          2       16.661        218.03       174.43        21.803    
+          3       16.649        217.69       174.16        21.770    
+          4       16.602        216.47       173.18        21.647    
+          5       16.542        214.91       171.93        21.491    
+          6       16.465        212.92       170.34        21.293    
+          7       16.364        210.31       168.25        21.031    
+          8       16.224        206.73       165.39        20.674    
+          9       16.021        201.59       161.28        20.160    
+         10       16.534        214.70       171.76        21.470    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 37  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+ 
+
+
+    *******************
+    *** SECTION   2 ***
+    *******************
+
+    STARTING STAGE NUMBER                                        11
+    ENDING STAGE NUMBER                                          30
+    FLOODING CALCULATION METHOD                               GLITSCH 
+
+    DESIGN PARAMETERS             
+    -----------------             
+    PEAK CAPACITY FACTOR                                      1.00000    
+    SYSTEM FOAMING FACTOR                                     1.00000    
+    FLOODING FACTOR                                           0.80000    
+    MINIMUM COLUMN DIAMETER         FT                        1.00000    
+    MINIMUM DC AREA/COLUMN AREA                               0.10000    
+    HOLE AREA/ACTIVE AREA                                     0.12000    
+
+    TRAY SPECIFICATIONS        
+    -------------------        
+    TRAY TYPE                                                 SIEVE       
+    NUMBER OF PASSES                                              1
+    TRAY SPACING                    FT                        1.50000    
+
+
+            ***** SIZING RESULTS @ STAGE WITH MAXIMUM DIAMETER *****
+
+    STAGE WITH MAXIMUM DIAMETER                                  18
+    COLUMN DIAMETER                 FT                       18.3561     
+    DC AREA/COLUMN AREA                                       0.10000    
+    DOWNCOMER VELOCITY              FT/SEC                    0.096647   
+    WEIR LENGTH                     FT                       13.3378     
+
+
+                          **** SIZING PROFILES ****
+
+       STAGE    DIAMETER      TOTAL AREA   ACTIVE AREA   SIDE DC AREA
+                  FT            SQFT         SQFT           SQFT    
+         11       18.355        264.61       211.69        26.462    
+         12       18.356        264.62       211.70        26.462    
+         13       18.356        264.62       211.70        26.463    
+         14       18.356        264.63       211.70        26.463    
+         15       18.356        264.63       211.71        26.463    
+         16       18.356        264.63       211.71        26.464    
+         17       18.356        264.64       211.71        26.464    
+         18       18.356        264.64       211.71        26.464    
+         19       18.356        264.63       211.71        26.464    
+         20       18.356        264.62       211.70        26.463    
+         21       18.355        264.60       211.68        26.461    
+         22       18.353        264.55       211.64        26.455    
+         23       18.349        264.44       211.55        26.444    
+         24       18.341        264.19       211.36        26.420    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 38  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TOWER    MODEL: RADFRAC (CONTINUED)         
+
+       STAGE    DIAMETER      TOTAL AREA   ACTIVE AREA   SIDE DC AREA
+                  FT            SQFT         SQFT           SQFT    
+         25       18.323        263.67       210.94        26.367    
+         26       18.283        262.55       210.04        26.255    
+         27       18.198        260.10       208.08        26.010    
+         28       18.004        254.57       203.66        25.458    
+         29       17.531        241.39       193.11        24.139    
+         30       16.320        209.19       167.36        20.919    
+
+ BLOCK:  TRIMHEAT MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          FH-OUT  
+   OUTLET STREAM:         FLASH-IN
+   PROPERTY OPTION SET:   UNIFAC    UNIFAC / REDLICH-KWONG                      
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            2853.37         2853.37        0.000000E+00
+       MASS(LB/HR   )            88683.3         88683.3        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.347963E+09   -0.346320E+09   -0.472182E-02
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE                F                       140.000      
+   SPECIFIED PRESSURE                   PSI                      15.0000     
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    140.00    
+   OUTLET PRESSURE       PSI                                  15.000    
+   HEAT DUTY             BTU/HR                              0.16465E+07
+   OUTLET VAPOR FRACTION                                     0.41689E-01
+
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 39  
+                          ETHANOL PRODUCTION PROCESS                            
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  TRIMHEAT MODEL: HEATER (CONTINUED)          
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      WATER            0.53215        0.54868        0.15207        0.27715    
+      CO2              0.36818E-01    0.12763E-01    0.58979         46.211    
+      ETHANOL          0.42930        0.43678        0.25727        0.58901    
+      METHANOL         0.42804E-03    0.43817E-03    0.19525E-03    0.44561    
+      2-PROP           0.10076E-02    0.10241E-02    0.62777E-03    0.61300    
+      1-PROP           0.14213E-03    0.14627E-03    0.47072E-04    0.32182    
+      GLYCEROL         0.10514E-03    0.10971E-03    0.54296E-09    0.49490E-05
+      ACETIC           0.52828E-04    0.54855E-04    0.62393E-05    0.11374    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 40  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ C02-CP1 C1-OUT C2-OUT CO2-PROD CO2-RECY         
+ ---------------------------------------
+
+ STREAM ID               C02-CP1    C1-OUT     C2-OUT     CO2-PROD   CO2-RECY
+ FROM :                  CO2-COMP   CO2-C1     CO2-C2     CO2-CHIL   TOWER   
+ TO   :                  CO2-C1     KO-DRUM    KO-DRUM2   ----       COMP-MX 
+
+ SUBSTREAM: MIXED   
+ PHASE:                  VAPOR      MIXED      MIXED      LIQUID     VAPOR  
+ COMPONENTS: LBMOL/HR    
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER                 45.9263    45.9263     3.9392     0.8081     0.2825
+   CO2                 1204.1231  1204.1231  1182.5112  1170.8305     6.0298
+   ETHANOL               79.2172    79.2172     9.0532     1.6692     1.8657
+   METHANOL            6.1865-02  6.1865-02  8.1140-03  2.9489-03  1.0846-03
+   2-PROP                 0.1825     0.1825  1.7337-02  2.3372-03  2.6492-03
+   1-PROP              1.2703-02  1.2703-02  5.8415-04  4.0032-05  5.0453-07
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL            7.6795-08  7.6795-08     0.0        0.0        0.0   
+   ACETIC              1.9289-03  1.9289-03  5.4636-05  3.3494-06  2.2601-11
+ COMPONENTS: MOLE FRAC   
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER               3.4543-02  3.4543-02  3.2949-03  6.8875-04  3.4535-02
+   CO2                    0.9056     0.9056     0.9891     0.9978     0.7369
+   ETHANOL             5.9583-02  5.9583-02  7.5726-03  1.4227-03     0.2280
+   METHANOL            4.6532-05  4.6532-05  6.7870-06  2.5133-06  1.3257-04
+   2-PROP              1.3732-04  1.3732-04  1.4501-05  1.9920-06  3.2378-04
+   1-PROP              9.5543-06  9.5543-06  4.8861-07  3.4119-08  6.1665-08
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL            5.7761-11  5.7761-11     0.0        0.0        0.0   
+   ACETIC              1.4509-06  1.4509-06  4.5700-08  2.8546-09  2.7624-12
+ TOTAL FLOW:     
+   LBMOL/HR            1329.5258  1329.5258  1195.5297  1173.3132     8.1818
+   LB/HR               5.7484+04  5.7484+04  5.2531+04  5.1620+04   356.6079
+   CUFT/HR             2.1461+05  9.5950+04  1.9970+04  1232.4437  2567.7111
+ STATE VARIABLES:
+   TEMP   F             297.9701    75.0000    75.0000    83.0461   130.4723
+   PRES   PSI            50.0000    70.0000   300.0000  1000.0000    20.0000
+   VFRAC                  1.0000     0.9021     0.9814     0.0        1.0000
+   LFRAC                  0.0     9.7895-02  1.8583-02     1.0000     0.0   
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.6068+05 -1.6453+05 -1.6900+05 -1.7259+05 -1.5081+05
+   BTU/LB             -3716.2316 -3805.4512 -3846.1678 -3923.0243 -3460.2080
+   BTU/HR             -2.1362+08 -2.1875+08 -2.0204+08 -2.0251+08 -1.2339+06
+ ENTROPY:        
+   BTU/LBMOL-R           -1.2378    -8.1790    -6.4207   -13.5089   -10.4238
+   BTU/LB-R           -2.8630-02    -0.1891    -0.1461    -0.3070    -0.2391
+ DENSITY:        
+   LBMOL/CUFT          6.1951-03  1.3856-02  5.9866-02     0.9520  3.1864-03
+   LB/CUFT                0.2678     0.5991     2.6304    41.8840     0.1388
+ AVG MW                  43.2363    43.2363    43.9399    43.9948    43.5852
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 41  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ C02-CP1 C1-OUT C2-OUT CO2-PROD CO2-RECY (CONTINUED) 
+
+ STREAM ID               C02-CP1    C1-OUT     C2-OUT     CO2-PROD   CO2-RECY
+
+ KMX      BTU-FT/HR-SQ 1.5327-02  9.4602-03  9.4651-03    MISSING  1.0719-02
+ CPMX     BTU/LB-R        0.2484     0.2089     0.2313    MISSING     0.2522
+ MUMX     CP           1.9818-02  1.4972-02  1.5617-02    MISSING  1.4510-02
+ MASSFLMX LB/HR        5.7484+04  5.2684+04  5.1620+04    MISSING   356.6079
+ VOLFLMX  CUFT/HR      2.1461+05  9.5859+04  1.9954+04    MISSING  2567.7111
+ MWMX                    43.2363    43.9266    43.9948    MISSING    43.5852
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR        MISSING    90.8129    16.2139  1232.4437    MISSING
+ KMX      BTU-FT/HR-SQ   MISSING  7.8982-02  5.6702-02  4.2506-02    MISSING
+ CPMX     BTU/LB-R       MISSING     1.0561     1.5538     2.4809    MISSING
+ MUMX     CP             MISSING     0.6745     0.2445  5.9299-02    MISSING
+ SIGMAMX  DYNE/CM        MISSING    34.9514    18.0575     0.2841    MISSING
+ MASSFLMX LB/HR          MISSING  4799.4578   911.7470  5.1620+04    MISSING
+ MWMX                    MISSING    36.8753    41.0391    43.9948    MISSING
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     GLUCOSE              0.0        0.0        0.0        0.0        0.0   
+     WATER              827.3759   827.3758    70.9659    14.5585     5.0904
+     CO2               5.2993+04  5.2993+04  5.2042+04  5.1528+04   265.3719
+     ETHANOL           3649.4636  3649.4634   417.0738    76.9010    85.9516
+     METHANOL             1.9822     1.9822     0.2599  9.4488-02  3.4754-02
+     2-PROP              10.9716    10.9716     1.0418     0.1404     0.1592
+     1-PROP               0.7633     0.7633  3.5105-02  2.4057-03  3.0320-05
+     BUTANOL              0.0        0.0        0.0        0.0        0.0   
+     GLYCEROL          7.0724-06  7.0724-06     0.0        0.0        0.0   
+     ACETIC               0.1158     0.1158  3.2810-03  2.0114-04  1.3573-09
+ MASSVFRA                 1.0000     0.9165     0.9826     0.0        1.0000
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ TEMP     F             297.9701    75.0000    75.0000    83.0461   130.4723
+ PRES     PSI            50.0000    70.0000   300.0000  1000.0000    20.0000
+ VOLFLMX  CUFT/HR      2.1461+05  9.5950+04  1.9970+04  1232.4437  2567.7111
+ MASSFLMX LB/HR        5.7484+04  5.7484+04  5.2531+04  5.1620+04   356.6079
+ MWMX                    43.2363    43.2363    43.9399    43.9948    43.5852
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 42  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ COMP-IN COMP-MIX CP2-OUT CP3-OUT FEED           
+ -------------------------------------
+
+ STREAM ID               COMP-IN    COMP-MIX   CP2-OUT    CP3-OUT    FEED    
+ FROM :                  FLASH      COMP-MX    CO2-CP2    CO2-CP3    ----    
+ TO   :                  COMP-MX    CO2-COMP   CO2-C2     CO2-CHIL   REACTOR 
+
+ SUBSTREAM: MIXED   
+ PHASE:                  VAPOR      MIXED      VAPOR      VAPOR      LIQUID 
+ COMPONENTS: LBMOL/HR    
+   GLUCOSE                0.0        0.0        0.0        0.0      600.0000
+   WATER                 18.0888    45.9263     3.9392     0.8081  1500.0000
+   CO2                   70.1566  1204.1231  1182.5112  1170.8305     0.0   
+   ETHANOL               30.6031    79.2172     9.0532     1.6692     0.0   
+   METHANOL            2.3226-02  6.1865-02  8.1140-03  2.9489-03     0.0   
+   2-PROP              7.4675-02     0.1825  1.7337-02  2.3372-03     0.0   
+   1-PROP              5.5994-03  1.2703-02  5.8415-04  4.0032-05     0.0   
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL            6.4587-08  7.6795-08     0.0        0.0        0.0   
+   ACETIC              7.4219-04  1.9289-03  5.4636-05  3.3494-06     0.0   
+ COMPONENTS: MOLE FRAC   
+   GLUCOSE                0.0        0.0        0.0        0.0        0.2857
+   WATER                  0.1520  3.4543-02  3.2949-03  6.8875-04     0.7142
+   CO2                    0.5897     0.9056     0.9891     0.9978     0.0   
+   ETHANOL                0.2572  5.9583-02  7.5726-03  1.4227-03     0.0   
+   METHANOL            1.9525-04  4.6532-05  6.7870-06  2.5133-06     0.0   
+   2-PROP              6.2777-04  1.3732-04  1.4501-05  1.9920-06     0.0   
+   1-PROP              4.7072-05  9.5543-06  4.8861-07  3.4119-08     0.0   
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL            5.4296-10  5.7761-11     0.0        0.0        0.0   
+   ACETIC              6.2393-06  1.4509-06  4.5700-08  2.8546-09     0.0   
+ TOTAL FLOW:     
+   LBMOL/HR             118.9528  1329.5258  1195.5297  1173.3132  2100.0000
+   LB/HR               4828.9231  5.7484+04  5.2531+04  5.1620+04  1.3512+05
+   CUFT/HR             5.0649+04  5.1571+05  1.5274+04  5593.4967  4307.9014
+ STATE VARIABLES:
+   TEMP   F             140.0000    87.0487   200.0000   150.0000    75.0000
+   PRES   PSI            15.0000    15.0000   500.0000  1000.0000    15.0000
+   VFRAC                  1.0000     0.9974     1.0000     1.0000     0.0   
+   LFRAC                  0.0     2.5517-03     0.0        0.0        1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.4102+05 -1.6282+05 -1.6770+05 -1.6943+05 -8.8895+04
+   BTU/LB             -3473.7411 -3765.8830 -3816.5488 -3851.0311 -1381.6019
+   BTU/HR             -1.6774+07 -2.1648+08 -2.0049+08 -1.9879+08 -1.8668+08
+ ENTROPY:        
+   BTU/LBMOL-R          -12.0699    -2.1850    -5.1265    -7.8142   -27.0078
+   BTU/LB-R              -0.2973 -5.0536-02    -0.1166    -0.1776    -0.4197
+ DENSITY:        
+   LBMOL/CUFT          2.3486-03  2.5781-03  7.8271-02     0.2097     0.4874
+   LB/CUFT             9.5341-02     0.1114     3.4392     9.2285    31.3650
+ AVG MW                  40.5952    43.2363    43.9399    43.9948    64.3416
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 43  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ COMP-IN COMP-MIX CP2-OUT CP3-OUT FEED (CONTINUED)   
+
+ STREAM ID               COMP-IN    COMP-MIX   CP2-OUT    CP3-OUT    FEED    
+
+ KMX      BTU-FT/HR-SQ 1.1144-02  9.7487-03  1.2656-02  1.1364-02    MISSING
+ CPMX     BTU/LB-R        0.2747     0.2169     0.2487     0.3332    MISSING
+ MUMX     CP           1.3980-02  1.4696-02  1.9040-02  2.0219-02    MISSING
+ MASSFLMX LB/HR        4828.9231  5.7378+04  5.2531+04  5.1620+04    MISSING
+ VOLFLMX  CUFT/HR      5.0649+04  5.1570+05  1.5274+04  5593.4967    MISSING
+ MWMX                    40.5952    43.2670    43.9399    43.9948    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR        MISSING     2.0232    MISSING    MISSING  4307.9014
+ KMX      BTU-FT/HR-SQ   MISSING     0.1025    MISSING    MISSING     0.1266
+ CPMX     BTU/LB-R       MISSING     0.7354    MISSING    MISSING     0.4302
+ MUMX     CP             MISSING     0.8208    MISSING    MISSING  6998.3403
+ SIGMAMX  DYNE/CM        MISSING    47.4762    MISSING    MISSING    60.7711
+ MASSFLMX LB/HR          MISSING   105.9772    MISSING    MISSING  1.3512+05
+ MWMX                    MISSING    31.2418    MISSING    MISSING    64.3416
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     GLUCOSE              0.0        0.0        0.0        0.0     1.0809+05
+     WATER              325.8751   827.3759    70.9659    14.5585  2.7023+04
+     CO2               3087.5792  5.2993+04  5.2042+04  5.1528+04     0.0   
+     ETHANOL           1409.8558  3649.4636   417.0738    76.9010     0.0   
+     METHANOL             0.7442     1.9822     0.2599  9.4488-02     0.0   
+     2-PROP               4.4876    10.9716     1.0418     0.1404     0.0   
+     1-PROP               0.3365     0.7633  3.5105-02  2.4057-03     0.0   
+     BUTANOL              0.0        0.0        0.0        0.0        0.0   
+     GLYCEROL          5.9481-06  7.0724-06     0.0        0.0        0.0   
+     ACETIC            4.4570-02     0.1158  3.2810-03  2.0114-04     0.0   
+ MASSVFRA                 1.0000     0.9981     1.0000     1.0000     0.0   
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ TEMP     F             140.0000    87.0487   200.0000   150.0000    75.0000
+ PRES     PSI            15.0000    15.0000   500.0000  1000.0000    15.0000
+ VOLFLMX  CUFT/HR      5.0649+04  5.1571+05  1.5274+04  5593.4967  4307.9014
+ MASSFLMX LB/HR        4828.9231  5.7484+04  5.2531+04  5.1620+04  1.3512+05
+ MWMX                    40.5952    43.2363    43.9399    43.9948    64.3416
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 44  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ FH-OUT FLASH-IN H20-COLD H20-DEC H20-OUT        
+ ----------------------------------------
+
+ STREAM ID               FH-OUT     FLASH-IN   H20-COLD   H20-DEC    H20-OUT 
+ FROM :                  FEEDHEAT   TRIMHEAT   FEEDHEAT   TOWER      TOWER   
+ TO   :                  TRIMHEAT   FLASH      ----       ----       FEEDHEAT
+
+ SUBSTREAM: MIXED   
+ PHASE:                  MIXED      MIXED      LIQUID     LIQUID     LIQUID 
+ COMPONENTS: LBMOL/HR    
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER               1518.4133  1518.4133  1386.8168     1.8676  1386.8168
+   CO2                  105.0555   105.0555  3.4608-29  4.3988-28  3.4608-29
+   ETHANOL             1224.9487  1224.9487   521.0047     3.1162   521.0047
+   METHANOL               1.2213     1.2213     0.8853  2.6118-03     0.8853
+   2-PROP                 2.8749     2.8749     1.6774  1.2496-02     1.6774
+   1-PROP                 0.4055     0.4055     0.3987  7.7712-04     0.3987
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL               0.3000     0.3000     0.2998  1.2955-04     0.2998
+   ACETIC                 0.1507     0.1507     0.1499  8.5753-05     0.1499
+ COMPONENTS: MOLE FRAC   
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER                  0.5321     0.5321     0.7256     0.3735     0.7256
+   CO2                 3.6818-02  3.6818-02  1.8108-32  8.7976-29  1.8108-32
+   ETHANOL                0.4293     0.4293     0.2726     0.6232     0.2726
+   METHANOL            4.2804-04  4.2804-04  4.6322-04  5.2236-04  4.6322-04
+   2-PROP              1.0076-03  1.0076-03  8.7769-04  2.4993-03  8.7769-04
+   1-PROP              1.4213-04  1.4213-04  2.0865-04  1.5542-04  2.0865-04
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL            1.0514-04  1.0514-04  1.5690-04  2.5909-05  1.5690-04
+   ACETIC              5.2828-05  5.2828-05  7.8437-05  1.7151-05  7.8437-05
+ TOTAL FLOW:     
+   LBMOL/HR            2853.3702  2853.3702  1911.2328     5.0000  1911.2328
+   LB/HR               8.8683+04  8.8683+04  4.9176+04   178.1077  4.9176+04
+   CUFT/HR             3.4093+04  5.2318+04   911.6704     3.8625   977.2450
+ STATE VARIABLES:
+   TEMP   F             123.7562   140.0000   104.2251   188.4590   194.2166
+   PRES   PSI            15.0000    15.0000    20.0000    20.0000    20.0000
+   VFRAC               2.7397-02  4.1689-02     0.0        0.0        0.0   
+   LFRAC                  0.9726     0.9583     1.0000     1.0000     1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.2195+05 -1.2137+05 -1.2134+05 -1.1769+05 -1.1933+05
+   BTU/LB             -3923.6576 -3905.1308 -4715.7773 -3304.0260 -4637.9462
+   BTU/HR             -3.4796+08 -3.4632+08 -2.3190+08 -5.8847+05 -2.2807+08
+ ENTROPY:        
+   BTU/LBMOL-R          -53.6037   -52.6356   -49.2947   -60.6340   -46.0209
+   BTU/LB-R              -1.7246    -1.6935    -1.9158    -1.7021    -1.7886
+ DENSITY:        
+   LBMOL/CUFT          8.3693-02  5.4539-02     2.0964     1.2945     1.9557
+   LB/CUFT                2.6011     1.6950    53.9403    46.1119    50.3208
+ AVG MW                  31.0801    31.0801    25.7299    35.6215    25.7299
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 45  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ FH-OUT FLASH-IN H20-COLD H20-DEC H20-OUT (CONTINUED)
+
+ STREAM ID               FH-OUT     FLASH-IN   H20-COLD   H20-DEC    H20-OUT 
+
+ KMX      BTU-FT/HR-SQ 1.0691-02  1.1144-02    MISSING    MISSING    MISSING
+ CPMX     BTU/LB-R        0.2487     0.2747    MISSING    MISSING    MISSING
+ MUMX     CP           1.4506-02  1.3980-02    MISSING    MISSING    MISSING
+ MASSFLMX LB/HR        3267.0282  4828.9231    MISSING    MISSING    MISSING
+ VOLFLMX  CUFT/HR      3.2417+04  5.0649+04    MISSING    MISSING    MISSING
+ MWMX                    41.7913    40.5952    MISSING    MISSING    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR      1676.6153  1669.1372   911.6704     3.8625   977.2543
+ KMX      BTU-FT/HR-SQ    0.1036     0.1043     0.1305  9.6639-02     0.1211
+ CPMX     BTU/LB-R        0.7736     0.7989     0.8242     0.8246     0.9105
+ MUMX     CP              0.5749     0.5013     0.7078     0.3626     0.3277
+ SIGMAMX  DYNE/CM        45.5715    44.5541    56.3821    33.0793    48.1020
+ MASSFLMX LB/HR        8.5416+04  8.3854+04  4.9176+04   178.1077  4.9176+04
+ MWMX                    30.7784    30.6662    25.7299    35.6215    25.7299
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     GLUCOSE              0.0        0.0        0.0        0.0        0.0   
+     WATER             2.7355+04  2.7355+04  2.4984+04    33.6459  2.4984+04
+     CO2               4623.4719  4623.4719     0.0        0.0        0.0   
+     ETHANOL           5.6432+04  5.6432+04  2.4002+04   143.5633  2.4002+04
+     METHANOL            39.1350    39.1350    28.3674  8.3688-02    28.3674
+     2-PROP             172.7748   172.7748   100.8094     0.7509   100.8094
+     1-PROP              24.3724    24.3724    23.9647  4.6702-02    23.9647
+     BUTANOL              0.0        0.0        0.0        0.0        0.0   
+     GLYCEROL            27.6284    27.6284    27.6164  1.1930-02    27.6164
+     ACETIC               9.0522     9.0522     9.0025  5.1497-03     9.0025
+ MASSVFRA              3.6839-02  5.4451-02     0.0        0.0        0.0   
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ TEMP     F             123.7562   140.0000   104.2251   188.4590   194.2166
+ PRES     PSI            15.0000    15.0000    20.0000    20.0000    20.0000
+ VOLFLMX  CUFT/HR      3.4093+04  5.2318+04   911.6704     3.8625   977.2543
+ MASSFLMX LB/HR        8.8683+04  8.8683+04  4.9176+04   178.1077  4.9176+04
+ MWMX                    31.0801    31.0801    25.7299    35.6215    25.7299
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 46  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ HEAT-IN K02-VAP KO-LIQ KO-VAP KO2-H20           
+ -------------------------------------
+
+ STREAM ID               HEAT-IN    K02-VAP    KO-LIQ     KO-VAP     KO2-H20 
+ FROM :                  HEAT-MIX   KO-DRUM2   KO-DRUM    KO-DRUM    KO-DRUM2
+ TO   :                  FEEDHEAT   CO2-CP3    HEAT-MIX   CO2-CP2    HEAT-MIX
+
+ SUBSTREAM: MIXED   
+ PHASE:                  MIXED      VAPOR      LIQUID     VAPOR      LIQUID 
+ COMPONENTS: LBMOL/HR    
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER               1518.4133     0.8081    41.9871     3.9392     3.1310
+   CO2                  105.0555  1170.8305    21.6119  1182.5112    11.6806
+   ETHANOL             1224.9487     1.6692    70.1640     9.0532     7.3839
+   METHANOL               1.2213  2.9489-03  5.3751-02  8.1140-03  5.1652-03
+   2-PROP                 2.8749  2.3372-03     0.1652  1.7337-02  1.5000-02
+   1-PROP                 0.4055  4.0032-05  1.2119-02  5.8415-04  5.4412-04
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL               0.3000     0.0     7.6795-08     0.0        0.0   
+   ACETIC                 0.1507  3.3494-06  1.8743-03  5.4636-05  5.1286-05
+ COMPONENTS: MOLE FRAC   
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER                  0.5321  6.8875-04     0.3133  3.2949-03     0.1409
+   CO2                 3.6818-02     0.9978     0.1612     0.9891     0.5257
+   ETHANOL                0.4293  1.4227-03     0.5236  7.5726-03     0.3323
+   METHANOL            4.2804-04  2.5133-06  4.0114-04  6.7870-06  2.3249-04
+   2-PROP              1.0076-03  1.9920-06  1.2331-03  1.4501-05  6.7516-04
+   1-PROP              1.4213-04  3.4119-08  9.0440-05  4.8861-07  2.4492-05
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL            1.0514-04     0.0     5.7311-10     0.0        0.0   
+   ACETIC              5.2828-05  2.8546-09  1.3988-05  4.5700-08  2.3085-06
+ TOTAL FLOW:     
+   LBMOL/HR            2853.3702  1173.3132   133.9960  1195.5297    22.2165
+   LB/HR               8.8683+04  5.1620+04  4952.4300  5.2531+04   911.7470
+   CUFT/HR             1.2635+04  1.9954+04    93.2113  9.4602+04    16.2139
+ STATE VARIABLES:
+   TEMP   F              72.8954    75.0000    70.0000    70.0000    75.0000
+   PRES   PSI            15.0000   300.0000    70.0000    70.0000   300.0000
+   VFRAC               1.0168-02     1.0000     0.0        1.0000     0.0   
+   LFRAC                  0.9898     0.0        1.0000     0.0        1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.2329+05 -1.6940+05 -1.2935+05 -1.6859+05 -1.4802+05
+   BTU/LB             -3966.8158 -3850.3959 -3499.7519 -3836.7330 -3606.7862
+   BTU/HR             -3.5179+08 -1.9876+08 -1.7332+07 -2.0155+08 -3.2885+06
+ ENTROPY:        
+   BTU/LBMOL-R          -55.9952    -5.8168   -56.7275    -2.9407   -38.3153
+   BTU/LB-R              -1.8016    -0.1322    -1.5348 -6.6927-02    -0.9336
+ DENSITY:        
+   LBMOL/CUFT             0.2258  5.8801-02     1.4375  1.2637-02     1.3702
+   LB/CUFT                7.0188     2.5869    53.1312     0.5552    56.2324
+ AVG MW                  31.0801    43.9948    36.9595    43.9399    41.0391
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 47  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ HEAT-IN K02-VAP KO-LIQ KO-VAP KO2-H20 (CONTINUED)   
+
+ STREAM ID               HEAT-IN    K02-VAP    KO-LIQ     KO-VAP     KO2-H20 
+
+ KMX      BTU-FT/HR-SQ 9.3999-03  9.4651-03    MISSING  9.3363-03    MISSING
+ CPMX     BTU/LB-R        0.2100     0.2313    MISSING     0.2080    MISSING
+ MUMX     CP           1.4540-02  1.5617-02    MISSING  1.4853-02    MISSING
+ MASSFLMX LB/HR        1263.0312  5.1620+04    MISSING  5.2531+04    MISSING
+ VOLFLMX  CUFT/HR      1.0989+04  1.9954+04    MISSING  9.4602+04    MISSING
+ MWMX                    43.5350    43.9948    MISSING    43.9399    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR      1645.5109    MISSING    93.2113    MISSING    16.2139
+ KMX      BTU-FT/HR-SQ    0.1059    MISSING  8.0359-02    MISSING  5.6702-02
+ CPMX     BTU/LB-R        0.8077    MISSING     0.9090    MISSING     1.5538
+ MUMX     CP              0.9574    MISSING     0.7040    MISSING     0.2445
+ SIGMAMX  DYNE/CM        49.1000    MISSING    35.0087    MISSING    18.0575
+ MASSFLMX LB/HR        8.7420+04    MISSING  4952.4300    MISSING   911.7470
+ MWMX                    30.9522    MISSING    36.9595    MISSING    41.0391
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     GLUCOSE              0.0        0.0        0.0        0.0        0.0   
+     WATER             2.7355+04    14.5585   756.4099    70.9659    56.4073
+     CO2               4623.4719  5.1528+04   951.1375  5.2042+04   514.0641
+     ETHANOL           5.6432+04    76.9010  3232.3895   417.0738   340.1728
+     METHANOL            39.1350  9.4488-02     1.7223     0.2599     0.1655
+     2-PROP             172.7748     0.1404     9.9297     1.0418     0.9014
+     1-PROP              24.3724  2.4057-03     0.7282  3.5105-02  3.2699-02
+     BUTANOL              0.0        0.0        0.0        0.0        0.0   
+     GLYCEROL            27.6284     0.0     7.0724-06     0.0        0.0   
+     ACETIC               9.0522  2.0114-04     0.1125  3.2810-03  3.0799-03
+ MASSVFRA              1.4242-02     1.0000     0.0        1.0000     0.0   
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ TEMP     F              72.8954    75.0000    70.0000    70.0000    75.0000
+ PRES     PSI            15.0000   300.0000    70.0000    70.0000   300.0000
+ VOLFLMX  CUFT/HR      1.2635+04  1.9954+04    93.2113  9.4602+04    16.2139
+ MASSFLMX LB/HR        8.8683+04  5.1620+04  4952.4300  5.2531+04   911.7470
+ MWMX                    31.0801    43.9948    36.9595    43.9399    41.0391
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 48  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ PRODUCT RXN-LIQ RXN-OUT RXN-VAP TOWER-IN        
+ ----------------------------------------
+
+ STREAM ID               PRODUCT    RXN-LIQ    RXN-OUT    RXN-VAP    TOWER-IN
+ FROM :                  TOWER      RXN-FLAS   REACTOR    RXN-FLAS   FLASH   
+ TO   :                  ----       HEAT-MIX   RXN-FLAS   COMP-MX    TOWER   
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID     LIQUID     MIXED      VAPOR      LIQUID 
+ COMPONENTS: LBMOL/HR    
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER                111.3071  1473.2951  1500.8500    27.5548  1500.3245
+   CO2                   28.8690    71.7628  1199.7000  1127.9371    34.8988
+   ETHANOL              668.4094  1147.4007  1194.1500    46.7492  1194.3456
+   METHANOL               0.3090     1.1624     1.2000  3.7554-02     1.1981
+   2-PROP                 1.1076     2.6947     2.8000     0.1052     2.8003
+   1-PROP              4.0806-04     0.3929     0.4000  7.1029-03     0.3999
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL               0.0        0.3000     0.3000  1.2452-08     0.3000
+   ACETIC              3.6355-08     0.1488     0.1500  1.1868-03     0.1500
+ COMPONENTS: MOLE FRAC   
+   GLUCOSE                0.0        0.0        0.0        0.0        0.0   
+   WATER                  0.1374     0.5462     0.3848  2.2917-02     0.5486
+   CO2                 3.5641-02  2.6607-02     0.3076     0.9380  1.2763-02
+   ETHANOL                0.8251     0.4254     0.3062  3.8880-02     0.4367
+   METHANOL            3.8153-04  4.3099-04  3.0773-04  3.1233-05  4.3817-04
+   2-PROP              1.3675-03  9.9911-04  7.1803-04  8.7531-05  1.0241-03
+   1-PROP              5.0377-07  1.4567-04  1.0258-04  5.9073-06  1.4627-04
+   BUTANOL                0.0        0.0        0.0        0.0        0.0   
+   GLYCEROL               0.0     1.1123-04  7.6932-05  1.0356-11  1.0971-04
+   ACETIC              4.4883-11  5.5174-05  3.8466-05  9.8701-07  5.4855-05
+ TOTAL FLOW:     
+   LBMOL/HR             810.0027  2697.1576  3899.5500  1202.3923  2734.4174
+   LB/HR               3.4145+04  8.2819+04  1.3512+05  5.2298+04  8.3854+04
+   CUFT/HR              724.7015  1558.6281  4.5882+05  4.5727+05  1669.1372
+ STATE VARIABLES:
+   TEMP   F             130.4723    75.0000    75.0000    75.0000   140.0000
+   PRES   PSI            20.0000    15.0000    15.0000    15.0000    15.0000
+   VFRAC                  0.0        0.0        0.3083     1.0000     0.0   
+   LFRAC                  1.0000     1.0000     0.6916     0.0        1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.2023+05 -1.2278+05 -1.3582+05 -1.6506+05 -1.2052+05
+   BTU/LB             -2852.2317 -3998.7088 -3919.8391 -3794.9420 -3929.9732
+   BTU/HR             -9.7390+07 -3.3117+08 -5.2964+08 -1.9847+08 -3.2955+08
+ ENTROPY:        
+   BTU/LBMOL-R          -70.7685   -56.1417   -39.2153    -1.2467   -54.4003
+   BTU/LB-R              -1.6787    -1.8283    -1.1317 -2.8663-02    -1.7739
+ DENSITY:        
+   LBMOL/CUFT             1.1177     1.7304  8.4990-03  2.6295-03     1.6382
+   LB/CUFT               47.1162    53.1359     0.2944     0.1143    50.2381
+ AVG MW                  42.1544    30.7060    34.6495    43.4953    30.6662
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 49  
+                          ETHANOL PRODUCTION PROCESS                            
+                                 STREAM SECTION                                 
+
+ PRODUCT RXN-LIQ RXN-OUT RXN-VAP TOWER-IN (CONTINUED)
+
+ STREAM ID               PRODUCT    RXN-LIQ    RXN-OUT    RXN-VAP    TOWER-IN
+
+ KMX      BTU-FT/HR-SQ   MISSING    MISSING  9.4525-03  9.4525-03    MISSING
+ CPMX     BTU/LB-R       MISSING    MISSING     0.2109     0.2109    MISSING
+ MUMX     CP             MISSING    MISSING  1.4571-02  1.4571-02    MISSING
+ MASSFLMX LB/HR          MISSING    MISSING  5.2298+04  5.2298+04    MISSING
+ VOLFLMX  CUFT/HR        MISSING    MISSING  4.5727+05  4.5727+05    MISSING
+ MWMX                    MISSING    MISSING    43.4953    43.4953    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR       724.7015  1558.6281  1558.6281    MISSING  1669.1372
+ KMX      BTU-FT/HR-SQ 8.8180-02     0.1061     0.1061    MISSING     0.1043
+ CPMX     BTU/LB-R        0.6994     0.8268     0.8268    MISSING     0.7989
+ MUMX     CP              0.5555     0.9353     0.9353    MISSING     0.5013
+ SIGMAMX  DYNE/CM        25.3690    49.3976    49.3976    MISSING    44.5541
+ MASSFLMX LB/HR        3.4145+04  8.2819+04  8.2819+04    MISSING  8.3854+04
+ MWMX                    42.1544    30.7060    30.7060    MISSING    30.6662
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     GLUCOSE              0.0        0.0        0.0        0.0        0.0   
+     WATER             2005.2300  2.6542+04  2.7038+04   496.4088  2.7029+04
+     CO2               1270.5208  3158.2702  5.2799+04  4.9640+04  1535.8927
+     ETHANOL           3.0793+04  5.2860+04  5.5013+04  2153.6931  5.5022+04
+     METHANOL             9.9022    37.2472    38.4505     1.2033    38.3908
+     2-PROP              66.5670   161.9437   168.2685     6.3248   168.2872
+     1-PROP            2.4523-02    23.6115    24.0383     0.4268    24.0359
+     BUTANOL              0.0        0.0        0.0        0.0        0.0   
+     GLYCEROL             0.0       27.6284    27.6284  1.1468-06    27.6284
+     ACETIC            2.1832-06     8.9366     9.0078  7.1269-02     9.0076
+ MASSVFRA                 0.0        0.0        0.3870     1.0000     0.0   
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ TEMP     F             130.4723    75.0000    75.0000    75.0000   140.0000
+ PRES     PSI            20.0000    15.0000    15.0000    15.0000    15.0000
+ VOLFLMX  CUFT/HR       724.7015  1558.6281  4.5882+05  4.5727+05  1669.1372
+ MASSFLMX LB/HR        3.4145+04  8.2819+04  1.3512+05  5.2298+04  8.3854+04
+ MWMX                    42.1544    30.7060    34.6495    43.4953    30.6662
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/11/1999  PAGE 50  
+                          ETHANOL PRODUCTION PROCESS                            
+                             PROBLEM STATUS SECTION                             
+
+ BLOCK STATUS                            
+ ------------
+
+ ****************************************************************************
+ *                                                                          *
+ * Calculations were completed with warnings                                *
+ *                                                                          *
+ * The following Unit Operation blocks were                                 *
+ * completed with warnings:                                                 *
+ *   TOWER     REACTOR                                                      *
+ *                                                                          *
+ * Errors occurred in Flash calculations                                    *
+ * for the following Tear streams:                                          *
+ *   COMP-MIX                                                               *
+ *                                                                          *
+ * All Convergence blocks were completed normally                           *
+ *                                                                          *
+ ****************************************************************************

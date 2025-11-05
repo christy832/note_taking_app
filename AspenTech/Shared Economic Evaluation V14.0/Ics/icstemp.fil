@@ -1,0 +1,93 @@
+#-------------------------------------------------------------------
+#      TEMPLATE FILE:  icstemp.fil
+#-------------------------------------------------------------------
+#
+#      History:
+#      -------- 
+#      Created 15 October 1997 at ICARUS Corporation by M. Brewer
+#      [add your changes here]
+#
+#  .................................................................
+#
+#      Purpose:
+#      --------
+#      Provide user-editable graph parameters 
+#
+#  .................................................................
+#
+#      Explanation of Fields:
+#      ----------------------
+#      To be added
+#
+#  .................................................................
+#
+#
+#      Rules of Syntax:
+#      ----------------
+#      1. Comment lines begin with a "#"- like this line.
+#      2. All lines containing template data begin with a "D".
+#      3. Make sure each data line has the proper label and "=" sign before
+#         the actual data value.
+#      4. Except for data ranges, the data value itself must be in double quotes.
+#      5. Exact column positions of a component are not important.
+#
+#  .................................................................
+#
+#
+#      Data Section:
+#      -------------
+#
+D      ICS File Path = "cashflow.ics"
+#
+D      Graph Title = "ICS Graph"
+#
+D      Graph Type = "Line Plot"
+#
+D      Display Logarithmic Graph = "No"
+#
+D      Display Legend = "No"
+#
+D      Y-Axis Label = "Cell Value"
+#
+D      X-Axis Label = "Index"
+#
+D      Data Range = C1..W1
+#
+D      X-Axis Annotation Range = C1..W1
+#
+#  .................................................................
+#
+#
+#      User Setup Information
+#      ----------------------
+#
+#          Available Graph Types
+#          - - - - - - - - - - - 
+#          "Line plot"
+#          "Vertical bars"
+#          "Horizontal bars"
+#          "3D Vertical bars"
+#          "3D Horizontal bars"
+#          "Stacked vertical bars"
+#          "Stacked horizontal bars"
+#          "XY Scatter plot"
+#          "Pie chart"
+#          "3D Pie chart"
+#
+#
+#          Standard Data Ranges
+#          - - - - - - - - - - -
+#
+#          ICS File        Field Description           Data Range          Annotation Range
+#          - - - - -       - - - - - - - - -           - - - - - -         - - - - - - - - -
+#          Cashflow.ics    Total Expenses              C60..W60            C1..W1
+#
+#          Cashflow.ics    Net Present Value           C71..W71            C1..W1
+#
+#          Cashflow.ics    Depreciation Expense        D148..N148          C1..W1
+#
+#          Projsum.ics     Project Capital Summary     C172..C186          A172..A186
+#
+#-------------------------------------------------------------------
+#      End of TEMPLATE FILE
+#-------------------------------------------------------------------

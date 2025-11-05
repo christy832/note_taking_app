@@ -1,0 +1,2007 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + +   + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + +   + +       + +   + + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + +   + +       +       +       + +   + + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + +   + +       +       +       +       +       + +   + + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + + +   + +       +       +       +       +       + +   + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + + +   + + +   + +       + +   + + +   + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + +   + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+                                                                        TM
+ AAAAA   SSSSS   PPPPP   EEEEE   NN    N   PPPPP   L       U   U   SSSSS
+ A   A   S       P   P   E       N N   N   P   P   L       U   U   S    
+ AAAAA   SSSSS   PPPPP   EEEEE   N   N N   PPPPP   L       U   U   SSSSS
+ A   A       S   P       E       N    NN   P       L       U   U       S
+ A   A   SSSSS   P       EEEEE   N     N   P       LLLLL   UUUUU   SSSSS
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7001
+ TEN CANAL PARK                         EUROPE (32) 2/724-0100
+ CAMBRIDGE, MASSACHUSETTS 02141                             
+ 617/949-1000
+
+ PLATFORM: WIN32                                         MAY 6, 1999         
+ VERSION: 10.1-0 Build 25                                THURSDAY    
+ INSTALLATION: ICARUSPC                                  10:23:53 A.M.       
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE    I
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. TEN CANAL PARK,
+      CAMBRIDGE, MA 02141.
+                               TABLE OF CONTENTS                                
+
+
+            RUN CONTROL SECTION....................................  1
+                 RUN CONTROL INFORMATION...........................  1
+                 DESCRIPTION.......................................  1
+
+            FLOWSHEET SECTION......................................  2
+                 FLOWSHEET CONNECTIVITY BY STREAMS.................  2
+                 FLOWSHEET CONNECTIVITY BY BLOCKS..................  2
+                 CONVERGENCE STATUS SUMMARY........................  2
+                 DESIGN-SPEC:  OFFGAS..............................  3
+                 FORTRAN BLOCK:  MKUP..............................  3
+                 CONVERGENCE BLOCK:  SOLVALL.......................  4
+                 COMPUTATIONAL SEQUENCE............................  5
+                 OVERALL FLOWSHEET BALANCE.........................  5
+                 FLOWSHEET SECTION BALANCE:  AA....................  6
+                 FLOWSHEET SECTION BALANCE:  BB....................  6
+
+            PHYSICAL PROPERTIES SECTION............................  8
+                 COMPONENTS........................................  8
+
+            U-O-S BLOCK SECTION....................................  9
+                 BLOCK:  A1       MODEL: COMPR.....................  9
+                 BLOCK:  A2       MODEL: MIXER..................... 10
+                 BLOCK:  B1       MODEL: RADFRAC................... 10
+                 BLOCK:  B2       MODEL: FLASH2.................... 15
+                 BLOCK:  B3-COLD  MODEL: HEATER.................... 16
+                 BLOCK:  B3-HOT   MODEL: HEATER.................... 17
+                 BLOCK:  B4       MODEL: MIXER..................... 18
+                 BLOCK:  B6       MODEL: HEATER.................... 19
+                 BLOCK:  B7       MODEL: RADFRAC................... 20
+                 BLOCK:  B8       MODEL: PUMP...................... 27
+
+            STREAM SECTION......................................... 29
+                 1 10 11 12 12A.................................... 29
+                 12B 1A 2 3 3A..................................... 32
+                 4 5 6 7 8......................................... 35
+                 9................................................. 38
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE   II
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               TABLE OF CONTENTS                                
+
+
+            PROBLEM STATUS SECTION................................. 41
+                 BLOCK STATUS...................................... 41
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 1   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              RUN CONTROL SECTION                               
+
+ RUN CONTROL INFORMATION                 
+ -----------------------
+
+
+ THIS COPY OF ASPEN PLUS LICENSED TO ICARUS CORP.                    
+
+ TYPE OF RUN: NEW 
+
+ INPUT FILE NAME:  _2311kit.inm                                                                    
+
+ OUTPUT PROBLEM DATA FILE NAME: _2311kit VERSION NO.   1
+ LOCATED IN:                                                                                                    
+
+
+
+ PDF SIZE USED FOR INPUT TRANSLATION:
+   NUMBER OF FILE RECORDS (PSIZE) =     0
+   NUMBER OF IN-CORE RECORDS      =   256
+ PSIZE NEEDED FOR SIMULATION      =   256
+
+ CALLING PROGRAM NAME:          apmain  
+ LOCATED IN:                    E:\ASPENT~1\ASPENP~1.1-0\Engine\xeq                                             
+
+
+ SIMULATION REQUESTED FOR ENTIRE FLOWSHEET
+
+ DESCRIPTION                             
+ -----------
+
+        USING BROYDEN TO SOLVE THE MATERIAL BALANCE OF THE RECYCLE LOOP     
+        TORN AT STREAM 4 AND A DESIGN SPEC ON H2S IN OFFGAS FROM THE        
+        ABSORBER                                                            
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 2   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               FLOWSHEET SECTION                                
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+ ---------------------------------
+
+ FLOWSHEET SECTION AA      
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   12B        ----       A2             12A        ----       A2      
+   1A         ----       A1             12         A2         B4      
+   1          A1         B1                                           
+
+ FLOWSHEET SECTION BB      
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   2          B1         ----           4          B1         B2      
+   5          B2         ----           6          B2         B3-COLD 
+   7          B3-COLD    B7             10         B3-HOT     B4      
+   11         B4         B6             3A         B6         B8      
+   8          B7         ----           9          B7         B3-HOT  
+   3          B8         B1                                           
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+ --------------------------------
+
+ FLOWSHEET SECTION AA      
+   BLOCK        INLETS                         OUTLETS
+   A2           12A 12B                        12                          
+   A1           1A                             1                           
+
+ FLOWSHEET SECTION BB      
+   BLOCK        INLETS                         OUTLETS
+   B1           1 3                            2 4                         
+   B2           4                              5 6                         
+   B3-COLD      6                              7                           
+   B3-HOT       9                              10                          
+   B4           10 12                          11                          
+   B6           11                             3A                          
+   B7           7                              8 9                         
+   B8           3A                             3                           
+
+ CONVERGENCE STATUS SUMMARY              
+ --------------------------
+
+   DESIGN-SPEC SUMMARY
+   ===================
+
+   DESIGN                                                            CONV 
+   SPEC      ERROR        TOLERANCE    ERR/TOL      VARIABLE   STAT  BLOCK     
+   ------    -----        ---------    -------      --------   ----  ----- 
+   OFFGAS    0.41490E-02  0.10000E-01  0.41490       3.0952     #    SOLVALL 
+
+   TEAR STREAM SUMMARY
+   ===================
+
+   STREAM    MAXIMUM                   MAXIMUM     VARIABLE             CONV 
+   ID        ERROR        TOLERANCE    ERR/TOL     ID             STAT  BLOCK 
+   ------    -------      ---------    --------    --------       ----  ----- 
+   3         0.68148E-05  0.73685E-05  0.92486     H2S MOLEFLOW     #   SOLVALL 
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 3   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               FLOWSHEET SECTION                                
+
+ CONVERGENCE STATUS SUMMARY (CONTINUED)              
+
+   #  = CONVERGED
+   *  = NOT CONVERGED
+   LB = AT LOWER BOUNDS
+   UB = AT UPPER BOUNDS
+
+ DESIGN-SPEC:  OFFGAS                    
+ --------------------
+
+   SAMPLED VARIABLES:
+     XLBH2S   : H2S MASSFLOW IN STREAM 2 SUBSTREAM MIXED    
+     TOTGAS   : TOTAL MOLEFLOW IN STREAM 2 SUBSTREAM MIXED  
+     REFLUX   : SENTENCE=COL-SPECS VARIABLE=MOLE-RR IN UOS BLOCK B7 
+
+   FORTRAN STATEMENTS:
+         GRAINS = XLBH2S * 7000/(TOTGAS * 3.8) 
+         WRITE(NHSTRY,100) GRAINS, REFLUX  
+     100 FORMAT(1H ,10X,24H GRAINS H2S IN OFFGAS = ,F12.5, 
+        1            5X,18H B7 REFLUX RATIO= ,F12.5/)  
+
+   SPECIFICATION:
+     MAKE GRAINS APPROACH 0.90000    
+     WITHIN          0.010000                                 
+
+   MANIPULATED VARIABLES:
+     VARY     : SENTENCE=COL-SPECS VARIABLE=MOLE-RR IN UOS BLOCK B7 
+     LOWER LIMIT =           0.80000                                  
+     UPPER LIMIT =           4.00000                                  
+     FINAL VALUE =           3.09519                                  
+
+   VALUES OF ACCESSED FORTRAN VARIABLES:
+     VARIABLE      VALUE AT START      FINAL VALUE     UNITS
+                      OF LOOP                               
+     --------      --------------      -----------     -----
+     XLBH2S          1.30218            1.30276        LB/HR           
+     TOTGAS          2653.66            2654.23        LBMOL/HR        
+     REFLUX          2.50000            3.09519                        
+
+ FORTRAN BLOCK:  MKUP                    
+ --------------------
+
+   SAMPLED VARIABLES:
+     RCYMEA   : MEA MOLEFLOW IN STREAM 10 SUBSTREAM MIXED   
+     TMEA     : TOTAL MOLEFLOW IN STREAM 12B SUBSTREAM MIXED    
+     RCYH2O   : H2O MOLEFLOW IN STREAM 10 SUBSTREAM MIXED   
+     TH2O     : TOTAL MOLEFLOW IN STREAM 12A SUBSTREAM MIXED    
+
+   FORTRAN STATEMENTS:
+          TMEA  = DMAX1(0.D0, 1200.D0 - RCYMEA)
+          TH2O  = DMAX1(0.D0, 22310.D0 - RCYH2O)   
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 4   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               FLOWSHEET SECTION                                
+
+ FORTRAN BLOCK:  MKUP (CONTINUED)                    
+
+   VALUES OF ACCESSED FORTRAN VARIABLES ON MOST RECENT SIMULATION PASS:
+     VARIABLE        VALUE READ      VALUE WRITTEN    UNITS
+     --------        ----------      -------------    -----
+     RCYMEA           1199.97          1199.97        LBMOL/HR        
+     TMEA            0.300210E-01     0.299919E-01    LBMOL/HR        
+     RCYH2O           22222.3          22222.3        LBMOL/HR        
+     TH2O             87.8161          87.7294        LBMOL/HR        
+
+ CONVERGENCE BLOCK:  SOLVALL             
+ ---------------------------
+     Tear Stream  :  3          
+     Tolerance used:  0.100D-02 
+     Trace molefrac:  0.100D-04 
+ 
+     SPECS: OFFGAS  
+     MAXIT =   15 WAIT =   2
+     PERTURBATION SIZE (% OF RANGE):  OFFGAS      1.0000    
+     MAXIMUM STEP SIZE (% OF RANGE):  OFFGAS      100.00    
+     METHOD: BROYDEN       STATUS: CONVERGED       
+     TOTAL NUMBER OF ITERATIONS:    11
+
+                          *** FINAL VALUES ***
+
+    VARIABLE                       VALUE           PREV VALUE      ERR/TOL
+ TOTAL MOLEFLOW   LBMOL/HR     2.3653+04      2.3653+04      3.6090-03      
+ N2 MOLEFLOW      LBMOL/HR        0.0            0.0           23.6373     T
+ H2 MOLEFLOW      LBMOL/HR        0.0            0.0           23.8472     T
+ CO2 MOLEFLOW     LBMOL/HR       84.9204        84.8891         0.3684      
+ CH4 MOLEFLOW     LBMOL/HR        0.0            0.0           25.9171     T
+ C2H4 MOLEFLOW    LBMOL/HR        0.0            0.0           31.2649     T
+ C2H6 MOLEFLOW    LBMOL/HR        0.0            0.0           30.2574     T
+ H2S MOLEFLOW     LBMOL/HR       58.5356        58.4815         0.9248      
+ C3H6 MOLEFLOW    LBMOL/HR        0.0            0.0           29.7271     T
+ C3H8 MOLEFLOW    LBMOL/HR        0.0            0.0           29.4899     T
+ C4H8 MOLEFLOW    LBMOL/HR        0.0            0.0           31.5702     T
+ I-C4H10 MOLEFLOW LBMOL/HR        0.0            0.0           30.8238     T
+ N-C4H10 MOLEFLOW LBMOL/HR        0.0            0.0           31.7792     T
+ N-C5H12 MOLEFLOW LBMOL/HR        0.0            0.0           34.0223     T
+ MEA MOLEFLOW     LBMOL/HR     1200.0000      1200.0000         0.0         
+ H2O MOLEFLOW     LBMOL/HR     2.2310+04      2.2310+04      1.5798-13      
+ PRESSURE         PSI           600.0000       600.0000         0.0         
+ MASS ENTHALPY    BTU/LB      -5990.6057     -5990.6292      3.9145-03      
+ BLOCK-VAR                        3.0951         3.0425         0.4149      
+
+     T - SIGNIFIES COMPONENT IS A TRACE COMPONENT
+
+                          *** ITERATION HISTORY *** 
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 5   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               FLOWSHEET SECTION                                
+
+ CONVERGENCE BLOCK:  SOLVALL (CONTINUED)             
+
+     DESIGN-SPEC ID: OFFGAS  
+
+     ITERATION  VARIABLE         ERROR          ERR/TOL 
+     ---------  --------         -----          ------- 
+          1      2.500           0.3943E-02     0.3943    
+          2      2.500           0.2587          25.87    
+          3      2.500           0.2511          25.11    
+          4      2.532           0.2511          25.11    
+          5     0.8000     LB     1.432          143.2    
+          6      2.900          -0.2467         -24.67    
+          7      2.592           0.4760          47.60    
+          8      2.795           0.1140          11.40    
+          9      2.859           0.8450E-01      8.450    
+         10      3.043           0.1882E-01      1.882    
+         11      3.095           0.4149E-02     0.4149    
+
+     TEAR STREAMS: 
+
+     ITERATION   MAX-ERR/TOL   STREAM ID   VARIABLE
+     ---------   -----------   ---------   --------
+          1       104.3        3           H2S MOLEFLOW    
+          2       11.58        3           CO2 MOLEFLOW    
+          3       6.333        3           CO2 MOLEFLOW    
+          4      -15.07        3           H2S MOLEFLOW    
+          5       580.1        3           H2S MOLEFLOW    
+          6       312.8        3           H2S MOLEFLOW    
+          7      -137.5        3           H2S MOLEFLOW    
+          8      -2.231        3           H2S MOLEFLOW    
+          9       1.263        3           H2S MOLEFLOW    
+         10       2.258        3           H2S MOLEFLOW    
+         11      0.9249        3           H2S MOLEFLOW    
+
+ COMPUTATIONAL SEQUENCE                  
+ ----------------------
+
+ SEQUENCE USED WAS:
+    A1                                                                     
+    SOLVALL B1 B2 B3-COLD B7 B3-HOT MKUP A2 B4 B6 B8                       
+    (RETURN SOLVALL)                                                       
+
+ OVERALL FLOWSHEET BALANCE               
+ -------------------------
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 6   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               FLOWSHEET SECTION                                
+
+ OVERALL FLOWSHEET BALANCE (CONTINUED)               
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    CONVENTIONAL COMPONENTS (LBMOL/HR)
+       N2                        396.400         396.400        0.785827E-13
+       H2                        533.800         533.800        0.109044E-12
+       CO2                       45.2000         45.1687        0.691977E-03
+       CH4                       996.600         996.600        0.475691E-13
+       C2H4                      202.700         202.700        0.353343E-13
+       C2H6                      453.400         453.400        0.114088E-13
+       H2S                       305.400         305.346        0.177102E-03
+       C3H6                      30.6000         30.6000        0.371526E-14
+       C3H8                      20.1000         20.1000       -0.212102E-14
+       C4H8                      4.60000         4.60000        0.193082E-15
+       I-C4H10                   4.40000         4.40000       -0.403717E-14
+       N-C4H10                   1.70000         1.70000       -0.261229E-14
+       N-C5H12                   1.70000         1.70000       -0.352659E-14
+       MEA                      0.299919E-01    0.299919E-01   -0.261545E-07
+       H2O                       87.7294         87.7294       -0.133358E-09
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            3084.36         3084.27        0.276765E-04
+       MASS(LB/HR   )            64378.4         64375.1        0.500152E-04
+       ENTHALPY(BTU/HR  )      -0.656013E+08   -0.641104E+08   -0.227260E-01
+
+ FLOWSHEET SECTION BALANCE:  AA          
+ ------------------------------
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    CONVENTIONAL COMPONENTS (LBMOL/HR)
+       N2                        396.400         396.400        0.000000E+00
+       H2                        533.800         533.800        0.000000E+00
+       CO2                       45.2000         45.2000        0.000000E+00
+       CH4                       996.600         996.600        0.000000E+00
+       C2H4                      202.700         202.700        0.000000E+00
+       C2H6                      453.400         453.400        0.000000E+00
+       H2S                       305.400         305.400        0.000000E+00
+       C3H6                      30.6000         30.6000        0.000000E+00
+       C3H8                      20.1000         20.1000        0.000000E+00
+       C4H8                      4.60000         4.60000        0.000000E+00
+       I-C4H10                   4.40000         4.40000        0.000000E+00
+       N-C4H10                   1.70000         1.70000        0.000000E+00
+       N-C5H12                   1.70000         1.70000        0.000000E+00
+       MEA                      0.299919E-01    0.299919E-01    0.000000E+00
+       H2O                       87.7294         87.7294        0.000000E+00
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            3084.36         3084.36        0.000000E+00
+       MASS(LB/HR   )            64378.4         64378.4        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.656013E+08   -0.591628E+08   -0.981459E-01
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 7   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                               FLOWSHEET SECTION                                
+
+ FLOWSHEET SECTION BALANCE:  BB          
+ ------------------------------
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    CONVENTIONAL COMPONENTS (LBMOL/HR)
+       N2                        396.400         396.400        0.785827E-13
+       H2                        533.800         533.800        0.109044E-12
+       CO2                       45.2000         45.1687        0.691977E-03
+       CH4                       996.600         996.600        0.475691E-13
+       C2H4                      202.700         202.700        0.353343E-13
+       C2H6                      453.400         453.400        0.114088E-13
+       H2S                       305.400         305.346        0.177102E-03
+       C3H6                      30.6000         30.6000        0.371526E-14
+       C3H8                      20.1000         20.1000       -0.212102E-14
+       C4H8                      4.60000         4.60000        0.193082E-15
+       I-C4H10                   4.40000         4.40000       -0.403717E-14
+       N-C4H10                   1.70000         1.70000       -0.261229E-14
+       N-C5H12                   1.70000         1.70000       -0.352659E-14
+       MEA                      0.299919E-01    0.299919E-01   -0.261545E-07
+       H2O                       87.7294         87.7294       -0.133358E-09
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            3084.36         3084.27        0.276765E-04
+       MASS(LB/HR   )            64378.4         64375.1        0.500152E-04
+       ENTHALPY(BTU/HR  )      -0.591628E+08   -0.641104E+08    0.771737E-01
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 8   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                          PHYSICAL PROPERTIES SECTION                           
+
+ COMPONENTS                              
+ ----------
+
+  ID       TYPE  FORMULA        NAME OR ALIAS                      REPORT NAME
+   N2       C     N2             N2                                 N2      
+   H2       C     H2             H2                                 H2      
+   CO2      C     CO2            CO2                                CO2     
+   CH4      C     CH4            CH4                                CH4     
+   C2H4     C     C2H4           C2H4                               C2H4    
+   C2H6     C     C2H6           C2H6                               C2H6    
+   H2S      C     H2S            H2S                                H2S     
+   C3H6     C     C3H6-2         C3H6-2                             C3H6    
+   C3H8     C     C3H8           C3H8                               C3H8    
+   C4H8     C     C4H8-1         C4H8-1                             C4H8    
+   I-C4H10  C     C4H10-2        C4H10-2                            I-C4H10 
+   N-C4H10  C     C4H10-1        C4H10-1                            N-C4H10 
+   N-C5H12  C     C5H12-1        C5H12-1                            N-C5H12 
+   MEA      C     C2H7NO         C2H7NO                             MEA     
+   H2O      C     H2O            H2O                                H2O     
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 9   
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  A1       MODEL: COMPR           
+ -----------------------------
+   INLET STREAM:          1A      
+   OUTLET STREAM:         1       
+   PROPERTY OPTION SET:   SYSOP0    IDEAL LIQUID / IDEAL GAS                    
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            2996.60         2996.60        0.000000E+00
+       MASS(LB/HR   )            62796.1         62796.1        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.548163E+08   -0.483778E+08   -0.117456    
+
+                           ***  INPUT DATA  ***
+
+   POLYTROPIC POSITIVE DISPLACEMENT COMPRESSOR
+    OUTLET PRESSURE  PSI                                   600.000      
+    POLYTROPIC EFFICIENCY                                    0.72000    
+    MECHANICAL EFFICIENCY                                    1.00000    
+    CLEARANCE FRACTION                                       0.50000    
+
+                           ***  RESULTS  ***
+
+    INDICATED  HORSEPOWER REQUIREMENT  HP                2,530.43       
+    BRAKE      HORSEPOWER REQUIREMENT  HP                2,530.43       
+    NET WORK REQUIRED                  HP                2,530.43       
+    CALCULATED OUTLET TEMP  F                              318.619      
+    EFFICIENCY (POLYTR/ISENTR) USED                          0.72000    
+    VOLUMETRIC EFFICIENCY                                    0.32058    
+    DISPLACEMENT            CUFT/HR                    298,623.         
+    OUTLET VAPOR FRACTION                                    1.00000    
+    HEAD DEVELOPED, FT-LBF/LB                           57,445.9        
+    INLET HEAT CAPACITY RATIO                                1.28072    
+    INLET VOLUMETRIC FLOW RATE , CUFT/HR                95,732.5        
+    OUTLET VOLUMETRIC FLOW RATE, CUFT/HR                41,713.3        
+    INLET  COMPRESSIBILITY FACTOR                            1.00000    
+    OUTLET COMPRESSIBILITY FACTOR                            1.00000    
+    AV. ISENT. VOL. EXPONENT                                 1.26159    
+    AV. ISENT. TEMP EXPONENT                                 1.26159    
+    AV. ACTUAL VOL. EXPONENT                                 1.39694    
+    AV. ACTUAL TEMP EXPONENT                                 1.39694    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 10  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  A1       MODEL: COMPR (CONTINUED)           
+
+ BLOCK:  A2       MODEL: MIXER           
+ -----------------------------
+   INLET STREAMS:         12A         12B     
+   OUTLET STREAM:         12      
+   PROPERTY OPTION SET:   SYSOP0    IDEAL LIQUID / IDEAL GAS                    
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            87.7594         87.7594        0.000000E+00
+       MASS(LB/HR   )            1582.30         1582.30       -0.143698E-15
+       ENTHALPY(BTU/HR  )      -0.107850E+08   -0.107850E+08    0.000000E+00
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.00010000 
+   OUTLET PRESSURE   PSI                                   15.0000     
+
+ BLOCK:  B1       MODEL: RADFRAC         
+ -------------------------------
+    INLETS   - 1        STAGE   3
+               3        STAGE   1
+    OUTLETS  - 2        STAGE   1
+               4        STAGE   3
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 11  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B1       MODEL: RADFRAC (CONTINUED)         
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            26650.0         26650.0        0.136510E-15
+       MASS(LB/HR   )            543747.         543747.        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.292957E+10   -0.292957E+10   -0.350347E-08
+
+
+
+                         **********************
+                         ****  INPUT DATA  ****
+                         **********************
+
+   ****   INPUT PARAMETERS   ****
+
+    NUMBER OF STAGES                                         3
+    ALGORITHM OPTION                                      STANDARD    
+    ABSORBER OPTION                                       NO      
+    INITIALIZATION OPTION                                 STANDARD    
+    HYDRAULIC PARAMETER CALCULATIONS                      NO      
+    INSIDE LOOP CONVERGENCE METHOD                        BROYDEN 
+    DESIGN SPECIFICATION METHOD                           NESTED  
+    MAXIMUM NO. OF OUTSIDE LOOP ITERATIONS                  25
+    MAXIMUM NO. OF INSIDE LOOP ITERATIONS                   10
+    MAXIMUM NUMBER OF FLASH ITERATIONS                      50
+    FLASH TOLERANCE                                          0.00010000 
+    OUTSIDE LOOP CONVERGENCE TOLERANCE                       0.100000-04
+
+   ****   COL-SPECS   ****
+
+    MOLAR VAPOR DIST / TOTAL DIST                            1.00000    
+    CONDENSER DUTY (W/O SUBCOOL)   BTU/HR                    0.0        
+    REBOILER DUTY                  BTU/HR                    0.0        
+
+   ****    PROFILES   ****
+
+    P-SPEC          STAGE   1  PRES, PSI                   600.000      
+
+    TEMP-EST        STAGE   1  TEMP, F                     110.000      
+                            3                              130.000      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 12  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B1       MODEL: RADFRAC (CONTINUED)         
+
+                          *******************
+                          ****  RESULTS  ****
+                          *******************
+
+
+   ***   COMPONENT SPLIT FRACTIONS   ***
+
+                             OUTLET STREAMS 
+                             --------------
+                  2            4       
+    COMPONENT:
+    N2          .99997       .27068E-04
+    H2          .99996       .40681E-04
+    CO2         .90291E-05   .99999    
+    CH4         .99998       .15240E-04
+    C2H4        .99999       .11117E-04
+    C2H6        1.0000       .39769E-05
+    H2S         .10505E-03   .99989    
+    C3H6        1.0000       .20111E-05
+    C3H8        1.0000       .46860E-06
+    C4H8        1.0000       .10896E-05
+    I-C4H10     1.0000       .26655E-07
+    N-C4H10     1.0000       .36586E-06
+    N-C5H12     1.0000       .18243E-06
+    MEA         .15072E-04   .99998    
+    H2O         .36884E-03   .99963    
+
+ 
+   ***    SUMMARY OF KEY RESULTS    ***
+
+    TOP STAGE TEMPERATURE          F                       112.859      
+    BOTTOM STAGE TEMPERATURE       F                       146.254      
+    TOP STAGE LIQUID FLOW          LBMOL/HR             23,654.0        
+    BOTTOM STAGE LIQUID FLOW       LBMOL/HR             23,995.7        
+    TOP STAGE VAPOR FLOW           LBMOL/HR              2,654.23       
+    BOTTOM STAGE VAPOR FLOW        LBMOL/HR              2,668.71       
+    CONDENSER DUTY (W/O SUBCOOL)   BTU/HR                    0.0        
+    REBOILER DUTY                  BTU/HR                    0.0        
+
+   ****   MAXIMUM FINAL RELATIVE ERRORS   ****
+
+    DEW POINT                       0.12396E-04  STAGE=  2
+    BUBBLE POINT                    0.10253E-02  STAGE=  2
+    COMPONENT MASS BALANCE          0.38569E-06  STAGE=  2 COMP=CH4     
+    ENERGY BALANCE                  0.31142E-06  STAGE=  2
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 13  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B1       MODEL: RADFRAC (CONTINUED)         
+
+   ****    PROFILES   ****
+
+   **NOTE** REPORTED VALUES FOR STAGE LIQUID AND VAPOR RATES ARE THE FLOWS
+            FROM THE STAGE EXCLUDING ANY SIDE PRODUCT.  FOR THE FIRST STAGE,
+            THE REPORTED VAPOR FLOW IS THE VAPOR DISTILLATE FLOW.  FOR THE
+            LAST STAGE, THE REPORTED LIQUID FLOW IS THE LIQUID BOTTOMS FLOW.
+
+                                          ENTHALPY
+ STAGE TEMPERATURE   PRESSURE             BTU/LBMOL          HEAT DUTY
+       F             PSI            LIQUID       VAPOR        BTU/HR  
+
+   1   112.86        600.00      -0.12181E+06  -17251.                
+   2   115.39        600.00      -0.12175E+06  -17245.                
+   3   146.25        600.00      -0.12018E+06  -17258.                
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LBMOL/HR                   LBMOL/HR                 LBMOL/HR
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1 0.2365E+05  2654.                          .23653+05            2654.2344
+   2 0.2367E+05  2655.                                                        
+   3 0.2400E+05  2669.                          2996.6000  .23996+05          
+
+    ****  MASS FLOW PROFILES  ****
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LB/HR                      LB/HR                    LB/HR   
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1 0.4810E+06 0.5055E+05                      .48095+06            .50548+05
+   2 0.4813E+06 0.5056E+05                                                    
+   3 0.4932E+06 0.5087E+05                      .62796+05  .49320+06          
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.20692E-06   0.42683E-06   0.35888E-02   0.29003E-06   0.45214E-07
+      2    0.21836E-06   0.45003E-06   0.35909E-02   0.30548E-06   0.47422E-07
+      3    0.44716E-06   0.90498E-06   0.54213E-02   0.63295E-06   0.93913E-07
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.32225E-07   0.24727E-02   0.10360E-08   0.14217E-09   0.80862E-10
+      2    0.34055E-07   0.26226E-02   0.10971E-08   0.15168E-09   0.85717E-10
+      3    0.75144E-07   0.15163E-01   0.25647E-08   0.39252E-09   0.20887E-09
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.14308E-11   0.92410E-11   0.44279E-11   0.50731E-01   0.94321    
+      2    0.15467E-11   0.98488E-11   0.47241E-11   0.50703E-01   0.94308    
+      3    0.48876E-11   0.25920E-10   0.12924E-10   0.50008E-01   0.92941    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 14  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B1       MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.14934       0.20110       0.44254E-06   0.37547       0.76368E-01
+      2    0.14931       0.20106       0.52736E-06   0.37539       0.76351E-01
+      3    0.14853       0.20002       0.37927E-04   0.37344       0.75954E-01
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.17082       0.14401E-04   0.11529E-01   0.75728E-02   0.17331E-02
+      2    0.17078       0.16961E-04   0.11526E-01   0.75711E-02   0.17327E-02
+      3    0.16989       0.13592E-02   0.11466E-01   0.75317E-02   0.17237E-02
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.16577E-02   0.64049E-03   0.64049E-03   0.68143E-05   0.31002E-02
+      2    0.16573E-02   0.64034E-03   0.64034E-03   0.74644E-05   0.33170E-02
+      3    0.16487E-02   0.63701E-03   0.63701E-03   0.20860E-04   0.71032E-02
+
+                         ****   K-VALUES           ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.72176E+06   0.47118E+06   0.12331E-03   0.12947E+07   0.16891E+07
+      2    0.68447E+06   0.44724E+06   0.14674E-03   0.12301E+07   0.16116E+07
+      3    0.33247E+06   0.22122E+06   0.69921E-02   0.59051E+06   0.80944E+06
+
+                         ****   K-VALUES           ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.53011E+07   0.58242E-02   0.11128E+08   0.53268E+08   0.21434E+08
+      2    0.50202E+07   0.64658E-02   0.10517E+08   0.49972E+08   0.20236E+08
+      3    0.22629E+07   0.89635E-01   0.44749E+07   0.19207E+08   0.82600E+07
+
+                         ****   K-VALUES           ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.11587E+10   0.69313E+08   0.14466E+09   0.13432E-03   0.32869E-02
+      2    0.10729E+10   0.65089E+08   0.13570E+09   0.14719E-03   0.35172E-02
+      3    0.33769E+09   0.24600E+08   0.49335E+08   0.41707E-03   0.76428E-02
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.28508E-06   0.42317E-07   0.77677E-02   0.22883E-06   0.62382E-07
+      2    0.30083E-06   0.44614E-07   0.77718E-02   0.24100E-06   0.65423E-07
+      3    0.60946E-06   0.88760E-07   0.11608E-01   0.49404E-06   0.12818E-06
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.47656E-07   0.41446E-02   0.21441E-08   0.30833E-09   0.22313E-09
+      2    0.50359E-07   0.43956E-02   0.22703E-08   0.32892E-09   0.23651E-09
+      3    0.10993E-06   0.25143E-01   0.52508E-08   0.84213E-09   0.57017E-09
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.40900E-11   0.26416E-10   0.15712E-10   0.15240       0.83568    
+      2    0.44210E-11   0.28152E-10   0.16762E-10   0.15231       0.83552    
+      3    0.13822E-10   0.73298E-10   0.45368E-10   0.14862       0.81463    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 15  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B1       MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.21968       0.21287E-01   0.10227E-05   0.31629       0.11250    
+      2    0.21963       0.21283E-01   0.12187E-05   0.31622       0.11247    
+      3    0.21829       0.21153E-01   0.87565E-04   0.31429       0.11178    
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.26971       0.25773E-04   0.25474E-01   0.17535E-01   0.51059E-02
+      2    0.26965       0.30353E-04   0.25468E-01   0.17531E-01   0.51048E-02
+      3    0.26800       0.24302E-02   0.25312E-01   0.17423E-01   0.50735E-02
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.50594E-02   0.19548E-02   0.24265E-02   0.21856E-04   0.29327E-02
+      2    0.50583E-02   0.19543E-02   0.24260E-02   0.23942E-04   0.31378E-02
+      3    0.50273E-02   0.19424E-02   0.24111E-02   0.66845E-04   0.67131E-02
+
+ BLOCK:  B2       MODEL: FLASH2          
+ ------------------------------
+   INLET STREAM:          4       
+   OUTLET VAPOR STREAM:   5       
+   OUTLET LIQUID STREAM:  6       
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23995.7         23995.7        0.000000E+00
+       MASS(LB/HR   )            493198.         493198.       -0.188833E-14
+       ENTHALPY(BTU/HR  )      -0.288378E+10   -0.289129E+10    0.259595E-02
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE F                                 128.990      
+   SPECIFIED PRESSURE    PSI                               150.000      
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.100000-04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 16  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B2       MODEL: FLASH2 (CONTINUED)          
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    128.99    
+   OUTLET PRESSURE       PSI                                  150.00    
+   HEAT DUTY             BTU/HR                             -0.75056E+07
+   VAPOR FRACTION                                            0.16500E-05
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      N2               0.44716E-06    0.11478E-06    0.20145        0.17551E+07
+      H2               0.90498E-06    0.29461E-06    0.36993        0.12557E+07
+      CO2              0.54213E-02    0.54213E-02    0.55375E-04    0.10214E-01
+      CH4              0.63295E-06    0.10947E-06    0.31727        0.28981E+07
+      C2H4             0.93913E-07    0.12753E-07    0.49188E-01    0.38570E+07
+      C2H6             0.75144E-07    0.41015E-08    0.43057E-01    0.10498E+08
+      H2S              0.15163E-01    0.15163E-01    0.28186E-02    0.18589    
+      C3H6             0.25647E-08    0.82812E-10    0.15042E-02    0.18164E+08
+      C3H8             0.39252E-09    0.29806E-11    0.23609E-03    0.79207E+08
+      C4H8             0.20887E-09    0.42386E-11    0.12402E-03    0.29260E+08
+      I-C4H10          0.48876E-11    0.22164E-14    0.29609E-05    0.13359E+10
+      N-C4H10          0.25920E-10    0.17819E-12    0.15601E-04    0.87552E+08
+      N-C5H12          0.12924E-10    0.49766E-13    0.78028E-05    0.15679E+09
+      MEA              0.50008E-01    0.50008E-01    0.26215E-04    0.52421E-03
+      H2O              0.92941        0.92941        0.14324E-01    0.15412E-01
+
+ BLOCK:  B3-COLD  MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          6       
+   OUTLET STREAM:         7       
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23995.7         23995.7        0.000000E+00
+       MASS(LB/HR   )            493198.         493198.        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.289129E+10   -0.285464E+10   -0.126744E-01
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE                F                       210.000      
+   SPECIFIED PRESSURE                   PSI                     150.000      
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 17  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B3-COLD  MODEL: HEATER (CONTINUED)          
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    210.00    
+   OUTLET PRESSURE       PSI                                  150.00    
+   HEAT DUTY             BTU/HR                              0.36645E+08
+   OUTLET VAPOR FRACTION                                     0.00000E+00
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      N2               0.11478E-06    0.11478E-06    0.12694        0.42416E+06
+      H2               0.29461E-06    0.29461E-06    0.23785        0.30965E+06
+      CO2              0.54213E-02    0.54213E-02    0.71946E-02    0.50899    
+      CH4              0.10947E-06    0.10947E-06    0.22489        0.78791E+06
+      C2H4             0.12753E-07    0.12753E-07    0.51225E-01    0.15405E+07
+      C2H6             0.41015E-08    0.41015E-08    0.35565E-01    0.33257E+07
+      H2S              0.15163E-01    0.15163E-01    0.71541E-01     1.8096    
+      C3H6             0.82812E-10    0.82812E-10    0.10680E-02    0.49464E+07
+      C3H8             0.29806E-11    0.29806E-11    0.13975E-03    0.17983E+08
+      C4H8             0.42386E-11    0.42386E-11    0.88788E-04    0.80341E+07
+      I-C4H10          0.22164E-14    0.22164E-14    0.12927E-05    0.22369E+09
+      N-C4H10          0.17819E-12    0.17819E-12    0.98258E-05    0.21149E+08
+      N-C5H12          0.49766E-13    0.49766E-13    0.49969E-05    0.38510E+08
+      MEA              0.50008E-01    0.50008E-01    0.90143E-03    0.69135E-02
+      H2O              0.92941        0.92941        0.24258        0.10010    
+
+ BLOCK:  B3-HOT   MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          9       
+   OUTLET STREAM:         10      
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23565.7         23565.7        0.000000E+00
+       MASS(LB/HR   )            479371.         479371.        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.281398E+10   -0.285098E+10    0.129780E-01
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 18  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B3-HOT   MODEL: HEATER (CONTINUED)          
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  PQ  FLASH
+   SPECIFIED PRESSURE                   PSI                      20.0000     
+   SPECIFIED HEAT DUTY                  BTU/HR                   -0.370000+08
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    157.01    
+   OUTLET PRESSURE       PSI                                  20.000    
+   OUTLET VAPOR FRACTION                                     0.00000E+00
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      CO2              0.36036E-02    0.36036E-02    0.57484E-03    0.33985E-01
+      H2S              0.24839E-02    0.24839E-02    0.63637E-02    0.54581    
+      MEA              0.50920E-01    0.50920E-01    0.22906E-02    0.95837E-02
+      H2O              0.94299        0.94299        0.99077        0.22384    
+
+ BLOCK:  B4       MODEL: MIXER           
+ -----------------------------
+   INLET STREAMS:         10          12      
+   OUTLET STREAM:         11      
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23653.5         23653.5        0.000000E+00
+       MASS(LB/HR   )            480954.         480954.        0.121025E-15
+       ENTHALPY(BTU/HR  )      -0.286177E+10   -0.286177E+10   -0.166623E-15
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 19  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B4       MODEL: MIXER (CONTINUED)           
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE      FLASH
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.00010000 
+   OUTLET PRESSURE   PSI                                   20.0000     
+
+ BLOCK:  B6       MODEL: HEATER          
+ ------------------------------
+   INLET STREAM:          11      
+   OUTLET STREAM:         3A      
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23653.5         23653.5        0.000000E+00
+       MASS(LB/HR   )            480954.         480954.        0.000000E+00
+       ENTHALPY(BTU/HR  )      -0.286177E+10   -0.288235E+10    0.714182E-02
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  TP  FLASH
+   SPECIFIED TEMPERATURE                F                       110.000      
+   SPECIFIED PRESSURE                   PSI                      20.0000     
+   MAXIMUM NO. ITERATIONS                                        30
+   CONVERGENCE TOLERANCE                                          0.100000-04
+
+
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    F                                    110.00    
+   OUTLET PRESSURE       PSI                                  20.000    
+   HEAT DUTY             BTU/HR                             -0.20585E+08
+   OUTLET VAPOR FRACTION                                     0.00000E+00
+
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 20  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B6       MODEL: HEATER (CONTINUED)          
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      CO2              0.35902E-02    0.35902E-02    0.15762E-03    0.27193E-02
+      H2S              0.24747E-02    0.24747E-02    0.52521E-02    0.13145    
+      MEA              0.50733E-01    0.50733E-01    0.14216E-02    0.17356E-02
+      H2O              0.94320        0.94320        0.99317        0.65220E-01
+
+ BLOCK:  B7       MODEL: RADFRAC         
+ -------------------------------
+    INLETS   - 7        STAGE   2
+    OUTLETS  - 8        STAGE   1
+               9        STAGE  10
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23995.7         23995.7        0.000000E+00
+       MASS(LB/HR   )            493198.         493198.        0.365393E-12
+       ENTHALPY(BTU/HR  )      -0.285464E+10   -0.283230E+10   -0.782574E-02
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 21  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+
+
+                         **********************
+                         ****  INPUT DATA  ****
+                         **********************
+
+   ****   INPUT PARAMETERS   ****
+
+    NUMBER OF STAGES                                        10
+    ALGORITHM OPTION                                      STANDARD    
+    ABSORBER OPTION                                       NO      
+    INITIALIZATION OPTION                                 STANDARD    
+    HYDRAULIC PARAMETER CALCULATIONS                      NO      
+    INSIDE LOOP CONVERGENCE METHOD                        BROYDEN 
+    DESIGN SPECIFICATION METHOD                           NESTED  
+    MAXIMUM NO. OF OUTSIDE LOOP ITERATIONS                  25
+    MAXIMUM NO. OF INSIDE LOOP ITERATIONS                   10
+    MAXIMUM NUMBER OF FLASH ITERATIONS                      50
+    FLASH TOLERANCE                                          0.00010000 
+    OUTSIDE LOOP CONVERGENCE TOLERANCE                       0.100000-04
+
+   ****   COL-SPECS   ****
+
+    MOLAR VAPOR DIST / TOTAL DIST                            1.00000    
+    MOLAR REFLUX RATIO                                       3.09519    
+    MOLAR DISTILLATE RATE          LBMOL/HR                430.000      
+
+   ****    PROFILES   ****
+
+    P-SPEC          STAGE   1  PRES, PSI                    20.0000     
+                            2                               22.0000     
+
+    TEMP-EST        STAGE   1  TEMP, F                     150.000      
+                            2                              210.000      
+                           10                              230.000      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 22  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+                          *******************
+                          ****  RESULTS  ****
+                          *******************
+
+
+   ***   COMPONENT SPLIT FRACTIONS   ***
+
+                             OUTLET STREAMS 
+                             --------------
+                  8            9       
+    COMPONENT:
+    N2          1.0000       .21970E-48
+    H2          1.0000       .37966E-47
+    CO2         .34721       .65279    
+    CH4         1.0000       .29237E-51
+    C2H4        1.0000       .57338E-55
+    C2H6        1.0000       .54584E-58
+    H2S         .83912       .16088    
+    C3H6        1.0000       .26401E-59
+    C3H8        1.0000       .94952E-65
+    C4H8        1.0000       .25883E-61
+    I-C4H10     1.0000       .20133E-75
+    N-C4H10     1.0000       .20386E-65
+    N-C5H12     1.0000       .55007E-68
+    MEA         .99203E-05   .99999    
+    H2O         .35647E-02   .99644    
+
+ 
+   ***    SUMMARY OF KEY RESULTS    ***
+
+    TOP STAGE TEMPERATURE          F                       149.326      
+    BOTTOM STAGE TEMPERATURE       F                       236.786      
+    TOP STAGE LIQUID FLOW          LBMOL/HR              1,330.93       
+    BOTTOM STAGE LIQUID FLOW       LBMOL/HR             23,565.7        
+    TOP STAGE VAPOR FLOW           LBMOL/HR                430.000      
+    BOTTOM STAGE VAPOR FLOW        LBMOL/HR              2,708.48       
+    MOLAR REFLUX RATIO                                       3.09519    
+    MOLAR BOILUP RATIO                                       0.11493    
+    CONDENSER DUTY (W/O SUBCOOL)   BTU/HR                   -0.252327+08
+    REBOILER DUTY                  BTU/HR                    0.475721+08
+
+   ****   MAXIMUM FINAL RELATIVE ERRORS   ****
+
+    DEW POINT                       0.44926E-05  STAGE=  9
+    BUBBLE POINT                    0.60972E-03  STAGE=  1
+    COMPONENT MASS BALANCE          0.10591E-05  STAGE=  6 COMP=H2S     
+    ENERGY BALANCE                  0.13077E-04  STAGE=  1
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 23  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+   ****    PROFILES   ****
+
+   **NOTE** REPORTED VALUES FOR STAGE LIQUID AND VAPOR RATES ARE THE FLOWS
+            FROM THE STAGE EXCLUDING ANY SIDE PRODUCT.  FOR THE FIRST STAGE,
+            THE REPORTED VAPOR FLOW IS THE VAPOR DISTILLATE FLOW.  FOR THE
+            LAST STAGE, THE REPORTED LIQUID FLOW IS THE LIQUID BOTTOMS FLOW.
+
+                                          ENTHALPY
+ STAGE TEMPERATURE   PRESSURE             BTU/LBMOL          HEAT DUTY
+       F             PSI            LIQUID       VAPOR        BTU/HR  
+
+   1   149.33        20.000      -0.12156E+06  -42606.      -.25233+08
+   2   224.14        22.000      -0.11896E+06  -87948.                
+   3   228.39        22.100      -0.11910E+06  -93262.                
+   4   230.84        22.200      -0.11919E+06  -96274.                
+   5   232.40        22.300      -0.11926E+06  -98088.                
+   6   233.50        22.400      -0.11931E+06  -99286.                
+   7   234.36        22.500      -0.11936E+06 -0.10016E+06            
+   8   235.11        22.600      -0.11939E+06 -0.10085E+06            
+   9   235.80        22.700      -0.11943E+06 -0.10145E+06            
+  10   236.79        22.800      -0.11941E+06 -0.10201E+06   .47572+08
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LBMOL/HR                   LBMOL/HR                 LBMOL/HR
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1  1331.      430.0                .56729-01                       430.0000
+   2 0.2583E+05  1761.      .23996+05                                         
+   3 0.2597E+05  2260.                                                        
+   4 0.2606E+05  2406.                                                        
+   5 0.2612E+05  2497.                                                        
+   6 0.2617E+05  2558.                                                        
+   7 0.2621E+05  2603.                                                        
+   8 0.2624E+05  2640.                                                        
+   9 0.2627E+05  2674.                                                        
+  10 0.2357E+05  2708.                                     .23566+05          
+
+    ****  MASS FLOW PROFILES  ****
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            LB/HR                      LB/HR                    LB/HR   
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1 0.2419E+05 0.1383E+05               1.1489                      .13826+05
+   2 0.5257E+06 0.3802E+05  .49320+06                                         
+   3 0.5271E+06 0.4631E+05                                                    
+   4 0.5279E+06 0.4774E+05                                                    
+   5 0.5284E+06 0.4853E+05                                                    
+   6 0.5287E+06 0.4901E+05                                                    
+   7 0.5290E+06 0.4935E+05                                                    
+   8 0.5292E+06 0.4960E+05                                                    
+   9 0.5294E+06 0.4981E+05                                                    
+  10 0.4794E+06 0.5003E+05                                 .47937+06          
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 24  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.51855E-12   0.18692E-11   0.43325E-07   0.26177E-12   0.19430E-13
+      2    0.86005E-13   0.37916E-12   0.50293E-02   0.24667E-13   0.65265E-15
+      3    0.43651E-18   0.25696E-17   0.47481E-02   0.64704E-19   0.73784E-21
+      4    0.21484E-23   0.16881E-22   0.45263E-02   0.16325E-24   0.78700E-27
+      5    0.10400E-28   0.10906E-27   0.43494E-02   0.40287E-30   0.81083E-33
+      6    0.49881E-34   0.69806E-33   0.41983E-02   0.98089E-36   0.81675E-39
+      7    0.23788E-39   0.44426E-38   0.40553E-02   0.23665E-41   0.80934E-45
+      8    0.11297E-44   0.28158E-43   0.38982E-02   0.56678E-47   0.79112E-51
+      9    0.53433E-50   0.17776E-48   0.36829E-02   0.13474E-52   0.76291E-57
+     10    0.25678E-55   0.11389E-53   0.36036E-02   0.32591E-58   0.74458E-63
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.23408E-14   0.11132E-03   0.26930E-16   0.22307E-18   0.79858E-18
+      2    0.50055E-16   0.12193E-01   0.52392E-18   0.14939E-20   0.10936E-19
+      3    0.28108E-22   0.95649E-02   0.21686E-24   0.17626E-27   0.28603E-26
+      4    0.14963E-28   0.77916E-02   0.85472E-31   0.19858E-34   0.71019E-33
+      5    0.77156E-35   0.65349E-02   0.32716E-37   0.21758E-41   0.17085E-39
+      6    0.38972E-41   0.55737E-02   0.12287E-43   0.23414E-48   0.40254E-46
+      7    0.19392E-47   0.47710E-02   0.45509E-50   0.24865E-55   0.93392E-53
+      8    0.95281E-54   0.40339E-02   0.16660E-56   0.26111E-62   0.21383E-59
+      9    0.46226E-60   0.32820E-02   0.60255E-63   0.27096E-69   0.48285E-66
+     10    0.22796E-66   0.24839E-02   0.22262E-69   0.28818E-76   0.11171E-72
+
+                         ****   MOLE-X-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.93441E-23   0.11117E-19   0.16143E-20   0.37552E-02   0.99613    
+      2    0.79028E-26   0.68521E-22   0.60714E-23   0.46738E-01   0.93604    
+      3    0.80033E-34   0.69669E-29   0.34338E-30   0.46510E-01   0.93918    
+      4    0.77490E-42   0.67313E-36   0.18377E-37   0.46370E-01   0.94131    
+      5    0.72989E-50   0.63042E-43   0.95046E-45   0.46277E-01   0.94284    
+      6    0.67509E-58   0.57837E-50   0.48043E-52   0.46208E-01   0.94402    
+      7    0.61599E-66   0.52256E-57   0.23867E-59   0.46152E-01   0.94502    
+      8    0.55544E-74   0.46590E-64   0.11679E-66   0.46102E-01   0.94597    
+      9    0.49442E-82   0.40962E-71   0.56238E-74   0.46094E-01   0.94694    
+     10    0.45437E-90   0.36989E-78   0.27874E-81   0.50920E-01   0.94299    
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.64052E-05   0.16440E-04   0.10504       0.61090E-05   0.71168E-06
+      2    0.20288E-06   0.66925E-06   0.25650E-01   0.11114E-06   0.66058E-08
+      3    0.98267E-12   0.43322E-11   0.19893E-01   0.28184E-12   0.74570E-14
+      4    0.47116E-17   0.27735E-16   0.15957E-01   0.69839E-18   0.79639E-20
+      5    0.22426E-22   0.17621E-21   0.13236E-01   0.17041E-23   0.82151E-26
+      6    0.10622E-27   0.11139E-26   0.11221E-01   0.41147E-29   0.82814E-32
+      7    0.50143E-33   0.70174E-32   0.95819E-02   0.98606E-35   0.82105E-38
+      8    0.23609E-38   0.44093E-37   0.80866E-02   0.23487E-40   0.80327E-44
+      9    0.11085E-43   0.27628E-42   0.64941E-02   0.55611E-46   0.77623E-50
+     10    0.51834E-49   0.17243E-47   0.43737E-02   0.13071E-51   0.74008E-56
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 25  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.22888E-06   0.71002       0.46212E-08   0.16633E-09   0.23653E-09
+      2    0.10292E-08   0.17346       0.14740E-10   0.14823E-12   0.48470E-12
+      3    0.57191E-15   0.11341       0.59861E-17   0.17068E-19   0.12495E-18
+      4    0.30338E-21   0.78913E-01   0.23407E-23   0.19025E-26   0.30873E-25
+      5    0.15619E-27   0.57888E-01   0.89220E-30   0.20729E-33   0.74133E-32
+      6    0.78804E-34   0.43859E-01   0.33414E-36   0.22223E-40   0.17450E-38
+      7    0.39177E-40   0.33544E-01   0.12351E-42   0.23537E-47   0.40466E-45
+      8    0.19246E-46   0.25184E-01   0.45167E-49   0.24679E-54   0.92691E-52
+      9    0.93488E-53   0.17692E-01   0.16346E-55   0.25619E-61   0.20980E-58
+     10    0.44842E-59   0.10226E-01   0.58452E-62   0.26285E-68   0.46840E-65
+
+                         ****   MOLE-Y-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.12369E-12   0.99438E-11   0.27771E-11   0.27684E-04   0.18488    
+      2    0.91738E-17   0.78317E-14   0.12398E-14   0.28450E-02   0.79804    
+      3    0.90295E-25   0.78290E-21   0.69370E-22   0.31395E-02   0.86355    
+      4    0.86384E-33   0.75198E-28   0.37063E-29   0.33135E-02   0.90182    
+      5    0.80888E-41   0.70264E-35   0.19183E-36   0.34221E-02   0.92545    
+      6    0.74547E-49   0.64388E-42   0.97076E-44   0.34963E-02   0.94142    
+      7    0.67864E-57   0.58142E-49   0.48296E-51   0.35522E-02   0.95332    
+      8    0.61138E-65   0.51864E-56   0.23688E-58   0.35984E-02   0.96313    
+      9    0.54498E-73   0.45713E-63   0.11459E-65   0.36440E-02   0.97217    
+     10    0.47962E-81   0.39736E-70   0.54555E-73   0.41057E-02   0.98130    
+
+                         ****   K-VALUES           ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.12367E+08   0.88060E+07   0.24269E+07   0.23364E+08   0.36666E+08
+      2    0.23591E+07   0.17652E+07    5.0994       0.45061E+07   0.10122E+08
+      3    0.22513E+07   0.16860E+07    4.1893       0.43559E+07   0.10107E+08
+      4    0.21931E+07   0.16430E+07    3.5252       0.42781E+07   0.10120E+08
+      5    0.21564E+07   0.16158E+07    3.0434       0.42300E+07   0.10132E+08
+      6    0.21296E+07   0.15958E+07    2.6732       0.41950E+07   0.10140E+08
+      7    0.21081E+07   0.15797E+07    2.3631       0.41670E+07   0.10145E+08
+      8    0.20899E+07   0.15660E+07    2.0741       0.41443E+07   0.10154E+08
+      9    0.20746E+07   0.15544E+07    1.7621       0.41275E+07   0.10175E+08
+     10    0.20186E+07   0.15140E+07    1.2131       0.40106E+07   0.99397E+07
+
+                         ****   K-VALUES           ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.97888E+08    6382.5       0.17180E+09   0.74657E+09   0.29654E+09
+      2    0.20563E+08    14.226       0.28137E+08   0.99234E+08   0.44326E+08
+      3    0.20348E+08    11.856       0.27605E+08   0.96838E+08   0.43685E+08
+      4    0.20276E+08    10.128       0.27386E+08   0.95810E+08   0.43473E+08
+      5    0.20244E+08    8.8589       0.27272E+08   0.95271E+08   0.43392E+08
+      6    0.20221E+08    7.8701       0.27197E+08   0.94917E+08   0.43351E+08
+      7    0.20204E+08    7.0314       0.27142E+08   0.94664E+08   0.43331E+08
+      8    0.20200E+08    6.2421       0.27113E+08   0.94521E+08   0.43352E+08
+      9    0.20225E+08    5.3874       0.27131E+08   0.94557E+08   0.43454E+08
+     10    0.19671E+08    4.1149       0.26256E+08   0.91213E+08   0.41931E+08
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 26  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+                         ****   K-VALUES           ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.13255E+11   0.89561E+09   0.17225E+10   0.73702E-02   0.18560    
+      2    0.11609E+10   0.11431E+09   0.20422E+09   0.60871E-01   0.85257    
+      3    0.11283E+10   0.11238E+09   0.20203E+09   0.67502E-01   0.91948    
+      4    0.11148E+10   0.11172E+09   0.20169E+09   0.71457E-01   0.95804    
+      5    0.11083E+10   0.11146E+09   0.20183E+09   0.73947E-01   0.98156    
+      6    0.11043E+10   0.11133E+09   0.20207E+09   0.75663E-01   0.99725    
+      7    0.11018E+10   0.11127E+09   0.20236E+09   0.76966E-01    1.0088    
+      8    0.11008E+10   0.11133E+09   0.20285E+09   0.78052E-01    1.0181    
+      9    0.11024E+10   0.11161E+09   0.20377E+09   0.79055E-01    1.0266    
+     10    0.10556E+10   0.10743E+09   0.19572E+09   0.80631E-01    1.0406    
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.79908E-12   0.20728E-12   0.10489E-06   0.23101E-12   0.29985E-13
+      2    0.11837E-12   0.37551E-13   0.10874E-01   0.19441E-13   0.89950E-15
+      3    0.60251E-18   0.25523E-18   0.10296E-01   0.51146E-19   0.10199E-20
+      4    0.29713E-23   0.16801E-23   0.98347E-02   0.12930E-24   0.10900E-26
+      5    0.14404E-28   0.10870E-28   0.94636E-02   0.31954E-30   0.11246E-32
+      6    0.69161E-34   0.69650E-34   0.91449E-02   0.77887E-36   0.11341E-38
+      7    0.33013E-39   0.44368E-39   0.88417E-02   0.18808E-41   0.11248E-44
+      8    0.15693E-44   0.28147E-44   0.85069E-02   0.45087E-47   0.11005E-50
+      9    0.74289E-50   0.17784E-49   0.80444E-02   0.10728E-52   0.10622E-56
+     10    0.35362E-55   0.11287E-54   0.77963E-02   0.25703E-58   0.10269E-62
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.38720E-14   0.20871E-03   0.62339E-16   0.54110E-18   0.24647E-17
+      2    0.73945E-16   0.20415E-01   0.10831E-17   0.32363E-20   0.30144E-19
+      3    0.41644E-22   0.16062E-01   0.44963E-24   0.38297E-27   0.79075E-26
+      4    0.22213E-28   0.13110E-01   0.17757E-30   0.43232E-34   0.19673E-32
+      5    0.11470E-34   0.11011E-01   0.68064E-37   0.47436E-41   0.47393E-39
+      6    0.58002E-41   0.94021E-02   0.25590E-43   0.51102E-48   0.11179E-45
+      7    0.28887E-47   0.80558E-02   0.94874E-50   0.54321E-55   0.25960E-52
+      8    0.14207E-53   0.68172E-02   0.34763E-56   0.57093E-62   0.59490E-59
+      9    0.68986E-60   0.55515E-02   0.12584E-62   0.59301E-69   0.13446E-65
+     10    0.33698E-66   0.41617E-02   0.46053E-69   0.62471E-76   0.30812E-72
+
+                         ****   MASS-X-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.29876E-22   0.35543E-19   0.64069E-20   0.12618E-01   0.98717    
+      2    0.22566E-25   0.19566E-21   0.21521E-22   0.14026       0.82845    
+      3    0.22920E-33   0.19952E-28   0.12207E-29   0.13998       0.83366    
+      4    0.22236E-41   0.19316E-35   0.65460E-37   0.13984       0.83722    
+      5    0.20974E-49   0.18116E-42   0.33904E-44   0.13976       0.83977    
+      6    0.19421E-57   0.16639E-49   0.17157E-51   0.13970       0.84175    
+      7    0.17738E-65   0.15047E-56   0.85313E-59   0.13967       0.84344    
+      8    0.16008E-73   0.13428E-63   0.41783E-66   0.13964       0.84504    
+      9    0.14262E-81   0.11816E-70   0.20138E-73   0.13974       0.84666    
+     10    0.12983E-89   0.10569E-77   0.98867E-81   0.15291       0.83514    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 27  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B7       MODEL: RADFRAC (CONTINUED)         
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     N2            H2            CO2           CH4           C2H4    
+      1    0.55803E-05   0.10307E-05   0.14377       0.30479E-05   0.62092E-06
+      2    0.26322E-06   0.62485E-07   0.52282E-01   0.82580E-07   0.85829E-08
+      3    0.13435E-11   0.42622E-12   0.42728E-01   0.22067E-12   0.10210E-13
+      4    0.66524E-17   0.28180E-17   0.35395E-01   0.56470E-18   0.11261E-19
+      5    0.32322E-22   0.18276E-22   0.29970E-01   0.14065E-23   0.11857E-25
+      6    0.15529E-27   0.11719E-27   0.25771E-01   0.34449E-29   0.12124E-31
+      7    0.74101E-33   0.74625E-33   0.22246E-01   0.83450E-35   0.12151E-37
+      8    0.35207E-38   0.47317E-38   0.18945E-01   0.20058E-40   0.11996E-43
+      9    0.16672E-43   0.29903E-43   0.15345E-01   0.47900E-46   0.11692E-49
+     10    0.78616E-49   0.18820E-48   0.10421E-01   0.11353E-51   0.11241E-55
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     C2H6          H2S           C3H6          C3H8          C4H8    
+      1    0.21404E-06   0.75258       0.60479E-08   0.22811E-09   0.41273E-09
+      2    0.14333E-08   0.27381       0.28728E-10   0.30273E-12   0.12595E-11
+      3    0.83931E-15   0.18865       0.12294E-16   0.36733E-19   0.34215E-18
+      4    0.45979E-21   0.13555       0.49644E-23   0.42284E-26   0.87307E-25
+      5    0.24163E-27   0.10151       0.19316E-29   0.47027E-33   0.21400E-31
+      6    0.12366E-33   0.78008E-01   0.73378E-36   0.51140E-40   0.51093E-38
+      7    0.62145E-40   0.60309E-01   0.27418E-42   0.54752E-47   0.11977E-44
+      8    0.30808E-46   0.45691E-01   0.10118E-48   0.57931E-54   0.27685E-51
+      9    0.15093E-52   0.32373E-01   0.36932E-55   0.60656E-61   0.63201E-58
+     10    0.73004E-59   0.18869E-01   0.13317E-61   0.62755E-68   0.14229E-64
+
+                         ****   MASS-Y-PROFILE     ****
+   STAGE     I-C4H10       N-C4H10       N-C5H12       MEA           H2O     
+      1    0.22358E-12   0.17975E-10   0.62315E-11   0.52591E-04   0.10359    
+      2    0.24696E-16   0.21083E-13   0.41429E-14   0.80488E-02   0.66586    
+      3    0.25614E-24   0.22209E-20   0.24427E-21   0.93594E-02   0.75927    
+      4    0.25306E-32   0.22029E-27   0.13478E-28   0.10201E-01   0.81885    
+      5    0.24188E-40   0.21012E-34   0.71207E-36   0.10754E-01   0.85777    
+      6    0.22612E-48   0.19530E-41   0.36551E-43   0.11145E-01   0.88508    
+      7    0.20808E-56   0.17827E-48   0.18382E-50   0.11446E-01   0.90600    
+      8    0.18917E-64   0.16047E-55   0.90983E-58   0.11701E-01   0.92366    
+      9    0.17007E-72   0.14266E-62   0.44389E-65   0.11951E-01   0.94033    
+     10    0.15093E-80   0.12505E-69   0.21311E-72   0.13578E-01   0.95713    
+
+ BLOCK:  B8       MODEL: PUMP            
+ ----------------------------
+   INLET STREAM:          3A      
+   OUTLET STREAM:         3       
+   PROPERTY OPTION SET:   AMINES    AMINE / REDLICH-KWONG                       
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 28  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  B8       MODEL: PUMP (CONTINUED)            
+    TOTAL BALANCE
+       MOLE(LBMOL/HR)            23653.5         23653.4        0.360896E-05
+       MASS(LB/HR   )            480954.         480950.        0.669481E-05
+       ENTHALPY(BTU/HR  )      -0.288235E+10   -0.288120E+10   -0.401746E-03
+
+                          ***  INPUT DATA  ***
+    OUTLET PRESSURE  PSI                                  600.000      
+    DRIVER EFFICIENCY                                       1.00000    
+
+    FLASH SPECIFICATIONS:
+    LIQUID PHASE CALCULATION
+    NO FLASH PERFORMED
+    MAXIMUM NUMBER OF ITERATIONS                            30
+    TOLERANCE                                               0.00010000 
+
+                           ***  RESULTS  ***
+    VOLUMETRIC FLOW RATE  CUFT/HR                       8,281.28       
+    PRESSURE CHANGE  PSI                                  580.000      
+    NPSH AVAILABLE   FT-LBF/LB                              4.74650    
+    FLUID POWER  HP                                       349.319      
+    BRAKE POWER  HP                                       451.953      
+    ELECTRICITY  KW                                       337.021      
+    PUMP EFFICIENCY USED                                    0.77291    
+    NET WORK REQUIRED  HP                                 451.953      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 29  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 1 10 11 12 12A                                  
+ --------------
+
+ STREAM ID               1          10         11         12         12A     
+ FROM :                  A1         B3-HOT     B4         A2         ----    
+ TO   :                  B1         B4         B6         B4         A2      
+
+ SUBSTREAM: MIXED   
+ PHASE:                  VAPOR      LIQUID     LIQUID     LIQUID     LIQUID 
+ COMPONENTS: LBMOL/HR    
+   N2                   396.4000     0.0        0.0        0.0        0.0   
+   H2                   533.8000     0.0        0.0        0.0        0.0   
+   CO2                   45.2000    84.9204    84.9204     0.0        0.0   
+   CH4                  996.6000     0.0        0.0        0.0        0.0   
+   C2H4                 202.7000     0.0        0.0        0.0        0.0   
+   C2H6                 453.4000     0.0        0.0        0.0        0.0   
+   H2S                  305.4000    58.5356    58.5356     0.0        0.0   
+   C3H6                  30.6000     0.0        0.0        0.0        0.0   
+   C3H8                  20.1000     0.0        0.0        0.0        0.0   
+   C4H8                   4.6000     0.0        0.0        0.0        0.0   
+   I-C4H10                4.4000     0.0        0.0        0.0        0.0   
+   N-C4H10                1.7000     0.0        0.0        0.0        0.0   
+   N-C5H12                1.7000     0.0        0.0        0.0        0.0   
+   MEA                    0.0     1199.9700  1200.0000  2.9992-02     0.0   
+   H2O                    0.0     2.2222+04  2.2310+04    87.7294    87.7294
+ COMPONENTS: MOLE FRAC   
+   N2                     0.1322     0.0        0.0        0.0        0.0   
+   H2                     0.1781     0.0        0.0        0.0        0.0   
+   CO2                 1.5084-02  3.6036-03  3.5902-03     0.0        0.0   
+   CH4                    0.3325     0.0        0.0        0.0        0.0   
+   C2H4                6.7643-02     0.0        0.0        0.0        0.0   
+   C2H6                   0.1513     0.0        0.0        0.0        0.0   
+   H2S                    0.1019  2.4839-03  2.4747-03     0.0        0.0   
+   C3H6                1.0212-02     0.0        0.0        0.0        0.0   
+   C3H8                6.7076-03     0.0        0.0        0.0        0.0   
+   C4H8                1.5351-03     0.0        0.0        0.0        0.0   
+   I-C4H10             1.4683-03     0.0        0.0        0.0        0.0   
+   N-C4H10             5.6731-04     0.0        0.0        0.0        0.0   
+   N-C5H12             5.6731-04     0.0        0.0        0.0        0.0   
+   MEA                    0.0     5.0920-02  5.0733-02  3.4175-04     0.0   
+   H2O                    0.0        0.9429     0.9432     0.9996     1.0000
+ COMPONENTS: LB/HR       
+   N2                  1.1105+04     0.0        0.0        0.0        0.0   
+   H2                  1076.0767     0.0        0.0        0.0        0.0   
+   CO2                 1989.2429  3737.3323  3737.3323     0.0        0.0   
+   CH4                 1.5988+04     0.0        0.0        0.0        0.0   
+   C2H4                5686.4971     0.0        0.0        0.0        0.0   
+   C2H6                1.3634+04     0.0        0.0        0.0        0.0   
+   H2S                 1.0409+04  1995.0040  1995.0040     0.0        0.0   
+   C3H6                1287.6675     0.0        0.0        0.0        0.0   
+   C3H8                 886.3400     0.0        0.0        0.0        0.0   
+   C4H8                 258.0945     0.0        0.0        0.0        0.0   
+   I-C4H10              255.7429     0.0        0.0        0.0        0.0   
+   N-C4H10               98.8097     0.0        0.0        0.0        0.0   
+   N-C5H12              122.6554     0.0        0.0        0.0        0.0   
+   MEA                    0.0     7.3299+04  7.3300+04     1.8320     0.0   
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 30  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 1 10 11 12 12A (CONTINUED)                          
+
+ STREAM ID               1          10         11         12         12A     
+
+   H2O                    0.0     4.0034+05  4.0192+05  1580.4699  1580.4699
+ TOTAL FLOW:     
+   LBMOL/HR            2996.6000  2.3566+04  2.3653+04    87.7594    87.7294
+   LB/HR               6.2796+04  4.7937+05  4.8095+05  1582.3019  1580.4699
+   CUFT/HR             4.1713+04  8495.9800  8521.2824    25.5339    25.4944
+ STATE VARIABLES:
+   TEMP   F             318.6185   157.0077   156.7297    77.0000    77.0000
+   PRES   PSI           600.0000    20.0000    20.0000    15.0000    20.0000
+   VFRAC                  1.0000     0.0        0.0        0.0        0.0   
+   LFRAC                  0.0        1.0000     1.0000     1.0000     1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.6144+04 -1.2098+05 -1.2099+05 -1.2289+05 -1.2290+05
+   BTU/LB              -770.3953 -5947.3379 -5950.1958 -6816.0211 -6821.7766
+   BTU/HR             -4.8378+07 -2.8510+09 -2.8618+09 -1.0785+07 -1.0782+07
+ ENTROPY:        
+   BTU/LBMOL-R          -13.7483   -43.8216   -43.8024   -38.9444   -38.8969
+   BTU/LB-R              -0.6560    -2.1542    -2.1542    -2.1599    -2.1591
+ DENSITY:        
+   LBMOL/CUFT          7.1838-02     2.7737     2.7758     3.4369     3.4411
+   LB/CUFT                1.5054    56.4233    56.4414    61.9685    61.9927
+ AVG MW                  20.9557    20.3419    20.3333    18.0300    18.0152
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ KMX      BTU-FT/HR-SQ 3.2706-02    MISSING    MISSING    MISSING    MISSING
+ MUMX     CP           1.6025-02    MISSING    MISSING    MISSING    MISSING
+ CPMX     BTU/LB-R        0.5048    MISSING    MISSING    MISSING    MISSING
+ MWMX                    20.9557    MISSING    MISSING    MISSING    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR        MISSING  8495.9800  8521.2824    25.5339    25.4944
+ KMX      BTU-FT/HR-SQ   MISSING     0.1275     0.1276     0.1693     0.1694
+ CPMX     BTU/LB-R       MISSING     0.9370     0.9371     0.9631     0.9636
+ MUMX     CP             MISSING     0.4280     0.4288     0.7648     0.7640
+ SIGMAMX  DYNE/CM        MISSING    86.1277    86.1915   104.7659   104.7860
+ MWMX                    MISSING    20.3419    20.3333    18.0300    18.0152
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     N2                1.1105+04     0.0        0.0        0.0        0.0   
+     H2                1076.0767     0.0        0.0        0.0        0.0   
+     CO2               1989.2429  3737.3323  3737.3323     0.0        0.0   
+     CH4               1.5988+04     0.0        0.0        0.0        0.0   
+     C2H4              5686.4971     0.0        0.0        0.0        0.0   
+     C2H6              1.3634+04     0.0        0.0        0.0        0.0   
+     H2S               1.0409+04  1995.0040  1995.0040     0.0        0.0   
+     C3H6              1287.6675     0.0        0.0        0.0        0.0   
+     C3H8               886.3400     0.0        0.0        0.0        0.0   
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 31  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 1 10 11 12 12A (CONTINUED)                          
+
+ STREAM ID               1          10         11         12         12A     
+
+     C4H8               258.0945     0.0        0.0        0.0        0.0   
+     I-C4H10            255.7429     0.0        0.0        0.0        0.0   
+     N-C4H10             98.8097     0.0        0.0        0.0        0.0   
+     N-C5H12            122.6554     0.0        0.0        0.0        0.0   
+     MEA                  0.0     7.3299+04  7.3300+04     1.8320     0.0   
+     H2O                  0.0     4.0034+05  4.0192+05  1580.4699  1580.4699
+ MASSFLMX LB/HR        6.2796+04  4.7937+05  4.8095+05  1582.3019  1580.4699
+ MASSVFRA                 1.0000     0.0        0.0        0.0        0.0   
+ PRES     PSI           600.0000    20.0000    20.0000    15.0000    20.0000
+ TEMP     F             318.6185   157.0077   156.7297    77.0000    77.0000
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ VOLFLMX  CUFT/HR      4.1713+04  8495.9800  8521.2824    25.5339    25.4944
+ MWMX                    20.9557    20.3419    20.3333    18.0300    18.0152
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 32  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 12B 1A 2 3 3A                                   
+ -------------
+
+ STREAM ID               12B        1A         2          3          3A      
+ FROM :                  ----       ----       B1         B8         B6      
+ TO   :                  A2         A1         ----       B1         B8      
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID     VAPOR      VAPOR      LIQUID     LIQUID 
+ COMPONENTS: LBMOL/HR    
+   N2                     0.0      396.4000   396.3892     0.0        0.0   
+   H2                     0.0      533.8000   533.7782     0.0        0.0   
+   CO2                    0.0       45.2000  1.1746-03    84.8891    84.9204
+   CH4                    0.0      996.6000   996.5848     0.0        0.0   
+   C2H4                   0.0      202.7000   202.6977     0.0        0.0   
+   C2H6                   0.0      453.4000   453.3982     0.0        0.0   
+   H2S                    0.0      305.4000  3.8224-02    58.4815    58.5356
+   C3H6                   0.0       30.6000    30.5999     0.0        0.0   
+   C3H8                   0.0       20.1000    20.0999     0.0        0.0   
+   C4H8                   0.0        4.6000     4.5999     0.0        0.0   
+   I-C4H10                0.0        4.4000     4.4000     0.0        0.0   
+   N-C4H10                0.0        1.7000     1.7000     0.0        0.0   
+   N-C5H12                0.0        1.7000     1.7000     0.0        0.0   
+   MEA                 2.9992-02     0.0     1.8087-02  1200.0000  1200.0000
+   H2O                    0.0        0.0        8.2287  2.2310+04  2.2310+04
+ COMPONENTS: MOLE FRAC   
+   N2                     0.0        0.1322     0.1493     0.0        0.0   
+   H2                     0.0        0.1781     0.2011     0.0        0.0   
+   CO2                    0.0     1.5084-02  4.4254-07  3.5889-03  3.5902-03
+   CH4                    0.0        0.3325     0.3754     0.0        0.0   
+   C2H4                   0.0     6.7643-02  7.6368-02     0.0        0.0   
+   C2H6                   0.0        0.1513     0.1708     0.0        0.0   
+   H2S                    0.0        0.1019  1.4401-05  2.4724-03  2.4747-03
+   C3H6                   0.0     1.0212-02  1.1529-02     0.0        0.0   
+   C3H8                   0.0     6.7076-03  7.5728-03     0.0        0.0   
+   C4H8                   0.0     1.5351-03  1.7331-03     0.0        0.0   
+   I-C4H10                0.0     1.4683-03  1.6577-03     0.0        0.0   
+   N-C4H10                0.0     5.6731-04  6.4049-04     0.0        0.0   
+   N-C5H12                0.0     5.6731-04  6.4049-04     0.0        0.0   
+   MEA                    1.0000     0.0     6.8143-06  5.0733-02  5.0733-02
+   H2O                    0.0        0.0     3.1002-03     0.9432     0.9432
+ COMPONENTS: LB/HR       
+   N2                     0.0     1.1105+04  1.1104+04     0.0        0.0   
+   H2                     0.0     1076.0767  1076.0329     0.0        0.0   
+   CO2                    0.0     1989.2429  5.1694-02  3735.9558  3737.3323
+   CH4                    0.0     1.5988+04  1.5988+04     0.0        0.0   
+   C2H4                   0.0     5686.4971  5686.4339     0.0        0.0   
+   C2H6                   0.0     1.3634+04  1.3634+04     0.0        0.0   
+   H2S                    0.0     1.0409+04     1.3027  1993.1606  1995.0040
+   C3H6                   0.0     1287.6675  1287.6649     0.0        0.0   
+   C3H8                   0.0      886.3400   886.3396     0.0        0.0   
+   C4H8                   0.0      258.0945   258.0943     0.0        0.0   
+   I-C4H10                0.0      255.7429   255.7429     0.0        0.0   
+   N-C4H10                0.0       98.8097    98.8097     0.0        0.0   
+   N-C5H12                0.0      122.6554   122.6554     0.0        0.0   
+   MEA                    1.8320     0.0        1.1048  7.3300+04  7.3300+04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 33  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 12B 1A 2 3 3A (CONTINUED)                           
+
+ STREAM ID               12B        1A         2          3          3A      
+
+   H2O                    0.0        0.0      148.2428  4.0192+05  4.0192+05
+ TOTAL FLOW:     
+   LBMOL/HR            2.9992-02  2996.6000  2654.2344  2.3653+04  2.3653+04
+   LB/HR                  1.8320  6.2796+04  5.0548+04  4.8095+05  4.8095+05
+   CUFT/HR             2.8988-02  9.5733+04  2.5715+04  8294.3962  8281.2774
+ STATE VARIABLES:
+   TEMP   F              77.0000   100.0000   112.8586   112.6766   110.0000
+   PRES   PSI            20.0000   188.0000   600.0000   600.0000    20.0000
+   VFRAC                  0.0        1.0000     1.0000     0.0        0.0   
+   LFRAC                  1.0000     0.0        0.0        1.0000     1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.1305+05 -1.8293+04 -1.7251+04 -1.2181+05 -1.2186+05
+   BTU/LB             -1850.7514  -872.9256  -905.8542 -5990.6292 -5992.9967
+   BTU/HR             -3390.6094 -5.4816+07 -4.5789+07 -2.8812+09 -2.8824+09
+ ENTROPY:        
+   BTU/LBMOL-R         -195.6829   -14.6708   -20.4784   -45.2440   -45.2677
+   BTU/LB-R              -3.2035    -0.7000    -1.0753    -2.2251    -2.2262
+ DENSITY:        
+   LBMOL/CUFT             1.0346  3.1302-02     0.1032     2.8517     2.8562
+   LB/CUFT               63.1990     0.6559     1.9656    57.9849    58.0772
+ AVG MW                  61.0837    20.9557    19.0443    20.3332    20.3333
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ KMX      BTU-FT/HR-SQ   MISSING  2.2563-02  2.6879-02    MISSING    MISSING
+ MUMX     CP             MISSING  1.2150-02  1.2772-02    MISSING    MISSING
+ CPMX     BTU/LB-R       MISSING     0.4323     0.5327    MISSING    MISSING
+ MWMX                    MISSING    20.9557    19.0443    MISSING    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR      2.8988-02    MISSING    MISSING  8294.4007  8281.2774
+ KMX      BTU-FT/HR-SQ    0.1127    MISSING    MISSING     0.1325     0.1328
+ CPMX     BTU/LB-R        0.5334    MISSING    MISSING     0.8952     0.8921
+ MUMX     CP             17.7369    MISSING    MISSING     0.6239     0.6395
+ SIGMAMX  DYNE/CM        46.0629    MISSING    MISSING    94.4833    94.9868
+ MWMX                    61.0837    MISSING    MISSING    20.3332    20.3333
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     N2                   0.0     1.1105+04  1.1104+04     0.0        0.0   
+     H2                   0.0     1076.0767  1076.0329     0.0        0.0   
+     CO2                  0.0     1989.2429  5.1694-02  3735.9558  3737.3323
+     CH4                  0.0     1.5988+04  1.5988+04     0.0        0.0   
+     C2H4                 0.0     5686.4971  5686.4339     0.0        0.0   
+     C2H6                 0.0     1.3634+04  1.3634+04     0.0        0.0   
+     H2S                  0.0     1.0409+04     1.3027  1993.1606  1995.0040
+     C3H6                 0.0     1287.6675  1287.6649     0.0        0.0   
+     C3H8                 0.0      886.3400   886.3396     0.0        0.0   
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 34  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 12B 1A 2 3 3A (CONTINUED)                           
+
+ STREAM ID               12B        1A         2          3          3A      
+
+     C4H8                 0.0      258.0945   258.0943     0.0        0.0   
+     I-C4H10              0.0      255.7429   255.7429     0.0        0.0   
+     N-C4H10              0.0       98.8097    98.8097     0.0        0.0   
+     N-C5H12              0.0      122.6554   122.6554     0.0        0.0   
+     MEA                  1.8320     0.0        1.1048  7.3300+04  7.3300+04
+     H2O                  0.0        0.0      148.2428  4.0192+05  4.0192+05
+ MASSFLMX LB/HR           1.8320  6.2796+04  5.0548+04  4.8095+05  4.8095+05
+ MASSVFRA                 0.0        1.0000     1.0000     0.0        0.0   
+ PRES     PSI            20.0000   188.0000   600.0000   600.0000    20.0000
+ TEMP     F              77.0000   100.0000   112.8586   112.6766   110.0000
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ VOLFLMX  CUFT/HR      2.8988-02  9.5733+04  2.5715+04  8294.4007  8281.2774
+ MWMX                    61.0837    20.9557    19.0443    20.3332    20.3333
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 35  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 4 5 6 7 8                                       
+ ---------
+
+ STREAM ID               4          5          6          7          8       
+ FROM :                  B1         B2         B2         B3-COLD    B7      
+ TO   :                  B2         ----       B3-COLD    B7         ----    
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID     VAPOR      LIQUID     LIQUID     VAPOR  
+ COMPONENTS: LBMOL/HR    
+   N2                  1.0730-02  7.9757-03  2.7542-03  2.7542-03  2.7542-03
+   H2                  2.1716-02  1.4646-02  7.0694-03  7.0694-03  7.0694-03
+   CO2                  130.0880  2.1924-06   130.0880   130.0880    45.1675
+   CH4                 1.5188-02  1.2561-02  2.6269-03  2.6269-03  2.6269-03
+   C2H4                2.2535-03  1.9475-03  3.0602-04  3.0602-04  3.0602-04
+   C2H6                1.8031-03  1.7047-03  9.8419-05  9.8419-05  9.8419-05
+   H2S                  363.8433  1.1160-04   363.8432   363.8432   305.3075
+   C3H6                6.1541-05  5.9554-05  1.9871-06  1.9871-06  1.9871-06
+   C3H8                9.4188-06  9.3473-06  7.1523-08  7.1523-08  7.1523-08
+   C4H8                5.0120-06  4.9103-06  1.0171-07  1.0171-07  1.0171-07
+   I-C4H10             1.1728-07  1.1723-07  5.3185-11  5.3185-11  5.3185-11
+   N-C4H10             6.2196-07  6.1769-07  4.2759-09  4.2759-09  4.2759-09
+   N-C5H12             3.1013-07  3.0893-07  1.1942-09  1.1942-09  1.1942-09
+   MEA                 1199.9819  1.0379-06  1199.9819  1199.9819  1.1904-02
+   H2O                 2.2302+04  5.6712-04  2.2302+04  2.2302+04    79.5001
+ COMPONENTS: MOLE FRAC   
+   N2                  4.4716-07     0.2014  1.1478-07  1.1478-07  6.4052-06
+   H2                  9.0498-07     0.3699  2.9461-07  2.9461-07  1.6440-05
+   CO2                 5.4213-03  5.5375-05  5.4213-03  5.4213-03     0.1050
+   CH4                 6.3295-07     0.3172  1.0947-07  1.0947-07  6.1090-06
+   C2H4                9.3913-08  4.9188-02  1.2753-08  1.2753-08  7.1168-07
+   C2H6                7.5144-08  4.3057-02  4.1015-09  4.1015-09  2.2888-07
+   H2S                 1.5163-02  2.8186-03  1.5163-02  1.5163-02     0.7100
+   C3H6                2.5647-09  1.5042-03  8.2812-11  8.2812-11  4.6212-09
+   C3H8                3.9252-10  2.3609-04  2.9806-12  2.9806-12  1.6633-10
+   C4H8                2.0887-10  1.2402-04  4.2386-12  4.2386-12  2.3653-10
+   I-C4H10             4.8876-12  2.9609-06  2.2164-15  2.2164-15  1.2369-13
+   N-C4H10             2.5920-11  1.5601-05  1.7819-13  1.7819-13  9.9438-12
+   N-C5H12             1.2924-11  7.8028-06  4.9766-14  4.9766-14  2.7771-12
+   MEA                 5.0008-02  2.6215-05  5.0008-02  5.0008-02  2.7684-05
+   H2O                    0.9294  1.4324-02     0.9294     0.9294     0.1848
+ COMPONENTS: LB/HR       
+   N2                     0.3005     0.2234  7.7155-02  7.7155-02  7.7155-02
+   H2                  4.3776-02  2.9525-02  1.4251-02  1.4251-02  1.4251-02
+   CO2                 5725.1471  9.6489-05  5725.1470  5725.1470  1987.8146
+   CH4                    0.2436     0.2015  4.2142-02  4.2142-02  4.2142-02
+   C2H4                6.3219-02  5.4634-02  8.5850-03  8.5850-03  8.5850-03
+   C2H6                5.4220-02  5.1260-02  2.9594-03  2.9594-03  2.9594-03
+   H2S                 1.2400+04  3.8034-03  1.2400+04  1.2400+04  1.0405+04
+   C3H6                2.5897-03  2.5061-03  8.3620-05  8.3620-05  8.3620-05
+   C3H8                4.1534-04  4.1218-04  3.1539-06  3.1539-06  3.1539-06
+   C4H8                2.8121-04  2.7550-04  5.7066-06  5.7066-06  5.7066-06
+   I-C4H10             6.8168-06  6.8137-06  3.0913-09  3.0913-09  3.0913-09
+   N-C4H10             3.6151-05  3.5902-05  2.4853-07  2.4853-07  2.4853-07
+   N-C5H12             2.2376-05  2.2289-05  8.6159-08  8.6159-08  8.6159-08
+   MEA                 7.3299+04  6.3400-05  7.3299+04  7.3299+04     0.7271
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 36  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 4 5 6 7 8 (CONTINUED)                               
+
+ STREAM ID               4          5          6          7          8       
+
+   H2O                 4.0177+05  1.0217-02  4.0177+05  4.0177+05  1432.2168
+ TOTAL FLOW:     
+   LBMOL/HR            2.3996+04  3.9592-02  2.3996+04  2.3996+04   430.0000
+   LB/HR               4.9320+05     0.5778  4.9320+05  4.9320+05  1.3826+04
+   CUFT/HR             8679.2084     1.6623  8585.8740  9054.3720  1.3943+05
+ STATE VARIABLES:
+   TEMP   F             146.2538   128.9900   128.9900   210.0000   149.3256
+   PRES   PSI           600.0000   150.0000   150.0000   150.0000    20.0000
+   VFRAC                  0.0        1.0000     0.0        0.0        1.0000
+   LFRAC                  1.0000     0.0        1.0000     1.0000     0.0   
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.2018+05 -1.1818+04 -1.2049+05 -1.1896+05 -4.2606+04
+   BTU/LB             -5847.1090  -809.7682 -5862.3332 -5788.0315 -1325.0534
+   BTU/HR             -2.8838+09  -467.8875 -2.8913+09 -2.8546+09 -1.8321+07
+ ENTROPY:        
+   BTU/LBMOL-R          -43.8663    -9.7997   -44.3435   -41.9308     7.4279
+   BTU/LB-R              -2.1342    -0.6715    -2.1574    -2.0400     0.2310
+ DENSITY:        
+   LBMOL/CUFT             2.7647  2.3817-02     2.7947     2.6501  3.0839-03
+   LB/CUFT               56.8252     0.3475    57.4429    54.4706  9.9161-02
+ AVG MW                  20.5535    14.5938    20.5535    20.5535    32.1543
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ KMX      BTU-FT/HR-SQ   MISSING  3.7107-02    MISSING    MISSING  1.2660-02
+ MUMX     CP             MISSING  1.3410-02    MISSING    MISSING  1.4684-02
+ CPMX     BTU/LB-R       MISSING     0.5580    MISSING    MISSING     0.2623
+ MWMX                    MISSING    14.5938    MISSING    MISSING    32.1543
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR      8679.2084    MISSING  8585.8740  9054.3720    MISSING
+ KMX      BTU-FT/HR-SQ    0.1179    MISSING     0.1204  9.8550-02    MISSING
+ CPMX     BTU/LB-R        0.8939    MISSING     0.8687     0.9554    MISSING
+ MUMX     CP              0.4546    MISSING     0.5252     0.2846    MISSING
+ SIGMAMX  DYNE/CM        86.9327    MISSING    90.1539    75.0552    MISSING
+ MWMX                    20.5535    MISSING    20.5535    20.5535    MISSING
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     N2                   0.3005     0.2234  7.7155-02  7.7155-02  7.7155-02
+     H2                4.3776-02  2.9525-02  1.4251-02  1.4251-02  1.4251-02
+     CO2               5725.1471  9.6489-05  5725.1470  5725.1470  1987.8146
+     CH4                  0.2436     0.2015  4.2142-02  4.2142-02  4.2142-02
+     C2H4              6.3219-02  5.4634-02  8.5850-03  8.5850-03  8.5850-03
+     C2H6              5.4220-02  5.1260-02  2.9594-03  2.9594-03  2.9594-03
+     H2S               1.2400+04  3.8034-03  1.2400+04  1.2400+04  1.0405+04
+     C3H6              2.5897-03  2.5061-03  8.3620-05  8.3620-05  8.3620-05
+     C3H8              4.1534-04  4.1218-04  3.1539-06  3.1539-06  3.1539-06
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 37  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 4 5 6 7 8 (CONTINUED)                               
+
+ STREAM ID               4          5          6          7          8       
+
+     C4H8              2.8121-04  2.7550-04  5.7066-06  5.7066-06  5.7066-06
+     I-C4H10           6.8168-06  6.8137-06  3.0913-09  3.0913-09  3.0913-09
+     N-C4H10           3.6151-05  3.5902-05  2.4853-07  2.4853-07  2.4853-07
+     N-C5H12           2.2376-05  2.2289-05  8.6159-08  8.6159-08  8.6159-08
+     MEA               7.3299+04  6.3400-05  7.3299+04  7.3299+04     0.7271
+     H2O               4.0177+05  1.0217-02  4.0177+05  4.0177+05  1432.2168
+ MASSFLMX LB/HR        4.9320+05     0.5778  4.9320+05  4.9320+05  1.3826+04
+ MASSVFRA                 0.0        1.0000     0.0        0.0        1.0000
+ PRES     PSI           600.0000   150.0000   150.0000   150.0000    20.0000
+ TEMP     F             146.2538   128.9900   128.9900   210.0000   149.3256
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ VOLFLMX  CUFT/HR      8679.2084     1.6623  8585.8740  9054.3720  1.3943+05
+ MWMX                    20.5535    14.5938    20.5535    20.5535    32.1543
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 38  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 9                                               
+ -
+
+ STREAM ID               9       
+ FROM :                  B7      
+ TO   :                  B3-HOT  
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID 
+ COMPONENTS: LBMOL/HR    
+   N2                     0.0   
+   H2                     0.0   
+   CO2                   84.9204
+   CH4                    0.0   
+   C2H4                   0.0   
+   C2H6                   0.0   
+   H2S                   58.5356
+   C3H6                   0.0   
+   C3H8                   0.0   
+   C4H8                   0.0   
+   I-C4H10                0.0   
+   N-C4H10                0.0   
+   N-C5H12                0.0   
+   MEA                 1199.9700
+   H2O                 2.2222+04
+ COMPONENTS: MOLE FRAC   
+   N2                     0.0   
+   H2                     0.0   
+   CO2                 3.6036-03
+   CH4                    0.0   
+   C2H4                   0.0   
+   C2H6                   0.0   
+   H2S                 2.4839-03
+   C3H6                   0.0   
+   C3H8                   0.0   
+   C4H8                   0.0   
+   I-C4H10                0.0   
+   N-C4H10                0.0   
+   N-C5H12                0.0   
+   MEA                 5.0920-02
+   H2O                    0.9429
+ COMPONENTS: LB/HR       
+   N2                     0.0   
+   H2                     0.0   
+   CO2                 3737.3323
+   CH4                    0.0   
+   C2H4                   0.0   
+   C2H6                   0.0   
+   H2S                 1995.0040
+   C3H6                   0.0   
+   C3H8                   0.0   
+   C4H8                   0.0   
+   I-C4H10                0.0   
+   N-C4H10                0.0   
+   N-C5H12                0.0   
+   MEA                 7.3299+04
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 39  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 9 (CONTINUED)                                       
+
+ STREAM ID               9       
+
+   H2O                 4.0034+05
+ TOTAL FLOW:     
+   LBMOL/HR            2.3566+04
+   LB/HR               4.7937+05
+   CUFT/HR             8962.2266
+ STATE VARIABLES:
+   TEMP   F             236.7861
+   PRES   PSI            22.8000
+   VFRAC                  0.0   
+   LFRAC                  1.0000
+   SFRAC                  0.0   
+ ENTHALPY:       
+   BTU/LBMOL          -1.1941+05
+   BTU/LB             -5870.1537
+   BTU/HR             -2.8140+09
+ ENTROPY:        
+   BTU/LBMOL-R          -41.4566
+   BTU/LB-R              -2.0379
+ DENSITY:        
+   LBMOL/CUFT             2.6294
+   LB/CUFT               53.4879
+ AVG MW                  20.3419
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ KMX      BTU-FT/HR-SQ   MISSING
+ MUMX     CP             MISSING
+ CPMX     BTU/LB-R       MISSING
+ MWMX                    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  CUFT/HR      8962.2266
+ KMX      BTU-FT/HR-SQ    0.1159
+ CPMX     BTU/LB-R        0.9975
+ MUMX     CP              0.2450
+ SIGMAMX  DYNE/CM        71.1478
+ MWMX                    20.3419
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW LB/HR       
+     N2                   0.0   
+     H2                   0.0   
+     CO2               3737.3323
+     CH4                  0.0   
+     C2H4                 0.0   
+     C2H6                 0.0   
+     H2S               1995.0040
+     C3H6                 0.0   
+     C3H8                 0.0   
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 40  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                                 STREAM SECTION                                 
+
+ 9 (CONTINUED)                                       
+
+ STREAM ID               9       
+
+     C4H8                 0.0   
+     I-C4H10              0.0   
+     N-C4H10              0.0   
+     N-C5H12              0.0   
+     MEA               7.3299+04
+     H2O               4.0034+05
+ MASSFLMX LB/HR        4.7937+05
+ MASSVFRA                 0.0   
+ PRES     PSI            22.8000
+ TEMP     F             236.7861
+ MASSSFRA                 0.0   
+ VOLFLMX  CUFT/HR      8962.2266
+ MWMX                    20.3419
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 05/06/1999  PAGE 41  
+                    MEA PROCESS FOR FCC FUEL GAS TREATMENT                      
+                             PROBLEM STATUS SECTION                             
+
+ BLOCK STATUS                            
+ ------------
+
+ ****************************************************************************
+ *                                                                          *
+ * Calculations were completed normally                                     *
+ *                                                                          *
+ * All Unit Operation blocks were completed normally                        *
+ *                                                                          *
+ * All streams were flashed normally                                        *
+ *                                                                          *
+ * All Convergence blocks were completed normally                           *
+ *                                                                          *
+ * All Fortran blocks were completed normally                               *
+ *                                                                          *
+ * Properties estimation was completed normally                             *
+ *                                                                          *
+ ****************************************************************************

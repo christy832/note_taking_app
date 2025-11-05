@@ -1,0 +1,77 @@
+#VERSION_NUM2327
+#                          MEDIUMHOT.DAT
+#-------------------------------------------------------------------------
+#  History:
+#
+#  Created 
+#  Updated V7.1 for Better Excel importing, Fix 8IN Cold Temperatures,
+#                   Additional Comments, Fix last temperature for High/Low Temps
+#  Updated V8.0 for Split from INSSPC.DAT file - Medium Hot Insulation Table
+#  [add your changes here]
+#
+#..........................................................................
+#
+# UNITS OF MEASURE:
+#   Overall Units: Select either Inch-Pound or Metric (IP/METRIC).
+#               This will determine whether the temperatures in Tables 1-4
+#               are read as degree F or C. Enter "IP" or "METRIC" below
+#               without moving or erasing the "|" characters:
+#
+#   Pipe Diameter: Select either Inches or Millimeters (INCH/MM).
+#               This will not affect the insulation thickness data
+#               Enter "INCH" or "MM" below without moving or erasing
+#               the "|" characters:
+# Pipe Diameter   Overall Units
+LM1F INCH           I-P
+#
+#   Note the Design Basis - Insulation Form or Area - Insulation Form
+#   Minimum Temp. Hot Insulation field defaults to 150 degrees F.  This controls
+#   the minimum temperature above which hot insulation is provided.  The minimum
+#   value allowed that the hot insulation tables will be applied is 51 degrees F.
+#   (the point that the cold insulation table starts).
+#
+#
+#   Each table is started by a line indicating if it is a cold(-) or hot(+) insulation
+#   table, and specifying a table name and description/remarks
+#
+#-------------------------------------------------------------------------
+# TABLE 2
+#
+|+|MEDIUMHOT|    Hot Insulation - Medium Schedule
+#
+#   Medium insulation schedule is typical for average low ambient 
+#   temperatures from 20 degrees F to 40 degrees F.
+#   This insulation table applies to temperatures 51 degrees F and above.
+#   (Use the cold insulation table below this temperature)
+#   See note above on Minimum Temp. Hot Insulation field to determine
+#   when insulation is generated.
+#
+#NOMINAL
+#  PIPE   |                     <------   Insulation Thickness (inch)   ------>                          |
+#DIAMETER |                                                    ( mm )                                    |
+#|   |    |  1 | 1.5|  2 | 2.5|  3 | 3.5|  4 | 4.5|  5 | 5.5|  6 | 6.5|  7 | 7.5|  8 | 8.5|  9 | 9.5| 10 |
+#|   |    | 25 | 38 | 50 | 63 | 75 | 88 | 100| 113| 125| 138| 150| 163| 175| 188| 200| 213| 225| 238| 250|
+#|in | mm |----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|0.75| 20 | 209| 305| 520| 758|1185|1457|1659|1911|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|1.00| 25 | 150| 302| 498| 732|1051|1399|1588|1825|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|1.50| 40 | 150| 231| 389| 665| 944|1279|1557|1786|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|2.00| 50 | 150| 228| 369| 565| 811|1173|1444|1747|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|2.50| 65 | 150| 202| 332| 544| 777|1137|1433|1710|1941|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|3.00| 80 | 150| 193| 296| 450| 660| 925|1240|1617|1882|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|4.00| 100| 150| 183| 270| 392| 579| 838|1112|1475|1801|2000|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|6.00| 150| 150| 157| 228| 322| 479| 705| 977|1304|1630|1953|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|8.00| 200| 150| 156| 223| 313| 444| 648| 881|1177|1505|1869|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|10.0| 250| 150| 156| 220| 298| 389| 571| 774|1067|1366|1788|2000|2000|2000|2000|2000|2000|2000|2000|2000|
+|12.0| 300| 150| 156| 213| 282| 368| 517| 710|1001|1277|1716|1922|2000|2000|2000|2000|2000|2000|2000|2000|
+|14.0| 350|  50| 150| 203| 271| 354| 474| 670| 926|1184|1653|1846|2000|2000|2000|2000|2000|2000|2000|2000|
+|16.0| 400|  50| 150| 200| 267| 346| 438| 625| 860|1115|1587|1775|2000|2000|2000|2000|2000|2000|2000|2000|
+|18.0| 450|  50| 150| 197| 262| 340| 428| 585| 819|1056|1530|1708|2000|2000|2000|2000|2000|2000|2000|2000|
+|20.0| 500|  50| 150| 194| 258| 334| 423| 548| 778|1013|1476|1646|2000|2000|2000|2000|2000|2000|2000|2000|
+|22.0| 550|  50| 150| 194| 258| 334| 423| 522| 739| 963|1427|1588|2000|2000|2000|2000|2000|2000|2000|2000|
+|24.0| 600|  50| 150| 188| 250| 326| 413| 512| 701| 916|1380|1534|2000|2000|2000|2000|2000|2000|2000|2000|
+|26.0| 650|  50| 150| 188| 250| 326| 413| 512| 676| 881|1337|1483|2000|2000|2000|2000|2000|2000|2000|2000|
+|28.0| 700|  50| 150| 188| 245| 326| 386| 500| 613| 809|1297|1436|2000|2000|2000|2000|2000|2000|2000|2000|
+|30.0| 750|  50| 150| 188| 245| 326| 386| 500| 591| 778|1251|1392|2000|2000|2000|2000|2000|2000|2000|2000|
+|36.0| 900|  50| 150| 188| 245| 326| 386| 500| 591| 778|1251|1392|2000|2000|2000|2000|2000|2000|2000|2000|
+# The last row (36 Inch) will be used by the system for Equipment Insulation
+#---------------------------------------------------------------------------------------------------------

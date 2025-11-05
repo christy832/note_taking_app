@@ -1,0 +1,82 @@
+*  This file is a template of LINSZEQN.DAT
+*
+* Following is a list of some standard sizes, you can get to
+*   other sizes by using the diameter adjustment mechanism
+* Standard 1 inch or 25 mm line
+D1001D 1 inch / 25 mm           I-P
+D1001E 1
+* Standard 2 inch or 50 mm line
+D1002D 2 inch / 50 mm           I-P
+D1002E 2
+* Standard 4 inch or 100 mm line
+D1003D 4 inch / 100 mm          I-P
+D1003E 4
+* Standard 6 inch or 150 mm line
+D1004D 6 inch / 150 mm          I-P
+D1004E 6
+* Standard 12 inch or 150 mm line
+D1005D 12 inch / 300 mm         I-P
+D1005E 12
+* Standard 24 inch or 600 mm line
+D1006D 24 inch / 600 mm         I-P
+D1006E 24
+* Following is Centrifugal Pump Discharge,  Inlet is one size larger
+D1010D Centr Pump Discharge     I-P
+D1010E LIQ: CAPFLOW
+* Process Storage Vessel
+D1011D Storage Tank Inlet       MIN=2 I-P
+D1011E LIQ: CAP/90.0
+D1012D Storage Tank Relief      I-P
+D1012E RLF: 0.294*DIA*HGT*(TMP+460.0)**0.5/(1.2*PRES+15.0)
+* Heat Exchanger or Condenser
+D1013D Shell Side Inlet         I-P
+D1013E LIQ: 0.2*AREA
+D1014D Heat Exchanger Safety    I-P
+D1014E 1
+* ------------------------------------------------------
+* Following are lines for EML Spiral Classifier
+*   First calculate Capacity in CUFT
+*   Then divide by 0.1337 to convert to GALLONS
+*   Then assume total volume flushes every hour (60 min)
+D1015D Classifier feed (1)      I-P
+D1015E LIQ: (HGT*3.1416*((DIA/2)**2))/(0.1337*60)
+*   Ditto Overflow & Underflow except 1/2 capacity
+D1016D Classifier overflow (2)  I-P
+D1016E LIQ: 0.5*(HGT*3.1416*(DIA/2)**2)/(0.1337*60)
+D1017D Classifier underflow (3) I-P
+D1017E LIQ: 0.5*(HGT*3.1416*(DIA/2)**2)/(0.1337*60)
+* ------------------------------------------------------
+* Following are lines for centrifugal pump
+L1001D Cent. Pump Discharge     I-P
+L1001E 100+0.02*HEAD+0.01*CAPFLOW
+L1002D Centrifugal Pump Inlet   I-P
+L1002E 40+0.01*CAPFLOW
+* Following are lines for Process Vessel in Storage Service
+L1003D Storage Tank Inlet       I-P
+L1003E 120+3.0*DIA
+L1004D Storage Tank Liquid Out  I-P
+L1004E 180+2.5*DIA
+L1005D Storage Tank Vapor Out   I-P
+L1005E 10+2.0*HGT
+L1006D Liquid Blowdown          I-P
+L1006E 25
+L1007D Storage Tank Relief      I-P
+L1007E 15+HGT
+L1008D Pump Recycle             I-P
+L1008E 30
+* Following are lines for Heat Exchanger
+L1009D Shell Side Inlet/Outlet  I-P
+L1009E 40+2.0*HGT
+L1010D Tube Side Inlet/Outlet   I-P
+L1010E 50+2.0*HGT
+L1011D Tube/Shell Relief        I-P
+L1011E 20
+* -----------------------------------------------------
+* Following are lines for EML Spiral Classifier
+L1015D Classifier feed (1)      I-P
+L1015E 100+DIA/2
+L1016D Classifier overflow (2)  I-P
+L1016E 50+HGT
+L1017D Classifier underflow (3) I-P
+L1017E 40
+* -----------------------------------------------------

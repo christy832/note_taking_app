@@ -1,0 +1,76 @@
+#VERSION_NUM2327
+#                          COLD.DAT
+#-------------------------------------------------------------------------
+#  History:
+#
+#  Created 
+#  Updated V7.1 for Better Excel importing, Fix 8IN Cold Temperatures,
+#                   Additional Comments, Fix last temperature for High/Low Temps
+#  Updated V8.0 for Split from INSSPC.DAT file - Cold Insulation Table
+#  [add your changes here]
+#
+#..........................................................................
+#
+# UNITS OF MEASURE:
+#   Overall Units: Select either Inch-Pound or Metric (IP/METRIC).
+#               This will determine whether the temperatures in Tables 1-4
+#               are read as degree F or C. Enter "IP" or "METRIC" below
+#               without moving or erasing the "|" characters:
+#
+#   Pipe Diameter: Select either Inches or Millimeters (INCH/MM).
+#               This will not affect the insulation thickness data
+#               Enter "INCH" or "MM" below without moving or erasing
+#               the "|" characters:
+# Pipe Diameter   Overall Units
+LM1F INCH           I-P
+#
+#   Note the Design Basis - Insulation Form or Area - Insulation Form
+#   Minimum Temp. Hot Insulation field defaults to 150 degrees F.  This controls
+#   the minimum temperature above which hot insulation is provided.  The minimum
+#   value allowed that the hot insulation tables will be applied is 51 degrees F.
+#   (the point that the cold insulation table starts).
+#
+#
+#   Each table is started by a line indicating if it is a cold(-) or hot(+) insulation
+#   table, and specifying a table name and description/remarks
+#
+#-------------------------------------------------------------------------
+# TABLE 4
+#
+|-|COLD      |                Cold Insulation
+#
+#   The hot insulation schedule assignment (L,M, or H) does not apply
+#   to cold insulation.  Insulation for cold service would be applied
+#   to designated surfaces of 50 degrees F or colder.
+#
+#   For cold insulation, joints are caulked and a vapor barrier is applied.
+#
+#NOMINAL
+#  PIPE   |                     <------   Insulation Thickness (inch)   ------>                          |
+#DIAMETER |                                                    ( mm )                                    |
+#|   |    |  1 | 1.5|  2 | 2.5|  3 | 3.5|  4 | 4.5|  5 | 5.5|  6 | 6.5|  7 | 7.5|  8 | 8.5|  9 | 9.5| 10 |
+#|   |    | 25 | 38 | 50 | 63 | 75 | 88 | 100| 113| 125| 138| 150| 163| 175| 188| 200| 213| 225| 238| 250|
+#|in | mm |----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|0.75| 20 |  50|  25| -10| -25| -70|-135|-225|-255|-300|-459|-459|-459|-459|-459|-459|-459|-459|-459|-459|
+|1.00| 25 |  50|  25| -10| -25| -70|-130|-180|-255|-300|-459|-459|-459|-459|-459|-459|-459|-459|-459|-459|
+|1.50| 40 |  50|  30|  15| -15| -45|-100|-120|-185|-230|-290|-345|-459|-459|-459|-459|-459|-459|-459|-459|
+|2.00| 50 |  50|  30|  15| -15| -45| -90|-120|-185|-225|-290|-340|-459|-459|-459|-459|-459|-459|-459|-459|
+|2.50| 65 |  50|  30|  15| -10| -35| -60|-105|-135|-175|-235|-290|-340|-459|-459|-459|-459|-459|-459|-459|
+|3.00| 80 |  50|  30|  15| -10| -35| -60|-105|-135|-175|-235|-290|-340|-459|-459|-459|-459|-459|-459|-459|
+|4.00| 100|  50|  30|  20|   0| -30| -55| -85|-135|-160|-205|-265|-300|-459|-459|-459|-459|-459|-459|-459|
+|6.00| 150|  50|  45|  25|   0| -25| -45| -70|-105|-125|-160|-205|-240|-290|-325|-459|-459|-459|-459|-459|
+|8.00| 200|  50|  45|  25|   0| -15| -35| -60| -85|-115|-145|-175|-215|-255|-295|-325|-459|-459|-459|-459|
+|10.0| 250|  50|  45|  30|  10| -10| -25| -50| -70|-105|-125|-150|-185|-225|-235|-300|-459|-459|-459|-459|
+|12.0| 300|  50|  45|  30|  15|  -5| -25| -45| -65|-105|-125|-140|-170|-205|-230|-285|-325|-459|-459|-459|
+|14.0| 350|  50|  45|  30|  15|   0| -25| -40| -55| -80|-105|-130|-160|-190|-225|-265|-305|-325|-459|-459|
+|16.0| 400|  50|  45|  30|  20|   0| -25| -35| -55| -75|-105|-125|-150|-180|-210|-250|-285|-310|-459|-459|
+|18.0| 450|  50|  45|  30|  20|   0| -25| -35| -50| -70|-105|-115|-145|-175|-200|-235|-275|-295|-325|-459|
+|20.0| 500|  50|  50|  30|  20|   0| -25| -35| -45| -65| -95|-110|-135|-165|-190|-225|-260|-290|-315|-459|
+|22.0| 550|  50|  50|  30|  20|   0| -25| -35| -45| -65| -95|-105|-130|-155|-180|-205|-240|-270|-300|-459|
+|24.0| 600|  50|  50|  30|  20|   0| -25| -35| -45| -65| -95|-105|-130|-155|-180|-205|-240|-270|-300|-459|
+|26.0| 650|  50|  50|  30|  20|   5| -10| -25| -40| -60| -75|-105|-120|-140|-170|-190|-225|-250|-285|-459|
+|28.0| 700|  50|  50|  30|  20|   5| -10| -25| -40| -60| -75|-105|-120|-140|-170|-190|-225|-250|-285|-459|
+|30.0| 750|  50|  50|  30|  20|   5| -10| -25| -40| -60| -75|-105|-120|-140|-170|-190|-225|-250|-285|-459|
+|36.0| 900|  50|  50|  30|  20|  10|  -5| -25| -40| -55| -75|-105|-115|-135|-160|-175|-215|-240|-280|-459|
+# The last row (36 Inch) will be used by the system for Equipment Insulation
+#---------------------------------------------------------------------------------------------------------

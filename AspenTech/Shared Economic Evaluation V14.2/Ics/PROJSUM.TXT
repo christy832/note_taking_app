@@ -1,0 +1,353 @@
+PROJSUM.ICS     (Project Summary)|||||||||||||||||||||
+ |||||||||||||||||||||
+ITEM|UNITS|VALUE|||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+PROJECT INFORMATION|||||||||||||||||||||
+|||||||||||||||||||||
+     Project Name||AE1|||||||||||||||||||
+     Project Description||This is a test IPE Run|||||||||||||||||||
+     Analysis Date and Time||Mon Jul 20 18:58:23 1998|||||||||||||||||||
+     Simulator Type||AspenTech|||||||||||||||||||
+     Simulator Version||PC-DOS-9.3-1|||||||||||||||||||
+     Simulator Report File||E:\Projects.ipe\reports\Asp_eng.out|||||||||||||||||||
+     Simulator Report Date||Monday, December 08, 1997|||||||||||||||||||
+     Economic Analysis Type||IPE|||||||||||||||||||
+     IPE Version|||||||||||||||||||||
+     Project Directory||e:\projects.ipe\projects\AE1|||||||||||||||||||
+     Scenario Name|||||||||||||||||||||
+     Scenario Description|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+CAPITAL COST EVALUATION BASIS|||||||||||||||||||||
+|||||||||||||||||||||
+     Date||20 JUL 98|||||||||||||||||||
+     Country||US|||||||||||||||||||
+     Units of Measure||I-P|||||||||||||||||||
+     Currency (Cost) Symbol||U.S. DOLLAR|||||||||||||||||||
+     Currency Conversion Rate|0|1|||||||||||||||||||
+     System Cost Base Date||1Q 97|||||||||||||||||||
+     Project Type||Plant Addition|||||||||||||||||||
+     Design code| |ASME|||||||||||||||||||
+     Prepared By||ABC|||||||||||||||||||
+     Plant Location||North America|||||||||||||||||||
+     Capacity||0|||||||||||||||||||
+     Time Difference Between System Cost Base Date and Start Date for Engineering|Days|153|||||||||||||||||||
+     User Currency Name|||||||||||||||||||||
+     User Currency Description|||||||||||||||||||||
+     User Currency Symbol||$|||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+TIME PERIOD|||||||||||||||||||||
+|||||||||||||||||||||
+     Period Description||Year|||||||||||||||||||
+     Operating Hours per Period|Hours/period|8000|||||||||||||||||||
+     Number of Weeks per Period|Weeks/period|52|||||||||||||||||||
+     Number of Periods for Analysis|Period|20|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+SCHEDULE|||||||||||||||||||||
+|||||||||||||||||||||
+     Start Date for Engineering||1 SEP 97|||||||||||||||||||
+     Duration of EPC Phase|Weeks|21|||||||||||||||||||
+     Length of Start-up Period|Weeks|10|||||||||||||||||||
+     Duration of Construction Phase|Weeks|9|||||||||||||||||||
+     Completion Date for Construction||Thursday, June 18, 1998|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+CAPITAL COSTS PARAMETERS|||||||||||||||||||||
+|||||||||||||||||||||
+     Working Capital Percentage|Percent/period|5|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+OPERATING COSTS PARAMETERS|||||||||||||||||||||
+|||||||||||||||||||||
+     Operating Charges (Percent of Operating Labor Costs)|Percent/period|25|||||||||||||||||||
+     Plant Overhead (Percent of Operating Labor and Maintenance Costs)|Percent/period|50|||||||||||||||||||
+     G and A Expenses (Percent of Subtotal Operating Costs)|Percent/period|0.00|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+GENERAL INVESTMENT PARAMETERS|||||||||||||||||||||
+|||||||||||||||||||||
+     Tax Rate|Percent/period|40|||||||||||||||||||
+     Interest Rate|Percent/period|20|||||||||||||||||||
+     Economic Life of Project |Period|10|||||||||||||||||||
+     Salvage Value (Fraction of Initial Capital Cost)|Percent|20|||||||||||||||||||
+     Depreciation Method||Straight Line|||||||||||||||||||
+     Desired Rate of Return|Percent|20|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+ESCALATION|||||||||||||||||||||
+|||||||||||||||||||||
+     Project Capital Escalation|Percent/period|5|||||||||||||||||||
+     Products Escalation|Percent/period|5|||||||||||||||||||
+     Raw Material Escalation |Percent/period|3.5|||||||||||||||||||
+     Operating and Maintenance Labor Escalation|Percent/period|3|||||||||||||||||||
+     Utilities Escalation|Percent/period|3|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+PROJECT RESULTS SUMMARY |||||||||||||||||||||
+|||||||||||||||||||||
+     Total Project Capital Cost|Cost|3.29441e+006|||||||||||||||||||
+     Total Raw Materials Cost|Cost/period|799997|||||||||||||||||||
+     Total Products Sales|Cost/period|0|||||||||||||||||||
+     Total Operating Labor and Maintenance Cost|Cost/period|624700|||||||||||||||||||
+     Total Utilities Cost|Cost/period|2.91403e+006|||||||||||||||||||
+     Total Operating Cost|Cost/period|4.80108e+006|||||||||||||||||||
+|||||||||||||||||||||
+     Operating Labor Cost|Cost/period|600000|||||||||||||||||||
+     Maintenance Cost|Cost/period|24700|||||||||||||||||||
+     Operating Charges|Cost/period|150000|||||||||||||||||||
+     Plant Overhead|Cost/period|312350|||||||||||||||||||
+     Subtotal Operating Cost|Cost/period|4.80108e+006|||||||||||||||||||
+     G and A Cost||0|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+PROJECT CAPITAL SUMMARY||Total Cost|Design, Eng, Procurement|Construction Material|Construction Manhours|Construction Manpower|Construction Indirects||||||||||||||
+|||||||||||||||||||||
+     Purchased Equipment|Cost|406910|||||||||||||||||||
+     Equipment Setting|Cost|8459.7|||455|8459.7|||||||||||||||
+     Piping|Cost|269103||180489|4775|88614.3|||||||||||||||
+     Civil|Cost|57238||33753.5|1509|23484.6|||||||||||||||
+     Steel|Cost|29277.2||18959.6|615|10317.6|||||||||||||||
+     Instrumentation|Cost|416103||361639|2814|54464.3|||||||||||||||
+     Electrical|Cost|106147||83115.4|1197|23032|||||||||||||||
+     Insulation|Cost|86439||54281.1|1829|32158|||||||||||||||
+     Paint|Cost|13568.9||4727.9|643|8841|||||||||||||||
+     Other|Cost|1.1338e+006|552000|117300|||464500||||||||||||||
+     Subcontracts|Cost|0.00|||||||||||||||||||
+     G and A Overheads|Cost|59251.4|0.00|37835.2||7481.1|13935||||||||||||||
+     Contract Fee|Cost|148108|47472|28578.2||25171.5|46886.6||||||||||||||
+     Escalation|Cost|0.00|0.00|0.00||0.00|0.00||||||||||||||
+     Contingencies|Cost|492193|107905|238966||50764.3|94557.9||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+     Total Project Cost|Cost|3.2266e+006|||||||||||||||||||
+     Adjusted Total Project Cost|Cost|3.29441e+006|||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+ENGINEERING SUMMARY||Cost|Manhours||||||||||||||||||
+|||||||||||||||||||||
+     Basic Engineering||134800|2655||||||||||||||||||
+     Detail Engineering||257300|5752||||||||||||||||||
+     Material Procurement||104800|2352||||||||||||||||||
+     Home Office||55100|1132||||||||||||||||||
+     Total Design, Eng, Procurement Cost||552000|||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+RAW MATERIALS COSTS AND PRODUCTS SALES|||||||||||||||||||||
+|||||||||||||||||||||
+     Raw Materials Cost per Hour|Cost/Hour|99.9996|||||||||||||||||||
+     Total Raw Materials Cost|Cost/Period|799997|||||||||||||||||||
+|||||||||||||||||||||
+     Products Sales per Hour|Cost/Hour|0.00|||||||||||||||||||
+     Total Products Sales|Cost/Period|0|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+     Main Product Name||Prod1|||||||||||||||||||
+     Main Product Rate|LB/Hour|200|||||||||||||||||||
+     Main Product Unit Cost|0|1|||||||||||||||||||
+     Main Product Production Basis||LB|||||||||||||||||||
+     Main Product Rate per Period|0|1.6e+006|||||||||||||||||||
+     Main Product Sales|0|1.6e+006|||||||||||||||||||
+     By-product Sales|0|-1.6e+006|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+OPERATING LABOR AND MAINTENANCE COSTS|||||||||||||||||||||
+|||||||||||||||||||||
+     Operating Labor || |||||||||||||||||||
+          Operators per Shift||2|||||||||||||||||||
+          Unit Cost||20|||||||||||||||||||
+          Total Operating Labor Cost|Cost/period|320000|||||||||||||||||||
+|||||||||||||||||||||
+     Maintenance|||||||||||||||||||||
+          Cost/8000 Hours||24700|||||||||||||||||||
+          Total Maintenance Cost|Cost/period|24700|||||||||||||||||||
+|||||||||||||||||||||
+     Supervision|||||||||||||||||||||
+          Supervisors per Shift||1|||||||||||||||||||
+          Unit Cost||35|||||||||||||||||||
+          Total Supervision Cost|Cost/period|280000|||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+************************************************************************|||||||||||||||||||||
+|||||||||||||||||||||
+UTILITIES COSTS|||||||||||||||||||||
+|||||||||||||||||||||
+|||||||||||||||||||||
+     Electricity|||||||||||||||||||||
+          Rate|KW|43.492|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Electricity Cost|Cost/period|0|||||||||||||||||||
+     Potable  Water|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Potable Water Cost|Cost/period|0|||||||||||||||||||
+     Fuel  |||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Fuel Cost|Cost/period|0|||||||||||||||||||
+     Instrument  Air |||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Instrument Air Cost|Cost/period|0|||||||||||||||||||
+     Subtotal Cost |Cost/period|0|||||||||||||||||||
+|||||||||||||||||||||
+Process Utilities|||||||||||||||||||||
+|||||||||||||||||||||
+Steam @400PSI|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|5.35|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Steam @165PSI|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|4.46|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Steam @100PSI|||||||||||||||||||||
+          Rate|KLB/H|92.7822|||||||||||||||||||
+          Unit Cost|Cost/KLB|3.72|||||||||||||||||||
+          Total Cost|Cost/period|2.7612e+006|||||||||||||||||||
+Refrigerant - Freon 12|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Refrigerant - Ethylene|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Refrigerant - Ethane|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Refrigerant - Propylene|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Refrigerant - Propane|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Cooling Water|||||||||||||||||||||
+          Rate|MMGAL/H|0.347346|||||||||||||||||||
+          Unit Cost|Cost/MMGAL|55|||||||||||||||||||
+          Total Cost|Cost/period|152832|||||||||||||||||||
+Low Temp Heating Oil|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+High Temp Heating Oil|||||||||||||||||||||
+          Rate|||||||||||||||||||||
+          Unit Cost|Cost/KLB|0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 12|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 13|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 14|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 15|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 16|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 17|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 18|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 19|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Process Utility 20|||||||||||||||||||||
+          Rate||0.00|||||||||||||||||||
+          Unit Cost||0.00|||||||||||||||||||
+          Total Cost|Cost/period|0|||||||||||||||||||
+Subtotal Cost |Cost/period|2.91403e+006|||||||||||||||||||

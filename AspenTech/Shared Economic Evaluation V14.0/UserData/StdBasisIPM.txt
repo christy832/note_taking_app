@@ -1,0 +1,22 @@
+:::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+:::Project Remarks|29994|100|ic_CAPITAL_COSTS_STANDARD_BASIS_REMARKS|Edit Remarks statements for this file|
+:::Units of Measure Customization|19992|000|ic_UOM_CUSTOMIZATION|Units of measure customization|
+::::Input|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+::::Output (Reports)|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+:::Design Basis|11010|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS|Design basis specs for the project|
+::::Equipment Specs|40020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS_EQUIPMENT_SPECS|Design basis specs for Equipment|
+::::Piping Specs|11020|000|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS|Piping specs for the project|
+:::::General|40040|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_GENERAL|General piping specs for the project|
+:::::Material|40050|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_MATERIAL|Material piping specs for the project|
+::::Civil/Steel Specs|40070|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CIVIL_SPECS|Civil specs for the project|
+::::Instrumentation Specs|40080|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSTRUMENTATION_SPECS|Instrumentation specs for the project|
+::::Electrical Specs|40090|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ELECTRICAL_SPECS|Electrical specs for the project|
+::::Insulation Specs|40100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSULATION_SPECS|Insulation specs for the project|
+::::Paint Specs|40110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PAINT_SPECS|Paint specs for the project|
+:::Contingency and Misc. Project Costs|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PROJECT_COSTS|Project costs|
+:::Escalation|42020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ESCALATION|Escalation parameters for the project|
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::General Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to general wages and productivities|
+:::Equipment Rental|34100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_EQUIPMENT_RENTAL|Equipment rental|
+:::Indirects|35100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INDIRECTS|Indirects|
+:::Project Execution Schedule Settings|30020|100|ic_SCHEDULE_SETTINGS_SETUP|Settings for developing construction planning schedule|

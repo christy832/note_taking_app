@@ -1,0 +1,633 @@
+:Process equipment
+::Agitators- mix, react, knead   (AG AT BL K MX)
+:::Agitator
+::::Portable direct drive agitator                          *1EAG DIRECT
+::::Portable gear drive agitator                            *1EAG GEAR DRIVE
+::::Agitator, mechanical seal, variable diameter            *1EAG MECH SEAL
+::::Fixed mount, gear drive, anchor, stuffing box           *1EAG ANCHOR
+::::Portable propeller agitator, to 7.5hp[5.5kw]            *1EAG PORT PROP
+::::Fixed propeller, gear drive, to 100hp[75kw]             *1EAG FIXED PROP
+::::Pulp stock agitator                                     *1DAG PULP STOCK
+::::Sanitary reversing anchor agitator                      *1DAG ANCHOR REV
+::::Sanitary counter-rotating two-piece agitator            *1DAG COUNT ROT
+::::Sanitary high shear homogenizing agitator               *1DAG HIGH SHEAR
+::::Sanitary fixed propeller/turbine mixer                  *1DAG SAN FIXED
+::::Sanitary portable propeller/turbine mixer               *1DAG SAN PORT
+:::Agitated tanks
+::::Agitated tank - enclosed                                *1DAT MIXER
+::::Agitated tank - open top                                *1DAT OPEN TOP
+::::Agitated tank - enclosed, jacketed                      *1DAT REACTOR
+::::On machine pulper                                       *1DAT MACH PULP
+::::Off machine pulper                                      *1DAT OFF MACH
+::::Floatation conditioning cell                            *1EAT COND CELL
+::::Floatation machine                                      *1EAT FLOAT CELL
+:::Blender
+::::Rotary drum blender                                     *1EBL BLENDER
+::::Rotary double-cone blender                              *1EBL ROTARY
+::::Sanitary kettle blender without agitator                *1DBL KETTLE
+::::Sanitary rotary bowl blender                            *1DBL ROTARYBOWL
+::::Sanitary multi-shell staggered blender                  *1DBL MSHELSTAG
+:::Kneader
+::::Stationary upright double-arm kneader                   *1EK  STATIONARY
+::::Tilting double-arm kneader                              *1EK  TILTING
+::::Vacuum tilting double-arm kneader                       *1EK  VAC TILTNG
+:::Mixer
+::::Cylinder type extruder with variable drive              *1EMX EXTRUDER
+::::Muller type extruder mixer                              *1EMX MULLER EXT
+::::Pan mixer                                               *1EMX PAN
+::::Portable propeller mixer,    to 7.5hp[5.5kw]            *1EMX PORT PROP
+::::Fixed propeller, gear drive, to 100hp[75kw]             *1EMX FIXED PROP
+::::Double-arm sigma blade mixer                            *1EMX SIGMA
+::::Spiral ribbon mixer                                     *1EMX SPIRAL RIB
+::::Static mixer                                            *1DMX STATIC
+::::Two-roll mixer                                          *1EMX TWO ROLL
+::::Sanitary high-speed Norman-type mixer                   *1DMX HIGH SPEED
+::::Sanitary ribbon blender                                 *1DMX RIBBON
+::::Sanitary piston-type homogenizer                        *1DMX PISTON HOM
+::::Sanitary shear pump homogenizer                         *1DMX SHEAR HOM
+::Compressors and blowers        (AC GC FN)
+:::Compressor - air
+::::Centrifugal air compressor with motor                   *1EAC CENTRIF M
+::::Centrifugal air compressor with turbine                 *1EAC CENTRIF T
+::::Recip air compressor with gas engine                    *1EAC RECIP GAS
+::::Reciprocating air compresor with motor                  *1EAC RECIP MOTR
+::::Single recip air compressor - 1 stage                   *1EAC SINGLE 1 S
+::::Single recip air compressor - 2 stage                   *1EAC SINGLE 2 S
+:::Compressor - gas
+::::Centrifugal compressor - horizontal                     *1DGC CENTRIF
+::::Centrifugal - integral gear                             *1DGC CENTRIF IG
+::::Reciprocating compressor                                *1DGC RECIP MOTR
+::::Reciprocating compr. - integral gas engine              *1EGC RECIP GAS
+:::Fan
+::::Heavy duty, low noise blower                            *1EFN CENT TURBO
+::::Centrifugal fan                                         *1EFN CENTRIF
+::::Propeller fan                                           *1EFN PROPELLER
+::::General purpose blower                                  *1EFN ROT BLOWER
+::::Vaneaxial fan                                           *1EFN VANEAXIAL
+::Drivers                        (MOT TUR)
+:::Motor/Motor reducer
+::::Totally enclosed induction motor                        *1EMOTENCLOSED
+::::Explosion-proof (hazardous service)                     *1EMOTEXP PROOF
+::::Open drip-proof induction motor                         *1EMOTOPEN
+::::Synchronous motor                                       *1EMOTSYNCHRON
+::::TEFC Motor with variable speed drive                    *1EMOTVARY SPEED
+:::Turbine
+::::Steam turbine driver, condensing type                   *1ETURCONDENSING
+::::Steam turbine driver, non-condensing                    *1ETURNON COND
+::::Gas turbine with combustion chamber                     *1ETURGAS
+::::Turboexpander                                           *1DTURTURBOEXP
+::Heat exchangers, heaters       (HE RB FU)
+:::Heat exchanger
+::::TEMA shell and tube exchanger                           *1DHE TEMA EXCH
+::::Pre-engineered(standard) U-tube exchanger               *1DHE PRE ENGR
+::::Air cooler, free-standing or rack-mounted               *1DHE AIR COOLER
+::::Multi-stream, plate fin heat exchanger                  *1DHE PLATE FIN
+::::Plate and frame heat exchanger                          *1DHE PLAT FRAM
+::::Electric immersion tank heater                          *1EHE HEATER ELC
+::::Bare pipe immersion coil-heating/cooling                *1EHE HEATER STM
+::::Double pipe heat exchanger                              *1EHE JACKETED
+::::Finned double pipe heat exchanger                       *1EHE FIN TUBE
+::::Cross-bore (all graphite) heat exchanger                *1EHE CROSS BORE
+::::Thermascrew (Reitz) single screw conveyor               *1EHE ONE SCREW
+::::Twin screw agitated/jacketed heat exchanger             *1EHE TWO SCREW
+::::Graphite tube/CS shell heat exchanger                   *1EHE SHELL TUBE
+::::Spiral plate heat exchanger                             *1EHE SPIRAL PLT
+::::Tank suction heater                                     *1EHE SUC HEATER
+::::Waste heat boiler                                       *1EHE WASTE HEAT
+::::Sanitary corrugated double pipe exchanger               *1DHE CORRUGATED
+::::Water heater(shell & tube - hot water set)              *1DHE HOT WATER
+::::Sanitary multi-zone plate and frame exchanger           *1DHE MULTI P F
+::::Sanitary direct steam heat module                       *1DHE STM HE MOD
+::::Fixed tube sheet shell and tube exchanger               *1DHE FIXED T S
+::::Floating head shell and tube exchanger                  *1DHE FLOAT HEAD
+::::U-Tube shell and tube exchanger                         *1DHE U TUBE
+:::Reboiler
+::::Kettle type reboiler with floating head                 *1DRB KETTLE
+::::Thermosiphon type reboiler                              *1DRB THERMOSIPH
+::::U-tube kettle type reboiler                             *1DRB U TUBE
+:::Furnace
+::::Box type process furnace                                *1EFU BOX
+::::A-Frame type process furnace                            *1EFU HEATER
+::::Pyrolysis unit                                          *1EFU PYROLYSIS
+::::Box type reformer, without catalyst                     *1EFU REFORMER
+::::Vertical cylindrical process furnace                    *1EFU VERTICAL
+::Packings, linings              (PAK LIN)
+:::Packings
+::::Packing, variety of vessel packings                     *1EPAKPACKING
+:::Linings
+::::Acid brick lining                                       *1ELINACID BRICK
+::::Castable, refractory or gunned mix                      *1ELINMONOLITHIC
+::::Lining - other than acid brick, monolithic              *1ELINOTHER
+::Pumps                          (CP GP P)
+:::Pump - Centrifugal
+::::Centrifugal single or multi-stage pump                  *1DCP CENTRIF
+::::API 610 pump                                            *1DCP API 610
+::::API 610 in line pump                                    *1DCP API 610 IL
+::::High speed vertical in line API 610 pump                *1DCP HIGH SPEED
+::::Standard ANSI single stage pump                         *1DCP ANSI
+::::Standard ANSI magnetic drive pump                       *1DCP MAG DRIVE
+::::Plastic  ANSI single stage pump                         *1DCP ANSI PLAST
+::::Axial flow vertical pump                                *1ECP AXIAL FLOW
+::::Canned motor pump                                       *1DCP CANNED
+::::General service pump                                    *1DCP GEN SERV
+::::General service in line pump                            *1DCP IN LINE
+::::Vertical sump pump - turbine impeller                   *1ECP TURBINE
+::::Low consistency stock pump                              *1DCP PULP STOCK
+::::Sanitary centrifugal pump                               *1DCP SAN PUMP
+::::Sanitary fluming pump with feeder hopper                *1DCP FLUME PUMP
+:::Pump - Gear
+::::Canned rotor gear pump                                  *1EGP CANNED RTR
+::::Standard external gear rotary pump                      *1EGP GEAR
+::::Mechanical seal gear pump                               *1EGP MECH SEAL
+:::Pump - Pos. displacement
+::::Diaphragm pump - TFE type                               *1EP  DIAPHRAGM
+::::Reciprocating simplex pump - Steam driver               *1EP  SIMPLEX
+::::Reciprocating duplex pump - Steam driver                *1EP  DUPLEX
+::::Triplex (plunger) pump - motor driver                   *1EP  TRIPLEX
+::::Reciprocating positive displ plunger pump               *1EP  RECIP MOTR
+::::Rotary (sliding vanes) pump                             *1EP  ROTARY
+::::Slurry pump                                             *1EP  SLURRY
+::::High density stock pump                                 *1DP  HD STOCK
+::::Sanitary rotary lobe pump                               *1DP  ROTARYLOBE
+::::Sanitary air diaphragm pump                             *1DP  AIR DIAPH
+::Towers, columns- trayed/packed (DDT TW)
+:::Tower - multiple diameter
+::::Multiple diameter, trayed or packed tower               *1DTW TOWER
+:::Tower - double diameter
+::::Trayed double-diameter tower                            *1DDDTTRAYED
+::::Packed double-diameter tower                            *1DDDTPACKED
+:::Tower - single diameter
+::::Trayed tower                                            *1DTW TRAYED
+::::Packed tower                                            *1DTW PACKED
+::::Direct contact heat exchanger tower                     *1DTW DC HE TW
+::::Dual vessel temperature swing adsorber                  *1DTW TS ADSORB
+::::Tray stack for tray tower                               *1ETW TRAY STACK
+::Vacuum system equipment        (C EJ VP)
+:::Condensers
+::::Barometric condenser                                    *1EC  BAROMETRIC
+:::Ejectors, 100 psig [690 kpa] steam
+::::One stage ejector non-condensing                        *1EEJ SINGLE STG
+::::Two stage ejector non-condensing                        *1EEJ 2 STAGE
+::::Two stage ejector with one condenser                    *1EEJ TWO STAGE
+::::Four stage ejector with two condensers                  *1EEJ 4 STAGE
+::::Four stage ejector with one condenser                   *1EEJ 4 STAGE B
+::::Five stage ejector with one condenser                   *1EEJ 5 STAGE B
+:::Vacuum pumps
+::::Mechanical booster vacuum pump                          *1EVP MECH BOOST
+::::Mechanical oil-sealed vacuum pump                       *1EVP MECHANICAL
+::::Water-sealed vacuum pump                                *1EVP WATER SEAL
+::Vessels- pressure, storage     (HT VT)
+:::Vessel - horizontal tank
+::::Horizontal drum                                         *1DHT HORIZ DRUM
+::::Jacketed horizontal drum                                *1DHT JACKETED
+::::Multi-wall horizontal drum                              *1DHT MULTI WALL
+::::Crude oil desalter                                      *1DHT DESALTER
+::::Sanitary horizontal drum                                *1DHT SAN TANK
+:::Vessel - vertical tank
+::::Vertical process vessel                                 *1DVT CYLINDER
+::::Jacketed vertical process vessel                        *1DVT JACKETED
+::::Multi-wall vertical process vessel                      *1DVT MULTI WALL
+::::Flat bottom storage tank, optional roof                 *1DVT STORAGE
+::::Low pressure gas storage vessel                         *1DVT GAS HOLDER
+::::Sphere - pressure or vacuum storage                     *1DVT SPHERE
+::::Spheroid - pressure storage                             *1DVT SPHEROID
+::::Cryogenic storage tank                                  *1DVT CRYOGENIC
+::::Cryogenic double-walled, full containment storage tank  *1DVT LNG TANK
+::::Plastic storage tank (FRP or Haveg)                     *1EVT PLAST TANK
+::::Wooden storage tank                                     *1EVT WOOD TANK
+::::Cone bottom storage bin                                 *1DVT CONE BTM
+::::Live bottom storage bin                                 *1DVT LIVE BTM
+::::Cylindrical concrete tile chest                         *1DVT CHEST CYL
+::::Rectangular concrete tile chest                         *1DVT CHEST REC
+::::Metal tile chest                                        *1DVT CHEST MTL
+::::Sanitary vertical cylindrical vessel                    *1DVT SAN TANK
+::Crushers,flakers,mills,stock   (CR FL M ST)
+:::Crusher
+::::Cone crusher - secondary crushing                       *1ECR CONE
+::::Gyratory - Primary and secondary crushing               *1ECR GYRATORY
+::::Overhead eccentric jaw crusher                          *1ECR ECCENTRIC
+::::Swing jaw crusher                                       *1ECR JAW
+::::Rotary crusher                                          *1ECR ROTARY
+::::Single roll crusher - light duty                        *1ECR S ROLL LT
+::::Single roll crusher - medium duty                       *1ECR S ROLL MED
+::::Single roll crusher - heavy duty                        *1ECR S ROLL HVY
+::::Sawtooth roller crusher                                 *1ECR SAWTOOTH
+::::Reversible hammermill                                   *1ECR REV HAMR
+::::Non-reversible hammermill, med hard material            *1ECR HAMMER MED
+::::Non-reversible hammermill, hard material                *1ECR SWING HAMR
+::::Bradford (rotary) breaker                               *1ECR BRADFORD
+::::Single rotor impact breaker                             *1ECR S IMPACT
+::::Pulverizer - crushing soft material                     *1ECR PULVERIZER
+::::Ring granulator                                         *1ECR ROLL RING
+:::Flaker
+::::Rotary drum flaker                                      *1EFL DRUM
+:::Mill
+::::Attrition mill                                          *1EM  ATTRITION
+::::Autogenous mill                                         *1EM  AUTOGENOUS
+::::Ball mill with initial ball charge                      *1EM  BALL MILL
+::::Rod mill with initial rod charge                        *1EM  ROD MILL
+::::Rod charger for rod mill                                *1EM  ROD CHARGR
+::::Mikro-pulverizer                                        *1EM  MIKRO PULV
+::::Roller mill                                             *1EM  ROLLER
+:::Stock treatment
+::::Conical type deflaker                                   *1EST DEFLAKE CN
+::::Plate or tackle type deflaker                           *1EST DEFLAKE DK
+::::Double disk refiner                                     *1EST REFINER
+::Evaporators, dryers, cryst. (CRY E WFE AD D DD RD TDS)
+:::Crystallizer
+::::Batch vacuum crystallizer                               *1ECRYBATCH VAC
+::::Mechanical scraped-surface crystallizer                 *1ECRYMECHANICAL
+::::Oslo growth type crystallizer                           *1ECRYOSLO
+:::Evaporator
+::::Agitated falling film evaporator                        *1EE  FALL FILM
+::::Forced circulation evaporator                           *1EE  FORCED CIR
+::::Long tube rising film evaporator                        *1EE  LONG TUBE
+::::Long tube vertical evaporator                           *1EE  LONG VERT
+::::Standard vertical tube evaporator                       *1EE  STAND VERT
+::::Standard horizontal tube evaporator                     *1EE  STAND HOR
+:::Wiped film evaporator
+::::Agitated thin film evaporator                           *1EWFETHIN FILM
+::::Agitated thin film evap. - package system               *1EWFEWFE SYSTEM
+:::Air dryer
+::::Dual tower, dessicant type air dryer                    *1EAD AIR DRYER
+:::Dryer
+::::Atmospheric tray batch dryer                            *1ED  ATMOS TRAY
+::::Vacuum tray batch dryer                                 *1ED  VAC TRAY
+::::Agitated pan batch dryer                                *1ED  PAN
+::::Continuous spray drying system                          *1ED  SPRAY
+:::Drum dryer
+::::Double atmospheric drum dryer                           *1EDD DOUBLE ATM
+::::Single atmospheric drum dryer                           *1EDD SINGLE ATM
+::::Single vacuum rotary drum dryer                         *1EDD SINGLE VAC
+::::Sanitary rotary drum cooker cooler                      *1DDD S COOKCOOL
+:::Rotary dryer
+::::Direct contact rotary dryer                             *1ERD DIRECT
+::::Indirect contact rotary dryer                           *1ERD INDIRECT
+::::Jacketed rotary vacuum dryer                            *1ERD JAC VACUUM
+::::Conical rotary vacuum dryer                             *1ERD VACUUM
+:::Tray drying system
+::::Atmospheric tray dryer                                  *1ETDSATM SYSTEM
+::::Vacuum tray dryer with condenser                        *1ETDSVAC SYSTEM
+::::Vacuum tray dryer                                       *1ETDSVACUUM
+::::Turbo tray drying system                                *1ETDSTURBO
+::Solids conveying               (CO CE EL FE HO S)
+:::Conveyor
+::::Belt conveyor - open                                    *1DCO OPEN BELT
+::::Belt conveyor - covered                                 *1DCO CLOSED BLT
+::::Apron conveyor - pans on endless chain                  *1ECO APRON
+::::Pneumatic conveying system                              *1ECO PNEUMATIC
+::::Roller conveyor (non-motorized)                         *1ECO ROLLER
+::::Screw conveyor in U-shaped trough                       *1ECO SCREW
+::::Vibrating conveyor with inclined trough                 *1ECO VIBRATING
+::::Elevator-spaced bucket                                  *1ECO CENT BKT L
+::::Elevator-continuous bucket                              *1ECO CONT BKT L
+::::Sanitary horizontal conveyor                            *1DCO S BELTCONV
+::::Sanitary vertical conveyor                              *1DCO S VERTICAL
+::::Sanitary vibratory conveyor                             *1DCO S VIBRATRY
+::::Sanitary inclined conveyor                              *1DCO S INCLINE
+:::Crane
+::::Traveling bridge crane                                  *1ECE BRIDGE CRN
+::::Hoist with track beam                                   *1ECE HOIST
+:::Elevator
+::::Freight elevator                                        *1EEL FREIGHT
+::::Passenger elevator                                      *1EEL PASSENGER
+:::Feeder
+::::Volumetric belt feeder                                  *1EFE BELT
+::::Bin activator                                           *1EFE BIN ACTVTR
+::::Rotary feeder                                           *1EFE ROTARY
+::::Vibrating feeder                                        *1EFE VIBRATING
+::::Loss-in-weight feeder                                   *1EFE WT LOSS
+::::Sanitary dumper                                         *1DFE DUMPER
+::::Sanitary bulk bag unloader                              *1DFE SACK DUMP
+::::Sanitary screw feeder                                   *1DFE SAN SCREW
+::::Sanitary weigh belt feeder                              *1DFE SAN BELT
+:::Hoist
+::::5-speed electric hoist - motorized trolley              *1EHO HOIST
+::::1-speed electric hoist - no trolley                     *1EHO 1 SPEED
+::::5-speed electric hoist - no trolley                     *1EHO 5 SPEED
+::::Hand hoist - manual pull chain trolley                  *1EHO HAND GT
+::::Hand hoist - manual trolley                             *1EHO HAND PT
+::::Hand hoist - no trolley                                 *1EHO HAND NT
+:::Scale
+::::Beam scale                                              *1ES  BEAM SCALE
+::::Conveyor belt scale                                     *1ES  BELT
+::::Bench scale - dial and beam                             *1ES  BENCH
+::::Full frame floor scale - dial and beam                  *1ES  FULL FRAME
+::::Semi frame floor scale - dial and beam                  *1ES  SEMI FRAME
+::::Tank scale - weight bridge and saddles                  *1ES  TANK SCALE
+::::Track scale for rail cars                               *1ES  TRACK
+::::Truck (lorry) scale                                     *1ES  TRUCK
+::::Sanitary floor scale - flush mounted                    *1DS  SAN FLOOR
+::Separation equipment           (CT DC F SE T VS)
+:::Centrifuge
+::::Atmospheric suspended basket centrifuge                 *1ECT ATM SUSPEN
+::::Auto batch filtering centrifuge                         *1ECT BATCH AUTO
+::::Batch bottom-suspended centrifuge                       *1ECT BATCH BOTM
+::::Batch top-suspended centrifuge                          *1ECT BATCH TOP
+::::Batch bottom unload centrifuge                          *1ECT BOT UNLOAD
+::::Batch top unload centrifuge                             *1ECT TOP UNLOAD
+::::Hi-speed disk centrifuge                                *1ECT DISK
+::::Inverting filter centrifuge                             *1ECT INVERTING
+::::Reciprocating conveyor centrifuge                       *1ECT RECIP CONV
+::::Scroll conveyor centrifuge                              *1ECT SCROLL CON
+::::Screen bowl centrifuge                                  *1ECT SCREEN BWL
+::::Solid bowl centrifuge                                   *1ECT SOLID BOWL
+::::Hi-speed tubular centrifuge                             *1ECT TUBULAR
+::::Vibratory screen centrifuge                             *1ECT VIBRATORY
+:::Dust collector
+::::Centrifugal precipitator                                *1EDC CENTRF PRE
+::::Baghouse with motor shakers                             *1EDC CLOTH BAY
+::::Baghouse with injected pulsed air                       *1EDC PULSE SHKR
+::::Cyclone dust collector                                  *1EDC CYCLONE
+::::Multiple cyclone dust collector                         *1EDC MULT CYCLO
+::::High voltage electrical precipitator                    *1DDC ELC H VOLT
+::::Low voltage electrical precipitator                     *1EDC ELC L VOLT
+::::Washer dust collector                                   *1EDC WASHERS
+::::Venturi and cyclone scrubber                            *1EDC VENTURI SC
+:::Filter
+::::Cartridge filter (5 micron cotton)                      *1EF  CARTRIDGE
+::::Pressure leaf-dry filter                                *1EF  LEAF DRY
+::::Pressure leaf-wet filter                                *1EF  LEAF WET
+::::Plate and frame filter                                  *1EF  PLATE FRAM
+::::Rotary disk filter                                      *1DF  ROTY DISK
+::::Rotary drum filter                                      *1DF  ROTY DRUM
+::::Scroll discharge centrifugal filter                     *1EF  SCROLL
+::::Sewage filter                                           *1EF  SEWAGE
+::::Sparkler filter                                         *1EF  SPARKLER
+::::Tubular fabric filter (bank of 3)                       *1EF  TUBULAR
+::::White water filter - centrifugal screen                 *1EF  WHITEWATER
+::::Compressed gas filter                                   *1DF  COMPRSDGAS
+::::Sediment removal filter                                 *1DF  FILTER
+::::Sanitary in-line metal trap                             *1DF  METAL TRAP
+::::Sanitary fluming reclaim reel                           *1DF  RECL REEL
+::::Culinary (sterile) air filter                           *1DF  SAN AIR
+::::Sanitary pipe filter                                    *1DF  SAN PIPE
+::::Sanitary filter press                                   *1DF  SAN PRESS
+::::Culinary (sterile) steam filter                         *1DF  SAN STEAM
+::::Sanitary pipe strainer                                  *1DF  SAN STRAIN
+:::Separation equipment
+::::Pulp stock centrifugal cleaner                          *1DSE PULP STOCK
+::::Water-only cyclone - mineral separation                 *1ESE WATER CYCL
+::::Oil-water separator - API type                          *1ESE OIL WATER
+:::Thickeners
+::::Thickener/clarifier                                     *1DT  THICKENER
+:::Vibrating screen
+::::Multiple deck rectangular vibrating screen              *1EVS RECTANGLE
+::::Multiple deck circular vibrating screen                 *1EVS CIRCULAR
+::::Hummer type screen for fine separation                  *1EVS HUMMER
+::::Low consistency stock screen                            *1DVS LD STOCK
+::::Mechanical bar screen                                   *1DVS BAR
+::::Pressure screen                                         *1DVS PRESSURE
+::::Sanitary fluming dewatering shaker                      *1DVS SHAKER
+::Utility service systems        (CTW STB HU RU EG WTS)
+:::Cooling tower
+::::Cooling tower, less pumps, field assembly               *1ECTWCOOLING
+::::Cooling tower, complete, field assembly                 *1ECTWCOOLING WP
+::::Packaged cooling tower, factory assembly                *1ECTWPACKAGED
+:::Steam boiler
+::::Packaged boiler unit                                    *1ESTBBOILER
+::::Field erected boiler unit                               *1ESTBSTM BOILER
+:::Heating units
+::::Process heater type dowtherm unit                       *1EHU CYLINDER
+:::Refrigeration unit
+::::Centrifugal compression refrigeration unit              *1ERU CENT COMPR
+::::Mechanical compression refrigeration unit               *1ERU MECHANICAL
+:::Electric generator
+::::Portable electrical generator - diesel                  *1EEG PORTABLE
+::::Electrical generator - steam or gas turbine drive       *1EEG TURBO GEN
+:::Water treatment plant
+::::Two stage ion exchange water treatment                  *1EWTSDEMINERAL
+::::Hot lime, zeolite water treatment system                *1EWTSSOFTENING
+::::Surface aerator                                         *1DWTSAERATOR
+::Flares, stacks                 (FLR STK)
+:::Flares
+::::Derrick-supported flare stack                           *1DFLRDERRICK
+::::Guyed flare stack                                       *1DFLRGUYED
+::::Self-supported flare stack                              *1DFLRSELF SUPP
+::::Horizontal ground flare                                 *1DFLRHORIZONTAL
+::::Vapor control flare for storage/loading                 *1EFLRSTORAGE
+::::Recuperative thermal oxidizer                           *1EFLRTHRM OX LC
+:::Stacks
+::::Stack without flare tip                                 *1DSTKSTACK
+:Plant bulks
+::Piping
+:::Above grade or buried piping                             *1BPIPPIPE
+:::Utility pipe and utility stations                        *1BPIPUTIL PIPE
+:::Buried concrete pipe, manholes, trench                   *1BPIPRCON PIPE
+:::Round duct with hangers                                  *1BPIPDUCT RD
+:::Square duct with hangers                                 *1BPIPDUCT SQ
+:::Fluid heat tracing for equipment                         *1BPIPEQPT TRACE
+:::Fluid heat tracing for pipe                              *1BPIPPIPE TRACE
+:::Half-round launders                                      *1BPIPLAUNDER RD
+:::Square or rectangular launders                           *1BPIPLAUNDER SQ
+:::Coating and wrapping of buried pipe                      *1BPIPCOAT WRAP
+:::Hot tap of production pipe for branch                    *1BPIPHOT TAP
+:::Permanent scraper launcher and receiver                  *1BPIPSCRAPER LR
+:::Pipe, valve and fittings at a well head                  *1BPIPWELL HEAD
+:::Post indicator valve (PIV)                               *1BPIPPIV
+:::Sprinkler fire system (water or water+foam)              *1BPIPSPRNK
+:::Foam fire systems                                        *1BPIPFOAM
+:::Standpipe and hose fire systems                          *1BPIPSPHOS
+:::Emergency eyewash and shower units                       *1BPIPWSHWR
+:::High density polyethylene pipe, fusion bonded            *1BPIPHDPE PIPE
+:::Ductile iron pipe                                        *1BPIPDI PIPE
+:::Sanitary flow diversion panel                            *1BPIPFLO PANEL
+:::Tubing                                                   *1BPIPTUBING
+:::Above grade or buried pipeline segment                   *1PCCP
+::Civil
+:::Above grade concrete tank                                *1BCIVABVGR TANK
+:::Below grade concrete tank                                *1BCIVBELGR TANK
+:::Foundations, slabs, other concrete items                 *1BCIVCONCRETE
+:::Scaffold erection and dismantling                        *1BCIVSCAFFOLD
+:::Drainage trench for paved areas                          *1BCIVTRENCH
+:::Tank containment - concrete paving, wall                 *1BCIVCONTAINMNT
+:::Tank containment - dike and geomembrane                  *1BCIVDIKE MEMBR
+:::Above grade or buried piping                             *1BCIVPIPE
+:::High density polyethylene pipe, fusion bonded            *1BCIVHDPE PIPE
+:::Buried concrete pipe, manholes, trench                   *1BCIVRCON PIPE
+:::Building                                                 *1BCIVBUILDING
+:::Civil Lining                                             *1BCIVLINING
+:::Pipe rack                                                *1BCIVPIPE RACK
+:::Tee or bent type pipe sleepers                           *1BCIVPIPE SUPPT
+:::Open concrete structure                                  *1BCIVOPN CON ST
+::Steel
+:::Open steel structure                                     *1BSTLOPN STL ST
+:::Pipe rack                                                *1BSTLPIPE RACK
+:::Tee or bent type pipe sleepers                           *1BSTLPIPE SUPPT
+:::Multiple bay mill building                               *1BSTLMILL BLDG
+:::Elevated access platform - complete                      *1BSTLPLATFORM
+:::Gallery for pipe, conveyor, personnel                    *1BSTLGALLERY
+:::Conveyor transfer tower                                  *1BSTLTRNS TOWER
+:::Steel grate - less support structure                     *1BSTLGRATE
+:::Steel ladders                                            *1BSTLLADDER
+:::Stairs with grate treads and handrail                    *1BSTLSTAIR
+:::Miscellaneous steel items                                *1BSTLMISC STEEL
+:::Fabricated steel plate items                             *1BSTLFABR PLATE
+:::Tubular steel items                                      *1BSTLTUBE STEEL
+:::Offshore jacket                                          *1BSTLJACKET
+:::Siding and roofing for steel structures                  *1BSTLSIDING
+:::Sanitary platform for equipment access                   *1BSTLSAN PLATFM
+:::Pipe truss bridge                                        *1BSTLPIPE TRUSS
+:::Steel material takeoff (MTO)                             *1BSTLMTO
+::Instrumentation
+:::Instrument conduit                                       *1BINSCONDUIT
+:::Instrument panel - analog                                *1BINSINST PANEL
+:::Instrument cable tray                                    *1BINSINST TRAY
+:::Instrument electronic transmission wire                  *1BINSINST WIRE
+:::Instrument pneumatic multi-tube bundle runs              *1BINSPNU TUBING
+:::Thermocouple wire runs                                   *1BINSTHCPL WIRE
+:::Instrument junction boxes                                *1BINSJUNC BOX
+:::Operator Center                                          *1BINSOPER CENT
+:::Multifunction controllers                                *1BINSMULTI CONT
+:::High energy level process interface unit                 *1BINSHL PIU
+:::Low energy level process interface unit                  *1BINSLL PIU
+:::Data hiway cable                                         *1BINSDATA HIWAY
+::Electrical - General
+:::Electrical power cable runs                              *1BELCELEC CABLE
+:::Electrical control cable runs (LV)                       *1BELCCTRL CABLE
+:::Electrical conduit with optional power,instrument cable  *1BELCCONDUIT
+:::Electrical cable tray                                    *1BELCELEC TRAY
+:::Electrical tracing for equipment                         *1BELCEQPT TRACE
+:::Electrical tracing for pipe                              *1BELCPIPE TRACE
+:::Ground grid                                              *1BELCGRND GRID
+:::Lights and outlets                                       *1BELCAREA LIGHT
+:::Group of anodes in deep well                             *1BELCDEEP ANODE
+:::Individual galvanic anode                                *1BELCGALV ANODE
+:::Group of anodes in shallow surface bed                   *1BELCSURF ANODE
+:::Potential measurement test station                       *1BELCPOT TEST
+:::Transformer/rectifier                                    *1BELCRECTIFIER
+:::Solar panel with storage batteries                       *1BELCSOLAR PANL
+:::Emergency light with battery                             *1BELCEMER LIGHT
+:::Underground cable duct                                   *1BELCCABLE DUCT
+:::Lighting panelboard and distribution board               *1BELCPANEL BRD
+:::Power panelboard/load center                             *1BELCPOWER PANL
+:::Tracing panelboard - self regulating heating cable       *1BELCTRACE PANL
+:::Electrical tracing controller                            *1BELCTRACE CNTR
+:::High mast lighting                                       *1BELCHIGH MAST
+:::Communication and alarm systems                          *1BELCCOMALM SYS
+::Electrical - Substation
+:::Bus duct                                                 *1BELSBUS DUCT
+:::Electrical transformer- 1 or 2 tap                       *1BELSTRANSFORM
+:::Oil circuit breakers                                     *1BELSOIL C BRKR
+:::Disconnect switch                                        *1BELSDISCNCT SW
+:::Power pole lines                                         *1BELSPOLE LINE
+:::Steel for substation structure                           *1BELSSUBSTN STL
+:::Circuit breaker- main, feeder, tie                       *1BELSBREAKER
+:::Motor control center                                     *1BELSMCC
+:::Switch board                                             *1BELSSWITCH BRD
+:::AC/DC transformer, low voltage AC to DC                  *1BELSAC DC TRAN
+:::Package transformer with panel                           *1BELSPKG TRANSF
+:::Uninterrupted power supply                               *1BELSUPS
+:::Emergency diesel generator                               *1BELSEM PWR SET
+:::Power factor correction capacitor                        *1BELSPF CORRECT
+::Insulation
+:::General area fireproofing                                *1BINLFIREP AREA
+:::Structural steel fireproofing                            *1BINLFIREP SSTL
+:::General area insulation                                  *1BINLINSUL AREA
+:::Pipe insulation                                          *1BINLINSUL PIPE
+:::Packed bulk insulation                                   *1BINLINSUL BULK
+:::Cable tray fireproofing                                  *1BINLFIREP TRAY
+::Paint
+:::General area painting                                    *1BPNTPAINT AREA
+:::Pipe painting                                            *1BPNTPAINT PIPE
+:::Structural steel painting                                *1BPNTPAINT SSTL
+:Site development
+::Demolition
+:::Demolish Building w/disposal, no salvage                 *1SD  DEMOLITION
+:::Demolish Building w/disposal and salvage                 *1SD  DISPOSAL
+:::Explosive bldg demol, no salvage/disposal                *1SD  EXPL DEMOL
+:::Gutting and disposal of building interior                *1SD  REMOVAL
+:::Lump sum quotation - demolition                          *1SD  DEMOL
+::Drainage
+:::Catch basin, manhole                                     *1SD  BASINS
+:::Pump and hose for open excavations                       *1SD  DEWATERING
+:::Drainage piping                                          *1SD  DRAINS
+:::Septic tank and drain field                              *1SD  SEPTIC TNK
+:::Foundation subdrain with perforated pipe                 *1SD  SUBDRAIN
+:::Sump pit                                                 *1SD  SUMP PIT
+:::Cased water supply well with pump                        *1SD  WATER WELL
+:::Wellpoints with header and pump                          *1SD  WELLPOINTS
+:::Dewatering wells with pump                               *1SD  WELLS
+:::Lump sum quotation - drainage                            *1SD  DRAINAGE
+::Earthwork - general
+:::Test borings with engineer's report                      *1SD  BORINGS
+:::Clear brush - manual or dozer                            *1SD  BRUSH
+:::Mechanized clearing and grubbing of trees, etc           *1SD  CLEAR GRUB
+:::Dike construction including stablizing                   *1SD  DIKE
+:::Gunite slope protection                                  *1SD  GUNITE
+:::Pond with bedding,lining,fencing - no pipe               *1SD  POND
+:::Cantilevered concrete retaining wall                     *1SD  RETAIN
+:::Sprayed asphalt soil stabilization                       *1SD  STABILIZE
+:::Lump sum quotation - earthwork                           *1SD  EARTHWORK
+::Earthwork - excavation
+:::Backfill and compact excavation                          *1SD  BACKFILL
+:::Drill and blast rock - no disposal                       *1SD  BLASTING
+:::Fill compaction with towed roller                        *1SD  COMPACT
+:::Cut and fill with spreading - no compaction              *1SD  CUT FILL
+:::Hand excavation, no backfill/shoring, etc                *1SD  HAND EXCV
+:::Truck haul-disposal or purchased fill                    *1SD  HAULING
+:::Manual jackhammer work - no disposal                     *1SD  J HAMMER
+:::Rock excavation with tractor and ripper                  *1SD  RIP ROCK
+:::Shoring of excavations                                   *1SD  SHORING
+:::Excavation with stockpile or disposal                    *1SD  SITE EXCVN
+:::Strip and stockpile soil - no hauling                    *1SD  STRIP SOIL
+:::Machine excavation, no backfill/shoring etc              *1SD  STRUC EXC
+:::Ditching no backfill/shoring, etc                        *1SD  TRENCH EXC
+::Fencing
+:::Barbed wire topping for fence                            *1SD  BARBED
+:::Chain link fence with concrete footing                   *1SD  CHAIN LINK
+:::Wood Fencing                                             *1SD  FENCE WOOD
+:::Free standing wall, concrete or masonry                  *1SD  FS WALL
+:::Industrial gate for fence                                *1SD  GATES
+:::Wire mesh fencing                                        *1SD  MESH
+:::Heavy duty security fencing                              *1SD  SECURITY
+:::Boundary or Perimeter fencing and gates                  *1SD  BOUNDARY
+:::Lump sum quotation - Fencing                             *1SD  FENCING
+::Landscaping
+:::Mesh or netting erosion control                          *1SD  EROSION
+:::Placing peat or wood chip mulch                          *1SD  MULCH
+:::Planting trees or shrubs                                 *1SD  PLANTING
+:::Fine grading, seed, lime, fertilize                      *1SD  SEEDING
+:::Furnish, place sod on prepared area                      *1SD  SODDING
+:::Polybor chlorate soil sterilization                      *1SD  STERILIZE
+:::Furnish topsoil, place and fine grade                    *1SD  TOPSOIL
+:::Lump sum quotation - Landscaping                         *1SD  LANDSCAPE
+::Paving/roads
+:::Paving - Asphalt base and wearing courses                *1SD  ASPHALT
+:::Grade and compact base for paving                        *1SD  BASE PREP
+:::Concrete paving-no base preparation                      *1SD  CONC PAVNG
+:::Slipformed or manual cross gutter                        *1SD  CROSS GUTT
+:::Slipformed or manual placed curb                         *1SD  CURB
+:::Slipformed or manual curb and gutter                     *1SD  CURB GUTT
+:::Coal tar pitch emulsion (2 coats)                        *1SD  SEALCOAT
+:::Sidewalk base and paving                                 *1SD  SIDEWALKS
+:::Gravel base course - no base prep                        *1SD  SUBPAVING
+:::Resurfacing with sealant and gravel                      *1SD  TAR CHIP
+:::Site preparation for paving                              *1SD  SITEPREP
+:::Concrete canal or gutter                                 *1SD  CANALGUTTR
+:::Main, secondary and minor roads                          *1SD  ROAD
+:::Parking area                                             *1SD  PARKING                             
+:::Lump sum quotation - Paving/Roads                        *1SD  PAVING
+::Piling
+:::Drilled bell-type caisson                                *1SD  CAISSON
+:::Driven pipe piles                                        *1SD  PIPE
+:::Drilled and cast-in-place concrete piles                 *1SD  POURED
+:::Driven precast concrete piles                            *1SD  PRECAST
+:::Driven Raymond step-taper piles                          *1SD  RAYMOND
+:::Driven steel H-piles                                     *1SD  STEEL H
+:::Driven wood piles                                        *1SD  WOOD
+:::Lump sum quotation - Piling                              *1SD  PILING
+::Railroads
+:::Bumper at siding end                                     *1SD  BUMPER
+:::Single line siding crossing                              *1SD  CROSSING
+:::Single track yard siding                                 *1SD  SIDING
+:::Heavy duty siding for mining application                 *1SD  SIDING HVY
+:::Crossing signal with barrier, etc.                       *1SD  SIGNAL
+:::Wheel stops on siding                                    *1SD  STOPS
+:::#8 Turnout, switchpoint, etc.                            *1SD  TURNOUT
+:::Lump sum quotation - Railroads                           *1SD  RAILROADS
+:Buildings                                                  *1BCIVBUILDING
+:Quoted equipment                                           *1C
+:Unit cost library                                          *1LIB
+:Equipment model library                                    *1Y
+

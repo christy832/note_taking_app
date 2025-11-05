@@ -1,0 +1,104 @@
+Object : Standard Basis Files
+
+
+US_MET : Sample Standard Basis File for US Metric units of measure
+Default : Default Standard Basis File developed for US Metric units of measure
+
+Argentina(Aspen_Basis) : Argentina Country Basis,
+Aspen ICARUS Basis,
+Pesos Currency,
+L3 Level
+
+Brazil(Aspen_Basis) : Brazil Country Basis,
+Aspen ICARUS Basis,
+Currency: Reals,
+L3 Level
+
+Australia(Aspen_Basis) : Australia Country Basis,
+Aspen ICARUS Basis,
+Currency: Australian Dollars,
+L3 Level
+
+Canada(Aspen_Basis) : Canada Country Basis,
+Aspen ICARUS Basis,
+Currency: Canadian Dollars,
+L2 Level
+
+China(Aspen_Basis) : China Country Basis,
+Aspen ICARUS Basis,
+Currency: Renminbi,
+L2 Level
+
+Colombia(Aspen_Basis) : Colombia Country Basis,
+Aspen ICARUS Basis,
+Currency: 1000 Columbian Pesos,
+L4 Level
+
+Czech_Republic(Aspen_Basis) : Czech Republic Country Basis,
+Aspen ICARUS Basis,
+Currency: Koruna,
+L3 Level
+
+
+France(Aspen_Basis) : France Country Basis,
+Aspen ICARUS Basis,
+Currency: French Francs,
+L2 Level
+
+Germany(Aspen_Basis) : Germany Country Basis,
+Aspen ICARUS Basis,
+Currency: German Marks,
+L2 Level
+
+India(Aspen_Basis) : India Country Basis,
+Aspen ICARUS Basis,
+Currency: Rupees,
+L4 Level
+
+South_Korea(Aspen_Basis) : South Korea Country Basis,
+Aspen ICARUS Basis,
+Currency: 1000 Won,
+L3 Level
+
+Malaysia(Aspen_Basis) : Malaysia Country Basis,
+Aspen ICARUS Basis,
+Currency: Ringgit,
+L3 Level
+
+Mexico(Aspen_Basis) : Mexico Country Basis,
+Aspen ICARUS Basis,
+Currency: Mexican Pesos,
+L2 Level
+
+Russia(Aspen_Basis) : Russia Country Basis,
+Aspen ICARUS Basis,
+Currency: 1000 Rubles,
+L3 Level
+
+Saudi_Arabia(Aspen_Basis) : Saudi Arabia Country Basis,
+Aspen ICARUS Basis,
+Currency: Riyals,
+L2 Level
+
+South_Africa(Aspen_Basis) : South Africa Country Basis,
+Aspen ICARUS Basis,
+Currency: Rand,
+L2 Level
+
+
+Taiwan(Aspen_Basis) : Taiwan Country Basis,
+Aspen ICARUS Basis,
+Currency: Taiwanese Dollars,
+L4 Level,
+
+
+Venezuela(Aspen_Basis) : Venezuela Country Basis,
+Aspen ICARUS Basis,
+Currency: 1000 Bolivar,
+L2 Level
+
+UK_MET : Sample Standard Basis File for UK Metric units of measure
+
+JP_MET : Sample Standard Basis File for JP Metric units of measure
+
+

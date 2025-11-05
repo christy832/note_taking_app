@@ -1,0 +1,16 @@
+::::Design Criteria|10031|010|ic_GENERAL_DESIGN_CRITERIA|Design criteria and associated file name|projinfo|Project Information|Design Criteria|
+:::::Common|20015|100|ic_DESIGN_CRIT_COMMON|Design criteria - Common (can be overwritten at sub-level category)|projinfo|Project Information|Design Criteria|
+:::::Pumps|20016|100|ic_DESIGN_CRIT_PUMPS|Design criteria - Pumps|projinfo|Project Information|Design Criteria|
+:::::Compressors|20017|100|ic_DESIGN_CRIT_COMPRESSORS|Design criteria - Compressors|projinfo|Project Information|Design Criteria|
+:::::Heat Exchangers|20018|100|ic_DESIGN_CRIT_HEAT_EXCHANGER|Design criteria - Heat Exchangers|projinfo|Project Information|Design Criteria|
+:::::Towers|20019|100|ic_DESIGN_CRIT_TOWERS|Design criteria - Towers|projinfo|Project Information|Design Criteria|
+::::::Packed|20020|100|ic_DESIGN_CRIT_TOWERS_PACKED|Design criteria - Packed Towers|projinfo|Project Information|Design Criteria|
+::::::Trayed|20021|100|ic_DESIGN_CRIT_TOWERS_TRAYED|Design criteria - Trayed Towers|projinfo|Project Information|Design Criteria|
+::::::Configurations Towers|20022|100|ic_DESIGN_CRIT_TOWERS_CONFIGS|Design criteria - Tower Configurations|projinfo|Project Information|Design Criteria|
+:::::Vessels|20023|100|ic_DESIGN_CRIT_VESSELS|Design criteria - Vessels|projinfo|Project Information|Design Criteria|
+::::::Agitated|20024|100|ic_DESIGN_CRIT_VESSELS_AGITATED|Design criteria - Agitated Vessels|projinfo|Project Information|Design Criteria|
+::::::Storage|20025|100|ic_DESIGN_CRIT_VESSELS_STORAGE|Design criteria - Storage Vessels|projinfo|Project Information|Design Criteria|
+::::::Horizontal|20026|100|ic_DESIGN_CRIT_VESSELS_HORIZONTAL|Design criteria - Horizontal Vessels|projinfo|Project Information|Design Criteria|
+::::::Vertical|20027|100|ic_DESIGN_CRIT_VESSELS_VERTICAL|Design criteria - Vertical Vessels|projinfo|Project Information|Design Criteria|
+:::::Miscellaneous|20028|100|ic_DESIGN_CRIT_MISCELLANEOUS|Design criteria - Other design criteria parameters|projinfo|Project Information|Design Criteria|
+:::::Configurations Flash|20029|100|ic_DESIGN_CRIT_FLASH_CONFIGS|Design criteria - Flash Configurations|projinfo|Project Information|Design Criteria|

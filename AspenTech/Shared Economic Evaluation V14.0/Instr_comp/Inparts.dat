@@ -1,0 +1,393 @@
+#--------------------------------------------------------------------------     
+#  Process Instruments Parts List:  INPARTS.DAT                                 
+#--------------------------------------------------------------------------     
+#  History:                                                                     
+#                                                                               
+#  Created 27 October 1998 at ICARUS Corp. by B. Ye                             
+#  Updated 10 July    1998 by B. Ye : Add rotameter to piping block             
+#  Updated 15 January 1999 by B. Ye : Add Currency Conversion Info.             
+#  Updated 19 January 1999 by B. Ye : Users may add their items for ID 5000     
+#                                     through 5999.                             
+#  Updated 26 October 1999 by B. Ye : Change Currency Conversion Info.          
+#  Updated 10 October 2007 by PD    : Add SAR Currency for ME country base      
+#  [add your changes here]                                                      
+#                                                                               
+#..........................................................................     
+#  Purpose:                                                                     
+#                                                                               
+#  To provide user-editable format for reading instrument hookup parts          
+#  from this database and making instrument assembly in INASMBLY.DAT            
+#                                                                               
+#..........................................................................     
+#                                                                               
+#  Explanation of Fields:                                                       
+#                                                                               
+#  ID:   Instrument parts 4 digit ID number                                     
+#  COA:  Code of Account - a valid ICARUS instrumentation code of account.      
+#        If a customized COA set is being used in the project, items            
+#        will be subsequently allocated to the appropriate user COA.            
+#  QT:   Quantity, MUST Be set to 1                                             
+#  UT:   Unit of Measure (EA for each, FT for feet, M for meter)                
+#  DIA:  Size (I/P is imperial unit, MET is metric unit)                        
+#  DESCRIPTION:  Description of hookup parts - maximum of 12 characters         
+#  MATL: Material - Must be a valid ICARUS material code                        
+#        The following material codes have been prepared by ICARUS              
+#        for the instrumentation hookups. If you want to add others besides     
+#        those prepared, please contact ICARUS                                  
+#        {CS,CI,SS,TI,AL,NI,INCNL,MONEL,CU,BRASS,BRONZ,TFELS,GALV,              
+#        PVC,ARMOR,FIBER,COAX}.                                                 
+#  BCOST:The unit material cost in user's currency for the base YEAR (see       
+#        see below). Default is U.S. Dollars (USD).                             
+#        This will be converted to the currency for the base country in your    
+#        project using the currency conversion information table in this file   
+#        (see the CURRENCY CONVERSION section, below).  After escalation to the 
+#        year of your system, then to the User's Base Year (see YEAR, below),   
+#        this is finally converted to the project currency units using the      
+#        conversion rate in the project.                                        
+#  MH:   Total crew installation man-hours per unit of measure                  
+#  PIPNG:Piping - These items are priced and installed by piping                
+#  CREW: Select an installation crew type from this list.  The final            
+#        installation labor cost will be calculated from the total              
+#        installation man-hours multiplied by the composite crew wage rate.     
+#        If you entered wage rates in the project, then they (de-escalated      
+#        from UBI to SBI) are used to calculate the labor cost; if you did      
+#        not enter rates, then the default rates for the current                
+#        system (SBI) are used.                                                 
+#             ITWR - Thermowells and Regulators                                 
+#             IPIP - Instrument Pipe                                            
+#             IPVF - Instrument Fittings and Valves                             
+#             ITBC - Instrument Tubing and Connectors                           
+#             IELC - Instrument Electrical Conduit                              
+#             IEWF - Instrument Wire and Conduit Fittings                       
+#  YEAR: Year basis for pricing.  Your BCOSTs are "starting" costs.  The        
+#        final, reported cost is derived by escalating this cost to the         
+#        base cost for the system version running the estimate (SBI).  This     
+#        is done using indices for instrumentation generated by ICARUS each     
+#        year.  These costs are then further escalated using the User Base      
+#        Indices (UBI) and Escalation Indices (EI) as usual.  Although the      
+#        system will automatically escalate these costs, you should             
+#        evaluate them periodically, especially if you experience large         
+#        cost fluctuations.                                                     
+#                                                                               
+#..........................................................................     
+#  Rules of Syntax:                                                             
+#                                                                               
+#  1. Comment lines begin with a "#" - like this line.  If you use and/or       
+#     customize this file, ICARUS strongly advises that you extensively         
+#     comment your changes.                                                     
+#  2. Format of file MUST NOT change (location, type & quantity of values)      
+#  3. All characters MUST BE in UPPER CASE (except comments like this).         
+#  4. Quantity Field MUST BE set to 1                                           
+#  5. Year Field CANNOT exceed ICARUS pricing basis for the system version      
+#     being used                                                                
+#  6. DESCRIPTION Field for Items between 1000 and 1362 may not exceed 12       
+#     characters- they will be truncated.                                       
+#  7. You may add your own items for ID 1058 through 1099 and 5000 through      
+#     5999.  To do this, delete the "#" (this will shift the line one           
+#     character to the left), then add the required information.                
+#  8. Do NOT CHANGE Items 0001-1000, they are reserved for ICARUS' use and      
+#     are priced and installed by piping.                                       
+#  9. You may not create your own piping items.                                 
+#                                                                               
+#...........................................................................    
+#                                                                               
+#                                                                               
+#  Currency Conversion Information:                                             
+#                                                                               
+#  You must provide the currency conversion information before you continue     
+#  to Data Section.  You must use only a single currency in this file.          
+#  This currency is independent of that used in projects.  You must define the  
+#  conversion rates for all three country locations.  You should enter          
+#  "parity rates" not financial exchange rates.  The parity rate is the         
+#  relative cost of the same items in the different countries in the local      
+#  currency.  If you do not know this, then enter the currently-valid           
+#  financial exchange rate.                                                     
+#                                                                               
+#  The following table may help you do the conversion. We use currency          
+#  U.S. USD as an example. If you use a currency other than USD,                
+#  you need to replace USD by your currency within the Currency field           
+#  and redo the conversions given below using the formulas:                     
+#                                                                               
+#  USD * CURCONUS = Your Currency                                               
+#   PS * CURCONUK = Your Currency                                               
+#   KY * CURCONJP = Your Currency                                               
+#   EU * CURCONEU = Your Currency                                               
+#  SAR * CURCONME = Your Currency                                               
+#                                                                               
+#                                                                               
+#  |--------|-------|-------|-------|---------|---------|                       
+#  |Currency|U.S.USD|U.K. PS|JAP. KY|E.U. EURO|M.E. SAR |                       
+#  |--------|-------|-------|-------|---------|---------|                       
+#  |USD     | 1.00  | 1.6000|8.3333 |0.901    |0.2667   |                       
+#  |--------|-------|-------|-------|---------|---------|                       
+#                                                                               
+#                                                                               
+#CURRENCY CONVERSION, enter a value between column 10 to 15                     
+# ID     |                                                                      
+#1234567890123456                                                               
+|CURCONUS|1.0000|                                                               
+#--------------------------------------------------------------------------     
+#CURRENCY CONVERSION, enter a value between column 10 to 15                     
+# ID     |                                                                      
+#1234567890123456                                                               
+|CURCONUK|1.6000|                                                               
+#--------------------------------------------------------------------------     
+#CURRENCY CONVERSION, enter a value between column 10 to 15                     
+# ID     |                                                                      
+#1234567890123456                                                               
+|CURCONJP|8.3333|                                                               
+#--------------------------------------------------------------------------     
+#CURRENCY CONVERSION, enter a value between column 10 to 15                     
+# ID     |                                                                      
+#1234567890123456                                                               
+|CURCONEU|0.901  |                                                              
+#--------------------------------------------------------------------------     
+#CURRENCY CONVERSION, enter a value between column 10 to 15                     
+# ID     |                                                                      
+#1234567890123456                                                               
+|CURCONME|0.2667 |                                                              
+#                                                                               
+#...........................................................................    
+#                                                                               
+#  Data Section:                                                                
+#                                                                               
+#----|----|--|--|----|---|--------------------|-----|-------|-----|----|----|   
+# ID |COA |QT|UT|DIA |DIA|  DESCRIPTION       |MATL | BCOST | MH  |CREW|YEAR|   
+#    |    |  |  |I/P |MET|                    |     | USD   |     |    |    |   
+#----|----|--|--|----|---|--------------------|-----|-------|-----|----|----|   
+#                                                                               
+#  Begin no changes (do not change anything for parts 0001-1000)                
+#                                                                               
+|0001|    | 1|EA|0.75| 20|CONTROL VALVE       |PIPNG|       |     |    |    |   
+|0003|    | 1|EA|0.75| 20|CUTS                |PIPNG|       |     |    |    |   
+|0004|    | 1|EA|0.75| 20|GATE VALVE          |PIPNG|       |     |    |    |   
+|0005|    | 1|EA|0.75| 20|GLOBE VALVE         |PIPNG|       |     |    |    |   
+|0006|    | 1|EA|0.75| 20|ELBOWS              |PIPNG|       |     |    |    |   
+|0007|    | 1|EA|0.75| 20|TEE                 |PIPNG|       |     |    |    |   
+|0008|    | 1|EA|0.75| 20|UNION               |PIPNG|       |     |    |    |   
+|0009|    | 1|EA|0.75| 20|REDUCER             |PIPNG|       |     |    |    |   
+|0010|    | 1|EA|0.75| 20|THREADOLET          |PIPNG|       |     |    |    |   
+|0011|    | 1|EA|0.75| 20|ORIFICE FLANGE      |PIPNG|       |     |    |    |   
+|0012|    | 1|EA|0.75| 20|FLANGES             |PIPNG|       |     |    |    |   
+|0013|    | 1|EA|0.75| 20|LENGTH              |PIPNG|       |     |    |    |   
+|0020|    | 1|EA|0.75| 20|ORIFICE PLATE       |PIPNG|       |     |    |    |   
+|0021|    | 1|EA|0.75| 20|VORTEX METER        |PIPNG|       |     |    |    |   
+|0022|    | 1|EA|0.75| 20|MAG METER           |PIPNG|       |     |    |    |   
+|0023|    | 1|EA|0.75| 20|MASS FLOW METER     |PIPNG|       |     |    |    |   
+|0033|    | 1|EA|0.75| 20|ROTAMETER           |PIPNG|       |     |    |    |   
+|0034|    | 1|EA|0.75| 20|METERRUN            |PIPNG|       |     |    |    |   
+#|1000|    |  |  |    |   |                    |     |       |     |    |    |  
+#  End no changes (you may change any of the parts below)                       
+#                                                                               
+#  Remember that your DESCRIPTION must fit within the space indicated by the    
+#  "X" at right---------->XXXXXXXXXXXX                                          
+#                                                                               
+|1011| 634| 1|EA|0.25|  6|MNPT TUB CN         |BRASS|   1.63|  .54|ITBC|2009|
+|1012| 634| 1|FT|0.25|  6|TUBE                |CU   |   0.41|  .10|ITBC|2009|
+|1013| 634| 1|EA|0.25|  6|TUBE UNION          |BRASS|   2.04|  .40|ITBC|2009|
+|1014| 634| 1|EA|0.25|  6|BLKHD CONN          |BRASS|   5.86| 1.05|ITBC|2009|
+|1015| 631| 1|EA|0.25|  6|BALL VALVE          |BRASS|   9.40|  .40|ITBC|2009|
+|1016| 631| 1|EA|0.25|  6|SWAGE NIP.          |GALV |   4.42|  .35|ITBC|2009|
+|1017| 631| 1|EA|0.25|  6|NIPPLE   XS         |GALV |   2.21|  .35|ITBC|2009|
+#                                                                               
+|1021| 632| 1|EA|0.50| 15|FNPT TUB CN         |SS   |  21.30|  .55|ITBC|2009|
+|1022| 632| 1|EA|0.50| 15|MNPT TUB CN         |SS   |  14.40|  .55|ITBC|2009|
+|1023| 632| 1|EA|0.50| 15|TUBE UNION          |SS   |  19.19|  .35|ITBC|2009|
+|1024| 632| 1|FT|0.50| 15|TUBE                |SS   |   3.99|  .17|ITBC|2009|
+|1025| 632| 1|EA|0.50| 15|BLEED VALVE         |SS   |  34.05|  .45|ITBC|2009|
+#                                                                               
+|1031| 631| 1|EA|0.75| 20|NIPPLE   XS         |GALV |   2.96|  .35|IPVF|2009|
+|1032| 631| 1|EA|0.75| 20|GATE VALVE          |GALV |  31.00|  .45|IPVF|2009|
+|1033| 631| 1|EA|0.75| 20|ELBOW               |GALV |   3.82|  .35|IPVF|2009|
+|1034| 631| 1|FT|0.75| 20|PIPE                |GALV |   1.40|  .35|IPVF|2009|
+|1035| 631| 1|EA|0.75| 20|SWG NIPPLE          |GALV |   6.21|  .35|IPVF|2009|
+|1036| 632| 1|EA|0.75| 20|GATE VALVE          |SS   | 195.00|  .45|IPVF|2009|
+|1037| 631| 1|EA|0.75| 20|TEE,REDUCER         |GALV |   7.94| 1.50|IPVF|2009|
+#                                                                               
+|1041| 632| 1|EA|.375| 10|VENT BLOCK          |SS   | 109.52|  .25|IPVF|2009|
+|1042| 632| 1|EA|.375| 10|DB. VENT BLK        |SS   | 273.81|  .50|IPVF|2009|
+|1043| 632| 1|EA|.375| 10|VENT GA. BLK        |SS   | 240.95|  .25|IPVF|2009|
+|1044| 632| 1|EA|.375| 10|FILTER BLOCK        |SS   | 219.05|  .50|IPVF|2009|
+|1045| 632| 1|EA|.375| 10|SEAL POT            |SS   | 142.38|  .90|IPVF|2009|
+|1046| 632| 1|EA|0.25|  6|FILL. CONN.         |SS   |   5.48|  .01|IPVF|2009|
+|1047| 632| 1| M|.375| 10|TUBING-1.5MM        |SS   |   5.48|  .60|IPVF|2009|
+|1048| 632| 1|EA|.375| 10|COMPR. FTNGS        |SS   | 164.29|  .40|IPVF|2009|
+|1049| 632| 1|EA|.375| 10|ORIF. NIPPLE        |SS   |  16.43|  .40|IPVF|2009|
+|1050| 632| 1|EA|.375| 10|NEEDLE VALVE        |SS   |  54.76|  .20|IPVF|2009|
+|1051| 632| 1|EA|.375| 10|MALE CONN.          |SS   |  16.43|  .18|IPVF|2009|
+|1052| 632| 1|EA|.375| 10|UNION TEE           |SS   |  43.81|  .34|IPVF|2009|
+|1053| 632| 1|EA|.375| 10|TRACING BLK         |SS   |  98.57|  .70|IPVF|2009|
+|1054| 632| 1|EA|    |   |MOUNTING PLATE      |     | 109.52| 0.50|ITBC|2009|
+|1055| 632| 1|EA|    |   |PORT PROTECTOR      |SS   |  10.95| 0.50|ITBC|2009|
+|1056| 632| 1|EA|    |   |BODY ENCLOSURE      |     | 109.52| 0.50|ITBC|2009|
+|1057| 632| 1|EA|    |   |TUBING SPACER       |     |   0.55| 0.10|ITBC|2009|
+#                                                                               
+#  Begin User-Added Parts  (First Section)                                      
+#  Remember that your DESCRIPTION must fit within the space indicated by the    
+#  "X" at right----------->XXXXXXXXXXXX                                         
+#                                                                               
+#|1058|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1059|    |  |  |    |   |                    |     |       |     |    |    |  
+#                                                                               
+#|1060|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1061|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1062|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1063|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1064|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1065|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1066|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1067|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1068|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1069|    |  |  |    |   |                    |     |       |     |    |    |  
+#                                                                               
+#|1070|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1071|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1072|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1073|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1074|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1075|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1076|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1077|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1078|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1079|    |  |  |    |   |                    |     |       |     |    |    |  
+#                                                                               
+#|1080|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1081|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1082|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1083|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1084|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1085|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1086|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1087|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1088|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1089|    |  |  |    |   |                    |     |       |     |    |    |  
+#                                                                               
+#|1090|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1091|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1092|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1093|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1094|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1095|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1096|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1097|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1098|    |  |  |    |   |                    |     |       |     |    |    |  
+#|1099|    |  |  |    |   |                    |     |       |     |    |    |  
+#                                                                               
+#  End User-Added Parts (First Section.  See 5000 series below for more.)       
+#                                                                               
+|1121| 632| 1|EA|0.50| 15|ELBOW               |SS   |  11.00|  .35|IPVF|2009|
+|1122| 632| 1|EA|0.50| 15|TEE                 |SS   |  13.67|  .35|IPVF|2009|
+|1123| 632| 1|EA|0.50| 15|PLUG                |SS   |   4.15|  .35|IPVF|2009|
+|1124| 632| 1|EA|0.50| 15|UNION               |SS   |  21.63|  .35|IPVF|2009|
+|1126| 632| 1|EA|0.50| 15|NIPPLE   XS         |SS   |   5.80|  .35|IPVF|2009|
+|1127| 632| 1|EA|0.50| 15|SWG NIP. XS         |SS   |  10.85|  .35|IPVF|2009|
+|1128| 632| 1|EA|0.50| 15|GATE VALVE          |SS   | 166.00|  .45|IPVF|2009|
+|1129| 632| 1|EA|0.50| 15|GLOBE VALVE         |SS   | 137.00|  .45|IPVF|2009|
+#                                                                               
+|1131| 632| 1|EA|0.75| 20|ELBOW               |SS   |  15.84|  .35|IPVF|2009|
+|1132| 632| 1|EA|0.75| 20|TEE                 |SS   |  20.78|  .35|IPVF|2009|
+|1133| 632| 1|EA|0.75| 20|PLUG                |SS   |   5.02|  .35|IPVF|2009|
+|1134| 632| 1|EA|0.75| 20|UNION               |SS   |  30.45|  .35|IPVF|2009|
+|1135| 632| 1|FT|0.75| 20|PIPE     XS         |SS   |   9.68|  .35|IPIP|2009|
+|1136| 632| 1|EA|0.75| 20|NIPPLE   XS         |SS   |   9.85|  .35|IPVF|2009|
+|1137| 632| 1|EA|0.75| 20|SWG NIP. XS         |SS   |  21.88|  .35|IPVF|2009|
+|1138| 632| 1|EA|0.75| 20|GATE VALVE          |SS   | 195.00|  .45|IPVF|2009|
+|1139| 632| 1|EA|0.75| 20|GLOBE VALVE         |SS   | 158.00|  .45|IPVF|2009|
+#                                                                               
+|1141| 632| 1|EA|1.00| 25|ELBOW               |SS   |  20.36|  .90|IPVF|2009|
+|1142| 632| 1|EA|1.00| 25|TEE                 |SS   |  26.59|  .90|IPVF|2009|
+|1143| 632| 1|EA|1.00| 25|PLUG                |SS   |   5.95|  .90|IPVF|2009|
+|1144| 632| 1|EA|1.00| 25|UNION               |SS   |  43.63|  .90|IPVF|2009|
+|1145| 632| 1|FT|1.00| 25|PIPE     XS         |SS   |  11.84|  .42|IPIP|2009|
+|1146| 632| 1|EA|1.00| 25|NIPPLE   XS         |SS   |  13.22|  .90|IPVF|2009|
+|1147| 632| 1|EA|1.00| 25|SWG NIP. XS         |SS   |  25.14|  .90|IPVF|2009|
+|1148| 632| 1|EA|1.00| 25|GATE VALVE          |SS   | 218.00| 1.25|IPVF|2009|
+|1149| 632| 1|EA|1.00| 25|GLOBE VALVE         |SS   | 176.00| 1.25|IPVF|2009|
+#                                                                               
+|1161| 632| 1|EA|1.50| 40|ELBOW               |SS   |  48.96| 1.50|IPVF|2009|
+|1162| 632| 1|EA|1.50| 40|TEE                 |SS   |  53.96|  .80|IPVF|2009|
+|1163| 632| 1|EA|1.50| 40|PLUG                |SS   |  15.06| 1.50|IPVF|2009|
+|1164| 632| 1|EA|1.50| 40|UNION               |SS   |  50.71| 1.50|IPVF|2009|
+|1165| 632| 1|FT|1.50| 40|PIPE     XS         |SS   |  12.73|  .44|IPIP|2009|
+|1166| 632| 1|EA|1.50| 40|NIPPLE   XS         |SS   |  16.72| 1.50|IPVF|2009|
+|1167| 632| 1|EA|1.50| 40|SWG NIP. XS         |SS   |  34.35| 1.50|IPVF|2009|
+|1168| 632| 1|EA|1.50| 40|GATE VALVE          |SS   | 303.00| 2.10|IPVF|2009|
+|1169| 632| 1|EA|1.50| 40|GLOBE VALVE         |SS   | 269.00| 2.10|IPVF|2009|
+#                                                                               
+|1231| 642| 1|FT|0.75| 20|CONDUIT             |GALV |   1.24| 0.05|IELC|2009|
+|1232| 642| 1|FT|0.75| 20|FLEX. COND.         |GALV |   0.82| 0.05|IELC|2009|
+|1233| 642| 1|EA|0.75| 20|COND. UNION         |GALV |   2.34| 0.35|IEWF|2009|
+|1234| 642| 1|EA|0.75| 20|COND. BUSH.         |GALV |   1.10| 0.25|IEWF|2009|
+|1235| 642| 1|EA|0.75| 20|COND. NIPP.         |GALV |   7.59| 0.40|IEWF|2009|
+|1236| 642| 1|EA|0.75| 20|COND. CPLNG         |GALV |   2.07| 0.25|IEWF|2009|
+|1237| 642| 1|EA|0.75| 20|CONDULET T          |GALV |  10.69| 0.70|IEWF|2009|
+|1238| 642| 1|EA|0.75| 20|COND. SEAL          |GALV |  12.14| 0.65|IEWF|2009|
+|1239| 642| 1|EA|0.75| 20|CONDULET LB         |GALV |   8.89| 0.50|IEWF|2009|
+#                                                                               
+|1241| 642| 1|FT|1.00| 25|CONDUIT             |GALV |   1.51| 0.05|IELC|2009|
+|1242| 642| 1|FT|1.00| 25|FLEX. COND.         |GALV |   1.00| 0.05|IELC|2009|
+|1243| 642| 1|EA|1.00| 25|COND. UNION         |GALV |   3.72| 0.40|IEWF|2009|
+|1244| 642| 1|EA|1.00| 25|COND. BUSH.         |GALV |   1.60| 0.30|IEWF|2009|
+|1245| 642| 1|EA|1.00| 25|COND. NIPP.         |GALV |   9.00| 0.45|IEWF|2009|
+|1246| 642| 1|EA|1.00| 25|COND. CPLNG         |GALV |   3.58| 0.30|IEWF|2009|
+|1247| 642| 1|EA|1.00| 25|CONDULET T          |GALV |  12.60| 0.80|IEWF|2009|
+|1248| 642| 1|EA|1.00| 25|COND. SEAL          |GALV |  12.90| 0.75|IEWF|2009|
+|1249| 642| 1|EA|1.00| 25|CONDULET LB         |GALV |  10.47| 0.55|IEWF|2009|
+#                                                                               
+|1251| 642| 1|FT|1.25| 32|CONDUIT             |GALV |   1.99| 0.05|IELC|2009|
+|1252| 642| 1|FT|1.25| 32|FLEX. COND.         |GALV |   0.00| 0.00|IELC|2009|
+|1253| 642| 1|EA|1.25| 32|COND. UNION         |GALV |   6.83| 0.45|IEWF|2009|
+|1254| 642| 1|EA|1.25| 32|COND. BUSH.         |GALV |   2.25| 0.35|IEWF|2009|
+|1255| 642| 1|EA|1.25| 32|COND. NIPP.         |GALV |   0.00| 0.00|IEWF|2009|
+|1256| 642| 1|EA|1.25| 32|COND. CPLNG         |GALV |   6.62| 0.40|IEWF|2009|
+|1257| 642| 1|EA|1.25| 32|CONDULET T          |GALV |  17.75| 0.90|IEWF|2009|
+|1258| 642| 1|EA|1.25| 32|COND. SEAL          |GALV |  15.64| 1.00|IEWF|2009|
+|1259| 642| 1|EA|1.25| 32|CONDULET LB         |GALV |  15.78| 0.60|IEWF|2009|
+#                                                                               
+|1261| 642| 1|FT|1.50| 40|CONDUIT             |GALV |   2.41| 0.06|IELC|2009|
+|1262| 642| 1|FT|1.50| 40|FLEX. COND.         |GALV |   0.00| 0.00|IELC|2009|
+|1263| 642| 1|EA|1.50| 40|COND. UNION         |GALV |   8.61| 0.50|IEWF|2009|
+|1264| 642| 1|EA|1.50| 40|COND. BUSH.         |GALV |   2.87| 0.40|IEWF|2009|
+|1265| 642| 1|EA|1.50| 40|COND. NIPP.         |GALV |   0.00| 0.00|IEWF|2009|
+|1266| 642| 1|EA|1.50| 40|COND. CPLNG         |GALV |   8.30| 0.45|IEWF|2009|
+|1267| 642| 1|EA|1.50| 40|CONDULET T          |GALV |  22.77| 0.95|IEWF|2009|
+|1268| 642| 1|EA|1.50| 40|COND. SEAL          |GALV |  23.04| 1.05|IEWF|2009|
+|1269| 642| 1|EA|1.50| 40|CONDULET LB         |GALV |  19.57| 0.65|IEWF|2009|
+#                                                                               
+|1281| 642| 1|FT|2.00| 50|CONDUIT             |GALV |   3.31| 0.06|IELC|2009|
+|1282| 642| 1|FT|2.00| 50|FLEX. COND.         |GALV |   0.00| 0.00|IELC|2009|
+|1283| 642| 1|EA|2.00| 50|COND. UNION         |GALV |  17.25| 0.60|IEWF|2009|
+|1284| 642| 1|EA|2.00| 50|COND. BUSH.         |GALV |   4.16| 0.45|IEWF|2009|
+|1285| 642| 1|EA|2.00| 50|COND. NIPP.         |GALV |   0.00| 0.00|IEWF|2009|
+|1286| 642| 1|EA|2.00| 50|COND. CPLNG         |GALV |  16.56| 0.55|IEWF|2009|
+|1287| 642| 1|EA|2.00| 50|CONDULET T          |GALV |  35.81| 1.00|IEWF|2009|
+|1288| 642| 1|EA|2.00| 50|COND. SEAL          |GALV |  30.00| 1.10|IEWF|2009|
+|1289| 642| 1|EA|2.00| 50|CONDULET LB         |GALV |  32.63| 0.70|IEWF|2009|
+#                                                                               
+|1362| 614| 1|EA|0.50| 15|THERMOWELL          |SS316| 102.81| 3.15|ITWR|2009|
+|1363| 614| 1|EA|0.50| 15|THERMOWELL  TT      |SS316| 126.96| 3.15|ITWR|2009|
+|1364| 614| 1|EA|0.50| 15|THERMOWELL TESTWELL |SS316|  51.06| 3.15|ITWR|2009|
+|1366| 631| 1|EA|0.25|  8|FILTER REGULATOR    |BRASS| 133.30| 2.10|ITWR|2009|
+|1367| 632| 1|EA|    |   |SEAL POT            |     | 171.46| 4.20|ITWR|2009|
+|1368| 632| 1|EA|1.50| 40|TP FL. XMITTER MOUNT|CS   | 734.13| 0.55|ITBC|2009|
+|1369| 632| 1|EA|0.50| 15|3 VALVE MANIFOLD    |SS   | 250.96| 6.30|ITBC|2009|
+#                                                                               
+#                                                                               
+#  Begin User-Added Parts (Second Section)                                      
+#  Remember that your DESCRIPTION must fit within the space indicated by the    
+#  "X" at right---------->XXXXXXXXXXXX                                          
+#                                                                               
+#|5000|    |  |  |    |   |                    |     |       |     |    |    |  
+#|5001|    |  |  |    |   |                    |     |       |     |    |    |  
+#|5002|    |  |  |    |   |                    |     |       |     |    |    |  
+#|5003|    |  |  |    |   |                    |     |       |     |    |    |  
+#                .....                                                          
+#                .....                                                          
+#                .....                                                          
+#                .....                                                          
+#|5998|    |  |  |    |   |                    |     |       |     |    |    |  
+#|5999|    |  |  |    |   |                    |     |       |     |    |    |  
+#                                                                               
+#  End User-Added Parts (Second Section)                                        
+#                                                                               
+#  End of INPARTS.DAT file.                                                     

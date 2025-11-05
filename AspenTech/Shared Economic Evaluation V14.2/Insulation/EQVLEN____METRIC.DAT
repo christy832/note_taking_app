@@ -1,0 +1,41 @@
+#                            EQVLEN_METRIC.DAT
+#
+#-------------------------------------------------------------------------
+# UNITS OF MEASURE:
+#   Overall Units: Select either Inch-Pound or Metric (IP/METRIC).
+#               This will determine whether the temperatures in Tables 1-4
+#               are read as degree F or C. Enter "IP" or "METRIC" below
+#               without moving or erasing the "|" characters:
+#
+#   Pipe Diameter: Select either Inches or Millimeters (INCH/MM).
+#               This will not affect the insulation thickness data
+#               Enter "INCH" or "MM" below without moving or erasing
+#               the "|" characters:
+# Pipe Diameter   Overall Units
+LM1C MM             METRIC
+#
+#-------------------------------------------------------------------------
+#
+# TABLE 5
+#
+|E|          |     VALVE AND FITTING INSULATION
+#                    EQUIVALENT LENGTH TABLE
+#
+# ***********************************************************************
+#  For both valves and fittings: 
+#
+#      LENGTH = A + B*Pipe_Diameter^C
+#
+#  LENGTH is the length of pipe which would need to be insulated to equal
+#  the insulation required for one valve/fitting.
+# ***********************************************************************
+#
+#pipe  |max  |      Valve      |     Fitting     |
+#size  |diam |    Parameters   |    Parameters   |
+#cat.  |in/mm|  A  |  B  |  C  |  A  |  B  |  C  |
+#=================================================
+| SMALL|  4  |  7  |  0  |  0  |  4  |  0  |  0  |
+| MED. |  12 |  7  |  0  |  0  |  4  |  0  |  0  |
+| LARGE|  24 |  7  |  0  |  0  |  4  |  0  |  0  |
+#=================================================
+#---------------------------------------------------------------------------------------------------------

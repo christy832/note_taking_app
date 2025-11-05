@@ -1,0 +1,36 @@
+#-------------------------------------------------------------------
+#      TEMPLATE NAMES STORAGE FILE:  storage1.icg
+#-------------------------------------------------------------------
+#      History:
+#       
+#      Created 17 July 1998 at ICARUS Corporation by M. Brewer
+#      [add your changes here]
+#
+#  .................................................................
+#      Purpose:
+#
+#      Store up to four names of ICS Chart template files.  A template file
+#      contains customized settings for a specific chart.
+#
+#  .................................................................
+#      Explanation of Fields:
+#
+#      Any nonblank line not beginning with blanks or the pound sign is read
+#      as a template file name.
+#
+#  .................................................................
+#      Rules of Syntax:
+#
+#      1. Comment lines begin with a "#"- like this line.
+#      2. Spacer lines begin with a blank.
+#      3. Template file names must begin at the first column.
+#
+#  .................................................................
+#      Data Section:
+#
+#
+
+npvtemp.fil
+pcstemp.fil
+tetemp.fil
+icstemp.fil

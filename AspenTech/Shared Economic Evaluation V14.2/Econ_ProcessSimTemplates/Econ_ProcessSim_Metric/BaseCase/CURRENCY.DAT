@@ -1,0 +1,117 @@
+#VERSION_NUM1729
+$SAMPLE CURRENCY FILE; CHANGE FIRST COLUMN $ TO C AND USE
+$        1         2         3         4         5         6         7          8
+$23456789012345678901234567890123456789012345678901234567890123456789012345657890
+$UR                        USD D  Dirham-MMoroccan Dirham         8.841
+$UR                        USD K-NK Naira K Nigerian Naira        0.137
+$UR                        USD ZARRand    South African Rand      6.716
+$UR                        USD RMBRenminbiChinese Yuan Renminbi   8.287
+$UR                        USD RS Rupee   Indian Rupee            45.69
+$UR                        USD KR K RupiahK Indonesian Rupiah     8.448
+$UR                        USD MYRRinggit Malaysian Ringgit       3.817
+$UR                        USD SD Dollar-SSingapore Dollar        1.702
+$UR                        USD KW K Won   K South-Korean Won      1.194
+$UR                        USD TD Dollar-TTaiwan Dollar           34.02
+$UR                        USD B  Baht    Thai Baht               39.709
+$UR                        USD Q  Quetzal Guatemalan Quetzal      8.228
+$UR                        USD P  Peso-MX Mexican Peso            11.227
+$UR                        USD K-DK Dong  K Vietnamese Dong       16.156
+$UR                        USD AD Dollar-AAustralian Dollar       1.33
+$UR                        USD PDEPound-E Egyptian Pound          6.229
+$UR                        USD DK Dinar   Kuwaiti Dinar           0.295
+$$R                        USD R  Riyal   Saudi Riyal             3.75
+$UR                        USD M-LM Lira  M Turkish Lira          1.427
+$UR                        USD P  Peso-A  Argentine Peso          2.95
+$UR                        USD K-PK Peso  K Colombian Peso        2.804
+$UR                        USD K-BK Boliv K Venezuelan Bolivar    1.6
+$UR                        USD PS Pound-UKBritish Pound           0.56
+$UR                        USD ZL Zloty   Polish Zloty            3.73
+$UR                        USD RBLRouble  Russian Rouble          29.25
+$UR                        USD R  Real    Brazilian Real          2.903
+$UR                        USD NS NuevoSolPeruvian Nuevo Sol      3.558
+$UR                        USD CD CanadianCanadian $              1.47
+$UR                        PS  D  Dirham-MMoroccan Dirham         8.84
+$UR                        PS  K-NK Naira K Nigerian Naira        0.13
+$UR                        PS  ZARRand    South African Rand      6.71
+$UR                        PS  RMBRenminbiChinese Yuan Renminbi   8.28
+$UR                        PS  RS Rupee   Indian Rupee            45.6
+$UR                        PS  KR K RupiahK Indonesian Rupiah     8.44
+$UR                        PS  MYRRinggit Malaysian Ringgit       3.81
+$UR                        PS  SD Dollar-SSingapore Dollar        1.70
+$UR                        PS  KW K Won   K South-Korean Won      1.19
+$UR                        PS  TD Dollar-TTaiwan Dollar           34.0
+$UR                        PS  B  Baht    Thai Baht               39.7
+$UR                        PS  Q  Quetzal Guatemalan Quetzal      8.22
+$UR                        PS  P  Peso-MX Mexican Peso            11.2
+$UR                        PS  K-DK Dong  K Vietnamese Dong       16.1
+$UR                        PS  AD Dollar-AAustralian Dollar       1.33
+$UR                        PS  PDEPound-E Egyptian Pound          6.22
+$UR                        PS  DK Dinar   Kuwaiti Dinar           0.29
+$$R                        PS  R  Riyal   Saudi Riyal             3.75
+$UR                        PS  M-LM Lira  M Turkish Lira          1.42
+$UR                        PS  P  Peso-A  Argentine Peso          2.95
+$UR                        PS  K-PK Peso  K Colombian Peso        2.80
+$UR                        PS  K-BK Boliv K Venezuelan Bolivar    1.6 
+$UR                        PS  PS Pound-UKBritish Pound           0.56
+$UR                        PS  ZL Zloty   Polish Zloty            3.73
+$UR                        PS  RBLRouble  Russian Rouble          29.2
+$UR                        PS  R  Real    Brazilian Real          2.90
+$UR                        PS  NS NuevoSolPeruvian Nuevo Sol      3.55
+$UR                        PS  CD CanadianCanadian $              1.47
+$UR                        KY  D  Dirham-MMoroccan Dirham         8.84
+$UR                        KY  K-NK Naira K Nigerian Naira        0.13
+$UR                        KY  ZARRand    South African Rand      6.71
+$UR                        KY  RMBRenminbiChinese Yuan Renminbi   8.28
+$UR                        KY  RS Rupee   Indian Rupee            45.6
+$UR                        KY  KR K RupiahK Indonesian Rupiah     8.44
+$UR                        KY  MYRRinggit Malaysian Ringgit       3.81
+$UR                        KY  SD Dollar-SSingapore Dollar        1.70
+$UR                        KY  KW K Won   K South-Korean Won      1.19
+$UR                        KY  TD Dollar-TTaiwan Dollar           34.0
+$UR                        KY  B  Baht    Thai Baht               39.7
+$UR                        KY  Q  Quetzal Guatemalan Quetzal      8.22
+$UR                        KY  P  Peso-MX Mexican Peso            11.2
+$UR                        KY  K-DK Dong  K Vietnamese Dong       16.1
+$UR                        KY  AD Dollar-AAustralian Dollar       1.33
+$UR                        KY  PDEPound-E Egyptian Pound          6.22
+$UR                        KY  DK Dinar   Kuwaiti Dinar           0.29
+$$R                        KY  R  Riyal   Saudi Riyal             3.75
+$UR                        KY  M-LM Lira  M Turkish Lira          1.42
+$UR                        KY  P  Peso-A  Argentine Peso          2.95
+$UR                        KY  K-PK Peso  K Colombian Peso        2.80
+$UR                        KY  K-BK Boliv K Venezuelan Bolivar    1.6 
+$UR                        KY  PS Pound-UKBritish Pound           0.56
+$UR                        KY  ZL Zloty   Polish Zloty            3.73
+$UR                        KY  RBLRouble  Russian Rouble          29.2
+$UR                        KY  R  Real    Brazilian Real          2.90
+$UR                        KY  NS NuevoSolPeruvian Nuevo Sol      3.55
+$UR                        KY  CD CanadianCanadian $              1.47
+$UR                        EUR D  Dirham-MMoroccan Dirham         8.84
+$UR                        EUR K-NK Naira K Nigerian Naira        0.13
+$UR                        EUR ZARRand    South African Rand      6.71
+$UR                        EUR RMBRenminbiChinese Yuan Renminbi   8.28
+$UR                        EUR RS Rupee   Indian Rupee            45.6
+$UR                        EUR KR K RupiahK Indonesian Rupiah     8.44
+$UR                        EUR MYRRinggit Malaysian Ringgit       3.81
+$UR                        EUR SD Dollar-SSingapore Dollar        1.70
+$UR                        EUR KW K Won   K South-Korean Won      1.19
+$UR                        EUR TD Dollar-TTaiwan Dollar           34.0
+$UR                        EUR B  Baht    Thai Baht               39.7
+$UR                        EUR Q  Quetzal Guatemalan Quetzal      8.22
+$UR                        EUR P  Peso-MX Mexican Peso            11.2
+$UR                        EUR K-DK Dong  K Vietnamese Dong       16.1
+$UR                        EUR AD Dollar-AAustralian Dollar       1.33
+$UR                        EUR PDEPound-E Egyptian Pound          6.22
+$UR                        EUR DK Dinar   Kuwaiti Dinar           0.29
+$$R                        EUR R  Riyal   Saudi Riyal             3.75
+$UR                        EUR M-LM Lira  M Turkish Lira          1.42
+$UR                        EUR P  Peso-A  Argentine Peso          2.95
+$UR                        EUR K-PK Peso  K Colombian Peso        2.80
+$UR                        EUR K-BK Boliv K Venezuelan Bolivar    1.6 
+$UR                        EUR PS Pound-UKBritish Pound           0.56
+$UR                        EUR ZL Zloty   Polish Zloty            3.73
+$UR                        EUR RBLRouble  Russian Rouble          29.2
+$UR                        EUR R  Real    Brazilian Real          2.90
+$UR                        EUR NS NuevoSolPeruvian Nuevo Sol      3.55
+$UR                        EUR CD CanadianCanadian $              1.47
+CUR                        USD USDDOLLARS U.S.DOLLARS             1

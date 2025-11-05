@@ -1,0 +1,87 @@
+:Project Basis (** not for Pipeline project)|10000|000|ic_PROJECT_BASIS|Project Basis general information (** items are not for Pipeline project)
+::Project Properties|20000|100|ic_PROJECT_PROPERTIES|View/Modify the properties of this project (Description, Remarks, etc.)|
+::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+::Basis for Capital Costs|10010|010|ic_CAPITAL_COSTS_STANDARD_BASIS|Specs for project basis relating to capital costs|projinfo|Project Information|Standard Basis Specs File|
+:::Input Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+:::Output (Reports) Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+:::Design Basis|11010|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS|Design basis specs for the project|
+::::Equipment Specs|40020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS_EQUIPMENT_SPECS|Design basis specs for Equipment|
+::::Piping Specs|11020|000|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS|Piping specs for the project|
+:::::General|40040|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_GENERAL|General piping specs for the project|
+:::::Material|40050|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_MATERIAL|Material piping specs for the project|
+:::::Custom|40060|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_CUSTOM|Custom piping specs for the project|
+::::Civil/Steel Specs|40070|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CIVIL_SPECS|Civil specs for the project|
+::::Instrumentation Specs|40080|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSTRUMENTATION_SPECS|Instrumentation specs for the project|
+::::Electrical Specs|40090|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ELECTRICAL_SPECS|Electrical specs for the project|
+::::Insulation Specs|40100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSULATION_SPECS|Insulation specs for the project|
+::::Paint Specs|40110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PAINT_SPECS|Paint specs for the project|
+:::Currency|42000|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CURRENCY|Currency Specifications for Procurement
+:::Contingency and Misc. Project Costs|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_BIG_PROJECT_COSTS|Contingency and miscellaneous project costs|
+:::Escalation|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ESCALATION|Escalation parameters for the project|
+:::Engineering Workforce|10020|000|ic_ENGINEERING_WORKFORCE|Engineering workforce definition|
+::::By Phase|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ENGINEERING_WORKFORCE_PHASE|Engineering workforce definition by phase|
+::::By Discipline|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ENGINEERING_WORKFORCE_DISCIPLINE|Engineering workforce definition by phase|
+::::Drawing Types (**)|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DRAWING_TYPES|Engineering drawing types (not allowed for Pipeline project)|
+::::Drawing Count (**)|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DRAWING_COUNT|Engineering drawing count (not allowed for Pipeline project)|
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::Wage Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to wages and productivities|
+::::Crew Mixes|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CREW_MIXTURES|Construction crew mixes|
+::::Craft Names|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CRAFT_NAMES|Construction craft names|
+:::Codes of Accounts|43020|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_CODES_OF_ACCOUNTS|Codes of accounts definition and allocation|
+:::Indexing|41100|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_INDEXING|Indexing for various accounts|
+:::Equipment Rental|34100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_EQUIPMENT_RENTAL|Equipment rental|
+:::Systems|10070|000|ic_CAPITAL_COSTS_STANDARD_BASIS_SYSTEMS|Plant systems|
+::::Power Distribution|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SYSTEMS_POWER_DISTRIBUTION|Power distribution system|
+::::Process Control|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SYSTEMS_PROCESS_CONTROL|Process control system|
+::::Panel Board|23111|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PANEL_BOARD|Panel board system|
+:::Contracts|10070|000|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTS|Contracts|
+::::Contractors|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTORS|Contractor definitions (for Pipeline project, only OWNER/MAIN contractor's indirects)|
+::::Scope (**)|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTS_SCOPE|Contractor scope definitions and exceptions (not allowed for Pipeline project)|
+:::Customer External Files|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT|Customer External Files|
+::::Indirects - Proratables (**)|23180|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INDIRECTS|Proratables (not allowed for Pipeline project)|
+::::Civil Material|23181|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CIVIL|Civil Materials table|
+::::Steel Material|23182|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_STEEL|Steel Materials table|
+::::Building Unit Costs|23183|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_BLDG|Building Material Table|
+::::Instrumentation Components|23184|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INPARTS|Instrumentation Components Table|
+::::Instrumentation Assemblies|23185|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INASMBLY|Instrumentation Assemblies|
+::::Instrumentation Control Systems|23189|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INCONTROL|Instrumentation Control Systems|
+::::Insulation External Files|10090|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INSULATION|Insulation External Files|
+:::::Hot Insulation Schedules|23187|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_HOTINSUL|Hot Insulation Schedules|
+:::::Cold Insulation Schedules|23188|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_COLDINSUL|Cold Insulation Schedules|
+:::::Insulation Equivalent Length Rules|23186|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INSUL|Insulation Equivalent Length Rules|
+::::Fittings|23187|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_FITTINGS|Fittings|
+::::SP3DImport|23190|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_SP3DIMPORT|SP3DImport|
+::Project Execution Schedule Settings|11080|000|ic_SCHEDULE_SETTINGS_EPC|Settings for developing EPC planning schedule|
+:::Adjust Schedule and Barcharts (**)|30020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_ADJUSTMENTS|Initial schedule adjustments (not allowed for Pipeline project)|
+:::Equipment Class Delivery Times (**)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_EQUIPMENT_CLASSES|Specifications for general equipment class delivery times (not allowed for Pipeline project)|
+:::Equipment Item Delivery Times (**)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_EQUIPMENT_ITEMS|Specifications for specific equipment delivery times (not allowed for Pipeline project)|
+:::Add Barchart Items (**)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_BARCHART_ITEMS|Add new barchart items (not allowed for Pipeline project)|
+::Process Design|10030|000|ic_PROCESS_DESIGN|Process Design specifications
+:::Simulator Type|20010|100|ic_SIMULATOR_TYPE_NAME|Process simulation system name|projinfo|Project Information|Input File Format|
+:::Simulator File Name|20011|101|ic_SIMULATOR_FILE_NAME|Process simulation report file name|projinfo|Project Information|Input File|
+:::Simulator Units of Measure Mapping Specs|20011|1111|ic_SIMULATOR_UNITS_OF_MEASURE_SPECS|Units of measure file used for mapping simulator units to KBW units|projinfo|Project Information|Units of Measure File|
+:::Project Component Map Specifications|20011|1111|ic_SIMULATOR_MAP_SPECS|Mapping specs|projinfo|Project Information|Component Map File|
+:::Design Criteria|10031|0111|ic_GENERAL_DESIGN_CRITERIA|Design criteria and associated file name|projinfo|Project Information|Design Criteria|
+::::Common|20015|100|ic_DESIGN_CRIT_COMMON|Design criteria - Common (can be overwritten at sub-level category)|projinfo|Project Information|Design Criteria|
+::::Pumps|20016|100|ic_DESIGN_CRIT_PUMPS|Design criteria - Pumps|projinfo|Project Information|Design Criteria|
+::::Compressors|20017|100|ic_DESIGN_CRIT_COMPRESSORS|Design criteria - Compressors|projinfo|Project Information|Design Criteria|
+::::Heat Exchangers|20018|100|ic_DESIGN_CRIT_HEAT_EXCHANGER|Design criteria - Heat Exchangers|projinfo|Project Information|Design Criteria|
+::::Towers|20019|100|ic_DESIGN_CRIT_TOWERS|Design criteria - Towers|projinfo|Project Information|Design Criteria|
+:::::Packed|20020|100|ic_DESIGN_CRIT_TOWERS_PACKED|Design criteria - Packed Towers|projinfo|Project Information|Design Criteria|
+:::::Trayed|20021|100|ic_DESIGN_CRIT_TOWERS_TRAYED|Design criteria - Trayed Towers|projinfo|Project Information|Design Criteria|
+:::::Configurations Towers|20022|100|ic_DESIGN_CRIT_TOWERS_CONFIGS|Design criteria - Tower Configurations|projinfo|Project Information|Design Criteria|
+::::Vessels|20023|100|ic_DESIGN_CRIT_VESSELS|Design criteria - Vessels|projinfo|Project Information|Design Criteria|
+:::::Agitated|20024|100|ic_DESIGN_CRIT_VESSELS_AGITATED|Design criteria - Agitated Vessels|projinfo|Project Information|Design Criteria|
+:::::Storage|20025|100|ic_DESIGN_CRIT_VESSELS_STORAGE|Design criteria - Storage Vessels|projinfo|Project Information|Design Criteria|
+:::::Horizontal|20026|100|ic_DESIGN_CRIT_VESSELS_HORIZONTAL|Design criteria - Horizontal Vessels|projinfo|Project Information|Design Criteria|
+:::::Vertical|20027|100|ic_DESIGN_CRIT_VESSELS_VERTICAL|Design criteria - Vertical Vessels|projinfo|Project Information|Design Criteria|
+::::Miscellaneous|20028|100|ic_DESIGN_CRIT_MISCELLANEOUS|Design criteria - Other design criteria parameters|projinfo|Project Information|Design Criteria|
+::::Configurations Flash|20029|100|ic_DESIGN_CRIT_FLASH_CONFIGS|Design criteria - Flash Confogurations|projinfo|Project Information|Design Criteria|
+:::Utility Specifications|20014|1111|ic_UTILITY_RESOURCES|Specs for utility resources|projinfo|Project Information|Utility Specs File|
+:::Sizing Selection|20015|1111|ic_SIZESELECT_DEFAULT|Specs for Sizing Selection|projinfo|Project Information|Sizing Selection File|
+::Investment Analysis|10040|000|ic_INVESTMENT_ANALYSIS|Investment Analysis|
+:::Investment Parameters|20010|1111|ic_INVESTMENT_ANALYSIS_PARAMETERS|Investment analysis parameters|projinfo|Project Information|Investment Analysis File|
+:::Operating Unit Costs|20010|1111|ic_OPERATING_COSTS_PARAMETERS|Unit costs for operation of the facility|projinfo|Project Information|Operating Unit Costs|
+:::Raw Material Specifications|20010|1111|ic_RAW_MATERIAL_SPECS|Specifications for raw materials|projinfo|Project Information|Raw Material File|
+:::Product Specifications|20010|1111|ic_PRODUCT_SPECS|Specifications for facility products and by-products|projinfo|Project Information|Product Specs File|
+:Streams|30000|100|ic_STREAMS|View stream information|

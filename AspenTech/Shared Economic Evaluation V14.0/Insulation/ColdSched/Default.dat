@@ -1,0 +1,76 @@
+#VERSION_NUM2327
+#                          BLANK.DAT
+#-------------------------------------------------------------------------
+#  History:
+#
+#  Created 
+#  Updated V7.1 for Better Excel importing, Fix 8IN Cold Temperatures,
+#                   Additional Comments, Fix last temperature for High/Low Temps
+#  Updated V8.0 for Split from INSSPC.DAT file - Cold Insulation Table
+#  [add your changes here]
+#
+#..........................................................................
+#
+# UNITS OF MEASURE:
+#   Overall Units: Select either Inch-Pound or Metric (IP/METRIC).
+#               This will determine whether the temperatures in Tables 1-4
+#               are read as degree F or C. Enter "IP" or "METRIC" below
+#               without moving or erasing the "|" characters:
+#
+#   Pipe Diameter: Select either Inches or Millimeters (INCH/MM).
+#               This will not affect the insulation thickness data
+#               Enter "INCH" or "MM" below without moving or erasing
+#               the "|" characters:
+# Pipe Diameter   Overall Units
+LM1F INCH           I-P
+#
+#   Note the Design Basis - Insulation Form or Area - Insulation Form
+#   Minimum Temp. Hot Insulation field defaults to 150 degrees F.  This controls
+#   the minimum temperature above which hot insulation is provided.  The minimum
+#   value allowed that the hot insulation tables will be applied is 51 degrees F.
+#   (the point that the cold insulation table starts).
+#
+#
+#   Each table is started by a line indicating if it is a cold(-) or hot(+) insulation
+#   table, and specifying a table name and description/remarks
+#
+#-------------------------------------------------------------------------
+# TABLE 4
+#
+|-|BLANKCOLD |                Cold Insulation
+#
+#   The hot insulation schedule assignment (L,M, or H) does not apply
+#   to cold insulation.  Insulation for cold service would be applied
+#   to designated surfaces of 50 degrees F or colder.
+#
+#   For cold insulation, joints are caulked and a vapor barrier is applied.
+#
+#NOMINAL
+#  PIPE   |                     <------   Insulation Thickness (inch)   ------>                          |
+#DIAMETER |                                                    ( mm )                                    |
+# |    |  |  1 | 1.5|  2 | 2.5|  3 | 3.5|  4 | 4.5|  5 | 5.5|  6 | 6.5|  7 | 7.5|  8 | 8.5|  9 | 9.5| 10 |
+# \/   \/ | 25 | 38 | 50 | 63 | 75 | 88 | 100| 113| 125| 138| 150| 163| 175| 188| 200| 213| 225| 238| 250|
+#inch| mm |----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|0.75| 20 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|1.00| 25 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|1.50| 40 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|2.00| 50 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|2.50| 65 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|3.00| 80 |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|4.00| 100|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|6.00| 150|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|8.00| 200|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|10.0| 250|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|12.0| 300|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|14.0| 350|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|16.0| 400|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|18.0| 450|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|20.0| 500|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|22.0| 550|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|24.0| 600|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|26.0| 650|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|28.0| 700|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|30.0| 750|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|36.0| 900|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+# The last row (36 Inch) will be used by the system for Equipment Insulation
+#---------------------------------------------------------------------------------------------------------

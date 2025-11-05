@@ -1,0 +1,1 @@
+"D2@CirPattern1" = 360 / "D1@CirPattern1"

@@ -1,0 +1,704 @@
+#---------------------------------------------------------------------------    
+#  Process Instruments List:  INASMBLY.EUG                                      
+#---------------------------------------------------------------------------    
+#  History:                                                                     
+#                                                                               
+#  created 04 April 1998 at ICARUS Corp. by B. Ye                               
+#  updated 19 January 1999 by B. Ye  :  Add assembly for meterrun               
+#  changed 16 May 2002 by C Lynch - add unique ID's for each sensor type        
+#  updated 15 Nov 2002 by C Lynch - add new options for chemical seals
+#  changed 15 May 2003 by C Lynch - add Burner Switch (blank by default)
+#  changed 25 Aug 2003 by C Lynch - 'I' or 'P' FLAG no longer used.
+#                                 - Created new assembly for air supply feed
+#  [add your changes here]                                                      
+#                                                                               
+#..........................................................................     
+#  Purpose:                                                                     
+#                                                                               
+#  To provide an editable format for choosing your own hookup parts from        
+#  INPARTS.DAT database file and for creating custom assemblies.                
+#                                                                               
+#..........................................................................     
+#  Explanation of Fields:                                                       
+#                                                                               
+#                                                                               
+#  LOOP SYMBOL : Symbol which describes the sensor loop.                        
+#  DESCRIPTION : Location for comments- has no effect on usage.                 
+#  PART NO.    : Instrument Part Number from Parts Listing File INPARTS.DAT     
+#  QTY         : Quantity of the parts to include in this assembly              
+#  FG(FLAG)    : No longer in use - may be left blank.                          
+#  NOTE        : Location for comments- has no effect on usage.                 
+#                                                                               
+#..........................................................................     
+#  Rules for editing the file:                                                  
+#                                                                               
+#  1. A line starting with a "#" is a comment line and has no effect on         
+#     the system. You may add, delete, or change these lines as needed.         
+#                                                                               
+#  2. A line starting with a "|" is an assembly entry line.  This is what       
+#     the system reads so the format must not change.                           
+#                                                                               
+#  3. You may delete some or all of the parts for any loop by deleting          
+#     the corresponding line(s).                                                
+#     *** Suggestion : If you delete all the assembly entry lines for a         
+#          loop, leave the comment line which gives the loop symbol so          
+#          you can add hookup parts for this loop at a later point in time.     
+#                                                                               
+#  4. You may add hookup parts to any loop by adding an assembly entry          
+#     line with the corresponding part ID number from INPARTS.DAT.              
+#     *** Note: Threadolets are omitted from the results if the loop sensor
+#               location is zero (located on the component).
+#                                                                               
+#  5. You may organize the file in any way - the assembly entry lines may       
+#     be moved or regrouped as long as the individual line format does not      
+#     change.                                                                   
+#                                                                               
+#  6. All characters MUST BE in UPPER CASE (except comments).                   
+#                                                                               
+#  7. You cannot add a new loop symbol that is not already present in the       
+#     default file, or change the symbol for an existing loop.                  
+#..........................................................................     
+#    Data Section:                                                              
+#                                                                               
+#  * * * * * * * * * * * *   PRESSURE (P)  * * * * * * * * * * * * * *          
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# FLEXIBLE COND.                                                                
+# (OLD ID 2071)                                                                 
+|FC| |  |FLEX. COND.               |1232| 10| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 1 : PRESSURE GAUGE, ST SENSOR TYPE                     
+# (OLD ID 2001)                                                                 
+|P |1|ST|PI GAUGE(ST),PS SWITCH    |1043|  1| |ST:PIPE FITTINGS TO PROCESS      
+|P |1|ST|                          |1047|  1| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 1 : PRESSURE GAUGE, FT SENSOR TYPE                     
+# (OLD ID 2013)                                                                 
+|P |1|FT|PI GAUGE (FT)             |1043|  1| |FT:GAUGE VALVE TO PROCESS        
+|P |1|FT|                          |1047|  1| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 1 : PRESSURE GAUGE, DG SENSOR TYPE                     
+# (OLD ID 2001)                                                                 
+|P |1|DG|PI GAUGE(ST),PS SWITCH    |1043|  1| |ST:PIPE FITTINGS TO PROCESS      
+|P |1|DG|                          |1047|  1| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 3 : PRESSURE CONTROLLER                                
+# (OLD ID 2002)                                                                 
+|P |3|  |PIT, PIC LOCAL            |1041|  1| |                                 
+|P |3|  |                          |1047|  3| |                                 
+|P |3|  |                          |1048|  1| |                                 
+|P |3|  |                          |1054|  1| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 2 : PRESSURE TRANSMITTER, TN (NO SEAL)                 
+# (OLD ID 2002)                                                                 
+|P |2|TN|PIT, PIC LOCAL            |1041|  1| |                                 
+|P |2|TN|                          |1047|  3| |                                 
+|P |2|TN|                          |1048|  1| |                                 
+|P |2|TN|                          |1054|  1| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 2 : PRESSURE TRANSMITTER, TS (WITH SEAL)               
+# (OLD ID 2002)                                                                 
+|P |2|TS|PIT, PIC LOCAL            |1041|  1| |                                 
+|P |2|TS|                          |1047|  3| |                                 
+|P |2|TS|                          |1048|  1| |                                 
+|P |2|TS|                          |1054|  1| |                                 
+#                                                                               
+# (P) SENSOR TYPE SYMBOL 4 : PRESSURE SWITCH (NO CHEMICAL SEAL)                 
+# (OLD ID 2001)                                                                 
+|P |4|  |PI GAUGE(ST),PS SWITCH    |1043|  1| |ST:PIPE FITTINGS TO PROCESS      
+|P |4|  |                          |1047|  1| |                                 
+#
+# (P) SENSOR TYPE SYMBOL 4 : PRESSURE SWITCH WITH CHEMICAL SEAL                 
+# (OLD ID 2001)                                                                 
+|P |4|CS|PI GAUGE(ST),PS SWITCH    |1043|  1| |ST:PIPE FITTINGS TO PROCESS      
+|P |4|CS|                          |1047|  1| |                                 
+#                                                                               
+#  * * * * * * * * *  DIFFERENTIAL PRESSURE (DP)  * * * * * * * * * * * * *     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (DP) SENSOR TYPE SYMBOL 1 : DIFF PRESSURE GAUGE (NO CHEMICAL SEALS)            
+# (OLD ID 2004)                                                                 
+|DP|1|  |DPI, DPIT, DPS            |1041|  2| |                                 
+|DP|1|  |                          |1054|  1| |                                 
+|DP|1|  |                          |1047|  6| |                                 
+|DP|1|  |                          |1048|  2| |                                 
+#
+# (DP) SENSOR TYPE SYMBOL 1 : DIFF PRESSURE GAUGE (WITH CHEMICAL SEALS)          
+# (OLD ID 2004)                                                                 
+|DP|1|CS|DPI, DPIT, DPS            |1041|  2| |                                 
+|DP|1|CS|                          |1054|  1| |                                 
+|DP|1|CS|                          |1047|  6| |                                 
+|DP|1|CS|                          |1048|  2| |                                 
+#                                                                               
+# (DP) SENSOR TYPE SYMBOL 2 : DIFF PRESSURE TRANSMITTER, TN (NO SEALS)           
+# (OLD ID 2004)                                                                 
+|DP|2|TN|DPI, DPIT, DPS            |1041|  2| |                                 
+|DP|2|TN|                          |1054|  1| |                                 
+|DP|2|TN|                          |1047|  6| |                                 
+|DP|2|TN|                          |1048|  2| |                                 
+#                                                                               
+# (DP) SENSOR TYPE SYMBOL 2 : DIFF PRESSURE TRANSMITTER, TS (WITH SEALS)         
+# (OLD ID 2004)                                                                 
+|DP|2|TS|DPI, DPIT, DPS            |1041|  2| |                                 
+|DP|2|TS|                          |1054|  1| |                                 
+|DP|2|TS|                          |1047|  6| |                                 
+|DP|2|TS|                          |1048|  2| |                                 
+#                                                                               
+# (DP) SENSOR TYPE SYMBOL 4 : DIFF PRESSURE SWITCH (NO SEALS)                   
+# (OLD ID 2004)                                                                 
+|DP|4|  |DPI, DPIT, DPS            |1041|  2| |                                 
+|DP|4|  |                          |1054|  1| |                                 
+|DP|4|  |                          |1047|  6| |                                 
+|DP|4|  |                          |1048|  2| |                                 
+#
+# (DP) SENSOR TYPE SYMBOL 4 : DIFF PRESSURE SWITCH, CS (WITH CHEMICAL SEALS)        
+# (OLD ID 2004)                                                                 
+|DP|4|CS|DPI, DPIT, DPS            |1041|  2| |                                 
+|DP|4|CS|                          |1054|  1| |                                 
+|DP|4|CS|                          |1047|  6| |                                 
+|DP|4|CS|                          |1048|  2| |                                 
+#                                                                               
+#  * * * * * * * * *  TEMPERATURE (T)  * * * * * * * * * * * * *                
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 1 : TEMPERATURE INDICATOR, TM (DIAL THERM.)            
+# (OLD ID 2009)                                                                 
+|T |1|TM|TI DIAL                   |1362|  1| |                                 
+|T |1|TM|                          |0010|  1| |                                 
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 1 : TEMPERATURE INDICATOR, TC (THERMOCOUPLE THERM.)    
+# (OLD ID 2005)                                                                 
+|T |1|TC|TE/TC, TT/TC              |1362|  1| |TE:THERMOCOUPLE,TC:THERMOWE      
+|T |1|TC|                          |0010|  1| |TT:TEMP. XMITTER                 
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 3 : TEMPERATURE CONTROLLER                             
+# (OLD ID 2006)                                                                 
+|T |3|  |TIT, TT WB., TS SW.       |1363|  1| |WB:WET BULB TEMP.                
+|T |3|  |                          |0010|  1| |SW:SWITCH                        
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 0 : TESTWELL                                           
+# (OLD ID 2008)                                                                 
+|T |0|  |TESTWELL                  |0010|  1| |                                 
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 2 : TEMPERATURE TRANSMITTER, FS (FILLED SYSTEM)        
+# (OLD ID 2006)                                                                 
+|T |2|FS|TIT, TT WB., TS SW.       |1363|  1| |WB:WET BULB TEMP.                
+|T |2|FS|                          |0010|  1| |SW:SWITCH                        
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 2 : TEMPERATURE TRANSMITTER, TC (THERMOCOUPLE)         
+# (OLD ID 2005)                                                                 
+|T |2|TC|TE/TC, TT/TC              |1362|  1| |TE:THERMOCOUPLE,TC:THERMOWE      
+|T |2|TC|                          |0010|  1| |TT:TEMP. XMITTER                 
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 2 : TEMPERATURE TRANSMITTER, RT (RES TEMP DETECTOR)    
+# (OLD ID 2011)                                                                 
+|T |2|RT|TT/RTD                    |1232|  1| |                                 
+|T |2|RT|                          |0010|  1| |                                 
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 2 : TEMPERATURE TRANSMITTER, WB (WET BULB)             
+# (OLD ID 2006)                                                                 
+|T |2|WB|TIT, TT WB., TS SW.       |1363|  1| |WB:WET BULB TEMP.                
+|T |2|WB|                          |0010|  1| |SW:SWITCH                        
+#                                                                               
+# (T) SENSOR TYPE SYMBOL 4 : TEMPERATURE SWITCH                                 
+# (OLD ID 2006)                                                                 
+|T |4|  |TIT, TT WB., TS SW.       |1363|  1| |WB:WET BULB TEMP.                
+|T |4|  |                          |0010|  1| |SW:SWITCH                        
+#                                                                               
+#  * * * * * * * * * * *  FLOW (F)  * * * * * * * * * * * * *                   
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (F) SENSOR TYPE SYMBOL 1 : FLOW INDICATOR, FG (FLOW GLASS)                    
+# (OLD ID 2110)                                                                 
+|F |1|FG|FI GAUGE (FG)             |0012|  2| |FG:FLOW GLASS                    
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 1 : FLOW INDICATOR, RT (ROTMETER)                      
+# (OLD ID 2111)                                                                 
+|F |1|RT|FI ROT (ROTMATER)         |0007|  2| |                                 
+|F |1|RT|                          |0009|  4| |                                 
+|F |1|RT|                          |0005|  2| |                                 
+|F |1|RT|                          |0004|  1| |                                 
+|F |1|RT|                          |0003|  4| |                                 
+|F |1|RT|                          |0008|  3| |                                 
+|F |1|RT|                          |0006|  2| |                                 
+|F |1|RT|                          |0010|  2| |                                 
+|F |1|RT|                          |0013|  2| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 1 : FLOW INDICATOR, OP (ORIFICE PLATE)                 
+# (OLD ID 2007)                                                                 
+|F |1|OP|FIC,FQIS,FQI,FIT DP CELL  |1042|  1| |FQI+FQIS:FLOW SWITCH WITH O      
+|F |1|OP|FI DP CELL                |1049|  1| |                                 
+|F |1|OP|                          |1047|  3| |                                 
+|F |1|OP|                          |1048|  2| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, OP (ORIFICE PLATE)               
+# (OLD ID 2007)                                                                 
+|F |2|OP|FIC,FQIS,FQI,FIT DP CELL  |1042|  1| |FQI+FQIS:FLOW SWITCH WITH O      
+|F |2|OP|FI DP CELL                |1049|  1| |                                 
+|F |2|OP|                          |1047|  3| |                                 
+|F |2|OP|                          |1048|  2| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, OS (OP WITH SEALS)               
+# (OLD ID 2007)                                                                 
+|F |2|OS|FIC,FQIS,FQI,FIT DP CELL  |1042|  1| |FQI+FQIS:FLOW SWITCH WITH O      
+|F |2|OS|FI DP CELL                |1049|  1| |                                 
+|F |2|OS|                          |1047|  3| |                                 
+|F |2|OS|                          |1048|  2| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, VX (VORTEX METER)                
+# (OLD ID 2113)                                                                 
+|F |2|VX|FIT W/ VORTEX METER       |1042|  1| |                                 
+|F |2|VX|                          |1047|  3| |                                 
+|F |2|VX|                          |1048|  2| |                                 
+|F |2|VX|                          |1054|  1| |                                 
+|F |2|VX|                          |0021|  1| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, MG (MAGNETIC METER)              
+# (OLD ID 2114)                                                                 
+|F |2|MG|FIT W/ MAGNETIC METER     |1042|  1| |                                 
+|F |2|MG|                          |1047|  3| |                                 
+|F |2|MG|                          |1048|  2| |                                 
+|F |2|MG|                          |1054|  1| |                                 
+|F |2|MG|                          |0022|  1| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, MS (MASS FLOW METER)             
+# (OLD ID 2115)                                                                 
+|F |2|MS|FIT W/ MASS FLOW METER    |1042|  1| |                                 
+|F |2|MS|                          |1047|  3| |                            
+|F |2|MS|                          |1048|  2| |                                 
+|F |2|MS|                          |1054|  1| |                                 
+|F |2|MS|                          |0023|  1| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, NS (NO SENSOR)                   
+# (OLD ID 2112)                                                                 
+|F |2|NS|FIT W/O SENSOR            |1042|  1| |                                 
+|F |2|NS|                          |1047|  3| |                                 
+|F |2|NS|                          |1048|  2| |                                 
+|F |2|NS|                          |1054|  1| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, MR (METER RUN)                   
+# (OLD ID 2116)                                                                 
+|F |2|MR|                          |1126|  2| |                                 
+|F |2|MR|                          |1122|  2| |                                 
+|F |2|MR|                          |1123|  2| |                                 
+|F |2|MR|                          |1022|  4| |                                 
+|F |2|MR|                          |1024| 20| |                                 
+|F |2|MR|                          |1023|  2| |                                 
+|F |2|MR|                          |1369|  1| |                                 
+|F |2|MR|                          |0003|  2| |                                 
+|F |2|MR|                          |0004|  2| |                                 
+|F |2|MR|                          |0034|  1| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 2 : FLOW TRANSMITTER, RS (METER RUN WITH SEAL)                   
+# (OLD ID 2116)                                                                 
+|F |2|RS|                          |1126|  2| |                                 
+|F |2|RS|                          |1122|  2| |                                 
+|F |2|RS|                          |1123|  2| |                                 
+|F |2|RS|                          |1022|  4| |                                 
+|F |2|RS|                          |1024| 20| |                                 
+|F |2|RS|                          |1023|  2| |                                 
+|F |2|RS|                          |1369|  1| |                                 
+|F |2|RS|                          |0003|  2| |                                 
+|F |2|RS|                          |0004|  2| |                                 
+|F |2|RS|                          |0034|  1| |                                 
+#
+# (F) SENSOR TYPE SYMBOL 3 : FLOW CONTROLLER                                    
+# (OLD ID 2007)                                                                 
+|F |3|  |FIC,FQIS,FQI,FIT DP CELL  |1042|  1| |FQI+FQIS:FLOW SWITCH WITH O      
+|F |3|  |FI DP CELL                |1049|  1| |                                 
+|F |3|  |                          |1047|  3| |                                 
+|F |3|  |                          |1048|  2| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 4 : FLOW SWITCH, FS (FLOW SWITCH)                      
+# (OLD ID 2007)                                                                 
+|F |4|FS|FIC,FQIS,FQI,FIT DP CELL  |1042|  1| |FQI+FQIS:FLOW SWITCH WITH O      
+|F |4|FS|FI DP CELL                |1049|  1| |                                 
+|F |4|FS|                          |1047|  3| |                                 
+|F |4|FS|                          |1048|  2| |                                 
+#                                                                               
+# (F) SENSOR TYPE SYMBOL 4 : FLOW SWITCH, TS (TOTALIZING)                       
+# (OLD ID 2007)                                                                 
+|F |4|TS|FIC,FQIS,FQI,FIT DP CELL  |1042|  1| |FQI+FQIS:FLOW SWITCH WITH O      
+|F |4|TS|FI DP CELL                |1049|  1| |                                 
+|F |4|TS|                          |1047|  3| |                                 
+|F |4|TS|                          |1048|  2| |                                 
+#                                                                               
+#  * * * * * * * * * * *  LEVEL (L)  * * * * * * * * * * * * *                  
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (L) SENSOR TYPE SYMBOL 1 : LEVEL INDICATOR, LG (LEVEL GLASS)                  
+# (OLD ID 2041)                                                                 
+|L |1|LG|LI GAUGE(LG),LI           |1042|  1| |LG:LEVEL GLASS-REFLEX TYPE       
+|L |1|LG|                          |1047|  3| |                                 
+|L |1|LG|                          |1048|  2| |                                 
+|L |1|LG|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 1 : LEVEL INDICATOR, SP (STANDPIPE)                    
+# (OLD ID 2048)                                                                 
+|L |1|SP|LI GAUGE (SP)             |1042|  1| |SP:LEVEL GAUGE                   
+|L |1|SP|                          |1047|  3| |                                 
+|L |1|SP|                          |1048|  2| |                                 
+|L |1|SP|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 1 : LEVEL INDICATOR, BB (BUBBLE TYPE)                  
+# (OLD ID 2049)                                                                 
+|L |1|BB|LI(BUBBLE TYPE)           |1042|  1| |                                 
+|L |1|BB|                          |1047|  3| |                                 
+|L |1|BB|                          |1048|  2| |                                 
+|L |1|BB|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 3 : LEVEL CONTROLLER                                   
+# (OLD ID 2042)                                                                 
+|L |3|  |LC DISP,LIT DISP          |1042|  1| |DISP:DISPLACEMENT TYPE           
+|L |3|  |LIT ULTRAS,LIT NUCLEAR    |1047|  3| |                                 
+|L |3|  |                          |1048|  2| |                                 
+|L |3|  |                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, DS (DISPLACEMENT)               
+# (OLD ID 2042)                                                                 
+|L |2|DS|LC DISP,LIT DISP          |1042|  1| |DISP:DISPLACEMENT TYPE           
+|L |2|DS|LIT ULTRAS,LIT NUCLEAR    |1047|  3| |                                 
+|L |2|DS|                          |1048|  2| |                                 
+|L |2|DS|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, DP (DIFF PRESSURE)              
+# (OLD ID 2043)                                                                 
+|L |2|DP|LIT DP                    |1042|  1| |DP:DIFFERENTIAL PRESSURE         
+|L |2|DP|                          |1047|  3| |                                 
+|L |2|DP|                          |1048|  2| |                                 
+|L |2|DP|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, PS (DP WITH CHEM SEALS)         
+# (OLD ID 2043)                                                                 
+|L |2|PS|LIT DP                    |1042|  1| |DP:DIFFERENTIAL PRESSURE         
+|L |2|PS|                          |1047|  3| |                                 
+|L |2|PS|                          |1048|  2| |                                 
+|L |2|PS|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, TF (TAPE FLOAT)                 
+# (OLD ID 2046)                                                                 
+|L |2|TF|LIT TAPE/FLOAT            |1164|  1| |                                 
+|L |2|TF|                          |1368|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, UL (ULTRASONIC)                 
+# (OLD ID 2042)                                                                 
+|L |2|UL|LC DISP,LIT DISP          |1042|  1| |DISP:DISPLACEMENT TYPE           
+|L |2|UL|LIT ULTRAS,LIT NUCLEAR    |1047|  3| |                                 
+|L |2|UL|                          |1048|  2| |                                 
+|L |2|UL|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, NL (NULEAR LEVEL)               
+# (OLD ID 2042)                                                                 
+|L |2|NL|LC DISP,LIT DISP          |1042|  1| |DISP:DISPLACEMENT TYPE           
+|L |2|NL|LIT ULTRAS,LIT NUCLEAR    |1047|  3| |                                 
+|L |2|NL|                          |1048|  2| |                                 
+|L |2|NL|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 2 : LEVEL TRANSMITTER, RD (RADAR TYPE)                 
+# (OLD ID 2042)                                                                 
+|L |2|RD|LC DISP,LIT DISP          |1042|  1| |DISP:DISPLACEMENT TYPE           
+|L |2|RD|LIT ULTRAS,LIT NUCLEAR    |1047|  3| |                                 
+|L |2|RD|                          |1048|  2| |                                 
+|L |2|RD|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 4 : LEVEL SWITCH, DS (DISPLACEMENT)                    
+# (OLD ID 2045)                                                                 
+|L |4|DS|LS WET OR DRY             |1042|  1| |LS:LEVEL SWITCH                  
+|L |4|DS|                          |1047|  3| |                                 
+|L |4|DS|                          |1048|  2| |                                 
+|L |4|DS|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 4 : LEVEL SWITCH, PD (PADDLE TYPE)                     
+# (OLD ID 2045)                                                                 
+|L |4|PD|LS WET OR DRY             |1042|  1| |LS:LEVEL SWITCH                  
+|L |4|PD|                          |1047|  3| |                                 
+|L |4|PD|                          |1048|  2| |                                 
+|L |4|PD|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 4 : LEVEL SWITCH, VS (VIBRATING)                       
+# (OLD ID 2045)                                                                 
+|L |4|VS|LS WET OR DRY             |1042|  1| |LS:LEVEL SWITCH                  
+|L |4|VS|                          |1047|  3| |                                 
+|L |4|VS|                          |1048|  2| |                                 
+|L |4|VS|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 4 : LEVEL SWITCH, CD (CONDUCTIVITY)                    
+# (OLD ID 2045)                                                                 
+|L |4|CD|LS WET OR DRY             |1042|  1| |LS:LEVEL SWITCH                  
+|L |4|CD|                          |1047|  3| |                                 
+|L |4|CD|                          |1048|  2| |                                 
+|L |4|CD|                          |1054|  1| |                                 
+#                                                                               
+# (L) SENSOR TYPE SYMBOL 4 : LEVEL SWITCH, CS (CAPACITIVE)                      
+# (OLD ID 2045)                                                                 
+|L |4|CS|LS WET OR DRY             |1042|  1| |LS:LEVEL SWITCH                  
+|L |4|CS|                          |1047|  3| |                                 
+|L |4|CS|                          |1048|  2| |                                 
+|L |4|CS|                          |1054|  1| |                                 
+#                                                                               
+#  * * * * * * * * * * *  ANALYZERS (A)  * * * * * * * * * * *                  
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, PH (PH INDICATING)                       
+# (OLD ID 2051)                                                                 
+|A |2|PH|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|PH|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|PH|                          |1051|  2| |                                 
+|A |2|PH|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, OR (OXIDATION DED. POTENTIAL TRANS.)     
+# (OLD ID 2051)                                                                 
+|A |2|OR|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|OR|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|OR|                          |1051|  2| |                                 
+|A |2|OR|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, O2 (OXYGEN ANALYZER)                     
+# (OLD ID 2051)                                                                 
+|A |2|O2|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|O2|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|O2|                          |1051|  2| |                                 
+|A |2|O2|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, BT (BTU TRANMITTER)                      
+# (OLD ID 2051)                                                                 
+|A |2|BT|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|BT|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|BT|                          |1051|  2| |                                 
+|A |2|BT|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, CS (CONSISTENCY ANALYZER)                
+# (OLD ID 2051)                                                                 
+|A |2|CS|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|CS|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|CS|                          |1051|  2| |                                 
+|A |2|CS|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, PL (GAS DETECTION %LEL)                  
+# (OLD ID 2051)                                                                 
+|A |2|PL|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|PL|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|PL|                          |1051|  2| |                                 
+|A |2|PL|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, HD (GAS DETECTION H2S)                   
+# (OLD ID 2051)                                                                 
+|A |2|HD|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|HD|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|HD|                          |1051|  2| |                                 
+|A |2|HD|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, C2 (CO2 WITHOUT SAMPLE COND. SYS)        
+# (OLD ID 2051)                                                                 
+|A |2|C2|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|C2|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|C2|                          |1051|  2| |                                 
+|A |2|C2|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, VS (VISCOSITY WITHOUT SAMPLE COND. SYS)  
+# (OLD ID 2051)                                                                 
+|A |2|VS|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|VS|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|VS|                          |1051|  2| |                                 
+|A |2|VS|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, CL (COLOR WITHOUT SAMPLE COND. SYS)      
+# (OLD ID 2051)                                                                 
+|A |2|CL|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|CL|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|CL|                          |1051|  2| |                                 
+|A |2|CL|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, FP (FLAME POINT WITHOUT SAMPLE COND. SYS)
+# (OLD ID 2051)                                                                 
+|A |2|FP|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|FP|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|FP|                          |1051|  2| |                                 
+|A |2|FP|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, CP (CLOUD POINT WITHOUT SAMPLE COND. SYS)
+# (OLD ID 2051)                                                                 
+|A |2|CP|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|CP|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|CP|                          |1051|  2| |                                 
+|A |2|CP|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, SD (SMOKE DENSITY)                       
+# (OLD ID 2051)                                                                 
+|A |2|SD|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|SD|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|SD|                          |1051|  2| |                                 
+|A |2|SD|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, FL (FLASH POINT)                         
+# (OLD ID 2051)                                                                 
+|A |2|FL|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|FL|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|FL|                          |1051|  2| |                                 
+|A |2|FL|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, SG (SPECIFIC GRAVITY - LIQUID)           
+# (OLD ID 2051)                                                                 
+|A |2|SG|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|SG|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|SG|                          |1051|  2| |                                 
+|A |2|SG|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, HV (HEATING VALVE)                       
+# (OLD ID 2051)                                                                 
+|A |2|HV|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|HV|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|HV|                          |1051|  2| |                                 
+|A |2|HV|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, GC (GAS CHROMATOGRAPH)                   
+# (OLD ID 2051)                                                                 
+|A |2|GC|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|GC|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|GC|                          |1051|  2| |                                 
+|A |2|GC|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, HC (C2 AND HYDROCARBONS)                 
+# (OLD ID 2051)                                                                 
+|A |2|HC|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|HC|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|HC|                          |1051|  2| |                                  
+|A |2|HC|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, HS (H2S ANALYZER)                        
+# (OLD ID 2051)                                                                 
+|A |2|HS|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|HS|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|HS|                          |1051|  2| |                                 
+|A |2|HS|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, H2 (HYDROCARBON IN WATER)                
+# (OLD ID 2051)                                                                 
+|A |2|H2|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|H2|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|H2|                          |1051|  2| |                                 
+|A |2|H2|                          |1047|  3| |                                 
+#                                                                               
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, HR (H2S/SO2 RATIO)                       
+# (OLD ID 2051)                                                                 
+|A |2|HR|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|HR|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|HR|                          |1051|  2| |                                 
+|A |2|HR|                          |1047|  3| |                                 
+#                                                                              
+# (A) SENSOR TYPE SYMBOL 2 : ANALYZER, SO (SULPHUR IN OIL)                      
+# (OLD ID 2051)                                                                 
+|A |2|SO|AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|A |2|SO|CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|A |2|SO|                          |1051|  2| |                                 
+|A |2|SO|                          |1047|  3| |                                 
+#                                                                               
+#  * * * * * * * * * * *  ELECTRICAL CONDUCTIVITY (C)  * * * * * * * * * *      
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (C) SENSOR TYPE SYMBOL 2 : CONDUCTIVITY TRANSMITTER                           
+# (OLD ID 2051)                                                                 
+|C |2|  |AT(PH,ORP,O2),BT,DENSITY  |1053|  1| |AT:ANALYZER,BT:BTU               
+|C |2|  |CS,CONDUCTIVITY           |1056|  1| |CS:CONSISTENCY                   
+|C |2|  |                          |1051|  2| |                                 
+|C |2|  |                          |1047|  3| |                                 
+#                                                                               
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# PNEUMATIC TUBING HOOKUP                                                       
+# (OLD ID 4001)                                                                 
+|PT| |  |PNEU. TUBING HOOKUP       |1011|  1| |                                 
+|PT| |  |                          |1012| 50| |                                 
+|PT| |  |                          |1013|  1| |                                 
+|PT| |  |                          |1014|  1| |                                 
+#                                                                               
+# AIR SUPPLY DROP                                                               
+# (OLD ID 5000)                                                                 
+|AS| |  |AIR SUPPLY DROP           |1031|  1| |                                 
+|AS| |  |                          |1032|  1| |                                 
+|AS| |  |                          |1033|  2| |                                 
+|AS| |  |                          |1035|  1| |                                 
+|AS| |  |                          |1015|  1| |                                 
+#                                                                               
+# AIR SUPPLY FEED                      
+# (OLD ID 5001)                                                                 
+|AS| |FD|AIR SUPPLY FEED           |1037|  1| |                                 
+|AS| |FD|                          |1016|  1| |                                 
+|AS| |FD|                          |1015|  1| |                                 
+|AS| |FD|                          |1011|  2| |                                 
+|AS| |FD|                          |1012|  5| |                                 
+|AS| |FD|                          |1366|  1| |                                  
+|AS| |FD|                          |1017|  1| |                                 
+#                                                                              
+# (H) SENSOR TYPE SYMBOL 3 : HAND REGULATOR, NO AIR REGU.                       
+# (OLD ID 5002)                                                                 
+#  * * * * * * * * * * *  HAND (MANUAL) ACTIVATION (H)  * * * * * * * * * *     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (H) SENSOR TYPE SYMBOL 3 : HAND REGULATOR                                     
+# (OLD ID 5001)                                                                 
+|H |3|  |AIR SUPPLY FEED           |1037|  1| |                                 
+|H |3|  |                          |1016|  1| |                                 
+|H |3|  |                          |1015|  1| |                                 
+|H |3|  |                          |1011|  2| |                                 
+|H |3|  |                          |1012|  5| |                                 
+|H |3|  |                          |1366|  1| |                                  
+|H |3|  |                          |1017|  1| |                                 
+#                                                                               
+# (H) SENSOR TYPE SYMBOL 3 : HAND REGULATOR, NO AIR REGU.                       
+# (OLD ID 5002)                                                                 
+|H |3|NO|5001 - NO AIR REGU.       |1037|  1| |                                 
+|H |3|NO|                          |1016|  1| |                                 
+|H |3|NO|                          |1015|  1| |                                 
+|H |3|NO|                          |1011|  2| |                                 
+|H |3|NO|                          |1012|  5| |                                 
+#                                                                               
+# (H) SENSOR TYPE SYMBOL 6 : MANUAL CONTROLLER                                  
+# (OLD ID 5001)                                                                 
+|H |6|  |AIR SUPPLY FEED           |1037|  1| |                                 
+|H |6|  |                          |1016|  1| |                                 
+|H |6|  |                          |1015|  1| |                                 
+|H |6|  |                          |1011|  2| |                                  
+|H |6|  |                          |1012|  5| |                                 
+|H |6|  |                          |1366|  1| |                                 
+|H |6|  |                          |1017|  1| |                                 
+#                                                                               
+#  * * * * * * * * * * *  BURNER SWITCH (B) * * * * * * * * * * * * * * * *     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+# LOOP  |                          |PART|   |F|                                 
+# DESCR.|     DESCRIPTION          | NO.|QTY|G|        NOTE                     
+#--|-|--|--------------------------|----|---|-|-----------------------------    
+#  | |  |                          |    |   | |                                 
+# (B) SENSOR TYPE SYMBOL 4 : BURNER SWITCH                                      
+#B |4|  |                          |    |   | | NO ASSEMBLY BY DEFAULT          
+#
+#  End of INASMBLY.DAT                                                          

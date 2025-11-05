@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curves>
+          <functioncurve id="0" name="Time curve -1" type="1" shape="0">
+              <data points="0 0"/>
+              <data points="30 0.9682"/>
+              <data points="60 0.99899"/>
+              <data points="90 0.99997"/>
+              <data points="120 1"/>
+              <data points="900 1"/>
+          </functioncurve>
+
+</curves>

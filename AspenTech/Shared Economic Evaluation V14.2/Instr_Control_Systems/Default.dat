@@ -1,0 +1,144 @@
+#-------------------------------------------------------------------------------
+#  Instrumentation Control Systems Cost and MH:  CTLSYSTEM.DAT 
+#-------------------------------------------------------------------------------
+#  History:
+#
+#  Updated 9 Mar 2012 by DMM  : New Instrumentation Control Systems External File
+#...............................................................................
+#
+#  To provide user-editable format for reading Control System Pricing from this database 
+#
+#...............................................................................
+#  1. Comment lines begin with a "#" 
+#  2. Format of file MUST NOT change
+#...............................................................................
+#
+#  TYPE:  Type of Control System
+#
+#  DESCRIPTION:  Description of Control System
+#
+#  MANHOUR FIELDS:
+#         Hardware MH per I/O loop:  If zero MH is specified for the DCS and
+#                                    PLC types, then the internal hardware MH
+#                                    calculations will be used.
+#         Software MH per I/O loop:  Provide MH based on MEDIUM configuration complexity  
+#                                    SIMPLE configuration = 80% of spec'd MH per I/O loop
+#                                    COMPLEX configuration = 125% of spec'd MH per I/O loop
+#
+#  COST FIELDS:
+#	      Hardware Cost per I/O loop:  If zero cost is specified for the DCS and
+#                                      PLC types, then the internal hardware cost
+#                                      calculations will be used.
+#         Software Cost per I/O loop:  The software configuration complexity must 
+#                                      be specified on the Control Center GUI Form.
+#                                      (S = SIMPLE, M = MEDIUM, C = COMPLEX)
+#         Advanced Control Cost per I/O:  Applies only to indicated loops specified
+#                                         in the GUI Forms.
+#         Supervisory Control Cost per I/O:  Applies only to indicated loops
+#                                            specified in the GUI Forms.
+#
+#
+#  YEAR:  Year basis for pricing.  These are the "starting" costs.  The
+#         final, reported cost is derived by escalating this cost to the
+#         base cost for the system version running the estimate. Although the
+#         system will automatically escalate these costs, you should
+#         evaulate them periodically, especially if you experience large 
+#         cost fluctuations.
+#
+#...............................................................................
+#
+#  Currency Conversion Information:
+#
+#  You must provide the currency conversion information before
+#  you continue to Data Section.
+#  1. CURCONUS - Conversion of CURRENCY to DOLLARS     (USD)
+#  2. CURCONUK - Conversion of CURRENCY to POUNDS      (PS)
+#  3. CURCONJP - Conversion of CURRENCY to K-YEN       (KY)
+#  4. CURCONEU - Conversion of CURRENCY to EURO        (EUR)
+#  5. CURCONME - Conversion of CURRENCY to Saudi Riyal (SAR) 
+#
+#  The following examples will help you do the conversion.
+#        If [1.60]USD = [1.00]PS and [1]USD = [0.120]KY and [0.9]USD = [1.0]EUR
+#        and [1]USD = [3.75]SAR and if you want to use U.S. $ for the Accessories Cost, 
+#        then conversion factors will be:
+#        CURCONUS = 1.00
+#        CURCONUK = 1.60  USD/PS
+#        CURCONJP = 1.0/0.120 = 8.3333 USD/KY
+#        CURCONEU = 0.9  USD/EUR
+#        CURCONME = 1.0/3.75 = 0.2667 USD/SAR
+#                                 
+#                 |----------|--------|
+#                 | Currency | U.S. $ | 
+#        |--------|----------|--------|
+#        |CURCONUS| U.S.  $  | 1.00   |
+#        |--------|----------|--------|
+#        |CURCONUK| U.K.  PS | 1.60   |          
+#        |--------|----------|--------|
+#        |CURCONJP| JAP.  KY | 8.3333 |
+#        |--------|----------|--------|                 
+#        |CURCONEU| EURO  EUR| 0.90   |          
+#        |--------|----------|--------|
+#        |CURCONME| Saudi SAR| 0.2667 | 
+#        |--------|----------|--------|                
+#                    
+#        If you want to use Saudi Arabian Riyals for Accessories Cost and if the
+#        currency conversion rate is 6.0 SAR/PS,
+#        then the conversion factors will be:
+#            
+#        CURCONUS = (6.0 SAR/PS) / (1.6 USD/PS) = 3.75 SAR/USD
+#        CURCONUK = 6.0 SAR/PS                  = 600. SAR/PS
+#        CURCONJP = (6.0 SAR/PS) / (1.6/8.3333)KY/PS = 31.248 SAR/KY
+#        CURCONEU = (6.0 SAR/PS) / (1.6/0.90)EU/PS = 3.375 SAR/EUR
+#        CURCONME = (6.0 SAR/PS) / (1.6/0.2667)SAR/PS = 1.00
+#
+#
+#CURRENCY CONVERSION (CUR/USD), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONUS|1.0000|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/PS), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONUK|1.6000|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/KY), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONJP|8.3333|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/EUR), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONEU|0.9000|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/SAR), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONME|0.2667|
+#--------------------------------------------------------------------------#
+#
+#...........................................................................
+#
+#  Data Section:  Revised March 2012
+#
+#        1         2         3         4         5         6         7         8         9 
+#234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+#---+------------------------+-------------+-----------------------------------------+----+
+# T | Description            |Hard- |Soft- |Hard- |Soft- |Soft- |Soft- |Advan-|Super-| Y  |
+# Y |                        |ware  |ware-M|ware  |ware-S|ware-M|ware-C|ced   |visory| E  |
+# P |                        | MH   | MH   | cost | cost | cost | cost | cost | cost | A  | 
+# E |                        | per  | per  | per  | per  | per  | per  | per  | per  | R  |     
+#   |                        | IO   | IO   | IO   | IO   | IO   | IO   | IO   | IO   |    | 
+#---+------------------------+-------------+-----------------------------------------+----+
+|DCS|Digital Control         |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|PLC|PLC                     |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|ESD|Emergency Shutdown      |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|MDC|Machine Dedicated Cntrl |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|TGS|Tank Gauging System     |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|MMN|Machine Monitoring      |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|ACS|Analyzer Control        |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|FGS|Fire and Gas Detection  |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|MMS|Motor Management System |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+|OTH|Other Control System    |   10.|    5.| 1000.|  300.|  400.|  500.|    0.|    0.|2012|
+#---+------------------------+-------------+-----------------------------------------+----+

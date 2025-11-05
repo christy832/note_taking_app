@@ -1,0 +1,182 @@
+#-------------------------------------------------------------------------------
+#  Civil - Material and MH List:  CIVMATMH.DAT 
+#-------------------------------------------------------------------------------
+#  History:
+#
+#  Updated 24 Jul. 2007 by GK  : New Civil External File
+#  Updated 11 Oct. 2007 by PD  : Changes for SAR currency
+#...............................................................................
+#
+#  To provide user-editable format for reading Material and Manhour
+#  from this database 
+#
+#...............................................................................
+#  1. Comment lines begin with a "#" 
+#  2. Format of file MUST NOT change
+#...............................................................................
+#
+#  TYPE   SYMBOL TYPE  DESCRIPTION                                              
+#  ----   -----------  ---------------------------------------------------------
+#    1     OCT+PROJ    Octagon Slabs and Piers with Projection
+#    2     OCTAGONL    Octagon Slabs and Piers without Projection
+#    3     PAVING      Area Paving
+#    4     MASSPOUR    Mass Pours - Large Mats, Pile Caps, and Other Shapes
+#                                 - 25CY[19 M3] min
+#    5     SM BLOCK    Small Blocks - Pumps, Compressors, - 3 CY[2.3 M3] or less
+#    6     LG BLOCK    Large Blocks - Large Compressors, Turbines
+#                                     3-25 CY [2.3-19 M3]
+#    7     PILECAP     Pile Caps - 5 CY [3.8 M3] or less
+#    8     CONDUIT     Conduit Envelope
+#    9     RING        Circular Ring Foundation - For Large Tanks
+#   10     BASIN       Basins
+#   11     EL SLAB     Elevated Slab
+#   12     COLM/BM     Columns and Beams
+#   13     WALL        Wall and Wall Footings
+#   14     GRAD BM     Grade Beam
+#   15     PIER        Piers
+#   16     FOOTING     Column Footings,Sleepers
+#   17     BOX         Valve Boxes,Manholes etc
+#   18     SLAB GRD    Slab-on-Grade
+#
+#  UNIT:  Units of measure. I for I-P unit and M for Metric unit
+#
+# NUMBER  DESCRIPTION                                          UNITS     UNITS
+#                                                              (IP)     (METRIC)
+#  ----   -------------------------------------------         --------  --------
+#    1    MAT'L - FORMWORK-CONTACT SURFACE area per            SF/CY     M2/M3
+#                 unit volume of concrete           
+#    2    MAT'L - BACK-UP-LUMBER volume of lumber per          BD FT/CY  M3/M3
+#                 unit volume of concrete                             
+#    3    MAT'L - REBAR per unit volume of Concrete            LBS/CY    KG/M3   
+#    4    MAT'L - ACCESSORIES COST in User's CURRENCY             /CY      /M3
+#                 The material cost in User's currency   
+#                 per unit volume of concrete 
+#                 for the base YEAR (see below).
+#                 This will be automatically converted to
+#                 the project currency units using the 
+#                 conversion rate from the currency 
+#                 conversion information table (see below) 
+#                
+#    5    LABOR - FORMWORK - FABRICATE                         MH/SF     MH/M2
+#    6    LABOR - FORMWORK - INSTALL                           MH/SF     MH/M2
+#    7    LABOR - FORMWORK - STRIP AND CLEAN                   MH/SF     MH/M2
+#    8    LABOR - REBAR    - INSTALL                           MH/TON    MH/TON
+#    9    LABOR - CONCRETE POUR & FINISH                       MH/CY     MH/M3
+#
+#   10    OVERPOUR - Concrete Overpour                         PERCENT   PERCENT
+#
+#  YEAR:  Year basis for pricing.  These are the "starting" costs.  The
+#         final, reported cost is derived by escalating this cost to the
+#         base cost for the system version running the estimate. Although the
+#         system will automatically escalate these costs, you should
+#         evaulate them periodically, especially if you experience large 
+#         cost fluctuations.
+#
+#...........................................................................
+#
+#
+#  Currency Conversion Information:
+#
+#  You must provide the currency conversion information before
+#  you continue to Data Section.
+#  1. CURCONUS - Conversion of CURRENCY to DOLLARS     (USD)
+#  2. CURCONUK - Conversion of CURRENCY to POUNDS      (PS)
+#  3. CURCONJP - Conversion of CURRENCY to K-YEN       (KY)
+#  4. CURCONEU - Conversion of CURRENCY to EURO        (EUR)
+#  5. CURCONME - Conversion of CURRENCY to Saudi Riyal (SAR) 
+#
+#  The following examples will help you do the conversion.
+#        If [1.60]USD = [1.00]PS and [1]USD = [0.120]KY and [0.9]USD = [1.0]EUR
+#        and [1]USD = [3.75]SAR and if you want to use U.S. $ for the Accessories Cost, 
+#        then conversion factors will be:
+#        CURCONUS = 1.00
+#        CURCONUK = 1.60  USD/PS
+#        CURCONJP = 1.0/0.120 = 8.3333 USD/KY
+#        CURCONEU = 0.9  USD/EUR
+#        CURCONME = 1.0/3.75 = 0.2667 USD/SAR
+#                                 
+#                 |----------|--------|
+#                 | Currency | U.S. $ | 
+#        |--------|----------|--------|
+#        |CURCONUS| U.S.  $  | 1.00   |
+#        |--------|----------|--------|
+#        |CURCONUK| U.K.  PS | 1.60   |          
+#        |--------|----------|--------|
+#        |CURCONJP| JAP.  KY | 8.3333 |
+#        |--------|----------|--------|                 
+#        |CURCONEU| EURO  EUR| 0.90   |          
+#        |--------|----------|--------|
+#        |CURCONME| Saudi SAR| 0.2667 | 
+#        |--------|----------|--------|                
+#                    
+#        If you want to use Saudi Arabian Riyals for Accessories Cost and if the
+#        currency conversion rate is 6.0 SAR/PS,
+#        then the conversion factors will be:
+#            
+#        CURCONUS = (6.0 SAR/PS) / (1.6 USD/PS) = 3.75 SAR/USD
+#        CURCONUK = 6.0 SAR/PS                  = 6.00 SAR/PS
+#        CURCONJP = (6.0 SAR/PS) / (1.6/8.3333)KY/PS = 31.248 SAR/KY
+#        CURCONEU = (6.0 SAR/PS) / (1.6/0.90)EU/PS = 3.375 SAR/EUR
+#        CURCONME = (6.0 SAR/PS) / (1.6/0.2667)SAR/PS = 1.00
+#
+#
+#CURRENCY CONVERSION (CUR/USD), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONUS|1.0000|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/PS), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONUK|1.6000|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/KY), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONJP|8.3333|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/EUR), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONEU|0.9000|
+#--------------------------------------------------------------------------
+#CURRENCY CONVERSION (CUR/SAR), give the number between column 10 to 15
+# ID     |
+#1234567890123456
+|CURCONME|0.2667|
+#--------------------------------------------------------------------------#
+#...........................................................................
+#
+#  Data Section:  Revised July 2007
+#
+#--|-|-------------------------------|----------------------------|------|
+# F| |                               |                            |      |
+# O| |         MATERIAL              |           LABOR            |      |      
+# U| |-------------------------------|----------------------------|   O  |-------------|
+# N|U|                    NUMBER                                  |   V  |             |
+# D|N|   1  |  2   |  3   |  4  |YEAR| 5   | 6   | 7   |  8  | 9  |   E  |DESCRIPTION  |
+#  |I|------|------|------|-----|----|-----|-----|-----|-----|----|   R  |             |
+# T|T|   FORMWORK  |REBAR |ACCES|    |    FORMWORK     |REBAR|CONC|   P  |             |
+# Y| | C.S. |BACKUP|QUANT.|COST |    |FAB. |INST |CLN. |INST.|POUR|   O  |             |
+# P| |  SF  |  BF  | LBS  |     |    |     |     |     |     |    |   U  |             |     
+# E| |  M2  |  M3  | KG   |CURR.|    | MH  | MH  | MH  | MH  | MH |   R  |             |
+#--|-|------|------|------|-----|----|-----|-----|-----|-----|----|------|-------------|
+| 1|I| 12.00| 30.00|140.00|30.58|2006|0.13 |0.25 |0.05 |36.00|2.50|  4.00|OCT+PROJ     |
+| 2|I| 13.00| 25.00|100.00|27.96|2006|0.12 |0.22 |0.05 |24.00|2.20|  4.00|OCTAGONAL    |
+| 3|I|  8.00| 15.00| 60.00| 6.12|2006|0.11 |0.15 |0.03 |24.00|2.80|  8.00|PAVING       |
+| 4|I| 10.00| 20.00|140.00| 7.86|2006|0.11 |0.25 |0.05 |20.00|1.50|  8.00|MASS POUR    |
+| 5|I| 20.00| 30.00|100.00| 8.74|2006|0.11 |0.23 |0.05 |26.00|2.50|  5.00|SMALL BLOCK  |
+| 6|I| 16.00| 30.00|120.00|22.72|2006|0.09 |0.20 |0.04 |22.00|1.80|  5.00|LARGE BLOCK  |
+| 7|I| 22.00| 30.00|150.00|12.23|2006|0.10 |0.16 |0.03 |18.00|1.80|  6.00|PILE CAP     |
+| 8|I| 20.00| 20.00| 45.00| 1.75|2006|0.05 |0.08 |0.02 |16.00|1.80| 13.00|CONDUIT      |
+| 9|I| 45.00| 80.00|110.00| 7.86|2006|0.11 |0.17 |0.04 |26.00|2.00|  4.00|RING         |
+|10|I| 35.00| 65.00|140.00|20.10|2006|0.10 |0.13 |0.03 |26.00|2.80|  5.00|BASIN        |
+|11|I| 50.00|145.00|240.00|22.72|2006|0.09 |0.23 |0.05 |32.00|2.50|  3.00|ELEV. SLAB   |
+|12|I| 65.00|180.00|300.00|22.72|2006|0.10 |0.22 |0.04 |29.00|3.10|  4.00|COLUMN/BEAM  |
+|13|I| 50.00|140.00|175.00|38.45|2006|0.09 |0.18 |0.04 |29.00|2.50|  4.00|WALL         |
+|14|I| 30.00| 40.00|200.00| 4.37|2006|0.09 |0.17 |0.03 |22.00|1.80|  5.00|GRADE BEAM   |
+|15|I| 35.00|110.00|140.00|27.96|2006|0.09 |0.17 |0.04 |26.00|2.00|  4.00|PIERS        |
+|16|I| 30.00| 50.00|120.00|27.96|2006|0.12 |0.19 |0.04 |26.00|1.70|  5.00|FOOTING      |
+|17|I| 50.00|150.00|125.00|27.30|2006|0.10 |0.17 |0.03 |29.00|3.10|  3.00|BOX          |
+|18|I|  5.00| 10.00| 75.00| 5.71|2006|0.10 |0.15 |0.03 |24.00|2.90| 10.00|SLAB-ON-GRADE|
+#--------------------------------------------------------------------------------------|

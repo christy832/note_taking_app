@@ -1,0 +1,16 @@
+<FRAMES>
+	<FRAME Name="ExplodeSteps" Config="Default" Played="0">
+		<COMPONENTFRAME Name="ExplodeStep0" Target="handle/Handle Rod-1">
+			<Translation Time="0.000000" x="0.000000"  y="0.014769"  z="0.000000" />
+		</COMPONENTFRAME>
+		<COMPONENTFRAME Name="ExplodeStep1" Target="handle/Knob-1">
+			<Translation Time="0.000000" x="0.000000"  y="0.014769"  z="0.000000" />
+			<Translation Time="1.000000" x="0.000000"  y="0.118150"  z="0.000000" />
+			<Translation Time="2.000000" x="0.000000"  y="0.044306"  z="0.000000" />
+		</COMPONENTFRAME>
+		<COMPONENTFRAME Name="ExplodeStep2" Target="handle/Marble Handle-1">
+			<Translation Time="0.000000" x="0.000000"  y="0.014769"  z="0.000000" />
+			<Translation Time="1.000000" x="0.000000"  y="0.118150"  z="0.000000" />
+		</COMPONENTFRAME>
+	</FRAME>
+</FRAMES>

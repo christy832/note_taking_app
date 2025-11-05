@@ -1,0 +1,938 @@
+
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + +   + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + +   + +       + +   + + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + + + + +       +       +       + + + + + + + + + + + + +
+ + + + + + + + + + +   + +       +       +       + +   + + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + +   + +       +       +       +       +       + +   + + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + +       +       +       +       +       +       +       + + + + +
+ + + + + + +   + +       +       +       +       +       + +   + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + +       +       +       +       +       + + + + + + + + +
+ + + + + + + + + + +   + + +   + +       + +   + + +   + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + +       + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + +   + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+                                                                        TM
+ AAAAA   SSSSS   PPPPP   EEEEE   NN    N   PPPPP   L       U   U   SSSSS
+ A   A   S       P   P   E       N N   N   P   P   L       U   U   S    
+ AAAAA   SSSSS   PPPPP   EEEEE   N   N N   PPPPP   L       U   U   SSSSS
+ A   A       S   P       E       N    NN   P       L       U   U       S
+ A   A   SSSSS   P       EEEEE   N     N   P       LLLLL   UUUUU   SSSSS
+
+ ASPEN PLUS IS A TRADEMARK OF           HOTLINE:
+ ASPEN TECHNOLOGY, INC.                 U.S.A. 888/996-7001
+ TEN CANAL PARK                         EUROPE (32) 2/724-0100
+ CAMBRIDGE, MASSACHUSETTS 02141                             
+ 617/949-1000
+
+ PLATFORM: WIN32                                         APRIL 29, 1999      
+ VERSION: 10.1-0 Build 25                                THURSDAY    
+ INSTALLATION: ICARUSPC                                  9:06:54 A.M.        
+
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE    I
+                                                                                
+
+
+
+      ASPEN PLUS (R) IS A PROPRIETARY PRODUCT OF ASPEN TECHNOLOGY, INC.
+      (ASPENTECH), AND MAY BE USED ONLY UNDER AGREEMENT WITH ASPENTECH.
+      RESTRICTED RIGHTS LEGEND:  USE, REPRODUCTION, OR DISCLOSURE BY THE
+      U.S. GOVERNMENT IS SUBJECT TO RESTRICTIONS SET FORTH IN 
+      (i) FAR 52.227-14, Alt. III, (ii) FAR 52.227-19, (iii) DFARS 
+      252.227-7013(c)(1)(ii), or (iv) THE ACCOMPANYING LICENSE AGREEMENT,
+      AS APPLICABLE. FOR PURPOSES OF THE FAR, THIS SOFTWARE SHALL BE DEEMED
+      TO BE "UNPUBLISHED" AND LICENSED WITH DISCLOSURE PROHIBITIONS.
+      CONTRACTOR/SUBCONTRACTOR: ASPEN TECHNOLOGY, INC. TEN CANAL PARK,
+      CAMBRIDGE, MA 02141.
+                               TABLE OF CONTENTS                                
+
+
+            RUN CONTROL SECTION....................................  1
+                 RUN CONTROL INFORMATION...........................  1
+                 DESCRIPTION.......................................  1
+
+            FLOWSHEET SECTION......................................  2
+                 FLOWSHEET CONNECTIVITY BY STREAMS.................  2
+                 FLOWSHEET CONNECTIVITY BY BLOCKS..................  2
+                 COMPUTATIONAL SEQUENCE............................  2
+                 OVERALL FLOWSHEET BALANCE.........................  2
+
+            ADA/PCS SECTION........................................  4
+                 ASSAY DATA ANALYSIS...............................  4
+                 PSEUDOCOMPONENT BREAKDOWN.........................  5
+                 PSEUDOCOMPONENT PHYSICAL PROPERTIES...............  6
+
+            PHYSICAL PROPERTIES SECTION............................  7
+                 COMPONENTS........................................  7
+
+            U-O-S BLOCK SECTION....................................  8
+                 BLOCK:  COLUMN   MODEL: RADFRAC...................  8
+                 BLOCK:  FLASH    MODEL: FLASH2.................... 11
+
+            STREAM SECTION......................................... 13
+                 BTMS FEED FEEDL FEEDV OVHD........................ 13
+
+            PROBLEM STATUS SECTION................................. 19
+                 BLOCK STATUS...................................... 19
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 1   
+                                                                                
+                              RUN CONTROL SECTION                               
+
+ RUN CONTROL INFORMATION                 
+ -----------------------
+
+
+ THIS COPY OF ASPEN PLUS LICENSED TO ICARUS CORP.                    
+
+ TYPE OF RUN: NEW 
+
+ INPUT FILE NAME:  _0441iap.inm                                                                    
+
+ OUTPUT PROBLEM DATA FILE NAME: _0441iap VERSION NO.   1
+ LOCATED IN:                                                                                                    
+
+
+
+ PDF SIZE USED FOR INPUT TRANSLATION:
+   NUMBER OF FILE RECORDS (PSIZE) =     0
+   NUMBER OF IN-CORE RECORDS      =   256
+ PSIZE NEEDED FOR SIMULATION      =   256
+
+ CALLING PROGRAM NAME:          apmain  
+ LOCATED IN:                    E:\ASPENT~1\ASPENP~1.1-0\Engine\xeq                                             
+
+
+ SIMULATION REQUESTED FOR ENTIRE FLOWSHEET
+
+ DESCRIPTION                             
+ -----------
+
+           THIS EXAMPLE DEMONSTRATES THE ASPEN PLUS TPSAR CAPABILITY.       
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 2   
+                                                                                
+                               FLOWSHEET SECTION                                
+
+ FLOWSHEET CONNECTIVITY BY STREAMS       
+ ---------------------------------
+
+   STREAM     SOURCE     DEST           STREAM     SOURCE     DEST
+   FEED       ----       FLASH          FEEDV      FLASH      COLUMN  
+   FEEDL      FLASH      COLUMN         OVHD       COLUMN     ----    
+   BTMS       COLUMN     ----                                         
+
+ FLOWSHEET CONNECTIVITY BY BLOCKS        
+ --------------------------------
+
+   BLOCK        INLETS                         OUTLETS
+   FLASH        FEED                           FEEDV FEEDL                 
+   COLUMN       FEEDL FEEDV                    OVHD BTMS                   
+
+ COMPUTATIONAL SEQUENCE                  
+ ----------------------
+
+ SEQUENCE USED WAS:
+    FLASH COLUMN                                                           
+
+ OVERALL FLOWSHEET BALANCE               
+ -------------------------
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    CONVENTIONAL COMPONENTS (KMOL/HR )
+       C1                        7.06000         7.06000        0.928400E-09
+       C2                        707.910         707.910        0.918657E-09
+       C3                        606.160         606.160       -0.678055E-09
+       IC4                       161.240         161.240       -0.679810E-09
+       NC4                       137.430         137.430       -0.679725E-09
+       IC5                       43.9400         43.9400       -0.678921E-09
+       NC5                       26.6200         26.6200       -0.678813E-09
+       NC6                       25.3400         25.3400       -0.678381E-09
+       NC7                       8.52000         8.52000       -0.678221E-09
+       NC8                       3.79000         3.79000       -0.678132E-09
+       NC9                      0.720000        0.720000       -0.678087E-09
+       NC10                     0.620000        0.620000       -0.678068E-09
+       N2                       0.000000E+00    0.000000E+00    0.000000E+00
+       CO2                       33.6500         33.6500        0.934647E-09
+       H2S                      0.600000E-01    0.600000E-01    0.901093E-09
+       H2O                      0.000000E+00    0.000000E+00    0.000000E+00
+       PC12C                    0.000000E+00    0.000000E+00    0.000000E+00
+       PC53C                    0.000000E+00    0.000000E+00    0.000000E+00
+       PC68C                    0.000000E+00    0.000000E+00    0.000000E+00
+       PC83C                    0.000000E+00    0.000000E+00    0.000000E+00
+       PC98C                    0.000000E+00    0.000000E+00    0.000000E+00
+       PC113C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC128C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC143C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC158C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC172C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC187C                   0.000000E+00    0.000000E+00    0.000000E+00
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 3   
+                                                                                
+                               FLOWSHEET SECTION                                
+
+ OVERALL FLOWSHEET BALANCE (CONTINUED)               
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    CONVENTIONAL COMPONENTS (KMOL/HR )
+       PC202C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC217C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC232C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC247C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC263C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC281C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC303C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC324C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC346C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC367C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC389C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC421C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC449C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC495C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC551C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC649C                   0.000000E+00    0.000000E+00    0.000000E+00
+       PC789C                   0.000000E+00    0.000000E+00    0.000000E+00
+    TOTAL BALANCE
+       MOLE(KMOL/HR )            1763.06         1763.06       -0.128965E-15
+       MASS(KG/HR   )            75436.9         75436.9       -0.193841E-09
+       ENTHALPY(CAL/SEC )      -0.131689E+08   -0.127361E+08   -0.328629E-01
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 4   
+                                                                                
+                                ADA/PCS SECTION                                 
+
+ ASSAY DATA ANALYSIS                     
+ -------------------
+
+ ASSAY ID:  CRUDE   
+
+ SPECIFIC GRAVITY 60F/60F        0.8300
+ API GRAVITY                    38.9819
+ DENSITY  GM/CC                  0.8279
+ MOLECULAR WEIGHT               MISSING
+
+ DISTILLATION CURVES
+ -------------------
+ PERCENT DISTILLED VERSUS
+ TEMPERATURE, C               
+                           
+                             
+                           
+ PERCENT             TBP   
+ DISTILLED          LV PCT 
+ ---------         --------
+   0                  -25.1
+   5                   52.2
+  10                   97.2
+  30                  186.7
+  50                  298.3
+  70                  403.3
+  90                  563.3
+  95                  710.6
+ 100                  857.9
+
+ PRES  KPA          101.3    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 5   
+                                                                                
+                                ADA/PCS SECTION                                 
+
+ PSEUDOCOMPONENT BREAKDOWN               
+ -------------------------
+
+ ASSAY ID:  CRUDE                 
+
+                       MOLE           WEIGHT          VOLUME
+ COMPONENT           PERCENT         PERCENT         PERCENT
+ ---------         ------------    ------------    ------------
+ PC12C                10.9127          3.5192          4.4259
+ PC53C                 2.6225          1.0392          1.2504
+ PC68C                 3.0753          1.3132          1.5565
+ PC83C                 3.4609          1.5893          1.8571
+ PC98C                 3.3771          1.6667          1.9211
+ PC113C                3.7805          2.0059          2.2812
+ PC128C                4.5822          2.6092          2.9297
+ PC143C                5.7450          3.5062          3.8889
+ PC158C                6.3580          4.1485          4.5485
+ PC172C                5.1849          3.6132          3.9177
+ PC187C                3.8064          2.8362          3.0411
+ PC202C                3.3224          2.6444          2.8051
+ PC217C                3.0116          2.5565          2.6838
+ PC232C                2.7935          2.5263          2.6256
+ PC247C                2.6251          2.5268          2.6006
+ PC263C                2.4974          2.5559          2.6058
+ PC281C                3.4634          3.8157          3.8467
+ PC303C                3.4377          4.1250          4.1053
+ PC324C                3.4767          4.5302          4.4537
+ PC346C                3.2501          4.5879          4.4575
+ PC367C                2.7961          4.2677          4.0995
+ PC389C                2.2963          3.7829          3.5937
+ PC421C                5.8246         10.6879          9.9968
+ PC449C                2.7822          5.6099          5.1765
+ PC495C                1.7269          4.0106          3.6262
+ PC551C                0.9707          2.6508          2.3409
+ PC649C                1.5721          5.5044          4.6819
+ PC789C                1.2464          5.7690          4.6813
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 6   
+                                                                                
+                                ADA/PCS SECTION                                 
+
+ PSEUDOCOMPONENT PHYSICAL PROPERTIES     
+ -----------------------------------
+
+                          PSEUDOCOMPONENT PROPERTY SUMMARY
+ COMPONENT    NBP         API         SG       MW        TC         PC      
+              C                                          C          KPA     
+ PC12C         12.2010    82.9075     0.6599    67.1838   184.1650  4425.2903
+ PC53C         52.7087    73.6272     0.6898    82.5534   229.2522  3607.5378
+ PC68C         67.7815    70.5586     0.7002    88.9627   245.6046  3365.0039
+ PC83C         82.6321    67.7072     0.7103    95.6682   261.5108  3151.2704
+ PC98C         97.5696    64.9949     0.7201   102.8200   277.3160  2957.9745
+ PC113C       112.7785    62.3790     0.7298   110.5371   293.2186  2780.4760
+ PC128C       127.8429    59.9201     0.7392   118.6300   308.7908  2621.3415
+ PC143C       142.8356    57.5922     0.7483   127.1435   324.1204  2477.3498
+ PC158C       157.5066    55.4201     0.7570   135.9324   338.9659  2348.6539
+ PC172C       172.1644    53.3463     0.7655   145.1795   353.6513  2230.7289
+ PC187C       187.2918    51.2994     0.7740   155.2255   368.6602  2118.9318
+ PC202C       202.4494    49.3365     0.7824   165.8173   383.5553  2015.8900
+ PC217C       217.4727    47.4715     0.7906   176.8479   398.1826  1921.6697
+ PC232C       232.4747    45.6837     0.7986   188.4041   412.6593  1834.6188
+ PC247C       247.4939    43.9633     0.8064   200.5263   427.0276  1753.7982
+ PC263C       262.5124    42.3078     0.8141   213.2113   441.2749  1678.6908
+ PC281C       280.9002    40.3634     0.8233   229.5224   458.5609  1593.7131
+ PC303C       302.6857    38.1681     0.8339   249.9772   478.8259  1501.8635
+ PC324C       324.2561    36.1010     0.8442   271.4536   498.6717  1419.2173
+ PC346C       345.7501    34.1379     0.8542   294.0759   518.2403  1344.0700
+ PC367C       367.2918    32.2595     0.8640   317.9761   537.6544  1275.1219
+ PC389C       388.9105    30.4573     0.8736   343.1934   556.9474  1211.6034
+ PC421C       420.5329    27.9579     0.8873   382.2744   584.8406  1127.6452
+ PC449C       449.3250    25.8109     0.8994   420.0678   609.9162  1059.2258
+ PC495C       494.7967    22.6426     0.9179   483.8190   648.9335   964.2483
+ PC551C       551.0538    19.0526     0.9398   568.8639   696.2857   864.8325
+ PC649C       649.2698    13.5074     0.9758   729.3877   776.7620   727.2398
+ PC789C       789.1985     6.8388     1.0228   964.2494   887.2341   585.1533
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 7   
+                                                                                
+                          PHYSICAL PROPERTIES SECTION                           
+
+ COMPONENTS                              
+ ----------
+
+  ID       TYPE  FORMULA        NAME OR ALIAS                      REPORT NAME
+   C1       C     CH4            CH4                                C1      
+   C2       C     C2H6           C2H6                               C2      
+   C3       C     C3H8           C3H8                               C3      
+   IC4      C     C4H10-2        C4H10-2                            IC4     
+   NC4      C     C4H8-1         C4H8-1                             NC4     
+   IC5      C     C5H12-2        C5H12-2                            IC5     
+   NC5      C     C5H12-1        C5H12-1                            NC5     
+   NC6      C     C6H14-1        C6H14-1                            NC6     
+   NC7      C     C7H16-1        C7H16-1                            NC7     
+   NC8      C     C8H18-1        C8H18-1                            NC8     
+   NC9      C     C9H20-1        C9H20-1                            NC9     
+   NC10     C     C10H22-1       C10H22-1                           NC10    
+   N2       C     N2             N2                                 N2      
+   CO2      C     CO2            CO2                                CO2     
+   H2S      C     H2S            H2S                                H2S     
+   H2O      C     H2O            H2O                                H2O     
+   PC12C    C     MISSING        MISSING                            PC12C   
+   PC53C    C     MISSING        MISSING                            PC53C   
+   PC68C    C     MISSING        MISSING                            PC68C   
+   PC83C    C     MISSING        MISSING                            PC83C   
+   PC98C    C     MISSING        MISSING                            PC98C   
+   PC113C   C     MISSING        MISSING                            PC113C  
+   PC128C   C     MISSING        MISSING                            PC128C  
+   PC143C   C     MISSING        MISSING                            PC143C  
+   PC158C   C     MISSING        MISSING                            PC158C  
+   PC172C   C     MISSING        MISSING                            PC172C  
+   PC187C   C     MISSING        MISSING                            PC187C  
+   PC202C   C     MISSING        MISSING                            PC202C  
+   PC217C   C     MISSING        MISSING                            PC217C  
+   PC232C   C     MISSING        MISSING                            PC232C  
+   PC247C   C     MISSING        MISSING                            PC247C  
+   PC263C   C     MISSING        MISSING                            PC263C  
+   PC281C   C     MISSING        MISSING                            PC281C  
+   PC303C   C     MISSING        MISSING                            PC303C  
+   PC324C   C     MISSING        MISSING                            PC324C  
+   PC346C   C     MISSING        MISSING                            PC346C  
+   PC367C   C     MISSING        MISSING                            PC367C  
+   PC389C   C     MISSING        MISSING                            PC389C  
+   PC421C   C     MISSING        MISSING                            PC421C  
+   PC449C   C     MISSING        MISSING                            PC449C  
+   PC495C   C     MISSING        MISSING                            PC495C  
+   PC551C   C     MISSING        MISSING                            PC551C  
+   PC649C   C     MISSING        MISSING                            PC649C  
+   PC789C   C     MISSING        MISSING                            PC789C  
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 8   
+                                                                                
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  COLUMN   MODEL: RADFRAC         
+ -------------------------------
+    INLETS   - FEEDL    STAGE  18
+               FEEDV    STAGE  17
+    OUTLETS  - OVHD     STAGE   1
+               BTMS     STAGE  37
+   PROPERTY OPTION SET:   SYSOP3    STANDARD RKS EQUATION OF STATE              
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(KMOL/HR )            1763.06         1763.06       -0.128965E-15
+       MASS(KG/HR   )            75436.9         75436.9       -0.194507E-09
+       ENTHALPY(CAL/SEC )      -0.130635E+08   -0.127361E+08   -0.250604E-01
+
+
+
+                         **********************
+                         ****  INPUT DATA  ****
+                         **********************
+
+   ****   INPUT PARAMETERS   ****
+
+    NUMBER OF STAGES                                        37
+    ALGORITHM OPTION                                      STANDARD    
+    ABSORBER OPTION                                       NO      
+    INITIALIZATION OPTION                                 STANDARD    
+    HYDRAULIC PARAMETER CALCULATIONS                      NO      
+    INSIDE LOOP CONVERGENCE METHOD                        BROYDEN 
+    DESIGN SPECIFICATION METHOD                           NESTED  
+    MAXIMUM NO. OF OUTSIDE LOOP ITERATIONS                  25
+    MAXIMUM NO. OF INSIDE LOOP ITERATIONS                   10
+    MAXIMUM NUMBER OF FLASH ITERATIONS                      50
+    FLASH TOLERANCE                                          0.00010000 
+    OUTSIDE LOOP CONVERGENCE TOLERANCE                       0.00010000 
+
+   ****   COL-SPECS   ****
+
+    MOLAR VAPOR DIST / TOTAL DIST                            0.0        
+    MOLAR REFLUX RATIO                                       2.42000    
+    MOLAR DISTILLATE RATE          KMOL/HR                 741.000      
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 9   
+                                                                                
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  COLUMN   MODEL: RADFRAC (CONTINUED)         
+
+   ****    PROFILES   ****
+
+    P-SPEC          STAGE   1  PRES, KPA                 2,970.00       
+                            2                            3,000.00       
+
+                          *******************
+                          ****  RESULTS  ****
+                          *******************
+
+
+   ***   COMPONENT SPLIT FRACTIONS   ***
+
+                             OUTLET STREAMS 
+                             --------------
+                  OVHD         BTMS    
+    COMPONENT:
+    C1          1.0000       .58125E-09
+    C2          .98748       .12515E-01
+    C3          .19487E-02   .99805    
+    IC4         .24231E-07   1.0000    
+    NC4         .15484E-07   1.0000    
+    IC5         .77998E-13   1.0000    
+    NC5         .72150E-14   1.0000    
+    NC6         .62744E-21   1.0000    
+    NC7         .12585E-25   1.0000    
+    NC8         .76556E-31   1.0000    
+    NC9         .23151E-37   1.0000    
+    NC10        .76277E-42   1.0000    
+    CO2         1.0000       .15749E-05
+    H2S         .97640       .23602E-01
+
+ 
+   ***    SUMMARY OF KEY RESULTS    ***
+
+    TOP STAGE TEMPERATURE          C                         4.01187    
+    BOTTOM STAGE TEMPERATURE       C                        99.8013     
+    TOP STAGE LIQUID FLOW          KMOL/HR               1,793.22       
+    BOTTOM STAGE LIQUID FLOW       KMOL/HR               1,022.06       
+    TOP STAGE VAPOR FLOW           KMOL/HR                   0.0        
+    BOTTOM STAGE VAPOR FLOW        KMOL/HR               2,480.65       
+    MOLAR REFLUX RATIO                                       2.42000    
+    MOLAR BOILUP RATIO                                       2.42711    
+    CONDENSER DUTY (W/O SUBCOOL)   CAL/SEC          -1,366,420.         
+    REBOILER DUTY                  CAL/SEC           1,693,800.         
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 10  
+                                                                                
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  COLUMN   MODEL: RADFRAC (CONTINUED)         
+
+   ****   MAXIMUM FINAL RELATIVE ERRORS   ****
+
+    DEW POINT                       0.12314E-03  STAGE= 22
+    BUBBLE POINT                    0.11050E-04  STAGE= 21
+    COMPONENT MASS BALANCE          0.44666E-05  STAGE= 18 COMP=NC10    
+    ENERGY BALANCE                  0.33403E-04  STAGE= 14
+
+
+   ****    PROFILES   ****
+
+   **NOTE** REPORTED VALUES FOR STAGE LIQUID AND VAPOR RATES ARE THE FLOWS
+            FROM THE STAGE EXCLUDING ANY SIDE PRODUCT.  FOR THE FIRST STAGE,
+            THE REPORTED VAPOR FLOW IS THE VAPOR DISTILLATE FLOW.  FOR THE
+            LAST STAGE, THE REPORTED LIQUID FLOW IS THE LIQUID BOTTOMS FLOW.
+
+                                          ENTHALPY
+ STAGE TEMPERATURE   PRESSURE             CAL/MOL            HEAT DUTY
+       C             KPA            LIQUID       VAPOR        CAL/SEC 
+
+   1   4.0119        2970.0       -26354.      -26952.      -.13664+07
+   2   7.0630        3000.0       -24830.      -24413.                
+  16   40.228        3014.0       -25751.      -23667.                
+  17   43.190        3015.0       -25674.      -23602.                
+  18   48.292        3016.0       -25853.      -23408.                
+  19   49.620        3017.0       -25607.      -22792.                
+  33   85.141        3031.0       -25829.      -23505.                
+  34   87.021        3032.0       -25759.      -23493.                
+  35   89.309        3033.0       -25644.      -23412.                
+  36   92.792        3034.0       -25532.      -23241.                
+  37   99.801        3035.0       -25753.      -22983.       .16938+07
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            KMOL/HR                    KMOL/HR                  KMOL/HR 
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1  1793.     0.0000E+00                                  741.0000          
+   2  1836.      2534.                                                        
+  16  1339.      2123.                                                        
+  17  1254.      2080.                            61.7071                     
+  18  2981.      1933.                          1701.3529                     
+  19  3002.      1959.                                                        
+  33  3599.      2540.                                                        
+  34  3619.      2577.                                                        
+  35  3605.      2596.                                                        
+  36  3503.      2583.                                                        
+  37  1022.      2481.                                     1022.0600          
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 11  
+                                                                                
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  COLUMN   MODEL: RADFRAC (CONTINUED)         
+
+    ****  MASS FLOW PROFILES  ****
+
+ STAGE     FLOW RATE                  FEED RATE               PRODUCT RATE
+            KG/HR                      KG/HR                    KG/HR   
+       LIQUID     VAPOR       LIQUID    VAPOR    MIXED      LIQUID    VAPOR
+   1 0.5486E+05 0.0000E+00                                 .22668+05          
+   2 0.5587E+05 0.7753E+05                                                    
+  16 0.5122E+05 0.7455E+05                                                    
+  17 0.4923E+05 0.7389E+05                      2236.7677                     
+  18 0.1236E+06 0.6966E+05                      .73200+05                     
+  19 0.1247E+06 0.7085E+05                                                    
+  33 0.1702E+06 0.1145E+06                                                    
+  34 0.1726E+06 0.1175E+06                                                    
+  35 0.1740E+06 0.1198E+06                                                    
+  36 0.1725E+06 0.1212E+06                                                    
+  37 0.5277E+05 0.1198E+06                                 .52768+05          
+
+ BLOCK:  FLASH    MODEL: FLASH2          
+ ------------------------------
+   INLET STREAM:          FEED    
+   OUTLET VAPOR STREAM:   FEEDV   
+   OUTLET LIQUID STREAM:  FEEDL   
+   PROPERTY OPTION SET:   SYSOP3    STANDARD RKS EQUATION OF STATE              
+
+                      ***  MASS AND ENERGY BALANCE  ***
+                                    IN              OUT        RELATIVE DIFF.
+    TOTAL BALANCE
+       MOLE(KMOL/HR )            1763.06         1763.06       -0.128965E-15
+       MASS(KG/HR   )            75436.9         75436.9        0.666282E-12
+       ENTHALPY(CAL/SEC )      -0.131689E+08   -0.130635E+08   -0.800305E-02
+
+                          ***  INPUT DATA  ***
+   TWO    PHASE  PV  FLASH
+   SPECIFIED PRESSURE    KPA                             3,016.00       
+   VAPOR FRACTION                                            0.035000   
+   MAXIMUM NO. ITERATIONS                                   30
+   CONVERGENCE TOLERANCE                                     0.00010000 
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 12  
+                                                                                
+                              U-O-S BLOCK SECTION                               
+
+ BLOCK:  FLASH    MODEL: FLASH2 (CONTINUED)          
+
+                           ***  RESULTS  ***
+   OUTLET TEMPERATURE    C                                    49.279    
+   OUTLET PRESSURE       KPA                                  3016.0    
+   HEAT DUTY             CAL/SEC                             0.10539E+06
+   VAPOR FRACTION                                            0.35000E-01
+
+
+
+   V-L PHASE EQUILIBRIUM : 
+
+      COMP              F(I)           X(I)           Y(I)           K(I)      
+      C1               0.40044E-02    0.35766E-02    0.15801E-01     4.4178    
+      C2               0.40152        0.39396        0.60998         1.5483    
+      C3               0.34381        0.34721        0.25016        0.72049    
+      IC4              0.91455E-01    0.93428E-01    0.37041E-01    0.39647    
+      NC4              0.77950E-01    0.79688E-01    0.30032E-01    0.37688    
+      IC5              0.24923E-01    0.25645E-01    0.49972E-02    0.19487    
+      NC5              0.15099E-01    0.15550E-01    0.26541E-02    0.17069    
+      NC6              0.14373E-01    0.14854E-01    0.11022E-02    0.74205E-01
+      NC7              0.48325E-02    0.50008E-02    0.19367E-03    0.38729E-01
+      NC8              0.21497E-02    0.22261E-02    0.42299E-04    0.19002E-01
+      NC9              0.40838E-03    0.42305E-03    0.38354E-05    0.90667E-02
+      NC10             0.35166E-03    0.36435E-03    0.17440E-05    0.47871E-02
+      CO2              0.19086E-01    0.18039E-01    0.47945E-01     2.6577    
+      H2S              0.34032E-04    0.33514E-04    0.48296E-04     1.4410    
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 13  
+                                                                                
+                                 STREAM SECTION                                 
+
+ BTMS FEED FEEDL FEEDV OVHD                      
+ --------------------------
+
+ STREAM ID               BTMS       FEED       FEEDL      FEEDV      OVHD    
+ FROM :                  COLUMN     ----       FLASH      FLASH      COLUMN  
+ TO   :                  ----       FLASH      COLUMN     COLUMN     ----    
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID     LIQUID     LIQUID     VAPOR      LIQUID 
+ COMPONENTS: KMOL/HR     
+   C1                  4.1037-09     7.0600     6.0849     0.9750     7.0600
+   C2                     8.8597   707.9100   670.2699    37.6400   699.0502
+   C3                   604.9787   606.1600   590.7234    15.4366     1.1812
+   IC4                  161.2400   161.2400   158.9543     2.2856  3.9069-06
+   NC4                  137.4300   137.4300   135.5768     1.8532  2.1280-06
+   IC5                   43.9400    43.9400    43.6316     0.3083  3.4272-12
+   NC5                   26.6200    26.6200    26.4562     0.1637  1.9206-13
+   NC6                   25.3400    25.3400    25.2719  6.8014-02  1.5899-20
+   NC7                    8.5200     8.5200     8.5080  1.1951-02  1.0723-25
+   NC8                    3.7900     3.7900     3.7873  2.6101-03  2.9015-31
+   NC9                    0.7200     0.7200     0.7197  2.3667-04     0.0   
+   NC10                   0.6200     0.6200     0.6198  1.0762-04     0.0   
+   N2                     0.0        0.0        0.0        0.0        0.0   
+   CO2                 5.2994-05    33.6500    30.6914     2.9585    33.6499
+   H2S                 1.4161-03  6.0000-02  5.7020-02  2.9802-03  5.8584-02
+   H2O                    0.0        0.0        0.0        0.0        0.0   
+   PC12C                  0.0        0.0        0.0        0.0        0.0   
+   PC53C                  0.0        0.0        0.0        0.0        0.0   
+   PC68C                  0.0        0.0        0.0        0.0        0.0   
+   PC83C                  0.0        0.0        0.0        0.0        0.0   
+   PC98C                  0.0        0.0        0.0        0.0        0.0   
+   PC113C                 0.0        0.0        0.0        0.0        0.0   
+   PC128C                 0.0        0.0        0.0        0.0        0.0   
+   PC143C                 0.0        0.0        0.0        0.0        0.0   
+   PC158C                 0.0        0.0        0.0        0.0        0.0   
+   PC172C                 0.0        0.0        0.0        0.0        0.0   
+   PC187C                 0.0        0.0        0.0        0.0        0.0   
+   PC202C                 0.0        0.0        0.0        0.0        0.0   
+   PC217C                 0.0        0.0        0.0        0.0        0.0   
+   PC232C                 0.0        0.0        0.0        0.0        0.0   
+   PC247C                 0.0        0.0        0.0        0.0        0.0   
+   PC263C                 0.0        0.0        0.0        0.0        0.0   
+   PC281C                 0.0        0.0        0.0        0.0        0.0   
+   PC303C                 0.0        0.0        0.0        0.0        0.0   
+   PC324C                 0.0        0.0        0.0        0.0        0.0   
+   PC346C                 0.0        0.0        0.0        0.0        0.0   
+   PC367C                 0.0        0.0        0.0        0.0        0.0   
+   PC389C                 0.0        0.0        0.0        0.0        0.0   
+   PC421C                 0.0        0.0        0.0        0.0        0.0   
+   PC449C                 0.0        0.0        0.0        0.0        0.0   
+   PC495C                 0.0        0.0        0.0        0.0        0.0   
+   PC551C                 0.0        0.0        0.0        0.0        0.0   
+   PC649C                 0.0        0.0        0.0        0.0        0.0   
+   PC789C                 0.0        0.0        0.0        0.0        0.0   
+ COMPONENTS: KG/HR       
+   C1                  6.5834-08   113.2618    97.6199    15.6418   113.2618
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 14  
+                                                                                
+                                 STREAM SECTION                                 
+
+ BTMS FEED FEEDL FEEDV OVHD (CONTINUED)              
+
+ STREAM ID               BTMS       FEED       FEEDL      FEEDV      OVHD    
+
+   C2                   266.4093  2.1287+04  2.0155+04  1131.8229  2.1020+04
+   C3                  2.6677+04  2.6730+04  2.6049+04   680.7001    52.0872
+   IC4                 9371.8168  9371.8170  9238.9660   132.8509  2.2708-04
+   NC4                 7710.8563  7710.8564  7606.8778   103.9786  1.1940-04
+   IC5                 3170.2833  3170.2833  3148.0346    22.2486  2.4727-10
+   NC5                 1920.6404  1920.6404  1908.8239    11.8165  1.3857-11
+   NC6                 2183.7292  2183.7292  2177.8680     5.8612  1.3702-18
+   NC7                  853.7384   853.7384   852.5409     1.1974  1.0745-23
+   NC8                  432.9351   432.9351   432.6370     0.2981  3.3144-29
+   NC9                   92.3456    92.3456    92.3152  3.0355-02     0.0   
+   NC10                  88.2165    88.2165    88.2011  1.5313-02     0.0   
+   N2                     0.0        0.0        0.0        0.0        0.0   
+   CO2                 2.3323-03  1480.9297  1350.7259   130.2038  1480.9274
+   H2S                 4.8263-02     2.0449     1.9433     0.1015     1.9966
+   H2O                    0.0        0.0        0.0        0.0        0.0   
+   PC12C                  0.0        0.0        0.0        0.0        0.0   
+   PC53C                  0.0        0.0        0.0        0.0        0.0   
+   PC68C                  0.0        0.0        0.0        0.0        0.0   
+   PC83C                  0.0        0.0        0.0        0.0        0.0   
+   PC98C                  0.0        0.0        0.0        0.0        0.0   
+   PC113C                 0.0        0.0        0.0        0.0        0.0   
+   PC128C                 0.0        0.0        0.0        0.0        0.0   
+   PC143C                 0.0        0.0        0.0        0.0        0.0   
+   PC158C                 0.0        0.0        0.0        0.0        0.0   
+   PC172C                 0.0        0.0        0.0        0.0        0.0   
+   PC187C                 0.0        0.0        0.0        0.0        0.0   
+   PC202C                 0.0        0.0        0.0        0.0        0.0   
+   PC217C                 0.0        0.0        0.0        0.0        0.0   
+   PC232C                 0.0        0.0        0.0        0.0        0.0   
+   PC247C                 0.0        0.0        0.0        0.0        0.0   
+   PC263C                 0.0        0.0        0.0        0.0        0.0   
+   PC281C                 0.0        0.0        0.0        0.0        0.0   
+   PC303C                 0.0        0.0        0.0        0.0        0.0   
+   PC324C                 0.0        0.0        0.0        0.0        0.0   
+   PC346C                 0.0        0.0        0.0        0.0        0.0   
+   PC367C                 0.0        0.0        0.0        0.0        0.0   
+   PC389C                 0.0        0.0        0.0        0.0        0.0   
+   PC421C                 0.0        0.0        0.0        0.0        0.0   
+   PC449C                 0.0        0.0        0.0        0.0        0.0   
+   PC495C                 0.0        0.0        0.0        0.0        0.0   
+   PC551C                 0.0        0.0        0.0        0.0        0.0   
+   PC649C                 0.0        0.0        0.0        0.0        0.0   
+   PC789C                 0.0        0.0        0.0        0.0        0.0   
+ TOTAL FLOW:     
+   KMOL/HR             1022.0600  1763.0600  1701.3529    61.7071   741.0000
+   KG/HR               5.2768+04  7.5437+04  7.3200+04  2236.7677  2.2668+04
+   L/MIN               2154.7374  2766.6075  2722.9846   642.9173   933.9018
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 15  
+                                                                                
+                                 STREAM SECTION                                 
+
+ BTMS FEED FEEDL FEEDV OVHD (CONTINUED)              
+
+ STREAM ID               BTMS       FEED       FEEDL      FEEDV      OVHD    
+
+ STATE VARIABLES:
+   TEMP   C              99.8012    45.0000    49.2785    49.2785     4.0118
+   PRES   KPA          3035.0000  3016.0000  3016.0000  3016.0000  2970.0000
+   VFRAC                  0.0        0.0        0.0        1.0000     0.0   
+   LFRAC                  1.0000     1.0000     1.0000     0.0        1.0000
+   SFRAC                  0.0        0.0        0.0        0.0        0.0   
+ ENTHALPY:       
+   CAL/MOL            -2.5753+04 -2.6890+04 -2.6731+04 -2.5127+04 -2.6354+04
+   CAL/GM              -498.8119  -628.4461  -621.2841  -693.2062  -861.4851
+   CAL/SEC            -7.3115+06 -1.3169+07 -1.2633+07 -4.3071+05 -5.4246+06
+ ENTROPY:        
+   CAL/MOL-K            -81.1544   -71.2851   -71.2698   -52.5386   -54.9509
+   CAL/GM-K              -1.5718    -1.6660    -1.6564    -1.4494    -1.7962
+ DENSITY:        
+   MOL/CC              7.9055-03  1.0621-02  1.0414-02  1.5997-03  1.3224-02
+   GM/CC                  0.4081     0.4544     0.4480  5.7985-02     0.4045
+ AVG MW                  51.6295    42.7875    43.0246    36.2481    30.5917
+
+ MIXED    SUBSTREAM PROPERTIES:
+
+ *** VAPOR PHASE   ***
+ KMX      KCAL-M/HR-SQ   MISSING    MISSING    MISSING  2.2193-02    MISSING
+ CPMX     KJ/KG-K        MISSING    MISSING    MISSING     2.5238    MISSING
+ MUMX     CP             MISSING    MISSING    MISSING  1.1532-02    MISSING
+ MWMX                    MISSING    MISSING    MISSING    36.2481    MISSING
+ VOLFLMX  L/MIN          MISSING    MISSING    MISSING   642.9173    MISSING
+ MASSFLMX KG/HR          MISSING    MISSING    MISSING  2236.7677    MISSING
+
+ *** LIQUID PHASE  ***
+ VOLFLMX  L/MIN        2154.7374  2766.6075  2722.9846    MISSING   933.9018
+ KMX      KCAL-M/HR-SQ 4.1315-02  5.8336-02  5.8384-02    MISSING  8.7690-02
+ CPMX     KJ/KG-K         4.2827     3.3530     3.4649    MISSING     4.6279
+ MUMX     CP           9.4809-02  9.7363-02  9.5964-02    MISSING  8.3907-02
+ SIGMAMX  DYNE/CM         2.7148     4.7233     4.4132    MISSING     4.9194
+ MWMX                    51.6295    42.7875    43.0246    MISSING    30.5917
+ MASSFLMX KG/HR        5.2768+04  7.5437+04  7.3200+04    MISSING  2.2668+04
+
+ TOTAL STREAM PROPERTIES:
+
+ ***  ALL PHASES   ***
+ MASSFLOW KG/HR       
+     C1                6.5834-08   113.2618    97.6199    15.6418   113.2618
+     C2                 266.4093  2.1287+04  2.0155+04  1131.8229  2.1020+04
+     C3                2.6677+04  2.6730+04  2.6049+04   680.7001    52.0872
+     IC4               9371.8168  9371.8170  9238.9660   132.8509  2.2708-04
+     NC4               7710.8563  7710.8564  7606.8778   103.9786  1.1940-04
+     IC5               3170.2833  3170.2833  3148.0346    22.2486  2.4727-10
+     NC5               1920.6404  1920.6404  1908.8239    11.8165     0.0   
+     NC6               2183.7292  2183.7292  2177.8680     5.8612     0.0   
+     NC7                853.7384   853.7384   852.5409     1.1974     0.0   
+     NC8                432.9351   432.9351   432.6370     0.2981     0.0   
+     NC9                 92.3456    92.3456    92.3152  3.0355-02     0.0   
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 16  
+                                                                                
+                                 STREAM SECTION                                 
+
+ BTMS FEED FEEDL FEEDV OVHD (CONTINUED)              
+
+ STREAM ID               BTMS       FEED       FEEDL      FEEDV      OVHD    
+
+     NC10                88.2165    88.2165    88.2011  1.5313-02     0.0   
+     N2                   0.0        0.0        0.0        0.0        0.0   
+     CO2               2.3323-03  1480.9297  1350.7259   130.2038  1480.9274
+     H2S               4.8263-02     2.0449     1.9433     0.1015     1.9966
+     H2O                  0.0        0.0        0.0        0.0        0.0   
+     PC12C                0.0        0.0        0.0        0.0        0.0   
+     PC53C                0.0        0.0        0.0        0.0        0.0   
+     PC68C                0.0        0.0        0.0        0.0        0.0   
+     PC83C                0.0        0.0        0.0        0.0        0.0   
+     PC98C                0.0        0.0        0.0        0.0        0.0   
+     PC113C               0.0        0.0        0.0        0.0        0.0   
+     PC128C               0.0        0.0        0.0        0.0        0.0   
+     PC143C               0.0        0.0        0.0        0.0        0.0   
+     PC158C               0.0        0.0        0.0        0.0        0.0   
+     PC172C               0.0        0.0        0.0        0.0        0.0   
+     PC187C               0.0        0.0        0.0        0.0        0.0   
+     PC202C               0.0        0.0        0.0        0.0        0.0   
+     PC217C               0.0        0.0        0.0        0.0        0.0   
+     PC232C               0.0        0.0        0.0        0.0        0.0   
+     PC247C               0.0        0.0        0.0        0.0        0.0   
+     PC263C               0.0        0.0        0.0        0.0        0.0   
+     PC281C               0.0        0.0        0.0        0.0        0.0   
+     PC303C               0.0        0.0        0.0        0.0        0.0   
+     PC324C               0.0        0.0        0.0        0.0        0.0   
+     PC346C               0.0        0.0        0.0        0.0        0.0   
+     PC367C               0.0        0.0        0.0        0.0        0.0   
+     PC389C               0.0        0.0        0.0        0.0        0.0   
+     PC421C               0.0        0.0        0.0        0.0        0.0   
+     PC449C               0.0        0.0        0.0        0.0        0.0   
+     PC495C               0.0        0.0        0.0        0.0        0.0   
+     PC551C               0.0        0.0        0.0        0.0        0.0   
+     PC649C               0.0        0.0        0.0        0.0        0.0   
+     PC789C               0.0        0.0        0.0        0.0        0.0   
+ MASSVFRA                 0.0        0.0        0.0        1.0000     0.0   
+ MASSSFRA                 0.0        0.0        0.0        0.0        0.0   
+ MASSFLMX KG/HR        5.2768+04  7.5437+04  7.3200+04  2236.7677  2.2668+04
+ PRES     KPA          3035.0000  3016.0000  3016.0000  3016.0000  2970.0000
+ TEMP     C              99.8012    45.0000    49.2785    49.2785     4.0118
+ VOLFLMX  L/MIN        2154.7374  2766.6075  2722.9846   642.9173   933.9018
+ MWMX                    51.6295    42.7875    43.0246    36.2481    30.5917
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 17  
+                                                                                
+                                 STREAM SECTION                                 
+
+ BTMS FEED FEEDL FEEDV OVHD (CONTINUED)              
+
+ STREAM ID               BTMS       FEED       FEEDL      FEEDV      OVHD    
+ FROM :                  COLUMN     ----       FLASH      FLASH      COLUMN  
+ TO   :                  ----       FLASH      COLUMN     COLUMN     ----    
+
+ SUBSTREAM: MIXED   
+ PHASE:                  LIQUID     LIQUID     LIQUID     VAPOR      LIQUID 
+ COMPONENTS: KMOL/HR     
+   C1                  4.1037-09     7.0600     6.0849     0.9750     7.0600
+   C2                     8.8597   707.9100   670.2699    37.6400   699.0502
+   C3                   604.9787   606.1600   590.7234    15.4366     1.1812
+   IC4                  161.2400   161.2400   158.9543     2.2856  3.9069-06
+   NC4                  137.4300   137.4300   135.5768     1.8532  2.1280-06
+   IC5                   43.9400    43.9400    43.6316     0.3083  3.4272-12
+   NC5                   26.6200    26.6200    26.4562     0.1637  1.9206-13
+   NC6                   25.3400    25.3400    25.2719  6.8014-02  1.5899-20
+   NC7                    8.5200     8.5200     8.5080  1.1951-02  1.0723-25
+   NC8                    3.7900     3.7900     3.7873  2.6101-03  2.9015-31
+   NC9                    0.7200     0.7200     0.7197  2.3667-04     0.0   
+   NC10                   0.6200     0.6200     0.6198  1.0762-04     0.0   
+   N2                     0.0        0.0        0.0        0.0        0.0   
+   CO2                 5.2994-05    33.6500    30.6914     2.9585    33.6499
+   H2S                 1.4161-03  6.0000-02  5.7020-02  2.9802-03  5.8584-02
+   H2O                    0.0        0.0        0.0        0.0        0.0   
+   PC12C                  0.0        0.0        0.0        0.0        0.0   
+   PC53C                  0.0        0.0        0.0        0.0        0.0   
+   PC68C                  0.0        0.0        0.0        0.0        0.0   
+   PC83C                  0.0        0.0        0.0        0.0        0.0   
+   PC98C                  0.0        0.0        0.0        0.0        0.0   
+   PC113C                 0.0        0.0        0.0        0.0        0.0   
+   PC128C                 0.0        0.0        0.0        0.0        0.0   
+   PC143C                 0.0        0.0        0.0        0.0        0.0   
+   PC158C                 0.0        0.0        0.0        0.0        0.0   
+   PC172C                 0.0        0.0        0.0        0.0        0.0   
+   PC187C                 0.0        0.0        0.0        0.0        0.0   
+   PC202C                 0.0        0.0        0.0        0.0        0.0   
+   PC217C                 0.0        0.0        0.0        0.0        0.0   
+   PC232C                 0.0        0.0        0.0        0.0        0.0   
+   PC247C                 0.0        0.0        0.0        0.0        0.0   
+   PC263C                 0.0        0.0        0.0        0.0        0.0   
+   PC281C                 0.0        0.0        0.0        0.0        0.0   
+   PC303C                 0.0        0.0        0.0        0.0        0.0   
+   PC324C                 0.0        0.0        0.0        0.0        0.0   
+   PC346C                 0.0        0.0        0.0        0.0        0.0   
+   PC367C                 0.0        0.0        0.0        0.0        0.0   
+   PC389C                 0.0        0.0        0.0        0.0        0.0   
+   PC421C                 0.0        0.0        0.0        0.0        0.0   
+   PC449C                 0.0        0.0        0.0        0.0        0.0   
+   PC495C                 0.0        0.0        0.0        0.0        0.0   
+   PC551C                 0.0        0.0        0.0        0.0        0.0   
+   PC649C                 0.0        0.0        0.0        0.0        0.0   
+   PC789C                 0.0        0.0        0.0        0.0        0.0   
+
+ MIXED    SUBSTREAM PROPERTIES:
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 18  
+                                                                                
+                                 STREAM SECTION                                 
+
+ BTMS FEED FEEDL FEEDV OVHD (CONTINUED)              
+
+ STREAM ID               BTMS       FEED       FEEDL      FEEDV      OVHD    
+
+
+ ***   DRY TOTAL   ***
+ TBPCRV   C           
+         0.0    %        MISSING    MISSING    MISSING    MISSING    MISSING
+         5.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        10.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        30.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        50.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        70.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        90.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        95.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+       100.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+ D86CRV   C           
+         0.0    %        MISSING    MISSING    MISSING    MISSING    MISSING
+         5.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        10.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        30.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        50.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        70.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        90.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+        95.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+       100.0000 %        MISSING    MISSING    MISSING    MISSING    MISSING
+ APISTD                 126.6433   169.8638   168.4856   214.9661   270.4740
+ ASPEN PLUS   PLAT: WIN32     VER: 10.1-0                 04/29/1999  PAGE 19  
+                                                                                
+                             PROBLEM STATUS SECTION                             
+
+ BLOCK STATUS                            
+ ------------
+
+ ****************************************************************************
+ *                                                                          *
+ * Calculations were completed normally                                     *
+ *                                                                          *
+ * All Unit Operation blocks were completed normally                        *
+ *                                                                          *
+ * All streams were flashed normally                                        *
+ *                                                                          *
+ ****************************************************************************

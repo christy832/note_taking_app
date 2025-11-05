@@ -1,0 +1,26 @@
+:Project Scheduler|10000|000|ic_SCHEDULE_SPECS|Project Basis general information
+::Detailed Project Schedule Settings|12000|000|ic_SCHEDULE_DETAIL_SETTINGS|Detailed Schedule Settings|
+:::Schedule Appearance Adjustments|12100|000|ic_SCHEDULE_APPEARANCE_ADJUSTMENTS|Schedule Appearance Adjustments|
+::::Group Names|112120|100|ic_SCHEDULE_GROUP_NAMES|Schedule Group Names|
+::::Description Modification|112130|000|ic_SCHEDULE_DESCRIPTIONS|Schedule Description Modifications|
+:::::Engineering|112131|100|ic_SCHEDULE_DESCRIPTIONS_ENGINEERING|Engineering Description Modifications|
+:::::Construction|112132|100|ic_SCHEDULE_DESCRIPTIONS_CONSTRUCTION|Construction Descritpion Modifications|
+:::Schedule Basis Adjustments|12200|000|ic_SCHEDULE_BASIS_ADJUSTMENTS|Schedule Basis Adjustments|
+::::Crafts|112220|100|ic_SCHEDULE_CRAFTS_ADJUSTMENTS|Crafts Adjustments|
+:::Schedule Activity Adjustments|12300|000|ic_SCHEDULE_ACTIVITY_ADJUSTMENTS|Schedule Activity Adjustments|
+::::Crew Size|112310|100|ic_SCHEDULE_CREW_SIZE|Crew Size Adjustments|
+::::Durations|12320|000|ic_SCHEDULE_DURATION_ADJUSTMENTS|Schedule Duration Adjustments|
+:::::Engineering|112321|100|ic_SCHEDULE_DURATION_ENGINEERING|Engineering Duration Adjustments|
+:::::Construction|112322|100|ic_SCHEDULE_DURATION_CONSTRUCTION|Construction Duration Adjustments|
+:::::Procurement|112323|100|ic_SCHEDULE_DURATION_PROCUREMENT|Procurement Duration Adjustments|
+:::Schedule Structure Adjustments|12400|000|ic_SCHEDULE_STRUCTURE_ADJUSTMENTS|Schedule Structure Adjustments|
+::::Logic Modification|12410|000|ic_SCHEDULE_STRUCTURE_LOGIC|Schedule Structure Logic|
+:::::Engineering|112411|100|ic_SCHEDULE_STRUCTURE_LOGIC_ENGINEERING|Engineering Logic Structure|
+:::::Construction|112412|100|ic_SCHEDULE_STRUCTURE_LOGIC_CONSTRUCTION|Construction Logic Structure|
+::::Activity Modification|12420|000|ic_SCHEDULE_STRUCTURE_ACTIVITY|Schedule Structure Activity|
+:::::Engineering|112421|100|ic_SCHEDULE_STRUCTURE_ACTIVITY_ENGINEERING|Engineering Activity Structure|
+:::::Construction|112422|100|ic_SCHEDULE_STRUCTURE_ACTIVITY_CONSTRUCTION|Construction Activity Structure|
+
+
+
+

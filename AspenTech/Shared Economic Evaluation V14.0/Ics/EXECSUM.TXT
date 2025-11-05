@@ -1,0 +1,49 @@
+|EXECUTIVE SUMMARY|
+=================================================================================||
+||
+PROJECT NAME:|0|
+||
+CAPACITY:|0|
+||
+PLANT LOCATION:|0|
+||
+BRIEF DESCRIPTION:|0|
+||
+||
+||
+SCHEDULE:|---------------------------------------------------------------------------------------|
+  Start Date for Engineering|0|
+  Duration of EPC Phase|21|
+  Completion Date for Construction|0|
+  Length of Start-up Period|10|
+||
+||
+INVESTMENT:|---------------------------------------------------------------------------------------|
+  Currency Conversion Rate|1|
+  Total Project Capital Cost|3.29441e+006|
+  Total Operating Cost|4.80108e+006|
+  Total Raw Materials Cost|799997|
+  Total Utilities Cost|2.91403e+006|
+  Total Product Sales|0|
+  Internal Rate of Return|0|
+  Desired Rate of Return|20|
+  P.O. Period|0|
+||
+PROJECT INFORMATION:|---------------------------------------------------------------------------------------|
+  Simulator Type|0|
+      Version|0|
+      Report File|0|
+      Report Date|0|
+||
+  Economic Analysis Type|IPE|
+      Version|0|
+      System Cost Base Date|0|
+      Project Directory|0|
+      Analysis Date|0|
+      Country Base|0|
+      Project Type|0|
+      Design code|0|
+      Prepared By|0|
+||
+NOTES:-----------------------------------------------------|---------------------------------------------------------------------------------------|
+||

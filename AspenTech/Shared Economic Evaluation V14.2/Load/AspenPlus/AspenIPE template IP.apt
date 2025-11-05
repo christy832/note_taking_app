@@ -1,0 +1,112 @@
+MM "10.2.1" FLAVOR "NO" VERSION "10.2.1" DATETIME "Wed Feb 28 11:24:45 2001" 
+MACHINE "WIN-NT/VC"  ; 
+startlibrary
+version1
+NumLibs = 1
+Built-In
+NumCats = 9
+Mixers/Splitters
+active
+Separators
+active
+Heat Exchangers
+active
+Columns
+active
+Reactors
+active
+Pressure Changers
+active
+Manipulators
+active
+Solids
+active
+User Models
+active
+endlibrary
+; 
+0
+? SETUP MAIN ? \ SIMULATE PROPERTIES = ( "IPE-1" "IPE-2" "IPE-3" ) VISITED = 
+1 \ ? SETUP GLOBAL ? \ "IN-UNITS" \ ? SETUP DIAGNOSTICS ? ? SETUP "SIM-OPTIONS" 
+? ; "ENG_MOLE" ; ? SETUP "ACCOUNT-INFO" ? ? SETUP DESCRIPTION ? ? COMPONENTS 
+MAIN ? ? COMPONENTS "COMP-LIST" GLOBAL ? ? FLOWSHEET GLOBAL ? ? PROPERTIES 
+MAIN ? \ GPROPERTIES PARCON = -1 \ ? PROPERTIES PARAMETERS BINARY SCALAR 
+"RKTKIJ-1" ? ; "ENG_MOLE" ; \ PROP-LIST PARAMNAME = RKTKIJ SETNO = 1 \ ? 
+PROPERTIES PARAMETERS BINARY "T-DEPENDENT" "ANDKIJ-1" ? ; "ENG_MOLE" ; \ 
+PROP-LIST PARAMNAME = ANDKIJ SETNO = 1 UNITROW = 0 TUNITROW = 22 TUNITLABEL
+ = F NEL = 2 \ ? PROPERTIES PARAMETERS BINARY "T-DEPENDENT" "ANDMIJ-1" ? ; 
+"ENG_MOLE" ; \ PROP-LIST PARAMNAME = ANDMIJ SETNO = 1 UNITROW = 0 TUNITROW = 
+22 TUNITLABEL = F NEL = 2 \ ? "PROP-SET" MAIN "IPE-1" ? ; "ENG_MOLE" ; \ P1 
+ID = MASSVFRA \ \ P1 ID = MASSSFRA \ \ P1 ID = MASSFLMX \ \ P1 ID = VOLFLMX \ 
+\ P1 ID = MASSFLOW \ \ P1 ID = TEMP \ \ P1 ID = PRES \ \ P1 ID = MWMX \ \ P2 
+SUBSTREAM = ALL \ ? "PROP-SET" MAIN "IPE-2" ? ; "ENG_MOLE" ; \ P1 ID = 
+VOLFLMX \ \ P1 ID = MASSFLMX \ \ P1 ID = KMX \ \ P1 ID = SIGMAMX \ \ P1 ID = 
+MUMX \ \ P1 ID = CPMX UNITS = ( "Btu/lb-R" ) \ \ P1 ID = MWMX \ \ P2 PHASE = 
+( L ) \ ? "PROP-SET" MAIN "IPE-3" ? ; "ENG_MOLE" ; \ P1 ID = VOLFLMX \ \ P1 
+ID = MASSFLMX \ \ P1 ID = KMX \ \ P1 ID = MUMX \ \ P1 ID = CPMX UNITS = ( 
+"Btu/lb-R" ) \ \ P1 ID = MWMX \ \ P2 PHASE = ( V ) \ ? REPORT REPORT ? ? 
+REPORT "BLOCK-REPORT" ? ? REPORT "STREAM-REPOR" ? \ OPTIONS PROPERTIES = ( 
+"IPE-1" "IPE-2" "IPE-3" ) \ ? REPORT "FLOWSHEET-RE" ? ? REPORT "PROPERTY-REP" 
+? ? REPORT "ADA-REPORT" ? ? REPORT "BATCH-OPERAT" ? ; "ENG_MOLE" ; 
+
+ GRAPHICS_BACKUP
+PFS V 5.00
+$CONFIG
+paramdata ENRTL-RK
+paramdata VLE-IG
+paramdata VLE-RK
+paramdata VLE-HOC
+paramdata LLE-LIT
+paramdata LLE-ASPEN
+paramdata VLE-LIT
+paramdata BINARY
+paramdata EOS-LIT
+paramdata HENRY
+purebank PURE10
+purebank AQUEOUS
+purebank SOLIDS
+purebank INORGANIC
+regdbank 1
+ftn_check 1
+autoblockid 1
+autostreamid 1
+showblockid 1
+showstreamid 1
+autoplacement 1
+grid 2
+gridresolution 0.100000
+scale 0
+streamprefix 
+blockprefix B
+labelscale 1.000000
+qwformat %.0f
+tempformat %.0f
+presformat %.0f
+flowformat %.0f
+strmqwformat %.0f
+pseudobatch 0
+partial 1
+animation 1
+runanyway 0
+tooldrawvisible 0
+polyplusenabled 1
+dynaplusenabled 1
+bfracenabled 1
+rtfenabled 1
+pinchenabled 0
+#
+#
+PFSVData {A0DFFFE6-908E-11CE-A964-0000C08C668E}
+# of PFS Objects = 1
+SIZE -3 3 -3 3
+LEGEND
+Version: 2
+Unfixed
+# of PFS Objects = 0
+VIEWPORT -5.667044 5.379159 3.300000 -2.383037
+LAYOUT
+TableFormat 1
+Pages 1 1 1 1
+PFDFLAG 255 255
+PFDMODE 0
+SCALE 0.010662

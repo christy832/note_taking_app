@@ -1,0 +1,9 @@
+:::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+:::Project Remarks|29994|100|ic_CAPITAL_COSTS_STANDARD_BASIS_REMARKS|Edit Remarks statements for this file|
+:::General Specs|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL|General specs for project basis relating to capital costs|
+:::Units of Measure Customization|19992|000|ic_UOM_CUSTOMIZATION|Units of measure customization|
+::::Input|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+::::Output (Reports)|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::General Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to general wages and productivities|
+

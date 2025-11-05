@@ -1,0 +1,69 @@
+:Project Basis (** not for Pipeline project)|10000|000|ic_PROJECT_BASIS|Project Basis general information (** items are not for Pipeline project)
+::Basis for Capital Costs|10010|010|ic_CAPITAL_COSTS_STANDARD_BASIS|Specs for project basis relating to capital costs|projinfo|Project Information|Standard Basis Specs File|
+:::General Project Data|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DATA|Main Setup|
+::::Project Properties|20000|100|ic_PROJECT_PROPERTIES|View/Modify the properties of this project (Description, Remarks, etc.)|
+::::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+::::Input Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+::::Output (Reports) Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+::::Currency|42000|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CURRENCY|Currency Specifications for Procurement
+:::Cost Breakdown and Calibration|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DATA|Main Setup|
+::::Codes of Accounts|43020|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_CODES_OF_ACCOUNTS|Codes of accounts definition and allocation|
+::::Indexing|41100|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_INDEXING|Indexing for various accounts|
+::Design Basis|11010|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS|Design basis specs for the project|
+:::Equipment Design Specs|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EQUIPMENT|Equipment design specs|
+::::Equipment Specs|40020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DESIGN_BASIS_EQUIPMENT_SPECS|Design basis specs for Equipment|
+:::Piping Specs|11020|000|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS|Piping specs for the project|
+::::General|40040|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_GENERAL|General piping specs for the project|
+::::Material|40050|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_MATERIAL|Material piping specs for the project|
+::::Custom|40060|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_PIPING_SPECS_CUSTOM|Custom piping specs for the project|
+::::Piping Customer External Files|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT|Customer External Files|
+:::::Fittings|23187|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_FITTINGS|Fittings|
+:::::SP3DImport|23190|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_SP3DIMPORT|SP3DImport|
+:::Civil/Steel Specs|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_CIVIL|Civil and structural specs|
+::::Civil/Steel Specs|40070|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CIVIL_SPECS|Civil specs for the project|
+::::Civil Customer External Files|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT|Customer External Files|
+:::::Civil Material|23181|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CIVIL|Civil Materials table|
+:::::Steel Material|23182|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_STEEL|Steel Materials table|
+:::::Building Unit Costs|23183|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_BLDG|Building Material Table|
+:::Instrumentation and Electrical Specs|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_INSTRUMENTATION|Instrumentation specs|
+::::Instrumentation Specs|40080|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSTRUMENTATION_SPECS|Instrumentation and electrical specs for the project|
+::::Electrical Specs|40090|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ELECTRICAL_SPECS|Electrical specs for the project|
+::::E&I Customer External Files|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT|Customer External Files|
+:::::Instrumentation Components|23184|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INPARTS|Instrumentation Components Table|
+:::::Instrumentation Assemblies|23185|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INASMBLY|Instrumentation Assemblies|
+:::::Instrumentation Control Systems|23189|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INCONTROL|Instrumentation Control Systems|
+:::Insulation and Painting Specs|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_INSULATION|Insulation and painting specs|
+::::Insulation Specs|40100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INSULATION_SPECS|Insulation specs for the project|
+::::Paint Specs|40110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PAINT_SPECS|Paint specs for the project|
+::::Insulation and Painting External Files|10090|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INSULATION|Insulation External Files|
+:::::Hot Insulation Schedules|23187|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_HOTINSUL|Hot Insulation Schedules|
+:::::Cold Insulation Schedules|23188|0111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_COLDINSUL|Cold Insulation Schedules|
+:::::Insulation Equivalent Length Rules|23186|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INSUL|Insulation Equivalent Length Rules|
+:::Electrical and Control Systems|10070|000|ic_CAPITAL_COSTS_STANDARD_BASIS_SYSTEMS|Plant systems|
+::::Power Distribution|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SYSTEMS_POWER_DISTRIBUTION|Power distribution system|
+::::Process Control|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SYSTEMS_PROCESS_CONTROL|Process control system|
+::::Panel Board|23111|100|ic_CAPITAL_COSTS_STANDARD_BASIS_PANEL_BOARD|Panel board system|
+::Contracting Strategy|10090|000|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTING|Contracting setup|
+:::Contractor setup|10070|000|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTS|Contracts|
+::::Contractors|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTORS|Contractor definitions (for Pipeline project, only OWNER/MAIN contractor's indirects)|
+::::Scope (**)|23110|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CONTRACTS_SCOPE|Contractor scope definitions and exceptions (not allowed for Pipeline project)|
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::Wage Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to wages and productivities|
+::::Crew Mixes|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CREW_MIXTURES|Construction crew mixes|
+::::Craft Names|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_CRAFT_NAMES|Construction craft names|
+:::Engineering Workforce|10020|000|ic_ENGINEERING_WORKFORCE|Engineering workforce definition|
+::::By Phase|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ENGINEERING_WORKFORCE_PHASE|Engineering workforce definition by phase|
+::::By Discipline|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ENGINEERING_WORKFORCE_DISCIPLINE|Engineering workforce definition by phase|
+::::Drawing Types (**)|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DRAWING_TYPES|Engineering drawing types (not allowed for Pipeline project)|
+::::Drawing Count (**)|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_DRAWING_COUNT|Engineering drawing count (not allowed for Pipeline project)|
+:::Indirects|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT|Indirect cost|
+::::Indirects - Proratables (**)|23180|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_INDIRECTS|Proratables (not allowed for Pipeline project)|
+::::Equipment Rental|34100|100|ic_CAPITAL_COSTS_STANDARD_BASIS_EQUIPMENT_RENTAL|Equipment rental|
+::Contingency and Escalation|10080|000|ic_CAPITAL_COSTS_STANDARD_BASIS_DATA|Main Setup|
+:::Contingency and Misc. Project Costs|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_BIG_PROJECT_COSTS|Contingency and miscellaneous project costs|
+:::Escalation|42010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_ESCALATION|Escalation parameters for the project|
+::Project Execution Schedule Settings|11080|000|ic_SCHEDULE_SETTINGS_EPC|Settings for developing EPC planning schedule|
+:::Adjust Schedule and Barcharts (**)|30020|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_ADJUSTMENTS|Initial schedule adjustments (not allowed for Pipeline project)|
+:::Equipment Class Delivery Times (**)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_EQUIPMENT_CLASSES|Specifications for general equipment class delivery times (not allowed for Pipeline project)|
+:::Equipment Item Delivery Times (**)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_EQUIPMENT_ITEMS|Specifications for specific equipment delivery times (not allowed for Pipeline project)|
+:::Add Barchart Items (**)|30030|100|ic_CAPITAL_COSTS_STANDARD_BASIS_SCHEDULE_BARCHART_ITEMS|Add new barchart items (not allowed for Pipeline project)|

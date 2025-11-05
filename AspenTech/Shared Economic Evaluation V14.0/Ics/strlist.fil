@@ -1,0 +1,85 @@
+#-------------------------------------------------------------------
+#      TEMPLATE FILE:  sprsheet.dat
+#-------------------------------------------------------------------
+#      History:
+#       
+#      Created 04 September 1997 at ICARUS Corporation by M. Brewer
+#      [add your changes here]
+#
+#  .................................................................
+#      Purpose:
+#
+#      To provide user-editable "triplets" for reading stream data from an
+#      IPE database and displaying to a spreadsheet.  Each triplet consists
+#      of 3 stream parameters:
+#		Display Tag
+#		Icarus Stream Slot Tag
+#		Formatting.
+#
+#  .................................................................
+#      Explanation of Fields:
+#
+#      "Number of Labels ="
+#          This parameter specifies the number of triplets that are to be 
+#          processed.  To get the number of triplets, the parser searches for
+#          the string, "Number of Labels =", and the integer immediately
+#          following.  This search string must be specified verbatim.
+#
+#      "Display Tag"
+#          This parameter specifies the exact text to be displayed on the 
+#          column header of the spreadsheet.  This is a nickname given to
+#          the underlying slot item.  You may edit this tag.
+#
+#      "Icarus Stream Slot Tag"
+#          This is a slot tag that the database uses for extracting represen-
+#          tative data values.  While you may rearrange the order of the slot
+#          tags, the slot names may not be altered.
+#
+#      "Formatting"
+#          This parameter is a C Language format specifier.  It determines how 
+#          the data will appear on the spreadsheet.  Be sure that the format 
+#          specifier is consistent with the underlying data itself.
+#          Options:
+#			"%s"  indicates a string value
+#			"%f"  indicates a floating point number
+#			"%a.bf"  indicates a floating point number of:
+#					"a" spaces wide (including the decimal point)
+#					"b" numbers after the decimal point.
+#
+#  .................................................................
+#      Rules of Syntax:
+#
+#      1. Comment lines begin with a "#"- like this line.
+#      2. Each component of the triplet must be within double quotes.
+#      3. Exact column positions of a component are not important.
+#
+#  .................................................................
+#      Data Section:
+#
+       Number of Labels = 19
+#
+#
+#      Display Tag             Icarus Stream Slot Tag                  Formatting
+#
+       "Stream"                "Object Name"                           "%s"
+       "T"                     "Temperature"                           "%4.0f"
+       "P"                     "Pressure"                              "%4.0f"
+       "Rho - Vap"             "Vapor Mass Density"                    "%f"
+       "mfr - Vap"             "Vapor Mass Flow"                       "%f"
+       "Cp - Vap"              "Vapor Specific Heat Capacity"          "%f"
+       "Mu - Vap"              "Vapor Viscosity"                       "%f"
+       "k - Vap"               "Vapor Conductivity"                    "%f"
+       "Rho - Liq"             "Liquid Mass Density"                   "%f"
+       "mfr - Liq"             "Liquid Mass Flow"                      "%8.2f"
+       "vfr - Liq"             "Liquid Volumetric Flow"                "%f"
+       "Cp - Liq"              "Liquid Specific Heat Capacity"         "%f"
+       "Mu - Liq"              "Liquid Viscosity"                      "%f"
+       "k - Liq"               "Liquid Conductivity"                   "%f"
+       "Rho - Sol"             "Solid Mass Density"                    "%f"
+       "mfr - Sol"             "Solid Mass Flow"                       "%f"
+       "MW"                    "Molecular Weight"                      "%f"
+       "Mu - all"              "Estimated Fluid Viscosity"             "%f"
+  "Primary Fluid Component"    "Primary Fluid Component"               "%s"
+#-------------------------------------------------------------------
+#      End of TEMPLATE FILE
+#-------------------------------------------------------------------

@@ -1,0 +1,40 @@
+:Project Basis|10000|000|ic_PROJECT_BASIS|Project Basis general information
+::Project Properties|20000|100|ic_PROJECT_PROPERTIES|View/Modify the properties of this project (Description, Remarks, etc.)|
+::General Project Data|29991|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL_PROJECT_DATA|View/Modify the project data specs (Country Base, Currency, etc.)|
+::Basis for Capital Costs|10010|010|ic_CAPITAL_COSTS_STANDARD_BASIS|Specs for project basis relating to capital costs|projinfo|Project Information|Standard Basis Specs File|
+:::Input Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_INPUT_UNITS|Units of measure customization controlling the input specifications|
+:::Output (Reports) Units of Measure Customization|29992|100|ic_CAPITAL_COSTS_STANDARD_BASIS_OUTPUT_UNITS|Units of measure customization controlling the capital cost reports|
+:::General Specs|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_GENERAL|General specs for project basis relating to capital costs|
+:::Currency|42000|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_EXT_CURRENCY|Currency Specifications for Procurement
+:::Construction Workforce|10020|000|ic_WAGERATE_PRODUCTIVITY|Wage rates and indexing for construction workforce|
+::::Wage Rates|20010|100|ic_CAPITAL_COSTS_STANDARD_BASIS_WAGE_GENERAL|Adjustments to wages and productivities|
+:::Indexing|41100|1111|ic_CAPITAL_COSTS_STANDARD_BASIS_INDEXING|Indexing for various accounts|
+::Process Design|10030|000|ic_PROCESS_DESIGN|Process Design specifications
+:::Simulator Type|20010|100|ic_SIMULATOR_TYPE_NAME|Process simulation system name|projinfo|Project Information|Input File Format|
+:::Simulator File Name|20011|101|ic_SIMULATOR_FILE_NAME|Process simulation report file name|projinfo|Project Information|Input File|
+:::Simulator Units of Measure Mapping Specs|20011|1111|ic_SIMULATOR_UNITS_OF_MEASURE_SPECS|Units of measure file used for mapping simulator units to KBW units|projinfo|Project Information|Units of Measure File|
+:::Project Component Map Specifications|20011|1111|ic_SIMULATOR_MAP_SPECS|Mapping specs|projinfo|Project Information|Component Map File|
+:::Design Criteria|10031|0111|ic_GENERAL_DESIGN_CRITERIA|Design criteria and associated file name|projinfo|Project Information|Design Criteria|
+::::Common|20015|100|ic_DESIGN_CRIT_COMMON|Design criteria - Common (can be overwritten at sub-level category)|projinfo|Project Information|Design Criteria|
+::::Pumps|20016|100|ic_DESIGN_CRIT_PUMPS|Design criteria - Pumps|projinfo|Project Information|Design Criteria|
+::::Compressors|20017|100|ic_DESIGN_CRIT_COMPRESSORS|Design criteria - Compressors|projinfo|Project Information|Design Criteria|
+::::Heat Exchangers|20018|100|ic_DESIGN_CRIT_HEAT_EXCHANGER|Design criteria - Heat Exchangers|projinfo|Project Information|Design Criteria|
+::::Towers|20019|100|ic_DESIGN_CRIT_TOWERS|Design criteria - Towers|projinfo|Project Information|Design Criteria|
+:::::Packed|20020|100|ic_DESIGN_CRIT_TOWERS_PACKED|Design criteria - Packed Towers|projinfo|Project Information|Design Criteria|
+:::::Trayed|20021|100|ic_DESIGN_CRIT_TOWERS_TRAYED|Design criteria - Trayed Towers|projinfo|Project Information|Design Criteria|
+:::::Configurations Towers|20022|100|ic_DESIGN_CRIT_TOWERS_CONFIGS|Design criteria - Tower Configurations|projinfo|Project Information|Design Criteria|
+::::Vessels|20023|100|ic_DESIGN_CRIT_VESSELS|Design criteria - Vessels|projinfo|Project Information|Design Criteria|
+:::::Agitated|20024|100|ic_DESIGN_CRIT_VESSELS_AGITATED|Design criteria - Agitated Vessels|projinfo|Project Information|Design Criteria|
+:::::Storage|20025|100|ic_DESIGN_CRIT_VESSELS_STORAGE|Design criteria - Storage Vessels|projinfo|Project Information|Design Criteria|
+:::::Horizontal|20026|100|ic_DESIGN_CRIT_VESSELS_HORIZONTAL|Design criteria - Horizontal Vessels|projinfo|Project Information|Design Criteria|
+:::::Vertical|20027|100|ic_DESIGN_CRIT_VESSELS_VERTICAL|Design criteria - Vertical Vessels|projinfo|Project Information|Design Criteria|
+::::Miscellaneous|20028|100|ic_DESIGN_CRIT_MISCELLANEOUS|Design criteria - Other design criteria parameters|projinfo|Project Information|Design Criteria|
+::::Configurations Flash|20029|100|ic_DESIGN_CRIT_FLASH_CONFIGS|Design criteria - Flash Confogurations|projinfo|Project Information|Design Criteria|
+:::Utility Specifications|20014|1111|ic_UTILITY_RESOURCES|Specs for utility resources|projinfo|Project Information|Utility Specs File|
+:::Sizing Selection|20015|1111|ic_SIZESELECT_DEFAULT|Specs for Sizing Selection|projinfo|Project Information|Sizing Selection File|
+::Investment Analysis|10040|000|ic_INVESTMENT_ANALYSIS|Investment Analysis|
+:::Investment Parameters|20010|1111|ic_INVESTMENT_ANALYSIS_PARAMETERS|Investment analysis parameters|projinfo|Project Information|Investment Analysis File|
+:::Operating Unit Costs|20010|1111|ic_OPERATING_COSTS_PARAMETERS|Unit costs for operation of the facility|projinfo|Project Information|Operating Unit Costs|
+:::Raw Material Specifications|20010|1111|ic_RAW_MATERIAL_SPECS|Specifications for raw materials|projinfo|Project Information|Raw Material File|
+:::Product Specifications|20010|1111|ic_PRODUCT_SPECS|Specifications for facility products and by-products|projinfo|Project Information|Product Specs File|
+:Streams|30000|100|ic_STREAMS|View stream information|

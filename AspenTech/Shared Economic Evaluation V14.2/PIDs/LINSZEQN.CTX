@@ -1,0 +1,36 @@
+ 1017 1016   19   36                                                            : 
+ *Not Used*                                                                     : 
+1 inch / 25 mm          IN        N            1 3                              : 
+2 inch / 50 mm          IN        N            4 3                              : 
+4 inch / 100 mm         IN        N            7 3                              : 
+6 inch / 150 mm         IN        N           10 3                              : 
+12 inch / 300 mm        IN        N           13 3                              : 
+24 inch / 600 mm        IN        N           16 3                              : 
+ *Not Used*                                                                     : 
+ *Not Used*                                                                     : 
+ *Not Used*                                                                     : 
+Centr Pump Discharge    IN        N           19 3                              : 
+Storage Tank Inlet      IY2       N           22 3                              : 
+Storage Tank Relief     IN        N           25 3                              : 
+Shell Side Inlet        IN        N           28 3                              : 
+Heat Exchanger Safety   IN        N           31 3                              : 
+Spiral Classifier Inlet IN        N           34 3                              : 
+Sp. Classifier Overflow IN        N           37 3                              : 
+Sp. Classifier UnderflowIN        N           40 3                              : 
+ *Not Used*                                                                     : 
+Cent. Pump Discharge    IN        N           43 3                              : 
+Centrifugal Pump Inlet  IN        N           46 3                              : 
+Storage Tank Inlet      IN        N           49 3                              : 
+Storage Tank Liquid Out IN        N           52 3                              : 
+Storage Tank Vapor Out  IN        N           55 3                              : 
+Liquid Blowdown         IN        N           58 3                              : 
+Storage Tank Relief     IN        N           61 3                              : 
+Pump Recycle            IN        N           64 3                              : 
+Shell Side Inlet/Outlet IN        N           67 3                              : 
+Tube Side Inlet/Outlet  IN        N           70 3                              : 
+Tube/Shell Relief       IN        N           73 3                              : 
+ *Not Used*                                                                     : 
+ *Not Used*                                                                     : 
+ *Not Used*                                                                     : 
+Spiral Classifier Inlet IN        N           76 3                              : 
+Sp. Classifier Overflow IN        N           79 3                              : 

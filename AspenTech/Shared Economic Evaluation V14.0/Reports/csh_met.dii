@@ -1,0 +1,768 @@
+
+
+
+
+
+
+              ..................................................
+              ..................................................
+              ............... D E S I G N   I I ................
+              ..................................................
+              ..................................................
+              ...                                            ...
+              ...                WinSim Inc.                 ...
+              ...                                            ...
+              ...       Automatic Process Simulation         ...
+              ...                                            ...
+              ..................................................
+              ..................................................
+              ............... D E S I G N   I I ................
+              ..................................................
+              ..................................................
+
+
+
+
+
+
+
+
+
+    **********************************************************************
+    *                                                                    *
+    *      The WinSim Technical Service Office Can Be Contacted At:      *
+    *                                                                    *
+    *             Phone / Fax         USA 281-565-6700                   *
+    *             Internet email      support@winsim.com                 *
+    *             Internet email      sales@winsim.com                   *
+    *             Internet Web Site   http://www.winsim.com              *
+    *                                                                    *
+    **********************************************************************
+
+
+
+
+
+License: Full                     Serial Number: ABC12345               
+
+The execution password expires on Apr 26, 1999.
+
+
+Warning !!!  The password will expire in    5 days on Apr 26, 1999.
+
+
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    1
+
+
+ECHO PRINT OF INPUT DATA
+
+*                                                                               
+                                                                                
+C- EQUIPMENT MODULES                                                            
+                                                                                
+HEA EXC 1 = X-1, 1,-2,                                                          
+  U(BTU/HR/FT2/F) = 50.                                                         
+  TEM OUT(F) = 50.                                                              
+  SHE PAS = 1                                                                   
+  TUB PAS = 1                                                                   
+  SHE = 1                                                                       
+  TUB FEE = 1                                                                   
+  INL = OPP                                                                     
+  HOR                                                                           
+  DEL(PSI) = 0.5                                                                
+                                                                                
+FLA 2 = F-2, 2,-3,-7,                                                           
+  DEL(PSI) = 0.5                                                                
+  LIQ FRA (MAS) = 0.98                                                          
+                                                                                
+EXP 3 = Expander, 3,-4,                                                         
+  PRE OUT(PSIA) = 150.                                                          
+  EFF = 0.78                                                                    
+                                                                                
+FLA 4 = F-4, 4,-5,-6,                                                           
+  ADI, HEA(BTU/HR) = 0.                                                         
+  DEL(PSI) = 0.                                                                 
+                                                                                
+C- GENERAL SECTION                                                              
+GENERAL                                                                         
+  COMPONENTS = 3,4,5,6,                                                         
+  APISOAVEK                                                                     
+  APISOAVEH                                                                     
+  STDD                                                                          
+  VIS VAP = NBS81                                                               
+  VIS LIQ = NBS81                                                               
+  THE CON VAP = NBS81                                                           
+  THE CON LIQ = NBS81                                                           
+  SUR TEN = STD                                                                 
+  QUA UNI OUT = KG                                                              
+  MET UNI OUT                                                                   
+  MAX = 1                                                                       
+  CON TOL = 1.E-003                                                             
+  FLO (FRA) 1 = 2*0.2,2*0.3,                                                    
+  TOT FLO (LBMOL/HR) 1 = 4000.                                                  
+  TP (F,PSIA) 1 = -20.,210.                                                     
+  NAM STR 1 = FEED                                                              
+  NAM STR 2 = Strm 2                                                            
+  NAM STR 3 = Strm 3                                                            
+  NAM STR 4 = Strm 4                                                            
+  NAM STR 5 = Strm 5                                                            
+  NAM STR 6 = Strm 6                                                            
+  NAM STR 7 = Strm 7                                                            
+END                                                                             
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    2
+
+
+     STREAM THERMODYNAMIC INITIALIZATION
+
+ STREAM NUMBER     KVALUES        ENTHALPIES       DENSITY
+ -------------     -------        ----------       -------
+        1           ASOA             ASOA          STD 
+
+     THE FOLLOWING STREAMS ARE FEED STREAMS TO THE PROCESS
+ STREAM NUMBER
+ -------------
+          1
+
+     THE FOLLOWING STREAMS ARE PRODUCT STREAMS FROM THE PROCESS
+ STREAM NUMBER
+ -------------
+          5
+          6
+          7
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    3
+
+           ++SYSTEM VARIABLES++
+             ----------------
+
+
+NUMBER OF COMPONENTS      4
+
+COMPONENTS USED...            3  ETHANE          
+                              4  PROPANE         
+                              5  I-BUTANE        
+                              6  N-BUTANE        
+
+
+ENTHALPY DATUM IS IDEAL GAS AT 32 DEGREES F AND 14.696 PSIA
+ENTROPY DATUM IS IDEAL GAS AT 32 DEGREES F AND 14.696 PSIA
+
+ENERGY SIGN CONVENTION: WORK PRODUCED BY THE EQUIPMENT IS POSITIVE
+                        HEAT TRANSFERRED TO THE EQUIPMENT IS POSITIVE
+
+STANDARD CONDITIONS ARE  STP     60.00 DEG F AND    14.696 PSIA
+                         NTP      0.00 DEG C AND      1.00 ATM
+                         API     15.00 DEG C AND      1.00 ATM
+LIQUID GAL AND BBL ARE U.S. GAL AND BBL
+
+
+RECYCLE LOOP CONVERGENCE TOLERANCE      0.0010
+
+MAXIMUM RECYCLE LOOPS                                1
+AUTOMATIC RECYCLE CALC. SEQUENCE USED
+
+++++++ GENERAL THERMOPHYSICAL PROPERTY OPTIONS +++++++
+
+KVALUES    ENTHALPIES    DENSITIES    VAPOR FUGACITIES
+=======    ==========    =========    ================
+ ASOA         ASOA         STD             STD VAP
+
+
+        VISCOSITY              THERMAL CONDUCTIVITY    
+   --------------------        --------------------     
+   LIQUID      VAPOR           LIQUID      VAPOR      
+   ========    ========        ========    ========    
+    NBS81        NBS81          NBS81        NBS81  
+
+
+   SURFACE TENSION                                     
+   ===============                                     
+      STD   
+
+
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    4
+
+
++++++UNIT CALCULATION SEQUENCE ANALYSIS
+
+
+
+
+                             E Q U I P M E N T
+  INLET STREAMS          TYPE  NUMBER  NAME              OUTLET STREAMS
+------------------------ ----------------------------  ------------------------
+   1                     HEAEXC    1 X-1                  2
+   2                     FLA       2 F-2                  3    7
+   3                     EXP       3 Expander             4
+   4                     FLA       4 F-4                  5    6
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    5
+
+NOW CALLING EQUIPMENT      1   +   HEAEXC     =   X-1 
+KVALUES  -  ASOA    ENTHALPY  -  ASOA    DENSITY  -  STD 
+         ELAPSED TIME  -  00:00:00.03  -  IN EQUIPMENT NUMBER    1
+NOW CALLING EQUIPMENT      2   +   FLA        =   F-2 
+KVALUES  -  ASOA    ENTHALPY  -  ASOA    DENSITY  -  STD 
+         ELAPSED TIME  -  00:00:00.06  -  IN EQUIPMENT NUMBER    2
+NOW CALLING EQUIPMENT      3   +   EXP        =   Expander
+KVALUES  -  ASOA    ENTHALPY  -  ASOA    DENSITY  -  STD 
+         ELAPSED TIME  -  00:00:00.05  -  IN EQUIPMENT NUMBER    3
+NOW CALLING EQUIPMENT      4   +   FLA        =   F-4 
+KVALUES  -  ASOA    ENTHALPY  -  ASOA    DENSITY  -  STD 
+         ELAPSED TIME  -  00:00:00.00  -  IN EQUIPMENT NUMBER    4
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    6
+                          SOLUTION REACHED        
+
+
+
+
+                   ++++ SOLUTION HAS BEEN REACHED ++++
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    7
+                          SOLUTION REACHED        
+
+
+                               STREAM SUMMARY
+                               --------------
+
+STREAM NUMBER            1              2              3              4
+STREAM NAME       FEED           Strm 2         Strm 3         Strm 4        
+EQUIP CONXION        FEED-X-1       X-1 -F-2       F-2 -Expa      Expa-F-4     
+                   (   0)-(   1)  (   1)-(   2)  (   2)-(   3)  (   3)-(   4)
+VAPOR FRACTION      0.00000E+00    0.00000E+00     1.0000        0.99509       
+TEMPERATURE C       -28.889         10.000         43.340         31.298       
+PRESSURE KG/CM2      14.764         14.729         14.694         10.546       
+ENTHALPY KCAL/HR   -0.97620E+07   -0.77686E+07     16434.         10497.       
+V Cp  KCAL/KGMO/C                                  19.763         18.456       
+V Cv  KCAL/KGMO/C                                  15.831         15.140       
+L Cp  KCAL/KGMO/C    26.707         29.999                        32.952       
+V DEN KG/M3                                        26.805         19.080       
+L DEN KG/M3          574.61         529.83                        506.15       
+L S.G.(60F)   STP   0.52295        0.52295                       0.53082       
+V VIS CP                                          0.98814E-02    0.92929E-02   
+L VIS CP            0.20152        0.13455                       0.11242       
+V THC KCAL/M/HR/C                                 0.20859E-01    0.19141E-01   
+L THC KCAL/M/HR/C   0.10933        0.91184E-01                   0.82813E-01   
+V M3(NTP)/HR                                       998.04         993.13       
+L M3(NTP)/HR         164.68         164.68                       0.20051E-01   
+TOTAL MOLE WEIGHT    49.704         49.704         40.503         40.503       
+
+L-LIQUID PHASE,  V-VAPOR PHASE
+Cp,Cv-HEAT CAPACITY, DEN-DENSITY, VIS-VISCOSITY, THC-THERMAL CONDUCTIVITY
+
+
+FLOW RATES       KG/HR 
+
+ETHANE               10911.         10911.         703.48         703.48       
+PROPANE              16001.         16001.         403.11         403.11       
+I-BUTANE             31635.         31635.         393.11         393.11       
+N-BUTANE             31635.         31635.         304.06         304.06       
+                    -----------    -----------    -----------    -----------
+TOTAL       KG/HR    90182.         90182.         1803.8         1803.8       
+
+
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    8
+                          SOLUTION REACHED        
+
+                     STREAM SUMMARY (CONTINUED)
+                     --------------------------
+
+STREAM NUMBER            5              6              7
+STREAM NAME       Strm 5         Strm 6         Strm 7        
+EQUIP CONXION        F-4 -PROD      F-4 -PROD      F-2 -PROD                   
+                   (   4)-(   0)  (   4)-(   0)  (   2)-(   0)
+VAPOR FRACTION       1.0000        0.00000E+00    0.00000E+00                  
+TEMPERATURE C        31.298         31.298         43.340                      
+PRESSURE KG/CM2      10.546         10.546         14.694                      
+ENTHALPY KCAL/HR     11308.        -810.39       -0.57203E+07                  
+V Cp  KCAL/KGMO/C    18.456                                                    
+V Cv  KCAL/KGMO/C    15.140                                                    
+L Cp  KCAL/KGMO/C                   32.952         34.500                      
+V DEN KG/M3          19.080                                                    
+L DEN KG/M3                         506.15         483.72                      
+L S.G.(60F)   STP                  0.53082        0.52461                      
+V VIS CP            0.92929E-02                                                
+L VIS CP                           0.11242        0.97342E-01                  
+V THC KCAL/M/HR/C   0.19141E-01                                                
+L THC KCAL/M/HR/C                  0.82813E-01    0.78319E-01                  
+V M3(NTP)/HR         993.13                                                    
+L M3(NTP)/HR                       0.20051E-01     160.97                      
+TOTAL MOLE WEIGHT    40.452         50.827         49.936                      
+
+L-LIQUID PHASE,  V-VAPOR PHASE
+Cp,Cv-HEAT CAPACITY, DEN-DENSITY, VIS-VISCOSITY, THC-THERMAL CONDUCTIVITY
+
+
+FLOW RATES       KG/HR 
+
+ETHANE               702.41         1.0774         10207.                      
+PROPANE              401.26         1.8533         15597.                      
+I-BUTANE             389.09         4.0207         31242.                      
+N-BUTANE             299.89         4.1631         31331.                      
+                    -----------    -----------    -----------
+TOTAL       KG/HR    1792.7         11.114         88378.                      
+
+
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE    9
+                          SOLUTION REACHED        
+
+          + EQUIPMENT SUMMARY - INDIVIDUAL DETAILS +
+
+****FLASH SEPARATORS    ****
+
+EQUIPMENT NO.          2             4
+
+EXTERNAL NAME      F-2           F-4         
+TYPE              L/F (MASS)    ADIABATIC   
+DUTY    KCAL/HR   2.06474E+06   2.75608E-02
+SPECIFICATION
+LIQ FRACTION     -0.98000          
+
+..................................................................
+
+
+
+............................................................
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   10
+                          SOLUTION REACHED        
+
+          + EQUIPMENT SUMMARY - INDIVIDUAL DETAILS +  (CONTINUED)
+
+****EXCHANGER/CONDENSERS****
+
+EQUIPMENT NO.          1
+
+EXTERNAL NAME      X-1         
+  U KCAL/HR/M2/C      244.1    
+AREA/SHELL  M2        9.290    
+NO. SHELLS            1.000    
+SHELL PASSES          1.000    
+TUBE PASSES           1.000    
+DELTA P-STR 1
+  KG/CM2             3.5153E-02
+Q STR 1 KCAL/HR      1.9934E+06
+UTI TEM IN  DEG C    32.222    
+UTI TEM OUT DEG C    40.556    
+T OUT SPEC  DEG C    10.000    
+
+..................................................................
+
+
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   11
+                          SOLUTION REACHED        
+
+          + EQUIPMENT SUMMARY - INDIVIDUAL DETAILS +  (CONTINUED)
+
+****PUMP/COMPRESSOR/EXPD****
+
+EQUIPMENT NO.          3
+
+EXTERNAL NAME      Expander    
+COMP. STAGES         1.000    
+WORK CAPACITY       
+  HPMETRIC         1.01400E+06
+OUTLET PRES.        
+  KG/CM2            10.546    
+DRIV TYPE                   
+COMP TYPE           ENTROPY 
+THERMAL EFFIC.      0.7800    
+REAL WORK HPMETR     9.388    
+
+
+..................................................................
+
+
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   12
+                          SOLUTION REACHED        
+
+
+
+
+              M A T E R I A L   B A L A N C E   S U M M A R Y
+              - - - - - - - -   - - - - - - -   - - - - - - - 
+
+
+ COMPONENT NAME     FEED(S)      PRODUCT(S)   DIFFERENCE   REL. ERROR
+                       KG           KG           KG
+ ----------------   ----------   ----------   ----------   ----------
+ ETHANE             1.0911E+04   1.0911E+04   0.0000E+00   0.0000E+00
+ PROPANE            1.6001E+04   1.6001E+04   0.0000E+00   0.0000E+00
+ I-BUTANE           3.1635E+04   3.1635E+04   0.0000E+00   0.0000E+00
+ N-BUTANE           3.1635E+04   3.1635E+04   0.0000E+00   0.0000E+00
+ ----------------   ----------   ----------   ----------   ----------
+ TOTAL              9.0182E+04   9.0182E+04   0.0000E+00   0.0000E+00
+ FLOWRATE /HR 
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   13
+                          SOLUTION REACHED        
+ STREAM NUMBER    1     CONNECTING  (   0)  FEED
+ NAME: FEED                     TO  (   1)  X-1 
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL    KGMOL    KGMOL     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE               362.874  362.874       0.  10910.9   20.000
+PROPANE              362.874  362.874       0.  16000.6   20.000
+I-BUTANE             544.312  544.312       0.  31635.4   30.000
+N-BUTANE             544.312  544.312       0.  31635.4   30.000
+                    -------- -------- -------- -------- --------
+TOTAL                1814.37  1814.37       0.  90182.3  100.000
+TOTAL   KG           90182.3  90182.3       0.
+
+STREAM NUMBER    1
+TEMPERATURE DEG C     -28.889    
+PRESSURE    KG/CM2     14.764    
+ENTHALPY    KCAL/HR  -9.76198E+06
+VAPOR FRACTION        0.00000E+00
+
+PROPERTIES              TOTAL       LIQUID                              
+----------------      ----------  ----------
+FLOWRATE   KGMOL/HR    1814.3717   1814.3717
+MOLECULAR WT.            49.7044     49.7044
+ENTHALPY KCAL/KGMOL   -5380.3618  -5380.3618
+ENTROPY  KCAL/KGMO/K    -19.1932    -19.1932
+CP       KCAL/KGMO/C                 26.7075
+CV       KCAL/KGMO/C                 20.9553
+CP/CV                                 1.2745
+DENSITY  KG/M3                      574.6128
+Z-FACTOR                            0.061677
+FLOWRATE M3/HR   T-P                156.9405
+         M3/HR   NTP                164.6825
+VISCOSITY   CP                      0.201524
+TH.COND  KCAL/M/HR/C                0.109332
+SURFACE TENSION DYNE/CM              14.5236
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   14
+                          SOLUTION REACHED        
+ STREAM NUMBER    2     CONNECTING  (   1)  X-1 
+ NAME: Strm 2                   TO  (   2)  F-2 
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL    KGMOL    KGMOL     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE               362.874  362.874       0.  10910.9   20.000
+PROPANE              362.874  362.874       0.  16000.6   20.000
+I-BUTANE             544.312  544.312       0.  31635.4   30.000
+N-BUTANE             544.312  544.312       0.  31635.4   30.000
+                    -------- -------- -------- -------- --------
+TOTAL                1814.37  1814.37       0.  90182.3  100.000
+TOTAL   KG           90182.3  90182.3       0.
+
+STREAM NUMBER    2
+TEMPERATURE DEG C      10.000    
+PRESSURE    KG/CM2     14.729    
+ENTHALPY    KCAL/HR  -7.76861E+06
+VAPOR FRACTION        0.00000E+00
+
+PROPERTIES              TOTAL       LIQUID                              
+----------------      ----------  ----------
+FLOWRATE   KGMOL/HR    1814.3717   1814.3717
+MOLECULAR WT.            49.7044     49.7044
+ENTHALPY KCAL/KGMOL   -4281.7075  -4281.7075
+ENTROPY  KCAL/KGMO/K    -15.0247    -15.0247
+CP       KCAL/KGMO/C                 29.9988
+CV       KCAL/KGMO/C                 23.0450
+CP/CV                                 1.3017
+DENSITY  KG/M3                      529.8309
+Z-FACTOR                            0.057565
+FLOWRATE M3/HR   T-P                170.2053
+         M3/HR   NTP                164.6825
+VISCOSITY   CP                      0.134550
+TH.COND  KCAL/M/HR/C                0.091184
+SURFACE TENSION DYNE/CM               9.7314
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   15
+                          SOLUTION REACHED        
+ STREAM NUMBER    3     CONNECTING  (   2)  F-2 
+ NAME: Strm 3                   TO  (   3)  Expander
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL   MOL FR    KGMOL     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE               23.3964 0.191812  23.3964  703.484   52.536   2.7389
+PROPANE              9.14212 0.199866  9.14212  403.113   20.528   1.0271
+I-BUTANE             6.76376 0.303726  6.76376  393.110   15.188  0.50005
+N-BUTANE             5.23155 0.304592  5.23155  304.058   11.747  0.38568
+                    -------- -------- -------- -------- --------
+TOTAL                44.5339  1.00000  44.5339  1803.76  100.000
+TOTAL   KG           1803.76       0.  1803.76
+
+STREAM NUMBER    3
+TEMPERATURE DEG C      43.340    
+PRESSURE    KG/CM2     14.694    
+ENTHALPY    KCAL/HR    16434.    
+VAPOR FRACTION         1.0000    
+
+PROPERTIES              TOTAL       VAPOR       LIQUID                  
+----------------      ----------  ----------  ----------
+FLOWRATE   KGMOL/HR      44.5339     44.5339      0.0000
+MOLECULAR WT.            40.5032     40.5032     49.9359
+ENTHALPY KCAL/KGMOL     369.0188    369.0201  -3232.0889
+ENTROPY  KCAL/KGMO/K     -1.2256     -1.2256
+CP       KCAL/KGMO/C                 19.7634
+CV       KCAL/KGMO/C                 15.8313
+CP/CV                                 1.2484
+DENSITY  KG/M3                       26.8045
+Z-FACTOR                            0.827568
+FLOWRATE M3/HR   T-P                 67.2917
+         M3/HR   NTP                998.0350
+VISCOSITY   CP                    0.9881E-02
+TH.COND  KCAL/M/HR/C                0.020859
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   16
+                          SOLUTION REACHED        
+ STREAM NUMBER    4     CONNECTING  (   3)  Expander
+ NAME: Strm 4                   TO  (   4)  F-4 
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL    KGMOL    KGMOL     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE               23.3964 0.035831  23.3606  703.484   52.536   3.2171
+PROPANE              9.14212 0.042031  9.10009  403.113   20.528   1.0684
+I-BUTANE             6.76376 0.069179  6.69458  393.110   15.188  0.47751
+N-BUTANE             5.23155 0.071629  5.15992  304.058   11.747  0.35546
+                    -------- -------- -------- -------- --------
+TOTAL                44.5339 0.218671  44.3152  1803.76  100.000
+TOTAL   KG           1803.76  11.1145  1792.65
+
+STREAM NUMBER    4
+TEMPERATURE DEG C      31.298    
+PRESSURE    KG/CM2     10.546    
+ENTHALPY    KCAL/HR    10497.    
+VAPOR FRACTION        0.99509    
+
+PROPERTIES              TOTAL       VAPOR       LIQUID                  
+----------------      ----------  ----------  ----------
+FLOWRATE   KGMOL/HR      44.5339     44.3152      0.2187
+MOLECULAR WT.            40.5032     40.4523     50.8274
+ENTHALPY KCAL/KGMOL     235.7100    255.1606  -3706.1062
+ENTROPY  KCAL/KGMO/K     -1.1021     -1.0440    -12.8852
+CP       KCAL/KGMO/C                 18.4564     32.9523
+CV       KCAL/KGMO/C                 15.1405     24.9974
+CP/CV                                 1.2190      1.3182
+DENSITY  KG/M3                       19.0796    506.1487
+Z-FACTOR                            0.866339    0.041033
+FLOWRATE M3/HR   T-P                 93.9541
+         M3/HR   T-P                            0.021958
+         M3/HR   NTP                993.1345
+         M3/HR   NTP                            0.020051
+VISCOSITY   CP                    0.9293E-02    0.112420
+TH.COND  KCAL/M/HR/C                0.019141    0.082813
+SURFACE TENSION DYNE/CM                           7.7788
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   17
+                          SOLUTION REACHED        
+ STREAM NUMBER    5     CONNECTING  (   4)  F-4 
+ NAME: Strm 5                   TO  (   0)  PRODUCT 
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL   MOL FR    KGMOL     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE               23.3606 0.163860  23.3606  702.407   52.715   3.2171
+PROPANE              9.10009 0.192211  9.10009  401.259   20.535   1.0684
+I-BUTANE             6.69458 0.316362  6.69458  389.089   15.107  0.47751
+N-BUTANE             5.15992 0.327566  5.15992  299.895   11.644  0.35546
+                    -------- -------- -------- -------- --------
+TOTAL                44.3152  1.00000  44.3152  1792.65  100.000
+TOTAL   KG           1792.65       0.  1792.65
+
+STREAM NUMBER    5
+TEMPERATURE DEG C      31.298    
+PRESSURE    KG/CM2     10.546    
+ENTHALPY    KCAL/HR    11308.    
+VAPOR FRACTION         1.0000    
+
+PROPERTIES              TOTAL       VAPOR       LIQUID                  
+----------------      ----------  ----------  ----------
+FLOWRATE   KGMOL/HR      44.3152     44.3152      0.0000
+MOLECULAR WT.            40.4523     40.4523     50.8274
+ENTHALPY KCAL/KGMOL     255.1607    255.1606  -3706.1055
+ENTROPY  KCAL/KGMO/K     -1.0440     -1.0440
+CP       KCAL/KGMO/C                 18.4564
+CV       KCAL/KGMO/C                 15.1405
+CP/CV                                 1.2190
+DENSITY  KG/M3                       19.0796
+Z-FACTOR                            0.866339
+FLOWRATE M3/HR   T-P                 93.9541
+         M3/HR   NTP                993.1345
+VISCOSITY   CP                    0.9293E-02
+TH.COND  KCAL/M/HR/C                0.019141
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   18
+                          SOLUTION REACHED        
+ STREAM NUMBER    6     CONNECTING  (   4)  F-4 
+ NAME: Strm 6                   TO  (   0)  PRODUCT 
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL    KGMOL   MOL FR     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE              0.035831 0.035831 0.527147  1.07738   16.386   3.2171
+PROPANE             0.042031 0.042031 0.205349  1.85331   19.221   1.0684
+I-BUTANE            0.069179 0.069179 0.151067  4.02069   31.636  0.47751
+N-BUTANE            0.071629 0.071629 0.116437  4.16308   32.757  0.35546
+                    -------- -------- -------- -------- --------
+TOTAL               0.218670 0.218670  1.00000  11.1145  100.000
+TOTAL   KG           11.1145  11.1145       0.
+
+STREAM NUMBER    6
+TEMPERATURE DEG C      31.298    
+PRESSURE    KG/CM2     10.546    
+ENTHALPY    KCAL/HR   -810.39    
+VAPOR FRACTION        0.00000E+00
+
+PROPERTIES              TOTAL       VAPOR       LIQUID                  
+----------------      ----------  ----------  ----------
+FLOWRATE   KGMOL/HR       0.2187      0.0000      0.2187
+MOLECULAR WT.            50.8274     40.4523     50.8274
+ENTHALPY KCAL/KGMOL   -3705.9958    255.1608  -3706.1060
+ENTROPY  KCAL/KGMO/K    -12.8852                -12.8852
+CP       KCAL/KGMO/C                             32.9521
+CV       KCAL/KGMO/C                             24.9969
+CP/CV                                             1.3182
+DENSITY  KG/M3                                  506.1487
+Z-FACTOR                                        0.041033
+FLOWRATE M3/HR   T-P                            0.021958
+         M3/HR   NTP                            0.020051
+VISCOSITY   CP                                  0.112420
+TH.COND  KCAL/M/HR/C                            0.082813
+SURFACE TENSION DYNE/CM                           7.7788
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   19
+                          SOLUTION REACHED        
+ STREAM NUMBER    7     CONNECTING  (   2)  F-2 
+ NAME: Strm 7                   TO  (   0)  PRODUCT 
+ ASOA K-VALUES    ASOA ENTHALPY    STD  DENSITY    FLOW RATES /HR 
+
+                      TOTAL   LIQUID    VAPOR    TOTAL    TOTAL
+ COMPONENT NAME       KGMOL    KGMOL   MOL FR     KG    MOL PCT   KVALUE
+ --------- ----     -------- -------- -------- -------- -------- --------
+ETHANE               339.478  339.478 0.525365  10207.4   19.181   2.7389
+PROPANE              353.732  353.732 0.205285  15597.5   19.987   1.0271
+I-BUTANE             537.548  537.548 0.151880  31242.3   30.373  0.50005
+N-BUTANE             539.080  539.080 0.117474  31331.3   30.459  0.38568
+                    -------- -------- -------- -------- --------
+TOTAL                1769.84  1769.84  1.00000  88378.5  100.000
+TOTAL   KG           88378.5  88378.5       0.
+
+STREAM NUMBER    7
+TEMPERATURE DEG C      43.340    
+PRESSURE    KG/CM2     14.694    
+ENTHALPY    KCAL/HR  -5.72031E+06
+VAPOR FRACTION        0.00000E+00
+
+PROPERTIES              TOTAL       VAPOR       LIQUID                  
+----------------      ----------  ----------  ----------
+FLOWRATE   KGMOL/HR    1769.8379      0.0000   1769.8379
+MOLECULAR WT.            49.9359     40.5032     49.9359
+ENTHALPY KCAL/KGMOL   -3232.1072    369.0195  -3232.1069
+ENTROPY  KCAL/KGMO/K    -11.4933                -11.4933
+CP       KCAL/KGMO/C                             34.4997
+CV       KCAL/KGMO/C                             25.7331
+CP/CV                                             1.3407
+DENSITY  KG/M3                                  483.7159
+Z-FACTOR                                        0.056539
+FLOWRATE M3/HR   T-P                            182.7029
+         M3/HR   NTP                            160.9743
+VISCOSITY   CP                                  0.097342
+TH.COND  KCAL/M/HR/C                            0.078319
+SURFACE TENSION DYNE/CM                           6.2010
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   20
+
+    PAGE            INDEX OF FLOWSHEET CALCULATIONS
+    ----  ---------------------------------------------------
+      1   ECHO PRINT OF INPUT DATA
+      3   SYSTEM VARIABLES                                          
+      5   HEAEXC    1   (X-1 )                                      
+      5   FLA       2   (F-2 )                                      
+      5   EXP       3   (Expa)                                      
+      5   FLA       4   (F-4 )                                      
+      6   SOLUTION REACHED                                          
+      7   STREAM SUMMARY                                            
+      9   EQUIPMENT SUMMARY - FLASH SEPARATORS                      
+     10   EQUIPMENT SUMMARY - EXCHANGER/CONDENSERS                  
+     11   EQUIPMENT SUMMARY - PUMP/COMPRESSOR/EXPD                  
+     12   MATERIAL BALANCE SUMMARY                                  
+     13   DETAILED PRINT FOR STREAM    1                            
+     14   DETAILED PRINT FOR STREAM    2                            
+     15   DETAILED PRINT FOR STREAM    3                            
+     16   DETAILED PRINT FOR STREAM    4                            
+     17   DETAILED PRINT FOR STREAM    5                            
+     18   DETAILED PRINT FOR STREAM    6                            
+     19   DETAILED PRINT FOR STREAM    7                            
+     20   INDEX OF FLOWSHEET CALCULATIONS                           
+     21   ACCOUNTING INFORMATION
+DESIGN II VER  8.17 COPYRIGHT WINSIM INC. 1995-1999 ALL RIGHTS RESERVED 21APR99
+ABC12345 LICENSEE: Arthur King               ICARUS Corp.              16:15:26
+
+                                                                      PAGE   21
+
+
+---------------------------------------------------------------------
+ACCOUNTING INFORMATION
+   COMPUTER TYPE IS Windows Win32   
+       0  21APR99   16:15:26           MYXX  WEH             1  DESI
+       24     4     0       5287            21     100000000     0
+                                                            
+
+    24 CHEMSHARE CALCULATION UNITS (CCU) USED IN THIS RUN.
+
+
+
+
+  *** END OF SIMULATION ***
