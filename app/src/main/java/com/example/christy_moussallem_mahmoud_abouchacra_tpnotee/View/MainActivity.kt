@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Adapters.NoteAdapter
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.R
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.ViewModel.NoteViewModel
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.ViewModel.NoteViewModelFactory
@@ -16,6 +19,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val recyclerView: RecyclerView =findViewById(R.id.recyclerView)
+        recyclerView.layoutManager= LinearLayoutManager(this)
+        val noteAdapter = NoteAdapter()
+        recyclerView.adapter= noteAdapter
 
         val viewModelFactory =
             NoteViewModelFactory((application as NoteApplication).repository)
@@ -25,6 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         noteViewModel.myAllNotes.observe(this, Observer { notes ->
 
+
+            noteAdapter.setNote(notes)
         })
     }
 }
+

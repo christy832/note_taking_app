@@ -54,11 +54,14 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("com.google.android.material:material:1.12.0")
 
 
     // ---- Room ----
     implementation(libs.androidx.room.runtime.android)
     implementation(libs.androidx.room.common.jvm)
+    implementation(libs.material)
     kapt("androidx.room:room-compiler:2.8.3")
 
     // ---- RecyclerView & Fragment ----
