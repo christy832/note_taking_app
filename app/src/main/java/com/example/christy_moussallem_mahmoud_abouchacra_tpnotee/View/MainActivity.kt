@@ -1,45 +1,30 @@
-package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee
+package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.View
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.R
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.ViewModel.NoteViewModel
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.ViewModel.NoteViewModelFactory
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.NoteApplication
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var noteViewModel: NoteViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            NoteApp()
-        }
-    }
-}
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun NoteApp() {
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("Note App") }
-            )
-        }
-    ) { padding ->
-        HomeScreen(Modifier.padding(padding))
-    }
-}
+        setContentView(R.layout.activity_main)
 
+        val viewModelFactory =
+            NoteViewModelFactory((application as NoteApplication).repository)
 
+        noteViewModel = ViewModelProvider(this, viewModelFactory)
+            .get(NoteViewModel::class.java)
 
-@Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(16.dp)
-    ) {
-        Text(text = "Welcome!", style = MaterialTheme.typography.headlineMedium)
+        noteViewModel.myAllNotes.observe(this, Observer { notes ->
+
+        })
     }
 }
