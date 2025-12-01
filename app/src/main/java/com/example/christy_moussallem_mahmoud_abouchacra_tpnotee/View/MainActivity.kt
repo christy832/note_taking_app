@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 val resultCode = resultAddNote.resultCode
          val data = resultAddNote.data
          if (resultCode ==RESULT_OK && data!= null){
-             val noteTitle : String = data.getStringExtra("title").toString()
+             val noteTitle : String = data.getStringExtra("Title").toString()
              val noteDescription : String =data.getStringExtra("Description").toString()
              val note = Note(noteTitle, noteDescription)
              noteViewModel.insert(note)

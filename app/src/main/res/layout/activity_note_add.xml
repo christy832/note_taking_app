@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Enter Note Title"
-        android:textColor="#7C7272"
+        android:hint="Enter Note Title"
+        android:textColorHint="#7C7272"
         android:textSize="20sp" />
 
     <EditText
