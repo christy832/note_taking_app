@@ -12,6 +12,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Adapters.NoteAdapter
@@ -28,10 +29,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val recyclerView: RecyclerView =findViewById(R.id.recyclerView)
-        recyclerView.layoutManager= LinearLayoutManager(this)
+        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
         val noteAdapter = NoteAdapter()
-        recyclerView.adapter= noteAdapter
+        recyclerView.adapter = noteAdapter
 
 
         registerActivityResultLauncher() // for results
@@ -47,6 +48,27 @@ class MainActivity : AppCompatActivity() {
 
             noteAdapter.setNote(notes)
         })
+
+
+        //touch item for deleting a note by swiping left or right
+        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0,
+            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT){
+            override  fun onMove(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder,
+                target: RecyclerView.ViewHolder
+            ): Boolean{
+            TODO()
+            }
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction :Int)
+            {
+                val note = noteAdapter.getNote(viewHolder.adapterPosition)
+                noteViewModel.delete(note)
+
+                Toast.makeText(this@MainActivity, "Note deleted", Toast.LENGTH_SHORT).show()
+            }
+
+        }).attachToRecyclerView(recyclerView)
     }
     fun registerActivityResultLauncher(){
  addActivityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()
