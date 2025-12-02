@@ -1,6 +1,7 @@
 package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.View
 
 import android.app.Instrumentation
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ItemTouchHelper
@@ -25,7 +27,7 @@ import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.NoteApplication
 class MainActivity : AppCompatActivity() {
 
     private lateinit var noteViewModel: NoteViewModel
-     lateinit var addActivityResultLauncher: ActivityResultLauncher<Intent>
+    lateinit var addActivityResultLauncher: ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -51,17 +53,19 @@ class MainActivity : AppCompatActivity() {
 
 
         //touch item for deleting a note by swiping left or right
-        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0,
-            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT){
-            override  fun onMove(
+        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
+            0,
+            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
+        ) {
+            override fun onMove(
                 recyclerView: RecyclerView,
                 viewHolder: RecyclerView.ViewHolder,
                 target: RecyclerView.ViewHolder
-            ): Boolean{
-            TODO()
+            ): Boolean {
+                TODO()
             }
-            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction :Int)
-            {
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val note = noteAdapter.getNote(viewHolder.adapterPosition)
                 noteViewModel.delete(note)
 
@@ -70,20 +74,21 @@ class MainActivity : AppCompatActivity() {
 
         }).attachToRecyclerView(recyclerView)
     }
-    fun registerActivityResultLauncher(){
- addActivityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()
- , ActivityResultCallback{
-     resultAddNote->
-val resultCode = resultAddNote.resultCode
-         val data = resultAddNote.data
-         if (resultCode ==RESULT_OK && data!= null){
-             val noteTitle : String = data.getStringExtra("Title").toString()
-             val noteDescription : String =data.getStringExtra("Description").toString()
-             val note = Note(noteTitle, noteDescription)
-             noteViewModel.insert(note)
-         }
 
-     })
+    fun registerActivityResultLauncher() {
+        addActivityResultLauncher = registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult(),
+            ActivityResultCallback { resultAddNote ->
+                val resultCode = resultAddNote.resultCode
+                val data = resultAddNote.data
+                if (resultCode == RESULT_OK && data != null) {
+                    val noteTitle: String = data.getStringExtra("Title").toString()
+                    val noteDescription: String = data.getStringExtra("Description").toString()
+                    val note = Note(noteTitle, noteDescription)
+                    noteViewModel.insert(note)
+                }
+
+            })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -92,15 +97,36 @@ val resultCode = resultAddNote.resultCode
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.item_add_note ->{
-                val intent= Intent(this, NoteAddActivity::class.java)
+        when (item.itemId) {
+            R.id.item_add_note -> {
+                val intent = Intent(this, NoteAddActivity::class.java)
                 addActivityResultLauncher.launch(intent)
             }
-            R.id.item_delete_all_notes-> Toast.makeText(applicationContext
-            ,"Delete icon was clicked ", Toast.LENGTH_SHORT).show()
+
+            R.id.item_delete_all_notes -> showDialogMessage()
         }
         return true
+    }
+
+    fun showDialogMessage() {
+        val dialogMessage = AlertDialog.Builder(this)
+        dialogMessage.setTitle("Delete All Notes")
+        dialogMessage.setMessage(
+            " If click Yes all notes will delete" +
+                    ", if you want to delete a specific note, please swipe left or right."
+        )
+
+        dialogMessage.setNegativeButton("No", DialogInterface.OnClickListener { dialog,
+                                                                                which ->
+            dialog.cancel()
+        })
+        dialogMessage.setPositiveButton("Yes", DialogInterface.OnClickListener
+        { dialog, which->
+
+            noteViewModel.deleteAllNotes()
+
+        })
+        dialogMessage.create().show()
     }
 }
 
