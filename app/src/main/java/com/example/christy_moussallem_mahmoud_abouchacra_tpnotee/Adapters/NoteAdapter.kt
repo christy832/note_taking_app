@@ -1,6 +1,7 @@
 package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Adapters
 
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +10,10 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.R
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Model.Note
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.View.MainActivity
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.View.UpdateActivity
 
-class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
+class NoteAdapter(private val activity : MainActivity) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
     var notes :List<Note> = ArrayList()
     class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -38,6 +41,16 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
         var currentNote : Note= notes[position]
         holder.textViewTitle.text= currentNote.title
         holder.textViewDescription.text= currentNote.description
+
+        holder.cardView.setOnClickListener {
+        val intent = Intent(activity, UpdateActivity::class.java)
+            intent.putExtra("currentTitle", currentNote.title)
+            intent.putExtra("currentDescription", currentNote.description)
+            intent.putExtra("currentId", currentNote.id)
+
+            activity.updateActivityResultLauncher.launch(intent)
+
+        }
     }
 
     override fun getItemCount(): Int {
