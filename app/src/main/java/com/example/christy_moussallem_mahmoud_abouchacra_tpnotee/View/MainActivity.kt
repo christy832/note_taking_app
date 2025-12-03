@@ -93,11 +93,18 @@ class MainActivity : AppCompatActivity() {
             })
         updateActivityResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult(),
-            ActivityResultCallback { resultupdateNote ->
-                val resultCode = resultupdateNote.resultCode
-                val data = resultupdateNote.data
+            ActivityResultCallback { resultUpdateNote ->
+                val resultCode = resultUpdateNote.resultCode
+                val data = resultUpdateNote.data
                 if (resultCode == RESULT_OK && data != null) {
+                val updatedTitle: String= data.getStringExtra("updatedTitle").toString()
+                    val updatedDescription : String = data.getStringExtra("updatedDescription").toString()
+                    val noteId= data.getIntExtra("noteId", -1)
 
+                    val newNote =Note(updatedTitle,updatedDescription)
+                    newNote.id = noteId
+
+                    noteViewModel.update(newNote)
                 }
 
             })

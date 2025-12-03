@@ -1,5 +1,6 @@
 package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.View
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -17,6 +18,7 @@ class UpdateActivity : AppCompatActivity() {
     lateinit var buttonCancel: Button
     lateinit var buttonSave : Button
 
+    var currentId =-1
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,14 +45,29 @@ class UpdateActivity : AppCompatActivity() {
         }
 
     fun updateNote(){
+         val updatedTitle =editTextTitle.toString()
+        val updatedDescription=editTextDescription.toString()
 
+        val intent = Intent()
+        intent.putExtra("updatedTitle", updatedTitle)
+        intent.putExtra("updatedDescription",updatedDescription)
+        if(currentId !=-1)
+        {
+            intent.putExtra("noteId", currentId)
+            setResult(RESULT_OK,intent)
+            finish()
+        }
     }
     fun getAndSetData(){
-        val currentTitle =intent.getStringExtra("currentTitle")
-        val currentDescription= intent.getStringExtra("currentDescription")
-        val currentId= intent.getIntExtra("currentId" , - 1)
 
-        editTextTitle.setText(currentTitle)
-        editTextTitle.setText(currentDescription)
-    }
-    }
+            val currentTitle = intent.getStringExtra("currentTitle")
+            val currentDescription = intent.getStringExtra("currentDescription")
+            val currentId = intent.getIntExtra("currentId", -1)
+
+            editTextTitle.setText(currentTitle)
+            editTextDescription.setText(currentDescription)
+        }
+
+
+}
+
