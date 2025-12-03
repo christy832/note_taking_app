@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.R
 
 class UpdateActivity : AppCompatActivity() {
@@ -59,14 +56,14 @@ class UpdateActivity : AppCompatActivity() {
         intent.putExtra("noteId", currentId)
 
         setResult(RESULT_OK, intent)
-        finish() // 🔥 return to MainActivity
+        finish()
     }
 
     fun getAndSetData() {
         val currentTitle = intent.getStringExtra("currentTitle")
         val currentDescription = intent.getStringExtra("currentDescription")
 
-        // FIX: assign to class variable, not create new one
+        // IMPORTANT: assign to class variable (no new variable)
         currentId = intent.getIntExtra("currentId", -1)
 
         editTextTitle.setText(currentTitle)
