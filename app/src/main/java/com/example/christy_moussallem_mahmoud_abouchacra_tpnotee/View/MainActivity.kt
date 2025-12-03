@@ -27,13 +27,15 @@ import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.NoteApplication
 class MainActivity : AppCompatActivity() {
 
     private lateinit var noteViewModel: NoteViewModel
+    lateinit var updateActivityResultLauncher: ActivityResultLauncher<Intent>
+
     lateinit var addActivityResultLauncher: ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        val noteAdapter = NoteAdapter()
+        val noteAdapter = NoteAdapter(this )
         recyclerView.adapter = noteAdapter
 
 
@@ -86,6 +88,16 @@ class MainActivity : AppCompatActivity() {
                     val noteDescription: String = data.getStringExtra("Description").toString()
                     val note = Note(noteTitle, noteDescription)
                     noteViewModel.insert(note)
+                }
+
+            })
+        updateActivityResultLauncher = registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult(),
+            ActivityResultCallback { resultupdateNote ->
+                val resultCode = resultupdateNote.resultCode
+                val data = resultupdateNote.data
+                if (resultCode == RESULT_OK && data != null) {
+
                 }
 
             })
