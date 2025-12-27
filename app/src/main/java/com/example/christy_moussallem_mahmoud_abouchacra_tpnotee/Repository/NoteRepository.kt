@@ -1,31 +1,38 @@
 package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Repository
 
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Model.Note
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.network.ApiClient
+import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.network.NotesApi
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
-import androidx.annotation.WorkerThread
-    import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Model.Note
-    import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Room.NoteDAO
-    import kotlinx.coroutines.flow.Flow
+class NoteRepository(
+    private val api: NotesApi = ApiClient.api
+) {
+    val myAllNotes: Flow<List<Note>> = flow {
+        val notes = api.getNotes()
+        emit(notes)
+    }
 
+    suspend fun insert(note: Note) {
+        api.addNote(note)
+    }
 
-    class NoteRepository (private val noteDao :NoteDAO){
-        val myAllNotes : Flow<List<Note>> = noteDao.getAllNotes()
-        @WorkerThread
-        suspend fun  insert(note:Note){
-            noteDao.insert(note)
-        }
+    suspend fun update(note: Note) {
+        val id = note.id ?: error("Note id is null")
+        api.updateNote(id, note)
+    }
 
-        @WorkerThread
-        suspend fun  update(note:Note){
-            noteDao.update(note)
-        }
+    suspend fun delete(note: Note) {
+        val id = note.id ?: error("Note id is null")
+        api.deleteNote(id)
+    }
 
-        @WorkerThread
-        suspend fun  delete(note:Note){
-            noteDao.delete(note)
-        }
+    suspend fun deleteAllNotes() {
 
-        @WorkerThread
-        suspend fun  deleteAllNotes(){
-            noteDao.deleteAllNotes()
+        val allNotes = api.getNotes()
+        for (n in allNotes) {
+            n.id?.let { api.deleteNote(it) }
         }
     }
+}
