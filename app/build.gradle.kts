@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
+
 }
 
 android {
@@ -52,15 +52,18 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
 
     // ⚠ IMPORTANT: Fix layout preview
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // ---- Room ----
-    implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
+
     implementation(libs.androidx.activity)
-    kapt("androidx.room:room-compiler:2.6.1")
+
 
     // ---- Tests ----
     testImplementation(libs.junit)
