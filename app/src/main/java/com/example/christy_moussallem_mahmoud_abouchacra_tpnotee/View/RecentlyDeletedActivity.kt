@@ -1,6 +1,7 @@
 package com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.View
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -22,11 +23,11 @@ class RecentlyDeletedActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recently_deleted)
 
         supportActionBar?.title = "Recently Deleted"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)   // 👈 show back arrow
 
         val recyclerView: RecyclerView = findViewById(R.id.recyclerViewDeleted)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // 🔹 pass callbacks for restore / delete forever
         deletedAdapter = DeletedNoteAdapter(
             onRestoreClick = { note ->
                 val id = note.id
@@ -55,12 +56,20 @@ class RecentlyDeletedActivity : AppCompatActivity() {
         noteViewModel = ViewModelProvider(this, viewModelFactory)
             .get(NoteViewModel::class.java)
 
-        // observe deleted notes
         noteViewModel.deletedNotes.observe(this) { notes ->
             deletedAdapter.submitList(notes)
         }
 
-        // load deleted notes when screen opens
         noteViewModel.loadDeletedNotes()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
