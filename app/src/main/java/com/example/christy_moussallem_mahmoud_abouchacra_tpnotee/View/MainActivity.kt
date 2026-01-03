@@ -5,6 +5,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.result.ActivityResultCallback
@@ -33,11 +38,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // 🔹 ASK FOR NOTIFICATION PERMISSION (Android 13+)
+        askNotificationPermission()
+
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         val noteAdapter = NoteAdapter(this)
         recyclerView.adapter = noteAdapter
-
 
         registerActivityResultLauncher()
 
@@ -74,6 +81,22 @@ class MainActivity : AppCompatActivity() {
         }).attachToRecyclerView(recyclerView)
     }
 
+    // 🔹 NEW: permission helper
+    private fun askNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) { // Android 13+
+            val permission = Manifest.permission.POST_NOTIFICATIONS
+            if (ContextCompat.checkSelfPermission(this, permission)
+                != PackageManager.PERMISSION_GRANTED
+            ) {
+                ActivityCompat.requestPermissions(
+                    this,
+                    arrayOf(permission),
+                    1001
+                )
+            }
+        }
+    }
+
     fun registerActivityResultLauncher() {
         // launcher for Add Note
         addActivityResultLauncher = registerForActivityResult(
@@ -85,13 +108,18 @@ class MainActivity : AppCompatActivity() {
                     val noteTitle: String = data.getStringExtra("Title").toString()
                     val noteDescription: String = data.getStringExtra("Description").toString()
 
+                    val reminderExtra = data.getLongExtra("ReminderTimeMillis", -1L)
+                    val reminderTimeOrNull = if (reminderExtra == -1L) null else reminderExtra
+
                     val note = Note(
                         title = noteTitle,
-                        description = noteDescription
+                        description = noteDescription,
+                        reminderTimeMillis = reminderTimeOrNull
                     )
 
                     noteViewModel.insert(note)
                 }
+
             })
 
         // launcher for Update Note
@@ -107,15 +135,22 @@ class MainActivity : AppCompatActivity() {
                         data.getStringExtra("updatedDescription").toString()
                     val noteId = data.getIntExtra("noteId", -1)
 
+                    val updatedReminderExtra =
+                        data.getLongExtra("updatedReminderTimeMillis", -1L)
+                    val updatedReminderOrNull =
+                        if (updatedReminderExtra == -1L) null else updatedReminderExtra
+
                     if (noteId != -1) {
                         val newNote = Note(
                             id = noteId,
                             title = updatedTitle,
-                            description = updatedDescription
+                            description = updatedDescription,
+                            reminderTimeMillis = updatedReminderOrNull
                         )
                         noteViewModel.update(newNote)
                     }
                 }
+
             })
     }
 
@@ -141,7 +176,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-
     fun showDialogMessage() {
         val dialogMessage = AlertDialog.Builder(this)
         dialogMessage.setTitle("Delete All Notes")
@@ -164,6 +198,7 @@ class MainActivity : AppCompatActivity() {
 
         dialogMessage.create().show()
     }
+
     override fun onResume() {
         super.onResume()
         noteViewModel.loadNotes()

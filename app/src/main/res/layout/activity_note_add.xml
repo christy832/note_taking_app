@@ -27,6 +27,26 @@
         android:gravity="start|top"
         android:hint="Enter Note"
         android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/textViewReminderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder (optional)"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonPickReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set reminder" />
+
+    <TextView
+        android:id="@+id/textViewReminderTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No reminder set"
+        android:layout_marginTop="8dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

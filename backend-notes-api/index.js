@@ -25,7 +25,11 @@ app.get('/', (req, res) => {
 app.get('/notes', async (req, res) => {
   try {
     const result = await pool.query(
-      `SELECT id, title, description
+      `SELECT 
+         id,
+         title,
+         description,
+         reminder_time AS "reminderTimeMillis"
        FROM notes
        WHERE is_deleted = FALSE
        ORDER BY id ASC`
@@ -37,11 +41,16 @@ app.get('/notes', async (req, res) => {
   }
 });
 
-// ✅ GET recently deleted notes – MUST be before /notes/:id
+//  get recently deleted notes (trash)
 app.get('/notes/deleted', async (req, res) => {
   try {
     const result = await pool.query(
-      `SELECT id, title, description, deleted_at
+      `SELECT 
+         id,
+         title,
+         description,
+         reminder_time AS "reminderTimeMillis",
+         deleted_at
        FROM notes
        WHERE is_deleted = TRUE
        ORDER BY deleted_at DESC`
@@ -53,13 +62,19 @@ app.get('/notes/deleted', async (req, res) => {
   }
 });
 
-// get one note by id
+//  get one note by id
 app.get('/notes/:id', async (req, res) => {
   const id = parseInt(req.params.id, 10);
 
   try {
     const result = await pool.query(
-      'SELECT id, title, description FROM notes WHERE id = $1',
+      `SELECT 
+         id,
+         title,
+         description,
+         reminder_time AS "reminderTimeMillis"
+       FROM notes
+       WHERE id = $1`,
       [id]
     );
 
@@ -76,12 +91,20 @@ app.get('/notes/:id', async (req, res) => {
 
 // add note
 app.post('/notes', async (req, res) => {
-  const { title, description } = req.body;
+  const { title, description, reminderTimeMillis } = req.body;
 
   try {
     const result = await pool.query(
-      'INSERT INTO notes (title, description) VALUES ($1, $2) RETURNING *',
-      [title, description]
+      `INSERT INTO notes (title, description, reminder_time)
+       VALUES ($1, $2, $3)
+       RETURNING 
+         id,
+         title,
+         description,
+         reminder_time AS "reminderTimeMillis",
+         is_deleted,
+         deleted_at`,
+      [title, description, reminderTimeMillis || null]
     );
     res.status(201).json(result.rows[0]);
   } catch (err) {
@@ -93,12 +116,23 @@ app.post('/notes', async (req, res) => {
 // update note
 app.put('/notes/:id', async (req, res) => {
   const id = parseInt(req.params.id, 10);
-  const { title, description } = req.body;
+  const { title, description, reminderTimeMillis } = req.body;
 
   try {
     const result = await pool.query(
-      'UPDATE notes SET title = $1, description = $2 WHERE id = $3 RETURNING *',
-      [title, description, id]
+      `UPDATE notes
+       SET title = $1,
+           description = $2,
+           reminder_time = $3
+       WHERE id = $4
+       RETURNING 
+         id,
+         title,
+         description,
+         reminder_time AS "reminderTimeMillis",
+         is_deleted,
+         deleted_at`,
+      [title, description, reminderTimeMillis || null, id]
     );
 
     if (result.rows.length === 0) {
@@ -112,13 +146,15 @@ app.put('/notes/:id', async (req, res) => {
   }
 });
 
-// soft delete note
+// soft delete note (move to trash)
 app.delete('/notes/:id', async (req, res) => {
   const id = parseInt(req.params.id, 10);
 
   try {
     await pool.query(
-      'UPDATE notes SET is_deleted = TRUE, deleted_at = NOW() WHERE id = $1',
+      `UPDATE notes 
+       SET is_deleted = TRUE, deleted_at = NOW() 
+       WHERE id = $1`,
       [id]
     );
     res.json({ success: true });
@@ -128,10 +164,7 @@ app.delete('/notes/:id', async (req, res) => {
   }
 });
 
-/**
- * RESTORE a deleted note
- * POST /notes/:id/restore
- */
+// RESTORE a deleted note
 app.post('/notes/:id/restore', async (req, res) => {
   const id = parseInt(req.params.id, 10);
 
@@ -141,7 +174,13 @@ app.post('/notes/:id/restore', async (req, res) => {
        SET is_deleted = FALSE,
            deleted_at = NULL
        WHERE id = $1
-       RETURNING id, title, description, is_deleted, deleted_at`,
+       RETURNING 
+         id,
+         title,
+         description,
+         reminder_time AS "reminderTimeMillis",
+         is_deleted,
+         deleted_at`,
       [id]
     );
 
@@ -156,10 +195,8 @@ app.post('/notes/:id/restore', async (req, res) => {
   }
 });
 
-/**
- * PERMANENTLY delete a note
- * DELETE /notes/:id/force
- */
+// PERMANENTLY delete a note
+
 app.delete('/notes/:id/force', async (req, res) => {
   const id = parseInt(req.params.id, 10);
 
@@ -179,7 +216,6 @@ app.delete('/notes/:id/force', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
-
 
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
