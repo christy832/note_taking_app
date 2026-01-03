@@ -164,4 +164,8 @@ class MainActivity : AppCompatActivity() {
 
         dialogMessage.create().show()
     }
+    override fun onResume() {
+        super.onResume()
+        noteViewModel.loadNotes()
+    }
 }

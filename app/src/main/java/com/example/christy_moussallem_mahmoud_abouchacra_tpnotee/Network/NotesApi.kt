@@ -4,7 +4,6 @@ import com.example.christy_moussallem_mahmoud_abouchacra_tpnotee.Model.Note
 import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET
-import retrofit2.http.PATCH
 import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Path
@@ -33,8 +32,7 @@ interface NotesApi {
     @DELETE("notes/{id}")
     suspend fun deleteNote(@Path("id") id: Int)
 
-    // restore from trash
-    @PATCH("notes/{id}/restore")
+    @POST("notes/{id}/restore")
     suspend fun restoreNote(@Path("id") id: Int): Note
 
     // delete forever
