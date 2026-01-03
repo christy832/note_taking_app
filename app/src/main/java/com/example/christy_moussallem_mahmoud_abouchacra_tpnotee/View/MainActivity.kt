@@ -132,9 +132,15 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.item_delete_all_notes -> showDialogMessage()
+
+            R.id.item_recently_deleted -> {
+                val intent = Intent(this, RecentlyDeletedActivity::class.java)
+                startActivity(intent)
+            }
         }
         return true
     }
+
 
     fun showDialogMessage() {
         val dialogMessage = AlertDialog.Builder(this)

@@ -12,14 +12,17 @@ import kotlinx.coroutines.launch
 
 class NoteViewModel(private val repository: NoteRepository) : ViewModel() {
 
-
+    // -------- ACTIVE NOTES ----------
     private val _myAllNotes = MutableLiveData<List<Note>>()
     val myAllNotes: LiveData<List<Note>> = _myAllNotes
+
+    // -------- DELETED NOTES ----------
+    private val _deletedNotes = MutableLiveData<List<Note>>()
+    val deletedNotes: LiveData<List<Note>> = _deletedNotes
 
     init {
         loadNotes()
     }
-
 
     fun loadNotes() {
         viewModelScope.launch {
@@ -28,7 +31,18 @@ class NoteViewModel(private val repository: NoteRepository) : ViewModel() {
                     _myAllNotes.value = notes
                 }
             } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+    }
 
+    fun loadDeletedNotes() {
+        viewModelScope.launch {
+            try {
+                val notes = repository.getDeletedNotes()
+                _deletedNotes.value = notes
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
         }
     }
@@ -39,7 +53,6 @@ class NoteViewModel(private val repository: NoteRepository) : ViewModel() {
             loadNotes()
         } catch (e: Exception) {
             e.printStackTrace()
-            // later you can expose an error LiveData if you want
         }
     }
 
@@ -54,8 +67,9 @@ class NoteViewModel(private val repository: NoteRepository) : ViewModel() {
 
     fun delete(note: Note) = viewModelScope.launch {
         try {
-            repository.delete(note)
+            repository.delete(note)      // soft delete (is_deleted = true)
             loadNotes()
+            loadDeletedNotes()
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -65,13 +79,33 @@ class NoteViewModel(private val repository: NoteRepository) : ViewModel() {
         try {
             repository.deleteAllNotes()
             loadNotes()
+            loadDeletedNotes()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    fun restoreNote(id: Int) = viewModelScope.launch {
+        try {
+            repository.restoreNote(id)
+            loadNotes()
+            loadDeletedNotes()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    fun deleteNoteForever(id: Int) = viewModelScope.launch {
+        try {
+            repository.deleteNoteForever(id)
+            loadDeletedNotes()
         } catch (e: Exception) {
             e.printStackTrace()
         }
     }
 }
 
-
+// Factory stays as a separate top-level class
 class NoteViewModelFactory(private var repository: NoteRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(NoteViewModel::class.java)) {
