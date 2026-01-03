@@ -1,0 +1,33 @@
+# --- ANDROID BUILD ---
+/app/build/
+/build/
+/captures/
+*.apk
+*.ap_
+*.aab
+
+# --- ANDROID STUDIO / IDEA ---
+/.idea/
+/.idea/*
+*.iml
+/local.properties
+/.gradle/
+/.gradle/*
+
+# --- KAPT / GENERATED CODE ---
+app/build/
+app/**/build/
+
+# --- NODE BACKEND ---
+backend-notes-api/node_modules/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
+
+#kotlin/ IDE logs
+.kotlin/
+*.log
