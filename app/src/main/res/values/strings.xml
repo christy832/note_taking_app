@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Note App</string>
+    <string name="reminder_icon">Reminder set</string>
+
 </resources>
